@@ -1,31 +1,16 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
+import routers from './route-config'
+import App from './pages/app'
 
 Vue.use(VueRouter);
-
-const Foo = Vue.extend({
-    template: '<p>This is foo!</p>'
-});
-
-const Bar = Vue.extend({
-    template: '<p>This is bar!</p>'
-});
-
-const App = Vue.extend({});
 
 var router = new VueRouter({
     history: true,
     saveScrollPosition: true
 });
 
-router.map({
-    '/foo': {
-        component: Foo
-    },
-    '/bar': {
-        component: Bar
-    }
-});
+router.map(routers);
 
 router.start(App, '#app');
 
