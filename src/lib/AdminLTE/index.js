@@ -7,10 +7,12 @@ var ControlSidebar = require('./ControlSidebar/ControlSidebar');
 var BoxWidget = require('./BoxWidget/BoxWidget');
 
 var FastClick = require('./plugins/fastclick');
-var Slimscroll = require('slimscroll');
 
 function AdminLTE($, userSettings) {
     var jQuery = this.$ = $, _this = this;
+
+    require('./plugins/jquery.slimscroll.js')(jQuery);
+    require('./plugins/tooltip.js')(jQuery);
 
     $("body").removeClass("hold-transition");
 
@@ -32,16 +34,11 @@ function AdminLTE($, userSettings) {
 
     //Add slimscroll to navbar dropdown
     if (o.navbarMenuSlimscroll) {
-
-        var navbarMenus = document.querySelectorAll('.navbar .menu');
-
-        for ( var i = 0; i < navbarMenus.length; i++ ) {
-            _this._instances.navbarMenuSlimscroll.push(new Slimscroll({
-                height: o.navbarMenuHeight,
-                alwaysVisible: false,
-                size: o.navbarMenuSlimscrollWidth
-            }, navbarMenus[i]));
-        }
+        $(".navbar .menu").slimscroll({
+            height: o.navbarMenuHeight,
+            alwaysVisible: false,
+            size: o.navbarMenuSlimscrollWidth
+        }).css("width", "100%");
     }
 
     //Activate sidebar push menu
@@ -49,12 +46,12 @@ function AdminLTE($, userSettings) {
         this.pushMenu.activate(o.sidebarToggleSelector);
     }
 
-    ////Activate Bootstrap tooltip
-    //if (o.enableBSToppltip) {
-    //    $('body').tooltip({
-    //        selector: o.BSTooltipSelector
-    //    });
-    //}
+    //Activate Bootstrap tooltip
+    if (o.enableBSToppltip) {
+        $('body').tooltip({
+            selector: o.BSTooltipSelector
+        });
+    }
 
     //Activate box widget
     if (o.enableBoxWidget) {
@@ -155,10 +152,6 @@ AdminLTE.prototype.init = function _init() {
             }
         });
     };
-
-    this._instances = {
-        navbarMenuSlimscroll: []
-    }
 };
 
 module.exports = AdminLTE;

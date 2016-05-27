@@ -73,7 +73,7 @@
 
 	router.map(_routeConfig2.default);
 
-	router.start(_app2.default, '#app');
+	router.start(_app2.default, 'body');
 
 	window.router = router;
 
@@ -7517,7 +7517,7 @@
 /* 13 */
 /***/ function(module, exports) {
 
-	module.exports = "<div class=\"skin-blue fixed\" data-spy=\"scroll\" data-target=\"#scrollspy\">\n    <div class=\"wrapper\">\n\n        <header class=\"main-header\">\n            <!-- Logo -->\n            <!-- Logo -->\n            <a href=\"../index2.html\" class=\"logo\">\n                <!-- mini logo for sidebar mini 50x50 pixels -->\n                <span class=\"logo-mini\"><b>A</b>LT</span>\n                <!-- logo for regular state and mobile devices -->\n                <span class=\"logo-lg\"><b>Admin</b>LTE</span>\n            </a>\n            <!-- Header Navbar: style can be found in header.less -->\n            <nav class=\"navbar navbar-static-top\" role=\"navigation\">\n                <!-- Sidebar toggle button-->\n                <a href=\"#\" class=\"sidebar-toggle\" data-toggle=\"offcanvas\" role=\"button\">\n                    <span class=\"sr-only\">Toggle navigation</span>\n                </a>\n                <!-- Navbar Right Menu -->\n                <div class=\"navbar-custom-menu\">\n                    <ul class=\"nav navbar-nav\">\n                        <li><a href=\"http://almsaeedstudio.com\">Almsaeed Studio</a></li>\n                        <li><a href=\"http://almsaeedstudio.com/premium\">Premium Templates</a></li>\n                    </ul>\n                </div>\n            </nav>\n        </header>\n        <!-- Left side column. contains the logo and sidebar -->\n        <aside class=\"main-sidebar\">\n            <!-- sidebar: style can be found in sidebar.less -->\n            <div class=\"sidebar\" id=\"scrollspy\">\n\n                <!-- sidebar menu: : style can be found in sidebar.less -->\n                <ul class=\"nav sidebar-menu\">\n                    <li class=\"header\">TABLE OF CONTENTS</li>\n                    <li class=\"active\"><a href=\"#introduction\"><i class=\"fa fa-circle-o\"></i> Introduction</a></li>\n                    <li><a href=\"#download\"><i class=\"fa fa-circle-o\"></i> Download</a></li>\n                    <li><a href=\"#dependencies\"><i class=\"fa fa-circle-o\"></i> Dependencies</a></li>\n                    <li><a href=\"#advice\"><i class=\"fa fa-circle-o\"></i> Advice</a></li>\n                    <li><a href=\"#layout\"><i class=\"fa fa-circle-o\"></i> Layout</a></li>\n                    <li><a href=\"#adminlte-options\"><i class=\"fa fa-circle-o\"></i> Javascript Options</a></li>\n                    <li class=\"treeview\" id=\"scrollspy-components\">\n                        <a href=\"javascript:void(0)\"><i class=\"fa fa-circle-o\"></i> Components</a>\n                        <ul class=\"nav treeview-menu\">\n                            <li><a href=\"#component-main-header\">Main Header</a></li>\n                            <li><a href=\"#component-sidebar\">Sidebar</a></li>\n                            <li><a href=\"#component-control-sidebar\">Control Sidebar</a></li>\n                            <li><a href=\"#component-info-box\">Info Box</a></li>\n                            <li><a href=\"#component-box\">Boxes</a></li>\n                            <li><a href=\"#component-direct-chat\">Direct Chat</a></li>\n                        </ul>\n                    </li>\n                    <li><a href=\"#plugins\"><i class=\"fa fa-circle-o\"></i> Plugins</a></li>\n                    <li><a href=\"#browsers\"><i class=\"fa fa-circle-o\"></i> Browser Support</a></li>\n                    <li><a href=\"#upgrade\"><i class=\"fa fa-circle-o\"></i> Upgrade Guide</a></li>\n                    <li><a href=\"#implementations\"><i class=\"fa fa-circle-o\"></i> Implementations</a></li>\n                    <li><a href=\"#faq\"><i class=\"fa fa-circle-o\"></i> FAQ</a></li>\n                    <li><a href=\"#license\"><i class=\"fa fa-circle-o\"></i> License</a></li>\n                </ul>\n            </div>\n            <!-- /.sidebar -->\n        </aside>\n\n        <!-- Content Wrapper. Contains page content -->\n        <div class=\"content-wrapper\">\n            <!-- Content Header (Page header) -->\n            <div class=\"content-header\">\n                <h1>\n                    AdminLTE Documentation\n                    <small>Current version 2.3.0</small>\n                </h1>\n                <ol class=\"breadcrumb\">\n                    <li><a href=\"#\"><i class=\"fa fa-dashboard\"></i> Home</a></li>\n                    <li class=\"active\">Documentation</li>\n                </ol>\n            </div>\n\n            <!-- Main content -->\n            <div class=\"content body\">\n\n                <section id=\"introduction\">\n                    <h2 class=\"page-header\"><a href=\"#introduction\">Introduction</a></h2>\n                    <p class=\"lead\">\n                        <b>AdminLTE</b> is a popular open source WebApp template for admin dashboards and control\n                        panels.\n                        It is a responsive HTML template that is based on the CSS framework Bootstrap 3.\n                        It utilizes all of the Bootstrap components in its design and re-styles many\n                        commonly used plugins to create a consistent design that can be used as a user\n                        interface for backend applications. AdminLTE is based on a modular design, which\n                        allows it to be easily customized and built upon. This documentation will guide you through\n                        installing the template and exploring the various components that are bundled with the template.\n                    </p>\n                </section><!-- /#introduction -->\n\n\n                <!-- ============================================================= -->\n\n                <section id=\"download\">\n                    <h2 class=\"page-header\"><a href=\"#download\">Download</a></h2>\n                    <p class=\"lead\">\n                        AdminLTE can be downloaded in two different versions, each appealing to different skill levels\n                        and use case.\n                    </p>\n                    <div class=\"row\">\n                        <div class=\"col-sm-6\">\n                            <div class=\"box box-primary\">\n                                <div class=\"box-header with-border\">\n                                    <h3 class=\"box-title\">Ready</h3>\n                                    <span class=\"label label-primary pull-right\"><i class=\"fa fa-html5\"></i></span>\n                                </div><!-- /.box-header -->\n                                <div class=\"box-body\">\n                                    <p>Compiled and ready to use in production. Download this version if you don't want\n                                        to customize AdminLTE's LESS files.</p>\n                                    <a href=\"http://almsaeedstudio.com/download/AdminLTE-dist\"\n                                       class=\"btn btn-primary\"><i class=\"fa fa-download\"></i> Download</a>\n                                </div><!-- /.box-body -->\n                            </div><!-- /.box -->\n                        </div><!-- /.col -->\n                        <div class=\"col-sm-6\">\n                            <div class=\"box box-danger\">\n                                <div class=\"box-header with-border\">\n                                    <h3 class=\"box-title\">Source Code</h3>\n                                    <span class=\"label label-danger pull-right\"><i class=\"fa fa-database\"></i></span>\n                                </div><!-- /.box-header -->\n                                <div class=\"box-body\">\n                                    <p>All files including the compiled CSS. Download this version if you plan on\n                                        customizing the template. <b>Requires a LESS compiler.</b></p>\n                                    <a href=\"http://almsaeedstudio.com/download/AdminLTE\" class=\"btn btn-danger\"><i\n                                            class=\"fa fa-download\"></i> Download</a>\n                                </div><!-- /.box-body -->\n                            </div><!-- /.box -->\n                        </div><!-- /.col -->\n                    </div><!-- /.row -->\n  <pre class=\"hierarchy bring-up\"><code class=\"language-bash\" data-lang=\"bash\">File Hierarchy of the Source Code Package\n\n      AdminLTE/\n      ├── dist/\n      │ ├── CSS/\n      │ ├── JS\n      │ ├── img\n      ├── build/\n      │ ├── less/\n      │ │ ├── AdminLTE's Less files\n      │ └── Bootstrap-less/ (Only for reference. No modifications have been made)\n      │ ├── mixins/\n      │ ├── variables.less\n      │ ├── mixins.less\n      └── plugins/\n      ├── All the customized plugins CSS and JS files</code></pre>\n                </section>\n\n\n                <!-- ============================================================= -->\n\n                <section id=\"dependencies\">\n                    <h2 class=\"page-header\"><a href=\"#dependencies\">Dependencies</a></h2>\n                    <p class=\"lead\">AdminLTE depends on two main frameworks.\n                        The downloadable package contains both of these libraries, so you don't have to manually\n                        download them.</p>\n                    <ul class=\"bring-up\">\n                        <li><a href=\"http://getbootstrap.com\" target=\"_blank\">Bootstrap 3</a></li>\n                        <li><a href=\"http://jquery.com/\" target=\"_blank\">jQuery 1.11+</a></li>\n                        <li><a href=\"#plugins\">All other plugins are listed below</a></li>\n                    </ul>\n                </section>\n\n\n                <!-- ============================================================= -->\n\n                <section id=\"advice\">\n                    <h2 class=\"page-header\"><a href=\"#advice\">A Word of Advice</a></h2>\n                    <p class=\"lead\">\n                        Before you go to see your new awesome theme, here are few tips on how to familiarize yourself\n                        with it:\n                    </p>\n\n                    <ul>\n                        <li><b>AdminLTE is based on <a href=\"http://getbootstrap.com/\" target=\"_blank\">Bootstrap 3</a>.</b>\n                            If you are unfamiliar with Bootstrap, visit their website and read through the\n                            documentation. All of Bootstrap components have been modified to fit the style of AdminLTE\n                            and provide a consistent look throughout the template. This way, we guarantee you will get\n                            the best of AdminLTE.\n                        </li>\n                        <li><b>Go through the pages that are bundled with the theme.</b> Most of the template example\n                            pages contain quick tips on how to create or use a component which can be really helpful\n                            when you need to create something on the fly.\n                        </li>\n                        <li><b>Documentation.</b> We are trying our best to make your experience with AdminLTE be\n                            smooth. One way to achieve that is to provide documentation and support. If you think that\n                            something is missing from the documentation, please do not hesitate to create an issue to\n                            tell us about it. Also, if you would like to contribute, email the support team at <a\n                                    href=\"mailto:support@almsaeedstudio.com\">support@almsaeedstudio.com</a>.\n                        </li>\n                        <li><b>Built with <a href=\"http://lesscss.org/\" target=\"_blank\">LESS</a>.</b> This theme uses\n                            the LESS compiler to make it easier to customize and use. LESS is easy to learn if you know\n                            CSS or SASS. It is not necessary to learn LESS but it will benefit you a lot in the future.\n                        </li>\n                        <li><b>Hosted on <a href=\"https://github.com/almasaeed2010/AdminLTE/\" target=\"_blank\">GitHub</a>.</b>\n                            Visit our GitHub repository to view issues, make requests, or contribute to the project.\n                        </li>\n                    </ul>\n                    <p>\n                        <b>Note:</b> LESS files are better commented than the compiled CSS file.\n                    </p>\n                </section>\n\n\n                <!-- ============================================================= -->\n\n                <section id=\"layout\">\n                    <h2 class=\"page-header\"><a href=\"#layout\">Layout</a></h2>\n                    <p class=\"lead\">The layout consists of four major parts:</p>\n                    <ul>\n                        <li>Wrapper <code>.wrapper</code>. A div that wraps the whole site.</li>\n                        <li>Main Header <code>.main-header</code>. Contains the logo and navbar.</li>\n                        <li>Sidebar <code>.sidebar-wrapper</code>. Contains the user panel and sidebar menu.</li>\n                        <li>Content <code>.content-wrapper</code>. Contains the page header and content.</li>\n                    </ul>\n                    <div class=\"callout callout-danger lead\">\n                        <h4>Tip!</h4>\n                        <p>The <a href=\"../starter.html\">starter page</a> is a good place to start building your app if\n                            you'd like to start from scratch.</p>\n                    </div>\n\n                    <h3>Layout Options</h3>\n                    <p class=\"lead\">AdminLTE 2.0 provides a set of options to apply to your main layout. Each on of\n                        these classes can be added\n                        to the body tag to get the desired goal.</p>\n                    <ul>\n                        <li><b>Fixed:</b> use the class <code>.fixed</code> to get a fixed header and sidebar.</li>\n                        <li><b>Collapsed Sidebar:</b> use the class <code>.sidebar-collapse</code> to have a collapsed\n                            sidebar upon loading.\n                        </li>\n                        <li><b>Boxed Layout:</b> use the class <code>.layout-boxed</code> to get a boxed layout that\n                            stretches only to 1250px.\n                        </li>\n                        <li><b>Top Navigation</b> use the class <code>.layout-top-nav</code> to remove the sidebar and\n                            have your links at the top navbar.\n                        </li>\n                    </ul>\n                    <p><b>Note:</b> you cannot use both layout-boxed and fixed at the same time. Anything else can be\n                        mixed together.</p>\n\n                    <h3>Skins</h3>\n                    <p class=\"lead\">Skins can be found in the dist/css/skins folder.\n                        Choose and the skin file that you want then add the appropriate\n                        class to the body tag to change the template's appearance. Here is the list of available\n                        skins:</p>\n                    <div class=\"box box-solid\" style=\"max-width: 300px;\">\n                        <div class=\"box-body no-padding\">\n                            <table id=\"layout-skins-list\" class=\"table table-striped bring-up nth-2-center\">\n                                <thead>\n                                <tr>\n                                    <th style=\"width: 210px;\">Skin Class</th>\n                                    <th>Preview</th>\n                                </tr>\n                                </thead>\n                                <tbody>\n                                <tr>\n                                    <td><code>skin-blue</code></td>\n                                    <td><a href=\"#\" data-skin=\"skin-blue\" class=\"btn btn-primary btn-xs\"><i\n                                            class=\"fa fa-eye\"></i></a></td>\n                                </tr>\n                                <tr>\n                                    <td><code>skin-blue-light</code></td>\n                                    <td><a href=\"#\" data-skin=\"skin-blue-light\" class=\"btn btn-primary btn-xs\"><i\n                                            class=\"fa fa-eye\"></i></a></td>\n                                </tr>\n                                <tr>\n                                    <td><code>skin-yellow</code></td>\n                                    <td><a href=\"#\" data-skin=\"skin-yellow\" class=\"btn btn-warning btn-xs\"><i\n                                            class=\"fa fa-eye\"></i></a></td>\n                                </tr>\n                                <tr>\n                                    <td><code>skin-yellow-light</code></td>\n                                    <td><a href=\"#\" data-skin=\"skin-yellow-light\" class=\"btn btn-warning btn-xs\"><i\n                                            class=\"fa fa-eye\"></i></a></td>\n                                </tr>\n                                <tr>\n                                    <td><code>skin-green</code></td>\n                                    <td><a href=\"#\" data-skin=\"skin-green\" class=\"btn btn-success btn-xs\"><i\n                                            class=\"fa fa-eye\"></i></a></td>\n                                </tr>\n                                <tr>\n                                    <td><code>skin-green-light</code></td>\n                                    <td><a href=\"#\" data-skin=\"skin-green-light\" class=\"btn btn-success btn-xs\"><i\n                                            class=\"fa fa-eye\"></i></a></td>\n                                </tr>\n                                <tr>\n                                    <td><code>skin-purple</code></td>\n                                    <td><a href=\"#\" data-skin=\"skin-purple\" class=\"btn bg-purple btn-xs\"><i\n                                            class=\"fa fa-eye\"></i></a></td>\n                                </tr>\n                                <tr>\n                                    <td><code>skin-purple-light</code></td>\n                                    <td><a href=\"#\" data-skin=\"skin-purple-light\" class=\"btn bg-purple btn-xs\"><i\n                                            class=\"fa fa-eye\"></i></a></td>\n                                </tr>\n                                <tr>\n                                    <td><code>skin-red</code></td>\n                                    <td><a href=\"#\" data-skin=\"skin-red\" class=\"btn btn-danger btn-xs\"><i\n                                            class=\"fa fa-eye\"></i></a></td>\n                                </tr>\n                                <tr>\n                                    <td><code>skin-red-light</code></td>\n                                    <td><a href=\"#\" data-skin=\"skin-red-light\" class=\"btn btn-danger btn-xs\"><i\n                                            class=\"fa fa-eye\"></i></a></td>\n                                </tr>\n                                <tr>\n                                    <td><code>skin-black</code></td>\n                                    <td><a href=\"#\" data-skin=\"skin-black\" class=\"btn bg-black btn-xs\"><i\n                                            class=\"fa fa-eye\"></i></a></td>\n                                </tr>\n                                <tr>\n                                    <td><code>skin-black-light</code></td>\n                                    <td><a href=\"#\" data-skin=\"skin-black-light\" class=\"btn bg-black btn-xs\"><i\n                                            class=\"fa fa-eye\"></i></a></td>\n                                </tr>\n                                </tbody>\n                            </table>\n                        </div><!-- /.box-body -->\n                    </div><!-- /.box -->\n                </section>\n\n\n                <!-- ============================================================= -->\n\n                <section id=\"adminlte-options\">\n                    <h2 class=\"page-header\"><a href=\"#adminlte-options\">AdminLTE Javascript Options</a></h2>\n                    <p class=\"lead\">Modifying the options of AdminLTE's app.js can be done using one of the following\n                        ways.</p>\n\n                    <h3>Editing app.js</h3>\n                    <p>Within the main Javascript file, modify the <code>$.AdminLTE.options</code> object to suit your\n                        use case.</p>\n\n                    <h3>Defining AdminLTEOptions</h3>\n                    <p>Alternatively, you can define a global options variable named <code>AdminLTEOptions</code> and\n                        initialize it before loading app.js.</p>\n                    <p>Example</p>\n  <pre class=\"prettyprint\"><code class=\"html\">&LT;script>\n      var AdminLTEOptions = {\n      //Enable sidebar expand on hover effect for sidebar mini\n      //This option is forced to true if both the fixed layout and sidebar mini\n      //are used together\n      sidebarExpandOnHover: true,\n      //BoxRefresh Plugin\n      enableBoxRefresh: true,\n      //Bootstrap.js tooltip\n      enableBSToppltip: true\n      };\n      &LT;/script>\n      &LT;script src=\"dist/js/app.js\" type=\"text/javascript\">&LT;/script></code></pre>\n\n                    <h3>Available AdminLTE Options</h3>\n  <pre class=\"prettyprint\"><code class=\"javascript\">{\n      //Add slimscroll to navbar menus\n      //This requires you to load the slimscroll plugin\n      //in every page before app.js\n      navbarMenuSlimscroll: true,\n      navbarMenuSlimscrollWidth: \"3px\", //The width of the scroll bar\n      navbarMenuHeight: \"200px\", //The height of the inner menu\n      //General animation speed for JS animated elements such as box collapse/expand and\n      //sidebar treeview slide up/down. This options accepts an integer as milliseconds,\n      //'fast', 'normal', or 'slow'\n      animationSpeed: 500,\n      //Sidebar push menu toggle button selector\n      sidebarToggleSelector: \"[data-toggle='offcanvas']\",\n      //Activate sidebar push menu\n      sidebarPushMenu: true,\n      //Activate sidebar slimscroll if the fixed layout is set (requires SlimScroll Plugin)\n      sidebarSlimScroll: true,\n      //Enable sidebar expand on hover effect for sidebar mini\n      //This option is forced to true if both the fixed layout and sidebar mini\n      //are used together\n      sidebarExpandOnHover: false,\n      //BoxRefresh Plugin\n      enableBoxRefresh: true,\n      //Bootstrap.js tooltip\n      enableBSToppltip: true,\n      BSTooltipSelector: \"[data-toggle='tooltip']\",\n      //Enable Fast Click. Fastclick.js creates a more\n      //native touch experience with touch devices. If you\n      //choose to enable the plugin, make sure you load the script\n      //before AdminLTE's app.js\n      enableFastclick: true,\n      //Control Sidebar Options\n      enableControlSidebar: true,\n      controlSidebarOptions: {\n      //Which button should trigger the open/close event\n      toggleBtnSelector: \"[data-toggle='control-sidebar']\",\n      //The sidebar selector\n      selector: \".control-sidebar\",\n      //Enable slide over content\n      slide: true\n      },\n      //Box Widget Plugin. Enable this plugin\n      //to allow boxes to be collapsed and/or removed\n      enableBoxWidget: true,\n      //Box Widget plugin options\n      boxWidgetOptions: {\n      boxWidgetIcons: {\n      //Collapse icon\n      collapse: 'fa-minus',\n      //Open icon\n      open: 'fa-plus',\n      //Remove icon\n      remove: 'fa-times'\n      },\n      boxWidgetSelectors: {\n      //Remove button selector\n      remove: '[data-widget=\"remove\"]',\n      //Collapse button selector\n      collapse: '[data-widget=\"collapse\"]'\n      }\n      },\n      //Direct Chat plugin options\n      directChat: {\n      //Enable direct chat by default\n      enable: true,\n      //The button to open and close the chat contacts pane\n      contactToggleSelector: '[data-widget=\"chat-pane-toggle\"]'\n      },\n      //Define the set of colors to use globally around the website\n      colors: {\n      lightBlue: \"#3c8dbc\",\n      red: \"#f56954\",\n      green: \"#00a65a\",\n      aqua: \"#00c0ef\",\n      yellow: \"#f39c12\",\n      blue: \"#0073b7\",\n      navy: \"#001F3F\",\n      teal: \"#39CCCC\",\n      olive: \"#3D9970\",\n      lime: \"#01FF70\",\n      orange: \"#FF851B\",\n      fuchsia: \"#F012BE\",\n      purple: \"#8E24AA\",\n      maroon: \"#D81B60\",\n      black: \"#222222\",\n      gray: \"#d2d6de\"\n      },\n      //The standard screen sizes that bootstrap uses.\n      //If you change these in the variables.less file, change\n      //them here too.\n      screenSizes: {\n      xs: 480,\n      sm: 768,\n      md: 992,\n      lg: 1200\n      }\n      }</code></pre>\n                </section>\n\n\n                <!-- ============================================================= -->\n\n                <section id=\"components\" data-spy=\"scroll\" data-target=\"#scrollspy-components\">\n                    <h2 class=\"page-header\"><a href=\"#components\">Components</a></h2>\n                    <div class=\"callout callout-info lead\">\n                        <h4>Reminder!</h4>\n                        <p>\n                            AdminLTE uses all of Bootstrap 3 components. It's a good start to review\n                            the <a href=\"http://getbootstrap.com\">Bootstrap documentation</a> to get an idea of the\n                            various components\n                            that this documentation <b>does not</b> cover.\n                        </p>\n                    </div>\n                    <div class=\"callout callout-danger lead\">\n                        <h4>Tip!</h4>\n                        <p>\n                            If you go through the example pages and would like to copy a component, right-click on\n                            the component and choose \"inspect element\" to get to the HTML quicker than scanning\n                            the HTML page.\n                        </p>\n                    </div>\n                    <h3 id=\"component-main-header\">Main Header</h3>\n                    <p class=\"lead\">The main header contains the logo and navbar. Construction of the\n                        navbar differs slightly from Bootstrap because it has components that Bootstrap doesn't provide.\n                        The navbar can be constructed in two way. This an example for the normal navbar and next we will\n                        provide an example for\n                        the top nav layout.</p>\n                    <div class=\"box box-solid\">\n                        <div class=\"box-body\" style=\"position: relative;\">\n                            <span class=\"eg\">Main Header Example</span>\n                            <header class=\"main-header\" style=\"position: relative;\">\n                                <!-- Logo -->\n                                <a href=\"index2.html\" class=\"logo\" style=\"position: relative;\"><b>Admin</b>LTE</a>\n                                <!-- Header Navbar: style can be found in header.less -->\n                                <nav class=\"navbar\" role=\"navigation\" style=\"border: 0;max-height: 50px;\">\n                                    <!-- Sidebar toggle button-->\n                                    <a href=\"#\" class=\"sidebar-toggle\" role=\"button\">\n                                        <span class=\"sr-only\">Toggle navigation</span>\n                                    </a>\n                                    <!-- Navbar Right Menu -->\n                                    <div class=\"navbar-custom-menu\">\n                                        <ul class=\"nav navbar-nav\">\n                                            <!-- Messages: style can be found in dropdown.less-->\n                                            <li class=\"dropdown messages-menu\">\n                                                <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">\n                                                    <i class=\"fa fa-envelope-o\"></i>\n                                                    <span class=\"label label-success\">4</span>\n                                                </a>\n                                                <ul class=\"dropdown-menu\">\n                                                    <li class=\"header\">You have 4 messages</li>\n                                                    <li>\n                                                        <!-- inner menu: contains the actual data -->\n                                                        <ul class=\"menu\">\n                                                            <li><!-- start message -->\n                                                                <a href=\"#\">\n                                                                    <div class=\"pull-left\">\n                                                                    </div>\n                                                                    <h4>\n                                                                        Support Team\n                                                                        <small><i class=\"fa fa-clock-o\"></i> 5 mins\n                                                                        </small>\n                                                                    </h4>\n                                                                    <p>Why not buy a new awesome theme?</p>\n                                                                </a>\n                                                            </li><!-- end message -->\n                                                        </ul>\n                                                    </li>\n                                                    <li class=\"footer\"><a href=\"#\">See All Messages</a></li>\n                                                </ul>\n                                            </li>\n                                            <!-- Notifications: style can be found in dropdown.less -->\n                                            <li class=\"dropdown notifications-menu\">\n                                                <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">\n                                                    <i class=\"fa fa-bell-o\"></i>\n                                                    <span class=\"label label-warning\">10</span>\n                                                </a>\n                                                <ul class=\"dropdown-menu\">\n                                                    <li class=\"header\">You have 10 notifications</li>\n                                                    <li>\n                                                        <!-- inner menu: contains the actual data -->\n                                                        <ul class=\"menu\">\n                                                            <li>\n                                                                <a href=\"#\">\n                                                                    <i class=\"fa fa-users text-aqua\"></i> 5 new members\n                                                                    joined today\n                                                                </a>\n                                                            </li>\n                                                        </ul>\n                                                    </li>\n                                                    <li class=\"footer\"><a href=\"#\">View all</a></li>\n                                                </ul>\n                                            </li>\n                                            <!-- Tasks: style can be found in dropdown.less -->\n                                            <li class=\"dropdown tasks-menu\">\n                                                <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">\n                                                    <i class=\"fa fa-flag-o\"></i>\n                                                    <span class=\"label label-danger\">9</span>\n                                                </a>\n                                                <ul class=\"dropdown-menu\">\n                                                    <li class=\"header\">You have 9 tasks</li>\n                                                    <li>\n                                                        <!-- inner menu: contains the actual data -->\n                                                        <ul class=\"menu\">\n                                                            <li><!-- Task item -->\n                                                                <a href=\"#\">\n                                                                    <h3>\n                                                                        Design some buttons\n                                                                        <small class=\"pull-right\">20%</small>\n                                                                    </h3>\n                                                                    <div class=\"progress xs\">\n                                                                        <div class=\"progress-bar progress-bar-aqua\"\n                                                                             style=\"width: 20%\" role=\"progressbar\"\n                                                                             aria-valuenow=\"20\" aria-valuemin=\"0\"\n                                                                             aria-valuemax=\"100\">\n                                                                            <span class=\"sr-only\">20% Complete</span>\n                                                                        </div>\n                                                                    </div>\n                                                                </a>\n                                                            </li><!-- end task item -->\n                                                        </ul>\n                                                    </li>\n                                                    <li class=\"footer\">\n                                                        <a href=\"#\">View all tasks</a>\n                                                    </li>\n                                                </ul>\n                                            </li>\n                                            <!-- User Account: style can be found in dropdown.less -->\n                                            <li class=\"dropdown user user-menu\">\n                                                <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">\n                                                    <span class=\"hidden-xs\">Alexander Pierce</span>\n                                                </a>\n                                                <ul class=\"dropdown-menu\">\n                                                    <!-- User image -->\n                                                    <li class=\"user-header\">\n                                                        <p>\n                                                            Alexander Pierce - Web Developer\n                                                            <small>Member since Nov. 2012</small>\n                                                        </p>\n                                                    </li>\n                                                    <!-- Menu Body -->\n                                                    <li class=\"user-body\">\n                                                        <div class=\"col-xs-4 text-center\">\n                                                            <a href=\"#\">Followers</a>\n                                                        </div>\n                                                        <div class=\"col-xs-4 text-center\">\n                                                            <a href=\"#\">Sales</a>\n                                                        </div>\n                                                        <div class=\"col-xs-4 text-center\">\n                                                            <a href=\"#\">Friends</a>\n                                                        </div>\n                                                    </li>\n                                                    <!-- Menu Footer-->\n                                                    <li class=\"user-footer\">\n                                                        <div class=\"pull-left\">\n                                                            <a href=\"#\" class=\"btn btn-default btn-flat\">Profile</a>\n                                                        </div>\n                                                        <div class=\"pull-right\">\n                                                            <a href=\"#\" class=\"btn btn-default btn-flat\">Sign out</a>\n                                                        </div>\n                                                    </li>\n                                                </ul>\n                                            </li>\n                                        </ul>\n                                    </div>\n                                </nav>\n                            </header>\n                        </div>\n                    </div>\n  <pre class=\"prettyprint\">&LT;header class=\"main-header\">\n      &LT;a href=\"../../index2.html\" class=\"logo\">\n      &LT;!-- LOGO -->\n    AdminLTE\n      &LT;/a>\n      &LT;!-- Header Navbar: style can be found in header.less -->\n      &LT;nav class=\"navbar navbar-static-top\" role=\"navigation\">\n      &LT;!-- Navbar Right Menu -->\n      &LT;div class=\"navbar-custom-menu\">\n      &LT;ul class=\"nav navbar-nav\">\n      &LT;!-- Messages: style can be found in dropdown.less-->\n      &LT;li class=\"dropdown messages-menu\">\n      &LT;a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">\n      &LT;i class=\"fa fa-envelope-o\">&LT;/i>\n      &LT;span class=\"label label-success\">4&LT;/span>\n      &LT;/a>\n      &LT;ul class=\"dropdown-menu\">\n      &LT;li class=\"header\">You have 4 messages&LT;/li>\n      &LT;li>\n      &LT;!-- inner menu: contains the actual data -->\n      &LT;ul class=\"menu\">\n      &LT;li>&LT;!-- start message -->\n      &LT;a href=\"#\">\n      &LT;div class=\"pull-left\">\n      &LT;img src=\"dist/img/user2-160x160.jpg\" class=\"img-circle\" alt=\"User Image\">\n      &LT;/div>\n      &LT;h4>\n                      Sender Name\n      &LT;small>&LT;i class=\"fa fa-clock-o\">&LT;/i> 5 mins&LT;/small>\n      &LT;/h4>\n      &LT;p>Message Excerpt&LT;/p>\n      &LT;/a>\n      &LT;/li>&LT;!-- end message -->\n                ...\n      &LT;/ul>\n      &LT;/li>\n      &LT;li class=\"footer\">&LT;a href=\"#\">See All Messages&LT;/a>&LT;/li>\n      &LT;/ul>\n      &LT;/li>\n      &LT;!-- Notifications: style can be found in dropdown.less -->\n      &LT;li class=\"dropdown notifications-menu\">\n      &LT;a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">\n      &LT;i class=\"fa fa-bell-o\">&LT;/i>\n      &LT;span class=\"label label-warning\">10&LT;/span>\n      &LT;/a>\n      &LT;ul class=\"dropdown-menu\">\n      &LT;li class=\"header\">You have 10 notifications&LT;/li>\n      &LT;li>\n      &LT;!-- inner menu: contains the actual data -->\n      &LT;ul class=\"menu\">\n      &LT;li>\n      &LT;a href=\"#\">\n      &LT;i class=\"ion ion-ios-people info\">&LT;/i> Notification title\n      &LT;/a>\n      &LT;/li>\n                ...\n      &LT;/ul>\n      &LT;/li>\n      &LT;li class=\"footer\">&LT;a href=\"#\">View all&LT;/a>&LT;/li>\n      &LT;/ul>\n      &LT;/li>\n      &LT;!-- Tasks: style can be found in dropdown.less -->\n      &LT;li class=\"dropdown tasks-menu\">\n      &LT;a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">\n      &LT;i class=\"fa fa-flag-o\">&LT;/i>\n      &LT;span class=\"label label-danger\">9&LT;/span>\n      &LT;/a>\n      &LT;ul class=\"dropdown-menu\">\n      &LT;li class=\"header\">You have 9 tasks&LT;/li>\n      &LT;li>\n      &LT;!-- inner menu: contains the actual data -->\n      &LT;ul class=\"menu\">\n      &LT;li>&LT;!-- Task item -->\n      &LT;a href=\"#\">\n      &LT;h3>\n                      Design some buttons\n      &LT;small class=\"pull-right\">20%&LT;/small>\n      &LT;/h3>\n      &LT;div class=\"progress xs\">\n      &LT;div class=\"progress-bar progress-bar-aqua\" style=\"width: 20%\" role=\"progressbar\" aria-valuenow=\"20\" aria-valuemin=\"0\" aria-valuemax=\"100\">\n      &LT;span class=\"sr-only\">20% Complete&LT;/span>\n      &LT;/div>\n      &LT;/div>\n      &LT;/a>\n      &LT;/li>&LT;!-- end task item -->\n                ...\n      &LT;/ul>\n      &LT;/li>\n      &LT;li class=\"footer\">\n      &LT;a href=\"#\">View all tasks&LT;/a>\n      &LT;/li>\n      &LT;/ul>\n      &LT;/li>\n      &LT;!-- User Account: style can be found in dropdown.less -->\n      &LT;li class=\"dropdown user user-menu\">\n      &LT;a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">\n      &LT;img src=\"dist/img/user2-160x160.jpg\" class=\"user-image\" alt=\"User Image\">\n      &LT;span class=\"hidden-xs\">Alexander Pierce&LT;/span>\n      &LT;/a>\n      &LT;ul class=\"dropdown-menu\">\n      &LT;!-- User image -->\n      &LT;li class=\"user-header\">\n      &LT;img src=\"dist/img/user2-160x160.jpg\" class=\"img-circle\" alt=\"User Image\">\n      &LT;p>\n                Alexander Pierce - Web Developer\n      &LT;small>Member since Nov. 2012&LT;/small>\n      &LT;/p>\n      &LT;/li>\n      &LT;!-- Menu Body -->\n      &LT;li class=\"user-body\">\n      &LT;div class=\"col-xs-4 text-center\">\n      &LT;a href=\"#\">Followers&LT;/a>\n      &LT;/div>\n      &LT;div class=\"col-xs-4 text-center\">\n      &LT;a href=\"#\">Sales&LT;/a>\n      &LT;/div>\n      &LT;div class=\"col-xs-4 text-center\">\n      &LT;a href=\"#\">Friends&LT;/a>\n      &LT;/div>\n      &LT;/li>\n      &LT;!-- Menu Footer-->\n      &LT;li class=\"user-footer\">\n      &LT;div class=\"pull-left\">\n      &LT;a href=\"#\" class=\"btn btn-default btn-flat\">Profile&LT;/a>\n      &LT;/div>\n      &LT;div class=\"pull-right\">\n      &LT;a href=\"#\" class=\"btn btn-default btn-flat\">Sign out&LT;/a>\n      &LT;/div>\n      &LT;/li>\n      &LT;/ul>\n      &LT;/li>\n      &LT;/ul>\n      &LT;/div>\n      &LT;/nav>\n      &LT;/header></pre>\n                    <h4>Top Nav Layout. Main Header Example.</h4>\n                    <div class=\"callout callout-info lead\">\n                        <h4>Reminder!</h4>\n                        <p>To use this main header instead of the regular one, you must add the\n                            <code>layout-top-nav</code> class to the body tag.</p>\n                    </div>\n                    <div class=\"box box-solid\">\n                        <div class=\"box-body layout-top-nav\">\n                            <span class=\"eg\">Top Nav Example</span>\n                            <header class=\"main-header\">\n                                <nav class=\"navbar navbar-static-top\">\n                                    <div class=\"container-fluid\">\n                                        <div class=\"navbar-header\">\n                                            <a href=\"../../index2.html\" class=\"navbar-brand\"><b>Admin</b>LTE</a>\n                                            <button type=\"button\" class=\"navbar-toggle collapsed\" data-toggle=\"collapse\"\n                                                    data-target=\"#navbar-collapse\">\n                                                <i class=\"fa fa-bars\"></i>\n                                            </button>\n                                        </div>\n\n                                        <!-- Collect the nav links, forms, and other content for toggling -->\n                                        <div class=\"collapse navbar-collapse\" id=\"navbar-collapse\">\n                                            <ul class=\"nav navbar-nav\">\n                                                <li class=\"active\"><a href=\"#\">Link <span\n                                                        class=\"sr-only\">(current)</span></a></li>\n                                                <li><a href=\"#\">Link</a></li>\n                                                <li class=\"dropdown\">\n                                                    <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">Dropdown\n                                                        <span class=\"caret\"></span></a>\n                                                    <ul class=\"dropdown-menu\" role=\"menu\">\n                                                        <li><a href=\"#\">Action</a></li>\n                                                        <li><a href=\"#\">Another action</a></li>\n                                                        <li><a href=\"#\">Something else here</a></li>\n                                                        <li class=\"divider\"></li>\n                                                        <li><a href=\"#\">Separated link</a></li>\n                                                        <li class=\"divider\"></li>\n                                                        <li><a href=\"#\">One more separated link</a></li>\n                                                    </ul>\n                                                </li>\n                                            </ul>\n                                            <form class=\"navbar-form navbar-left\" role=\"search\">\n                                                <div class=\"form-group\">\n                                                    <input type=\"text\" class=\"form-control\" id=\"navbar-search-input\"\n                                                           placeholder=\"Search\">\n                                                </div>\n                                            </form>\n                                            <ul class=\"nav navbar-nav navbar-right\">\n                                                <li><a href=\"#\">Link</a></li>\n                                                <li class=\"dropdown\">\n                                                    <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">Dropdown\n                                                        <span class=\"caret\"></span></a>\n                                                    <ul class=\"dropdown-menu\" role=\"menu\">\n                                                        <li><a href=\"#\">Action</a></li>\n                                                        <li><a href=\"#\">Another action</a></li>\n                                                        <li><a href=\"#\">Something else here</a></li>\n                                                        <li class=\"divider\"></li>\n                                                        <li><a href=\"#\">Separated link</a></li>\n                                                    </ul>\n                                                </li>\n                                            </ul>\n                                        </div><!-- /.navbar-collapse -->\n                                    </div><!-- /.container-fluid -->\n                                </nav>\n                            </header>\n                        </div>\n                    </div>\n  <pre class=\"prettyprint\">\n&LT;header class=\"main-header\">\n      &LT;nav class=\"navbar navbar-static-top\">\n      &LT;div class=\"container-fluid\">\n      &LT;div class=\"navbar-header\">\n      &LT;a href=\"../../index2.html\" class=\"navbar-brand\">&LT;b>Admin&LT;/b>LTE&LT;/a>\n      &LT;button type=\"button\" class=\"navbar-toggle collapsed\" data-toggle=\"collapse\" data-target=\"#navbar-collapse\">\n      &LT;i class=\"fa fa-bars\">&LT;/i>\n      &LT;/button>\n      &LT;/div>\n\n      &LT;!-- Collect the nav links, forms, and other content for toggling -->\n      &LT;div class=\"collapse navbar-collapse\" id=\"navbar-collapse\">\n      &LT;ul class=\"nav navbar-nav\">\n      &LT;li class=\"active\">&LT;a href=\"#\">Link &LT;span class=\"sr-only\">(current)&LT;/span>&LT;/a>&LT;/li>\n      &LT;li>&LT;a href=\"#\">Link&LT;/a>&LT;/li>\n      &LT;li class=\"dropdown\">\n      &LT;a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">Dropdown &LT;span class=\"caret\">&LT;/span>&LT;/a>\n      &LT;ul class=\"dropdown-menu\" role=\"menu\">\n      &LT;li>&LT;a href=\"#\">Action&LT;/a>&LT;/li>\n      &LT;li>&LT;a href=\"#\">Another action&LT;/a>&LT;/li>\n      &LT;li>&LT;a href=\"#\">Something else here&LT;/a>&LT;/li>\n      &LT;li class=\"divider\">&LT;/li>\n      &LT;li>&LT;a href=\"#\">Separated link&LT;/a>&LT;/li>\n      &LT;li class=\"divider\">&LT;/li>\n      &LT;li>&LT;a href=\"#\">One more separated link&LT;/a>&LT;/li>\n      &LT;/ul>\n      &LT;/li>\n      &LT;/ul>\n      &LT;form class=\"navbar-form navbar-left\" role=\"search\">\n      &LT;div class=\"form-group\">\n      &LT;input type=\"text\" class=\"form-control\" id=\"navbar-search-input\" placeholder=\"Search\">\n      &LT;/div>\n      &LT;/form>\n      &LT;ul class=\"nav navbar-nav navbar-right\">\n      &LT;li>&LT;a href=\"#\">Link&LT;/a>&LT;/li>\n      &LT;li class=\"dropdown\">\n      &LT;a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">Dropdown &LT;span class=\"caret\">&LT;/span>&LT;/a>\n      &LT;ul class=\"dropdown-menu\" role=\"menu\">\n      &LT;li>&LT;a href=\"#\">Action&LT;/a>&LT;/li>\n      &LT;li>&LT;a href=\"#\">Another action&LT;/a>&LT;/li>\n      &LT;li>&LT;a href=\"#\">Something else here&LT;/a>&LT;/li>\n      &LT;li class=\"divider\">&LT;/li>\n      &LT;li>&LT;a href=\"#\">Separated link&LT;/a>&LT;/li>\n      &LT;/ul>\n      &LT;/li>\n      &LT;/ul>\n      &LT;/div>&LT;!-- /.navbar-collapse -->\n      &LT;/div>&LT;!-- /.container-fluid -->\n      &LT;/nav>\n      &LT;/header></pre>\n\n                    <!-- ===================================================================== -->\n\n                    <h3 id=\"component-sidebar\">Sidebar</h3>\n                    <p class=\"lead\">\n                        The sidebar used in this page to the left provides an example of what your sidebar should like.\n                        Construction of a sidebar:\n                    </p>\n  <pre class=\"prettyprint\">\n&LT;div class=\"main-sidebar\">\n      &LT;!-- Inner sidebar -->\n      &LT;div class=\"sidebar\">\n      &LT;!-- user panel (Optional) -->\n      &LT;div class=\"user-panel\">\n      &LT;div class=\"pull-left image\">\n      &LT;img src=\"dist/img/user2-160x160.jpg\" class=\"img-circle\" alt=\"User Image\">\n      &LT;/div>\n      &LT;div class=\"pull-left info\">\n      &LT;p>User Name&LT;/p>\n\n      &LT;a href=\"#\">&LT;i class=\"fa fa-circle text-success\">&LT;/i> Online&LT;/a>\n      &LT;/div>\n      &LT;/div>&LT;!-- /.user-panel -->\n\n      &LT;!-- Search Form (Optional) -->\n      &LT;form action=\"#\" method=\"get\" class=\"sidebar-form\">\n      &LT;div class=\"input-group\">\n      &LT;input type=\"text\" name=\"q\" class=\"form-control\" placeholder=\"Search...\">\n      &LT;span class=\"input-group-btn\">\n      &LT;button type=\"submit\" name=\"search\" id=\"search-btn\" class=\"btn btn-flat\">&LT;i class=\"fa fa-search\">&LT;/i>&LT;/button>\n      &LT;/span>\n      &LT;/div>\n      &LT;/form>&LT;!-- /.sidebar-form -->\n\n      &LT;!-- Sidebar Menu -->\n      &LT;ul class=\"sidebar-menu\">\n      &LT;li class=\"header\">HEADER&LT;/li>\n      &LT;!-- Optionally, you can add icons to the links -->\n      &LT;li class=\"active\">&LT;a href=\"#\">&LT;span>Link&LT;/span>&LT;/a>&LT;&LT;/li>\n      &LT;li>&LT;a href=\"#\">&LT;span>Another Link&LT;/span>&LT;/a>&LT;/li>\n      &LT;li class=\"treeview\">\n      &LT;a href=\"#\">&LT;span>Multilevel&LT;/span> &LT;i class=\"fa fa-angle-left pull-right\">&LT;/i>&LT;/a>\n      &LT;ul class=\"treeview-menu\">\n      &LT;li>&LT;a href=\"#\">Link in level 2&LT;/a>&LT;/li>\n      &LT;li>&LT;a href=\"#\">Link in level 2&LT;/a>&LT;/li>\n      &LT;/ul>\n      &LT;/li>\n      &LT;/ul>&LT;!-- /.sidebar-menu -->\n\n      &LT;/div>&LT;!-- /.sidebar -->\n      &LT;/div>&LT;!-- /.main-sidebar --></pre>\n\n                    <h3 id=\"component-control-sidebar\">Control Sidebar</h3>\n                    <p class=\"lead\">Control sidebar is the right side bar. It can be used for many purposes and is\n                        extremely easy\n                        to create. The sidebar ships with two different show/hide styles. The first allows the sidebar\n                        to\n                        slide over the content. The second pushes the content to make space for the sidebar. Either of\n                        these methods can be set through the <a href=\"#adminlte-options\">Javascript options</a>.</p>\n                    <p class=\"lead\">The following code should be placed within the <code>.wrapper</code> div. I prefer\n                        to place it right after the footer.</p>\n                    <p class=\"lead\">Dark Sidebar Markup</p>\n<pre class=\"prettyprint\"><code class=\"lang-html\">&LT;!-- The Right Sidebar -->\n    &LT;aside class=\"control-sidebar control-sidebar-dark\">\n    &LT;!-- Content of the sidebar goes here -->\n    &LT;/aside>\n    &LT;!-- The sidebar's background -->\n    &LT;!-- This div must placed right after the sidebar for it to work-->\n    &LT;div class=\"control-sidebar-bg\">&LT;/div></code></pre>\n\n                    <p class=\"lead\">Light Sidebar Markup</p>\n<pre class=\"prettyprint\"><code class=\"lang-html\">&LT;!-- The Right Sidebar -->\n    &LT;aside class=\"control-sidebar control-sidebar-light\">\n    &LT;!-- Content of the sidebar goes here -->\n    &LT;/aside>\n    &LT;!-- The sidebar's background -->\n    &LT;!-- This div must placed right after the sidebar for it to work-->\n    &LT;div class=\"control-sidebar-bg\">&LT;/div></code></pre>\n\n                    <p class=\"lead\">Once you create the sidebar, you will need a toggle button to open/close it.\n                        By adding the attribute <code>data-toggle=\"control-sidebar\"</code> to any button, it will\n                        automatically act as the toggle button.</p>\n\n                    <p class=\"lead\">Toggle Button Example</p>\n                    <button class=\"btn btn-primary\" data-toggle=\"control-sidebar\">Toggle Right Sidebar</button>\n                    <br><br>\n\n                    <p class=\"lead\">Sidebar Toggle Markup</p>\n                    <pre class=\"prettyprint\"><code class=\"lang-html\">&LT;button class=\"btn btn-default\"\n                        data-toggle=\"control-sidebar\">Toggle Right Sidebar&LT;/button></code></pre>\n                    <!-- ===================================================================== -->\n\n                    <h3 id=\"component-info-box\">Info Box</h3>\n                    <p class=\"lead\">Info boxes are used to display statistical snippets. There are two types of info\n                        boxes.</p>\n                    <h4>First Type of Info Boxes</h4>\n                    <!-- Info Boxes -->\n                    <div class=\"row\">\n                        <div class=\"col-md-3 col-sm-6 col-xs-12\">\n                            <div class=\"info-box\">\n                                <span class=\"info-box-icon bg-aqua\"><i class=\"fa fa-envelope-o\"></i></span>\n                                <div class=\"info-box-content\">\n                                    <span class=\"info-box-text\">Messages</span>\n                                    <span class=\"info-box-number\">1,410</span>\n                                </div><!-- /.info-box-content -->\n                            </div><!-- /.info-box -->\n                        </div><!-- /.col -->\n                        <div class=\"col-md-3 col-sm-6 col-xs-12\">\n                            <div class=\"info-box\">\n                                <span class=\"info-box-icon bg-green\"><i class=\"fa fa-flag-o\"></i></span>\n                                <div class=\"info-box-content\">\n                                    <span class=\"info-box-text\">Bookmarks</span>\n                                    <span class=\"info-box-number\">410</span>\n                                </div><!-- /.info-box-content -->\n                            </div><!-- /.info-box -->\n                        </div><!-- /.col -->\n                        <div class=\"col-md-3 col-sm-6 col-xs-12\">\n                            <div class=\"info-box\">\n                                <span class=\"info-box-icon bg-yellow\"><i class=\"fa fa-files-o\"></i></span>\n                                <div class=\"info-box-content\">\n                                    <span class=\"info-box-text\">Uploads</span>\n                                    <span class=\"info-box-number\">13,648</span>\n                                </div><!-- /.info-box-content -->\n                            </div><!-- /.info-box -->\n                        </div><!-- /.col -->\n                        <div class=\"col-md-3 col-sm-6 col-xs-12\">\n                            <div class=\"info-box\">\n                                <span class=\"info-box-icon bg-red\"><i class=\"fa fa-star-o\"></i></span>\n                                <div class=\"info-box-content\">\n                                    <span class=\"info-box-text\">Likes</span>\n                                    <span class=\"info-box-number\">93,139</span>\n                                </div><!-- /.info-box-content -->\n                            </div><!-- /.info-box -->\n                        </div><!-- /.col -->\n                    </div><!-- /.row -->\n                    <p class=\"lead\">Markup</p>\n  <pre class=\"prettyprint\"><code class=\"lang-html\">&LT;div class=\"info-box\">\n      &LT;!-- Apply any bg-* class to to the icon to color it -->\n      &LT;span class=\"info-box-icon bg-red\">&LT;i class=\"fa fa-star-o\">&LT;/i>&LT;/span>\n      &LT;div class=\"info-box-content\">\n      &LT;span class=\"info-box-text\">Likes&LT;/span>\n      &LT;span class=\"info-box-number\">93,139&LT;/span>\n      &LT;/div>&LT;!-- /.info-box-content -->\n      &LT;/div>&LT;!-- /.info-box --></code></pre>\n\n                    <h4>Second Type of Info Boxes</h4>\n                    <div class=\"row\">\n                        <div class=\"col-md-3 col-sm-6 col-xs-12\">\n                            <div class=\"info-box bg-aqua\">\n                                <span class=\"info-box-icon\"><i class=\"fa fa-bookmark-o\"></i></span>\n                                <div class=\"info-box-content\">\n                                    <span class=\"info-box-text\">Bookmarks</span>\n                                    <span class=\"info-box-number\">41,410</span>\n                                    <div class=\"progress\">\n                                        <div class=\"progress-bar\" style=\"width: 70%\"></div>\n                                    </div>\n          <span class=\"progress-description\">\n            70% Increase in 30 Days\n          </span>\n                                </div><!-- /.info-box-content -->\n                            </div><!-- /.info-box -->\n                        </div><!-- /.col -->\n                        <div class=\"col-md-3 col-sm-6 col-xs-12\">\n                            <div class=\"info-box bg-green\">\n                                <span class=\"info-box-icon\"><i class=\"fa fa-thumbs-o-up\"></i></span>\n                                <div class=\"info-box-content\">\n                                    <span class=\"info-box-text\">Likes</span>\n                                    <span class=\"info-box-number\">41,410</span>\n                                    <div class=\"progress\">\n                                        <div class=\"progress-bar\" style=\"width: 70%\"></div>\n                                    </div>\n          <span class=\"progress-description\">\n            70% Increase in 30 Days\n          </span>\n                                </div><!-- /.info-box-content -->\n                            </div><!-- /.info-box -->\n                        </div><!-- /.col -->\n                        <div class=\"col-md-3 col-sm-6 col-xs-12\">\n                            <div class=\"info-box bg-yellow\">\n                                <span class=\"info-box-icon\"><i class=\"fa fa-calendar\"></i></span>\n                                <div class=\"info-box-content\">\n                                    <span class=\"info-box-text\">Events</span>\n                                    <span class=\"info-box-number\">41,410</span>\n                                    <div class=\"progress\">\n                                        <div class=\"progress-bar\" style=\"width: 70%\"></div>\n                                    </div>\n          <span class=\"progress-description\">\n            70% Increase in 30 Days\n          </span>\n                                </div><!-- /.info-box-content -->\n                            </div><!-- /.info-box -->\n                        </div><!-- /.col -->\n                        <div class=\"col-md-3 col-sm-6 col-xs-12\">\n                            <div class=\"info-box bg-red\">\n                                <span class=\"info-box-icon\"><i class=\"fa fa-comments-o\"></i></span>\n                                <div class=\"info-box-content\">\n                                    <span class=\"info-box-text\">Comments</span>\n                                    <span class=\"info-box-number\">41,410</span>\n                                    <div class=\"progress\">\n                                        <div class=\"progress-bar\" style=\"width: 70%\"></div>\n                                    </div>\n          <span class=\"progress-description\">\n            70% Increase in 30 Days\n          </span>\n                                </div><!-- /.info-box-content -->\n                            </div><!-- /.info-box -->\n                        </div><!-- /.col -->\n                    </div><!-- /.row -->\n                    <p class=\"lead\">Markup</p>\n  <pre class=\"prettyprint\"><code class=\"lang-html\">&LT;!-- Apply any bg-* class to to the info-box to color it -->\n      &LT;div class=\"info-box bg-red\">\n      &LT;span class=\"info-box-icon\">&LT;i class=\"fa fa-comments-o\">&LT;/i>&LT;/span>\n      &LT;div class=\"info-box-content\">\n      &LT;span class=\"info-box-text\">Likes&LT;/span>\n      &LT;span class=\"info-box-number\">41,410&LT;/span>\n      &LT;!-- The progress section is optional -->\n      &LT;div class=\"progress\">\n      &LT;div class=\"progress-bar\" style=\"width: 70%\">&LT;/div>\n      &LT;/div>\n      &LT;span class=\"progress-description\">\n      70% Increase in 30 Days\n      &LT;/span>\n      &LT;/div>&LT;!-- /.info-box-content -->\n      &LT;/div>&LT;!-- /.info-box --></code></pre>\n                    <p class=\"lead\">The only thing you need to change to alternate between these style is change the\n                        placement of the bg-* class. For the\n                        first style apply any bg-* class to the icon itself. For the other style, apply the bg-* class\n                        to the info-box div.</p>\n                    <!-- ===================================================================== -->\n\n                    <h3 id=\"component-box\">Box</h3>\n                    <p class=\"lead\">The box component is the most widely used component through out this template. You\n                        can\n                        use it for anything from displaying charts to just blocks of text. It comes in many different\n                        styles that we will explore below.</p>\n                    <h4>Default Box Markup</h4>\n                    <div class=\"box\">\n                        <div class=\"box-header with-border\">\n                            <h3 class=\"box-title\">Default Box Example</h3>\n                            <div class=\"box-tools pull-right\">\n                                <!-- Buttons, labels, and many other things can be placed here! -->\n                                <!-- Here is a label for example -->\n                                <span class=\"label label-primary\">Label</span>\n                            </div><!-- /.box-tools -->\n                        </div><!-- /.box-header -->\n                        <div class=\"box-body\">\n                            The body of the box\n                        </div><!-- /.box-body -->\n                        <div class=\"box-footer\">\n                            The footer of the box\n                        </div><!-- box-footer -->\n                    </div><!-- /.box -->\n  <pre class=\"prettyprint\">&LT;div class=\"box\">\n      &LT;div class=\"box-header with-border\">\n      &LT;h3 class=\"box-title\">Default Box Example&LT;/h3>\n      &LT;div class=\"box-tools pull-right\">\n      &LT;!-- Buttons, labels, and many other things can be placed here! -->\n      &LT;!-- Here is a label for example -->\n      &LT;span class=\"label label-primary\">Label&LT;/span>\n      &LT;/div>&LT;!-- /.box-tools -->\n      &LT;/div>&LT;!-- /.box-header -->\n      &LT;div class=\"box-body\">\n    The body of the box\n      &LT;/div>&LT;!-- /.box-body -->\n      &LT;div class=\"box-footer\">\n    The footer of the box\n      &LT;/div>&LT;!-- box-footer -->\n      &LT;/div>&LT;!-- /.box --></pre>\n                    <h4>Box Variants</h4>\n                    <p class=\"lead\">You can change the style of the box by adding any of the contextual classes.</p>\n                    <div class=\"row\">\n                        <div class=\"col-md-4\">\n                            <div class=\"box\">\n                                <div class=\"box-header with-border\">\n                                    <h3 class=\"box-title\">Default Box Example</h3>\n                                </div><!-- /.box-header -->\n                                <div class=\"box-body\">\n                                    The body of the box\n                                </div><!-- /.box-body -->\n                            </div><!-- /.box -->\n                        </div>\n                        <div class=\"col-md-4\">\n                            <div class=\"box box-primary\">\n                                <div class=\"box-header with-border\">\n                                    <h3 class=\"box-title\">Primary Box Example</h3>\n                                </div><!-- /.box-header -->\n                                <div class=\"box-body\">\n                                    The body of the box\n                                </div><!-- /.box-body -->\n                            </div><!-- /.box -->\n                        </div>\n                        <div class=\"col-md-4\">\n                            <div class=\"box box-info\">\n                                <div class=\"box-header with-border\">\n                                    <h3 class=\"box-title\">Info Box Example</h3>\n                                </div><!-- /.box-header -->\n                                <div class=\"box-body\">\n                                    The body of the box\n                                </div><!-- /.box-body -->\n                            </div><!-- /.box -->\n                        </div>\n                        <div class=\"clearfix\"></div>\n                        <div class=\"col-md-4\">\n                            <div class=\"box box-warning\">\n                                <div class=\"box-header with-border\">\n                                    <h3 class=\"box-title\">Warning Box Example</h3>\n                                </div><!-- /.box-header -->\n                                <div class=\"box-body\">\n                                    The body of the box\n                                </div><!-- /.box-body -->\n                            </div><!-- /.box -->\n                        </div>\n                        <div class=\"col-md-4\">\n                            <div class=\"box box-success\">\n                                <div class=\"box-header with-border\">\n                                    <h3 class=\"box-title\">Success Box Example</h3>\n                                </div><!-- /.box-header -->\n                                <div class=\"box-body\">\n                                    The body of the box\n                                </div><!-- /.box-body -->\n                            </div><!-- /.box -->\n                        </div>\n                        <div class=\"col-md-4\">\n                            <div class=\"box box-danger\">\n                                <div class=\"box-header with-border\">\n                                    <h3 class=\"box-title\">Danger Box Example</h3>\n                                </div><!-- /.box-header -->\n                                <div class=\"box-body\">\n                                    The body of the box\n                                </div><!-- /.box-body -->\n                            </div><!-- /.box -->\n                        </div>\n                    </div><!-- /.row -->\n  <pre class=\"prettyprint\">&LT;div class=\"box box-default\">...&LT;/div>\n      &LT;div class=\"box box-primary\">...&LT;/div>\n      &LT;div class=\"box box-info\">...&LT;/div>\n      &LT;div class=\"box box-warning\">...&LT;/div>\n      &LT;div class=\"box box-success\">...&LT;/div>\n      &LT;div class=\"box box-danger\">...&LT;/div></pre>\n\n                    <h4>Solid Box</h4>\n                    <p class=\"lead\">Solid Boxes are alternative ways to display boxes.\n                        They can be created by simply adding the box-solid class to the box component.\n                        You may also use contextual classes with you solid boxes.</p>\n                    <div class=\"row\">\n                        <div class=\"col-md-4\">\n                            <div class=\"box box-solid box-default\">\n                                <div class=\"box-header\">\n                                    <h3 class=\"box-title\">Default Solid Box Example</h3>\n                                </div><!-- /.box-header -->\n                                <div class=\"box-body\">\n                                    The body of the box\n                                </div><!-- /.box-body -->\n                            </div><!-- /.box -->\n                        </div>\n                        <div class=\"col-md-4\">\n                            <div class=\"box box-solid box-primary\">\n                                <div class=\"box-header\">\n                                    <h3 class=\"box-title\">Primary Solid Box Example</h3>\n                                </div><!-- /.box-header -->\n                                <div class=\"box-body\">\n                                    The body of the box\n                                </div><!-- /.box-body -->\n                            </div><!-- /.box -->\n                        </div>\n                        <div class=\"col-md-4\">\n                            <div class=\"box box-solid box-info\">\n                                <div class=\"box-header\">\n                                    <h3 class=\"box-title\">Info Solid Box Example</h3>\n                                </div><!-- /.box-header -->\n                                <div class=\"box-body\">\n                                    The body of the box\n                                </div><!-- /.box-body -->\n                            </div><!-- /.box -->\n                        </div>\n                        <div class=\"clearfix\"></div>\n                        <div class=\"col-md-4\">\n                            <div class=\"box box-solid box-warning\">\n                                <div class=\"box-header\">\n                                    <h3 class=\"box-title\">Warning Solid Box Example</h3>\n                                </div><!-- /.box-header -->\n                                <div class=\"box-body\">\n                                    The body of the box\n                                </div><!-- /.box-body -->\n                            </div><!-- /.box -->\n                        </div>\n                        <div class=\"col-md-4\">\n                            <div class=\"box box-solid box-success\">\n                                <div class=\"box-header\">\n                                    <h3 class=\"box-title\">Success Solid Box Example</h3>\n                                </div><!-- /.box-header -->\n                                <div class=\"box-body\">\n                                    The body of the box\n                                </div><!-- /.box-body -->\n                            </div><!-- /.box -->\n                        </div>\n                        <div class=\"col-md-4\">\n                            <div class=\"box box-solid box-danger\">\n                                <div class=\"box-header\">\n                                    <h3 class=\"box-title\">Danger Solid Box Example</h3>\n                                </div><!-- /.box-header -->\n                                <div class=\"box-body\">\n                                    The body of the box\n                                </div><!-- /.box-body -->\n                            </div><!-- /.box -->\n                        </div>\n                    </div><!-- /.row -->\n  <pre class=\"prettyprint\">\n&LT;div class=\"box box-solid box-default\">...&LT;/div>\n      &LT;div class=\"box box-solid box-primary\">...&LT;/div>\n      &LT;div class=\"box box-solid box-info\">...&LT;/div>\n      &LT;div class=\"box box-solid box-warning\">...&LT;/div>\n      &LT;div class=\"box box-solid box-success\">...&LT;/div>\n      &LT;div class=\"box box-solid box-danger\">...&LT;/div></pre>\n                    <h4>Box Tools</h4>\n                    <p class=\"lead\">Boxes can contain tools to deploy a specific event or provide simple info. The\n                        following examples makes use\n                        of multiple AdminLTE components within the header of the box.</p>\n                    <p>AdminLTE data-widget attribute provides boxes with the ability to collapse or be removed. The\n                        buttons\n                        are placed in the box-tools which is placed in the box-header.</p>\n  <pre class=\"prettyprint\">\n&LT;!-- This will cause the box to be removed when clicked -->\n      &LT;button class=\"btn btn-box-tool\" data-widget=\"remove\" data-toggle=\"tooltip\" title=\"Remove\">&LT;i class=\"fa fa-times\">&LT;/i>&LT;/button>\n      &LT;!-- This will cause the box to collapse when clicked -->\n      &LT;button class=\"btn btn-box-tool\" data-widget=\"collapse\" data-toggle=\"tooltip\" title=\"Collapse\">&LT;i class=\"fa fa-minus\">&LT;/i>&LT;/button></pre>\n                    <div class=\"row\">\n                        <div class=\"col-md-4\">\n                            <div class=\"box box-default\">\n                                <div class=\"box-header with-border\">\n                                    <h3 class=\"box-title\">Collapsable</h3>\n                                    <div class=\"box-tools pull-right\">\n                                        <button class=\"btn btn-box-tool\" data-widget=\"collapse\"><i\n                                                class=\"fa fa-minus\"></i></button>\n                                    </div><!-- /.box-tools -->\n                                </div><!-- /.box-header -->\n                                <div class=\"box-body\">\n                                    The body of the box\n                                </div><!-- /.box-body -->\n                            </div><!-- /.box -->\n      <pre class=\"prettyprint\">\n&LT;div class=\"box box-default\">\n          &LT;div class=\"box-header with-border\">\n          &LT;h3 class=\"box-title\">Collapsable&LT;/h3>\n          &LT;div class=\"box-tools pull-right\">\n          &LT;button class=\"btn btn-box-tool\" data-widget=\"collapse\">&LT;i class=\"fa fa-minus\">&LT;/i>&LT;/button>\n          &LT;/div>&LT;!-- /.box-tools -->\n          &LT;/div>&LT;!-- /.box-header -->\n          &LT;div class=\"box-body\">\n    The body of the box\n          &LT;/div>&LT;!-- /.box-body -->\n          &LT;/div>&LT;!-- /.box --></pre>\n                        </div>\n                        <div class=\"col-md-4\">\n                            <div class=\"box box-default\">\n                                <div class=\"box-header with-border\">\n                                    <h3 class=\"box-title\">Removable</h3>\n                                    <div class=\"box-tools pull-right\">\n                                        <button class=\"btn btn-box-tool\" data-widget=\"remove\"><i\n                                                class=\"fa fa-times\"></i></button>\n                                    </div><!-- /.box-tools -->\n                                </div><!-- /.box-header -->\n                                <div class=\"box-body\">\n                                    The body of the box\n                                </div><!-- /.box-body -->\n                            </div><!-- /.box -->\n      <pre class=\"prettyprint\">\n&LT;div class=\"box box-default\">\n          &LT;div class=\"box-header with-border\">\n          &LT;h3 class=\"box-title\">Removable&LT;/h3>\n          &LT;div class=\"box-tools pull-right\">\n          &LT;button class=\"btn btn-box-tool\" data-widget=\"remove\">&LT;i class=\"fa fa-times\">&LT;/i>&LT;/button>\n          &LT;/div>&LT;!-- /.box-tools -->\n          &LT;/div>&LT;!-- /.box-header -->\n          &LT;div class=\"box-body\">\n    The body of the box\n          &LT;/div>&LT;!-- /.box-body -->\n          &LT;/div>&LT;!-- /.box --></pre>\n                        </div>\n                        <div class=\"col-md-4\">\n                            <div class=\"box box-default collapsed-box\">\n                                <div class=\"box-header with-border\">\n                                    <h3 class=\"box-title\">Expandable</h3>\n                                    <div class=\"box-tools pull-right\">\n                                        <button class=\"btn btn-box-tool\" data-widget=\"collapse\"><i\n                                                class=\"fa fa-plus\"></i></button>\n                                    </div><!-- /.box-tools -->\n                                </div><!-- /.box-header -->\n                                <div class=\"box-body\">\n                                    The body of the box\n                                </div><!-- /.box-body -->\n                            </div><!-- /.box -->\n      <pre class=\"prettyprint\">\n&LT;div class=\"box box-default collapsed-box\">\n          &LT;div class=\"box-header with-border\">\n          &LT;h3 class=\"box-title\">Expandable&LT;/h3>\n          &LT;div class=\"box-tools pull-right\">\n          &LT;button class=\"btn btn-box-tool\" data-widget=\"collapse\">&LT;i class=\"fa fa-plus\">&LT;/i>&LT;/button>\n          &LT;/div>&LT;!-- /.box-tools -->\n          &LT;/div>&LT;!-- /.box-header -->\n          &LT;div class=\"box-body\">\n    The body of the box\n          &LT;/div>&LT;!-- /.box-body -->\n          &LT;/div>&LT;!-- /.box --></pre>\n                        </div>\n                    </div><!-- /.row -->\n                    <p>We can also add labels, badges, pagination, tooltips, inputs and many more in the box tools. A\n                        few examples:</p>\n                    <div class=\"row\">\n                        <div class=\"col-md-4\">\n                            <div class=\"box box-default\">\n                                <div class=\"box-header with-border\">\n                                    <h3 class=\"box-title\">Labels</h3>\n                                    <div class=\"box-tools pull-right\">\n                                        <span class=\"label label-default\">Some Label</span>\n                                    </div><!-- /.box-tools -->\n                                </div><!-- /.box-header -->\n                                <div class=\"box-body\">\n                                    The body of the box\n                                </div><!-- /.box-body -->\n                            </div><!-- /.box -->\n      <pre class=\"prettyprint\">\n&LT;div class=\"box box-default\">\n          &LT;div class=\"box-header with-border\">\n          &LT;h3 class=\"box-title\">Labels&LT;/h3>\n          &LT;div class=\"box-tools pull-right\">\n          &LT;span class=\"label label-default\">8 New Messages&LT;/span>\n          &LT;/div>&LT;!-- /.box-tools -->\n          &LT;/div>&LT;!-- /.box-header -->\n          &LT;div class=\"box-body\">\n    The body of the box\n          &LT;/div>&LT;!-- /.box-body -->\n          &LT;/div>&LT;!-- /.box --></pre>\n                        </div>\n                        <div class=\"col-md-4\">\n                            <div class=\"box box-default\">\n                                <div class=\"box-header with-border\">\n                                    <h3 class=\"box-title\">Input</h3>\n                                    <div class=\"box-tools pull-right\">\n                                        <div class=\"has-feedback\">\n                                            <input type=\"text\" class=\"form-control input-sm\" placeholder=\"Search...\">\n                                            <span class=\"glyphicon glyphicon-search form-control-feedback text-muted\"></span>\n                                        </div>\n                                    </div><!-- /.box-tools -->\n                                </div><!-- /.box-header -->\n                                <div class=\"box-body\">\n                                    The body of the box\n                                </div><!-- /.box-body -->\n                            </div><!-- /.box -->\n      <pre class=\"prettyprint\">\n&LT;div class=\"box box-default\">\n          &LT;div class=\"box-header with-border\">\n          &LT;h3 class=\"box-title\">Input&LT;/h3>\n          &LT;div class=\"box-tools pull-right\">\n          &LT;div class=\"has-feedback\">\n          &LT;input type=\"text\" class=\"form-control input-sm\" placeholder=\"Search...\">\n          &LT;span class=\"glyphicon glyphicon-search form-control-feedback\">&LT;/span>\n          &LT;/div>\n          &LT;/div>&LT;!-- /.box-tools -->\n          &LT;/div>&LT;!-- /.box-header -->\n          &LT;div class=\"box-body\">\n    The body of the box\n          &LT;/div>&LT;!-- /.box-body -->\n          &LT;/div>&LT;!-- /.box --></pre>\n                        </div>\n                        <div class=\"col-md-4\">\n                            <div class=\"box box-default\">\n                                <div class=\"box-header with-border\">\n                                    <h3 class=\"box-title\">Tootips on buttons</h3>\n                                    <div class=\"box-tools pull-right\">\n                                        <button class=\"btn btn-box-tool\" data-widget=\"collapse\" data-toggle=\"tooltip\"\n                                                title=\"Collapse\"><i class=\"fa fa-minus\"></i></button>\n                                        <button class=\"btn btn-box-tool\" data-widget=\"remove\" data-toggle=\"tooltip\"\n                                                title=\"Remove\"><i class=\"fa fa-times\"></i></button>\n                                    </div><!-- /.box-tools -->\n                                </div><!-- /.box-header -->\n                                <div class=\"box-body\">\n                                    The body of the box\n                                </div><!-- /.box-body -->\n                            </div><!-- /.box -->\n      <pre class=\"prettyprint\">\n&LT;div class=\"box box-default\">\n          &LT;div class=\"box-header with-border\">\n          &LT;h3 class=\"box-title\">Tooltips on buttons&LT;/h3>\n          &LT;div class=\"box-tools pull-right\">\n          &LT;button class=\"btn btn-box-tool\" data-widget=\"collapse\" data-toggle=\"tooltip\" title=\"Collapse\">&LT;i class=\"fa fa-minus\">&LT;/i>&LT;/button>\n          &LT;button class=\"btn btn-box-tool\" data-widget=\"remove\" data-toggle=\"tooltip\" title=\"Remove\">&LT;i class=\"fa fa-times\">&LT;/i>&LT;/button>\n          &LT;/div>&LT;!-- /.box-tools -->\n          &LT;/div>&LT;!-- /.box-header -->\n          &LT;div class=\"box-body\">\n    The body of the box\n          &LT;/div>&LT;!-- /.box-body -->\n          &LT;/div>&LT;!-- /.box --></pre>\n                        </div><!-- /.col -->\n                    </div><!-- /.row -->\n                    <p>\n                        If you inserted a box into the document after <code>app.js</code> was loaded, you have to\n                        activate\n                        the collapse/remove buttons explicitly by calling <code>.activateBox()</code>:\n                    </p>\n  <pre class=\"prettyprint\"><code class=\"html\">&LT;script>\n      $(\"#box-widget\").activateBox();\n      &LT;/script></code></pre>\n\n                    <h4>Loading States</h4>\n                    <div class=\"row\">\n                        <div class=\"col-md-6\">\n                            <div class=\"box box-default\">\n                                <div class=\"box-header with-border\">\n                                    <h3 class=\"box-title\">Loading state</h3>\n                                </div>\n                                <div class=\"box-body\">\n                                    The body of the box\n                                </div><!-- /.box-body -->\n                                <!-- Loading (remove the following to stop the loading)-->\n                                <div class=\"overlay\">\n                                    <i class=\"fa fa-refresh fa-spin\"></i>\n                                </div>\n                                <!-- end loading -->\n                            </div><!-- /.box -->\n                        </div><!-- /.col -->\n\n                        <div class=\"col-md-6\">\n                            <div class=\"box box-default box-solid\">\n                                <div class=\"box-header with-border\">\n                                    <h3 class=\"box-title\">Loading state (.box-solid)</h3>\n                                </div>\n                                <div class=\"box-body\">\n                                    The body of the box\n                                </div><!-- /.box-body -->\n                                <!-- Loading (remove the following to stop the loading)-->\n                                <div class=\"overlay\">\n                                    <i class=\"fa fa-refresh fa-spin\"></i>\n                                </div>\n                                <!-- end loading -->\n                            </div><!-- /.box -->\n                        </div><!-- /.col -->\n                    </div><!-- /.row -->\n                    <p class=\"lead\">\n                        To simulate a loading state, simply place this code before the <code>.box</code> closing tag.\n                    </p>\n  <pre class=\"prettyprint\"><code class=\"html\">&LT;div class=\"overlay\">\n      &LT;i class=\"fa fa-refresh fa-spin\">&LT;/i>\n      &LT;/div>\n  </code></pre>\n                    <h3 id=\"component-direct-chat\">Direct Chat</h3>\n                    <p class=\"lead\">The direct chat widget extends the box component to create a beautiful chat\n                        interface. This widget\n                        consists of a required messages pane and an <b>optional</b> contacts pane. Examples:</p>\n                    <!-- Direct Chat -->\n                    <div class=\"row\">\n                        <div class=\"col-md-3\">\n                            <!-- DIRECT CHAT PRIMARY -->\n                            <div class=\"box box-primary direct-chat direct-chat-primary\">\n                                <div class=\"box-header with-border\">\n                                    <h3 class=\"box-title\">Direct Chat</h3>\n                                    <div class=\"box-tools pull-right\">\n                                        <span data-toggle=\"tooltip\" title=\"3 New Messages\"\n                                              class=\"badge bg-light-blue\">3</span>\n                                        <button class=\"btn btn-box-tool\" data-widget=\"collapse\"><i\n                                                class=\"fa fa-minus\"></i></button>\n                                        <button class=\"btn btn-box-tool\" data-toggle=\"tooltip\" title=\"Contacts\"\n                                                data-widget=\"chat-pane-toggle\"><i class=\"fa fa-comments\"></i></button>\n                                        <button class=\"btn btn-box-tool\" data-widget=\"remove\"><i\n                                                class=\"fa fa-times\"></i></button>\n                                    </div>\n                                </div><!-- /.box-header -->\n                                <div class=\"box-body\">\n                                    <!-- Conversations are loaded here -->\n                                    <div class=\"direct-chat-messages\">\n                                        <!-- Message. Default to the left -->\n                                        <div class=\"direct-chat-msg\">\n                                            <div class=\"direct-chat-info clearfix\">\n                                                <span class=\"direct-chat-name pull-left\">Alexander Pierce</span>\n                                                <span class=\"direct-chat-timestamp pull-right\">23 Jan 2:00 pm</span>\n                                            </div><!-- /.direct-chat-info -->\n                                            <div class=\"direct-chat-text\">\n                                                Is this template really for free? That's unbelievable!\n                                            </div><!-- /.direct-chat-text -->\n                                        </div><!-- /.direct-chat-msg -->\n\n                                        <!-- Message to the right -->\n                                        <div class=\"direct-chat-msg right\">\n                                            <div class=\"direct-chat-info clearfix\">\n                                                <span class=\"direct-chat-name pull-right\">Sarah Bullock</span>\n                                                <span class=\"direct-chat-timestamp pull-left\">23 Jan 2:05 pm</span>\n                                            </div><!-- /.direct-chat-info -->\n                                            <div class=\"direct-chat-text\">\n                                                You better believe it!\n                                            </div><!-- /.direct-chat-text -->\n                                        </div><!-- /.direct-chat-msg -->\n                                    </div><!--/.direct-chat-messages-->\n\n                                    <!-- Contacts are loaded here -->\n                                    <div class=\"direct-chat-contacts\">\n                                        <ul class=\"contacts-list\">\n                                            <li>\n                                                <a href=\"#\">\n                                                    <div class=\"contacts-list-info\">\n                    <span class=\"contacts-list-name\">\n                      Count Dracula\n                      <small class=\"contacts-list-date pull-right\">2/28/2015</small>\n                    </span>\n                                                        <span class=\"contacts-list-msg\">How have you been? I was...</span>\n                                                    </div><!-- /.contacts-list-info -->\n                                                </a>\n                                            </li><!-- End Contact Item -->\n                                        </ul><!-- /.contatcts-list -->\n                                    </div><!-- /.direct-chat-pane -->\n                                </div><!-- /.box-body -->\n                                <div class=\"box-footer\">\n                                    <form action=\"#\" method=\"post\">\n                                        <div class=\"input-group\">\n                                            <input type=\"text\" name=\"message\" placeholder=\"Type Message ...\"\n                                                   class=\"form-control\">\n              <span class=\"input-group-btn\">\n                <button type=\"button\" class=\"btn btn-primary btn-flat\">Send</button>\n              </span>\n                                        </div>\n                                    </form>\n                                </div><!-- /.box-footer-->\n                            </div><!--/.direct-chat -->\n                        </div><!-- /.col -->\n\n                        <div class=\"col-md-3\">\n                            <!-- DIRECT CHAT SUCCESS -->\n                            <div class=\"box box-success direct-chat direct-chat-success\">\n                                <div class=\"box-header with-border\">\n                                    <h3 class=\"box-title\">Direct Chat</h3>\n                                    <div class=\"box-tools pull-right\">\n                                        <span data-toggle=\"tooltip\" title=\"3 New Messages\"\n                                              class=\"badge bg-green\">3</span>\n                                        <button class=\"btn btn-box-tool\" data-widget=\"collapse\"><i\n                                                class=\"fa fa-minus\"></i></button>\n                                        <button class=\"btn btn-box-tool\" data-toggle=\"tooltip\" title=\"Contacts\"\n                                                data-widget=\"chat-pane-toggle\"><i class=\"fa fa-comments\"></i></button>\n                                        <button class=\"btn btn-box-tool\" data-widget=\"remove\"><i\n                                                class=\"fa fa-times\"></i></button>\n                                    </div>\n                                </div><!-- /.box-header -->\n                                <div class=\"box-body\">\n                                    <!-- Conversations are loaded here -->\n                                    <div class=\"direct-chat-messages\">\n                                        <!-- Message. Default to the left -->\n                                        <div class=\"direct-chat-msg\">\n                                            <div class=\"direct-chat-info clearfix\">\n                                                <span class=\"direct-chat-name pull-left\">Alexander Pierce</span>\n                                                <span class=\"direct-chat-timestamp pull-right\">23 Jan 2:00 pm</span>\n                                            </div><!-- /.direct-chat-info -->\n                                            <div class=\"direct-chat-text\">\n                                                Is this template really for free? That's unbelievable!\n                                            </div><!-- /.direct-chat-text -->\n                                        </div><!-- /.direct-chat-msg -->\n\n                                        <!-- Message to the right -->\n                                        <div class=\"direct-chat-msg right\">\n                                            <div class=\"direct-chat-info clearfix\">\n                                                <span class=\"direct-chat-name pull-right\">Sarah Bullock</span>\n                                                <span class=\"direct-chat-timestamp pull-left\">23 Jan 2:05 pm</span>\n                                            </div><!-- /.direct-chat-info -->\n                                            <div class=\"direct-chat-text\">\n                                                You better believe it!\n                                            </div><!-- /.direct-chat-text -->\n                                        </div><!-- /.direct-chat-msg -->\n                                    </div><!--/.direct-chat-messages-->\n\n                                    <!-- Contacts are loaded here -->\n                                    <div class=\"direct-chat-contacts\">\n                                        <ul class=\"contacts-list\">\n                                            <li>\n                                                <a href=\"#\">\n                                                    <div class=\"contacts-list-info\">\n                    <span class=\"contacts-list-name\">\n                      Count Dracula\n                      <small class=\"contacts-list-date pull-right\">2/28/2015</small>\n                    </span>\n                                                        <span class=\"contacts-list-msg\">How have you been? I was...</span>\n                                                    </div><!-- /.contacts-list-info -->\n                                                </a>\n                                            </li><!-- End Contact Item -->\n                                        </ul><!-- /.contatcts-list -->\n                                    </div><!-- /.direct-chat-pane -->\n                                </div><!-- /.box-body -->\n                                <div class=\"box-footer\">\n                                    <form action=\"#\" method=\"post\">\n                                        <div class=\"input-group\">\n                                            <input type=\"text\" name=\"message\" placeholder=\"Type Message ...\"\n                                                   class=\"form-control\">\n              <span class=\"input-group-btn\">\n                <button type=\"button\" class=\"btn btn-success btn-flat\">Send</button>\n              </span>\n                                        </div>\n                                    </form>\n                                </div><!-- /.box-footer-->\n                            </div><!--/.direct-chat -->\n                        </div><!-- /.col -->\n\n                        <div class=\"col-md-3\">\n                            <!-- DIRECT CHAT WARNING -->\n                            <div class=\"box box-warning direct-chat direct-chat-warning\">\n                                <div class=\"box-header with-border\">\n                                    <h3 class=\"box-title\">Direct Chat</h3>\n                                    <div class=\"box-tools pull-right\">\n                                        <span data-toggle=\"tooltip\" title=\"3 New Messages\"\n                                              class=\"badge bg-yellow\">3</span>\n                                        <button class=\"btn btn-box-tool\" data-widget=\"collapse\"><i\n                                                class=\"fa fa-minus\"></i></button>\n                                        <button class=\"btn btn-box-tool\" data-toggle=\"tooltip\" title=\"Contacts\"\n                                                data-widget=\"chat-pane-toggle\"><i class=\"fa fa-comments\"></i></button>\n                                        <button class=\"btn btn-box-tool\" data-widget=\"remove\"><i\n                                                class=\"fa fa-times\"></i></button>\n                                    </div>\n                                </div><!-- /.box-header -->\n                                <div class=\"box-body\">\n                                    <!-- Conversations are loaded here -->\n                                    <div class=\"direct-chat-messages\">\n                                        <!-- Message. Default to the left -->\n                                        <div class=\"direct-chat-msg\">\n                                            <div class=\"direct-chat-info clearfix\">\n                                                <span class=\"direct-chat-name pull-left\">Alexander Pierce</span>\n                                                <span class=\"direct-chat-timestamp pull-right\">23 Jan 2:00 pm</span>\n                                            </div><!-- /.direct-chat-info -->\n                                            <div class=\"direct-chat-text\">\n                                                Is this template really for free? That's unbelievable!\n                                            </div><!-- /.direct-chat-text -->\n                                        </div><!-- /.direct-chat-msg -->\n\n                                        <!-- Message to the right -->\n                                        <div class=\"direct-chat-msg right\">\n                                            <div class=\"direct-chat-info clearfix\">\n                                                <span class=\"direct-chat-name pull-right\">Sarah Bullock</span>\n                                                <span class=\"direct-chat-timestamp pull-left\">23 Jan 2:05 pm</span>\n                                            </div><!-- /.direct-chat-info -->\n                                            <div class=\"direct-chat-text\">\n                                                You better believe it!\n                                            </div><!-- /.direct-chat-text -->\n                                        </div><!-- /.direct-chat-msg -->\n                                    </div><!--/.direct-chat-messages-->\n\n                                    <!-- Contacts are loaded here -->\n                                    <div class=\"direct-chat-contacts\">\n                                        <ul class=\"contacts-list\">\n                                            <li>\n                                                <a href=\"#\">\n                                                    <div class=\"contacts-list-info\">\n                    <span class=\"contacts-list-name\">\n                      Count Dracula\n                      <small class=\"contacts-list-date pull-right\">2/28/2015</small>\n                    </span>\n                                                        <span class=\"contacts-list-msg\">How have you been? I was...</span>\n                                                    </div><!-- /.contacts-list-info -->\n                                                </a>\n                                            </li><!-- End Contact Item -->\n                                        </ul><!-- /.contatcts-list -->\n                                    </div><!-- /.direct-chat-pane -->\n                                </div><!-- /.box-body -->\n                                <div class=\"box-footer\">\n                                    <form action=\"#\" method=\"post\">\n                                        <div class=\"input-group\">\n                                            <input type=\"text\" name=\"message\" placeholder=\"Type Message ...\"\n                                                   class=\"form-control\">\n              <span class=\"input-group-btn\">\n                <button type=\"button\" class=\"btn btn-warning btn-flat\">Send</button>\n              </span>\n                                        </div>\n                                    </form>\n                                </div><!-- /.box-footer-->\n                            </div><!--/.direct-chat -->\n                        </div><!-- /.col -->\n\n                        <div class=\"col-md-3\">\n                            <!-- DIRECT CHAT DANGER -->\n                            <div class=\"box box-danger direct-chat direct-chat-danger\">\n                                <div class=\"box-header with-border\">\n                                    <h3 class=\"box-title\">Direct Chat</h3>\n                                    <div class=\"box-tools pull-right\">\n                                        <span data-toggle=\"tooltip\" title=\"3 New Messages\" class=\"badge bg-red\">3</span>\n                                        <button class=\"btn btn-box-tool\" data-widget=\"collapse\"><i\n                                                class=\"fa fa-minus\"></i></button>\n                                        <button class=\"btn btn-box-tool\" data-toggle=\"tooltip\" title=\"Contacts\"\n                                                data-widget=\"chat-pane-toggle\"><i class=\"fa fa-comments\"></i></button>\n                                        <button class=\"btn btn-box-tool\" data-widget=\"remove\"><i\n                                                class=\"fa fa-times\"></i></button>\n                                    </div>\n                                </div><!-- /.box-header -->\n                                <div class=\"box-body\">\n                                    <!-- Conversations are loaded here -->\n                                    <div class=\"direct-chat-messages\">\n                                        <!-- Message. Default to the left -->\n                                        <div class=\"direct-chat-msg\">\n                                            <div class=\"direct-chat-info clearfix\">\n                                                <span class=\"direct-chat-name pull-left\">Alexander Pierce</span>\n                                                <span class=\"direct-chat-timestamp pull-right\">23 Jan 2:00 pm</span>\n                                            </div><!-- /.direct-chat-info -->\n                                            <div class=\"direct-chat-text\">\n                                                Is this template really for free? That's unbelievable!\n                                            </div><!-- /.direct-chat-text -->\n                                        </div><!-- /.direct-chat-msg -->\n\n                                        <!-- Message to the right -->\n                                        <div class=\"direct-chat-msg right\">\n                                            <div class=\"direct-chat-info clearfix\">\n                                                <span class=\"direct-chat-name pull-right\">Sarah Bullock</span>\n                                                <span class=\"direct-chat-timestamp pull-left\">23 Jan 2:05 pm</span>\n                                            </div><!-- /.direct-chat-info -->\n                                            <div class=\"direct-chat-text\">\n                                                You better believe it!\n                                            </div><!-- /.direct-chat-text -->\n                                        </div><!-- /.direct-chat-msg -->\n                                    </div><!--/.direct-chat-messages-->\n\n                                    <!-- Contacts are loaded here -->\n                                    <div class=\"direct-chat-contacts\">\n                                        <ul class=\"contacts-list\">\n                                            <li>\n                                                <a href=\"#\">\n                                                    <div class=\"contacts-list-info\">\n                    <span class=\"contacts-list-name\">\n                      Count Dracula\n                      <small class=\"contacts-list-date pull-right\">2/28/2015</small>\n                    </span>\n                                                        <span class=\"contacts-list-msg\">How have you been? I was...</span>\n                                                    </div><!-- /.contacts-list-info -->\n                                                </a>\n                                            </li><!-- End Contact Item -->\n                                        </ul><!-- /.contatcts-list -->\n                                    </div><!-- /.direct-chat-pane -->\n                                </div><!-- /.box-body -->\n                                <div class=\"box-footer\">\n                                    <form action=\"#\" method=\"post\">\n                                        <div class=\"input-group\">\n                                            <input type=\"text\" name=\"message\" placeholder=\"Type Message ...\"\n                                                   class=\"form-control\">\n              <span class=\"input-group-btn\">\n                <button type=\"button\" class=\"btn btn-danger btn-flat\">Send</button>\n              </span>\n                                        </div>\n                                    </form>\n                                </div><!-- /.box-footer-->\n                            </div><!--/.direct-chat -->\n                        </div><!-- /.col -->\n                    </div><!-- /.row -->\n                    <p class=\"lead\">Direct Chat Markup</p>\n  <pre class=\"prettyprint\"><code class=\"html\">\n      &LT;!-- Construct the box with style you want. Here we are using box-danger -->\n      &LT;!-- Then add the class direct-chat and choose the direct-chat-* contexual class -->\n      &LT;!-- The contextual class should match the box, so we are using direct-chat-danger -->\n      &LT;div class=\"box box-danger direct-chat direct-chat-danger\">\n      &LT;div class=\"box-header with-border\">\n      &LT;h3 class=\"box-title\">Direct Chat&LT;/h3>\n      &LT;div class=\"box-tools pull-right\">\n      &LT;span data-toggle=\"tooltip\" title=\"3 New Messages\" class=\"badge bg-red\">3&LT;/span>\n      &LT;button class=\"btn btn-box-tool\" data-widget=\"collapse\">&LT;i class=\"fa fa-minus\">&LT;/i>&LT;/button>\n      &LT;!-- In box-tools add this button if you intend to use the contacts pane -->\n      &LT;button class=\"btn btn-box-tool\" data-toggle=\"tooltip\" title=\"Contacts\" data-widget=\"chat-pane-toggle\">&LT;i\n      class=\"fa fa-comments\">&LT;/i>&LT;/button>\n      &LT;button class=\"btn btn-box-tool\" data-widget=\"remove\">&LT;i class=\"fa fa-times\">&LT;/i>&LT;/button>\n      &LT;/div>\n      &LT;/div>&LT;!-- /.box-header -->\n      &LT;div class=\"box-body\">\n      &LT;!-- Conversations are loaded here -->\n      &LT;div class=\"direct-chat-messages\">\n      &LT;!-- Message. Default to the left -->\n      &LT;div class=\"direct-chat-msg\">\n      &LT;div class=\"direct-chat-info clearfix\">\n      &LT;span class=\"direct-chat-name pull-left\">Alexander Pierce&LT;/span>\n      &LT;span class=\"direct-chat-timestamp pull-right\">23 Jan 2:00 pm&LT;/span>\n      &LT;/div>&LT;!-- /.direct-chat-info -->\n      &LT;img class=\"direct-chat-img\" src=\"../dist/img/user1-128x128.jpg\" alt=\"message user image\">&LT;!--\n      /.direct-chat-img -->\n      &LT;div class=\"direct-chat-text\">\n      Is this template really for free? That's unbelievable!\n      &LT;/div>&LT;!-- /.direct-chat-text -->\n      &LT;/div>&LT;!-- /.direct-chat-msg -->\n\n      &LT;!-- Message to the right -->\n      &LT;div class=\"direct-chat-msg right\">\n      &LT;div class=\"direct-chat-info clearfix\">\n      &LT;span class=\"direct-chat-name pull-right\">Sarah Bullock&LT;/span>\n      &LT;span class=\"direct-chat-timestamp pull-left\">23 Jan 2:05 pm&LT;/span>\n      &LT;/div>&LT;!-- /.direct-chat-info -->\n      &LT;img class=\"direct-chat-img\" src=\"../dist/img/user3-128x128.jpg\" alt=\"message user image\">&LT;!--\n      /.direct-chat-img -->\n      &LT;div class=\"direct-chat-text\">\n      You better believe it!\n      &LT;/div>&LT;!-- /.direct-chat-text -->\n      &LT;/div>&LT;!-- /.direct-chat-msg -->\n      &LT;/div>&LT;!--/.direct-chat-messages-->\n\n      &LT;!-- Contacts are loaded here -->\n      &LT;div class=\"direct-chat-contacts\">\n      &LT;ul class=\"contacts-list\">\n      &LT;li>\n      &LT;a href=\"#\">\n      &LT;img class=\"contacts-list-img\" src=\"../dist/img/user1-128x128.jpg\" alt=\"Contact Avatar\">\n      &LT;div class=\"contacts-list-info\">\n      &LT;span class=\"contacts-list-name\">\n      Count Dracula\n      &LT;small class=\"contacts-list-date pull-right\">2/28/2015&LT;/small>\n      &LT;/span>\n      &LT;span class=\"contacts-list-msg\">How have you been? I was...&LT;/span>\n      &LT;/div>&LT;!-- /.contacts-list-info -->\n      &LT;/a>\n      &LT;/li>&LT;!-- End Contact Item -->\n      &LT;/ul>&LT;!-- /.contatcts-list -->\n      &LT;/div>&LT;!-- /.direct-chat-pane -->\n      &LT;/div>&LT;!-- /.box-body -->\n      &LT;div class=\"box-footer\">\n      &LT;div class=\"input-group\">\n      &LT;input type=\"text\" name=\"message\" placeholder=\"Type Message ...\" class=\"form-control\">\n      &LT;span class=\"input-group-btn\">\n      &LT;button type=\"button\" class=\"btn btn-danger btn-flat\">Send&LT;/button>\n      &LT;/span>\n      &LT;/div>\n      &LT;/div>&LT;!-- /.box-footer-->\n      &LT;/div>&LT;!--/.direct-chat -->\n  </code></pre>\n\n                    <p>Of course you can use direct chat with a solid box by adding the class <code>solid-box</code> to\n                        the box. Here are a couple of examples:</p>\n\n                    <!-- Direct Chat With Solid Boxes -->\n                    <div class=\"row\">\n                        <div class=\"col-md-6\">\n                            <!-- DIRECT CHAT WARNING -->\n                            <div class=\"box box-primary box-solid direct-chat direct-chat-primary\">\n                                <div class=\"box-header\">\n                                    <h3 class=\"box-title\">Direct Chat in a Solid Box</h3>\n                                    <div class=\"box-tools pull-right\">\n                                        <span data-toggle=\"tooltip\" title=\"3 New Messages\"\n                                              class=\"badge bg-light-blue\">3</span>\n                                        <button class=\"btn btn-box-tool\" data-widget=\"collapse\"><i\n                                                class=\"fa fa-minus\"></i></button>\n                                        <button class=\"btn btn-box-tool\" data-toggle=\"tooltip\" title=\"Contacts\"\n                                                data-widget=\"chat-pane-toggle\"><i class=\"fa fa-comments\"></i></button>\n                                        <button class=\"btn btn-box-tool\" data-widget=\"remove\"><i\n                                                class=\"fa fa-times\"></i></button>\n                                    </div>\n                                </div><!-- /.box-header -->\n                                <div class=\"box-body\">\n                                    <!-- Conversations are loaded here -->\n                                    <div class=\"direct-chat-messages\">\n                                        <!-- Message. Default to the left -->\n                                        <div class=\"direct-chat-msg\">\n                                            <div class=\"direct-chat-info clearfix\">\n                                                <span class=\"direct-chat-name pull-left\">Alexander Pierce</span>\n                                                <span class=\"direct-chat-timestamp pull-right\">23 Jan 2:00 pm</span>\n                                            </div><!-- /.direct-chat-info -->\n                                            <div class=\"direct-chat-text\">\n                                                Is this template really for free? That's unbelievable!\n                                            </div><!-- /.direct-chat-text -->\n                                        </div><!-- /.direct-chat-msg -->\n\n                                        <!-- Message to the right -->\n                                        <div class=\"direct-chat-msg right\">\n                                            <div class=\"direct-chat-info clearfix\">\n                                                <span class=\"direct-chat-name pull-right\">Sarah Bullock</span>\n                                                <span class=\"direct-chat-timestamp pull-left\">23 Jan 2:05 pm</span>\n                                            </div><!-- /.direct-chat-info -->\n                                            <div class=\"direct-chat-text\">\n                                                You better believe it!\n                                            </div><!-- /.direct-chat-text -->\n                                        </div><!-- /.direct-chat-msg -->\n                                    </div><!--/.direct-chat-messages-->\n\n                                    <!-- Contacts are loaded here -->\n                                    <div class=\"direct-chat-contacts\">\n                                        <ul class=\"contacts-list\">\n                                            <li>\n                                                <a href=\"#\">\n                                                    <div class=\"contacts-list-info\">\n                    <span class=\"contacts-list-name\">\n                      Count Dracula\n                      <small class=\"contacts-list-date pull-right\">2/28/2015</small>\n                    </span>\n                                                        <span class=\"contacts-list-msg\">How have you been? I was...</span>\n                                                    </div><!-- /.contacts-list-info -->\n                                                </a>\n                                            </li><!-- End Contact Item -->\n                                        </ul><!-- /.contatcts-list -->\n                                    </div><!-- /.direct-chat-pane -->\n                                </div><!-- /.box-body -->\n                                <div class=\"box-footer\">\n                                    <form action=\"#\" method=\"post\">\n                                        <div class=\"input-group\">\n                                            <input type=\"text\" name=\"message\" placeholder=\"Type Message ...\"\n                                                   class=\"form-control\">\n              <span class=\"input-group-btn\">\n                <button type=\"button\" class=\"btn btn-primary btn-flat\">Send</button>\n              </span>\n                                        </div>\n                                    </form>\n                                </div><!-- /.box-footer-->\n                            </div><!--/.direct-chat -->\n                        </div><!-- /.col -->\n\n                        <div class=\"col-md-6\">\n                            <!-- DIRECT CHAT DANGER -->\n                            <div class=\"box box-info box-solid direct-chat direct-chat-info\">\n                                <div class=\"box-header\">\n                                    <h3 class=\"box-title\">Direct Chat in a Solid Box</h3>\n                                    <div class=\"box-tools pull-right\">\n                                        <span data-toggle=\"tooltip\" title=\"3 New Messages\"\n                                              class=\"badge bg-aqua\">3</span>\n                                        <button class=\"btn btn-box-tool\" data-widget=\"collapse\"><i\n                                                class=\"fa fa-minus\"></i></button>\n                                        <button class=\"btn btn-box-tool\" data-toggle=\"tooltip\" title=\"Contacts\"\n                                                data-widget=\"chat-pane-toggle\"><i class=\"fa fa-comments\"></i></button>\n                                        <button class=\"btn btn-box-tool\" data-widget=\"remove\"><i\n                                                class=\"fa fa-times\"></i></button>\n                                    </div>\n                                </div><!-- /.box-header -->\n                                <div class=\"box-body\">\n                                    <!-- Conversations are loaded here -->\n                                    <div class=\"direct-chat-messages\">\n                                        <!-- Message. Default to the left -->\n                                        <div class=\"direct-chat-msg\">\n                                            <div class=\"direct-chat-info clearfix\">\n                                                <span class=\"direct-chat-name pull-left\">Alexander Pierce</span>\n                                                <span class=\"direct-chat-timestamp pull-right\">23 Jan 2:00 pm</span>\n                                            </div><!-- /.direct-chat-info -->\n                                            <div class=\"direct-chat-text\">\n                                                Is this template really for free? That's unbelievable!\n                                            </div><!-- /.direct-chat-text -->\n                                        </div><!-- /.direct-chat-msg -->\n\n                                        <!-- Message to the right -->\n                                        <div class=\"direct-chat-msg right\">\n                                            <div class=\"direct-chat-info clearfix\">\n                                                <span class=\"direct-chat-name pull-right\">Sarah Bullock</span>\n                                                <span class=\"direct-chat-timestamp pull-left\">23 Jan 2:05 pm</span>\n                                            </div><!-- /.direct-chat-info -->\n                                            <div class=\"direct-chat-text\">\n                                                You better believe it!\n                                            </div><!-- /.direct-chat-text -->\n                                        </div><!-- /.direct-chat-msg -->\n                                    </div><!--/.direct-chat-messages-->\n\n                                    <!-- Contacts are loaded here -->\n                                    <div class=\"direct-chat-contacts\">\n                                        <ul class=\"contacts-list\">\n                                            <li>\n                                                <a href=\"#\">\n                                                    <div class=\"contacts-list-info\">\n                    <span class=\"contacts-list-name\">\n                      Count Dracula\n                      <small class=\"contacts-list-date pull-right\">2/28/2015</small>\n                    </span>\n                                                        <span class=\"contacts-list-msg\">How have you been? I was...</span>\n                                                    </div><!-- /.contacts-list-info -->\n                                                </a>\n                                            </li><!-- End Contact Item -->\n                                        </ul><!-- /.contatcts-list -->\n                                    </div><!-- /.direct-chat-pane -->\n                                </div><!-- /.box-body -->\n                                <div class=\"box-footer\">\n                                    <form action=\"#\" method=\"post\">\n                                        <div class=\"input-group\">\n                                            <input type=\"text\" name=\"message\" placeholder=\"Type Message ...\"\n                                                   class=\"form-control\">\n              <span class=\"input-group-btn\">\n                <button type=\"button\" class=\"btn btn-info btn-flat\">Send</button>\n              </span>\n                                        </div>\n                                    </form>\n                                </div><!-- /.box-footer-->\n                            </div><!--/.direct-chat -->\n                        </div><!-- /.col -->\n                    </div><!-- /.row -->\n                </section>\n\n\n                <!-- ============================================================= -->\n\n                <section id=\"plugins\">\n                    <h2 class=\"page-header\"><a href=\"#plugins\">Plugins</a></h2>\n                    <p class=\"lead\">AdminLTE makes use of the following plugins. For documentation, updates or license\n                        information, please visit the provided links.</p>\n                    <div class=\"row bring-up\">\n                        <div class=\"col-sm-3\">\n                            <ul class=\"list-unstyled\">\n                                <li><h4>Charts</h4></li>\n                                <li><a href=\"http://www.chartjs.org/\" target=\"_blank\">ChartJS</a></li>\n                                <li><a href=\"http://www.flotcharts.org/\" target=\"_blank\">Flot</a></li>\n                                <li><a href=\"http://morrisjs.github.io/morris.js/\" target=\"_blank\">Morris.js</a></li>\n                                <li><a href=\"http://omnipotent.net/jquery.sparkline/\" target=\"_blank\">Sparkline</a></li>\n                            </ul>\n                        </div><!-- /.col -->\n                        <div class=\"col-sm-3\">\n                            <ul class=\"list-unstyled\">\n                                <li><h4>Form Elements</h4></li>\n                                <li><a href=\"https://github.com/seiyria/bootstrap-slider/\">Bootstrap Slider</a></li>\n                                <li><a href=\"http://ionden.com/a/plugins/ion.rangeSlider/en.html\" target=\"_blank\">Ion\n                                    Slider</a></li>\n                                <li><a href=\"http://bootstrap-datepicker.readthedocs.org/\" target=\"_blank\">Date\n                                    Picker</a></li>\n                                <li><a href=\"http://www.daterangepicker.com/\" target=\"_blank\">Date Range Picker</a></li>\n                                <li><a href=\"http://mjolnic.com/bootstrap-colorpicker/\" target=\"_blank\">Color Picker</a>\n                                </li>\n                                <li><a href=\"https://github.com/jdewit/bootstrap-timepicker/\" target=\"_blank\">Time\n                                    Picker</a></li>\n                                <li><a href=\"http://fronteed.com/iCheck/\" target=\"_blank\">iCheck</a></li>\n                                <li><a href=\"https://github.com/RobinHerbots/jquery.inputmask/\" target=\"_blank\">Input\n                                    Mask</a></li>\n                            </ul>\n                        </div><!-- /.col -->\n                        <div class=\"col-sm-3\">\n                            <ul class=\"list-unstyled\">\n                                <li><h4>Editors</h4></li>\n                                <li><a href=\"https://github.com/bootstrap-wysiwyg/bootstrap3-wysiwyg/\" target=\"_blank\">Bootstrap\n                                    WYSIHTML5</a></li>\n                                <li><a href=\"http://ckeditor.com/\" target=\"_blank\">CK Editor</a></li>\n                            </ul>\n                        </div><!-- /. col -->\n                        <div class=\"col-sm-3\">\n                            <ul class=\"list-unstyled\">\n                                <li><h4>Other</h4></li>\n                                <li><a href=\"https://datatables.net/examples/styling/bootstrap.html\" target=\"_blank\">DataTables</a>\n                                </li>\n                                <li><a href=\"http://fullcalendar.io/\" target=\"_blank\">Full Calendar</a></li>\n                                <li><a href=\"http://jqueryui.com/\" target=\"_blank\">jQuery UI</a></li>\n                                <li><a href=\"http://anthonyterrien.com/knob/\" target=\"_blank\">jQuery Knob</a></li>\n                                <li><a href=\"http://jvectormap.com/\" target=\"_blank\">jVector Map</a></li>\n                                <li><a href=\"http://rocha.la/jQuery-slimScroll/\" target=\"_blank\">Slim Scroll</a></li>\n                                <li><a href=\"http://github.hubspot.com/pace/docs/welcome/\" target=\"_blank\">Pace</a></li>\n                            </ul>\n                        </div><!-- /.col -->\n                    </div><!-- /.row -->\n                </section>\n\n\n                <!-- ============================================================= -->\n\n                <section id=\"browsers\">\n                    <h2 class=\"page-header\"><a href=\"#browsers\">Browser Support</a></h2>\n                    <p class=\"lead\">AdminLTE supports the following browsers:</p>\n                    <ul>\n                        <li>IE9+</li>\n                        <li>Firefox (latest)</li>\n                        <li>Safari (latest)</li>\n                        <li>Chrome (latest)</li>\n                        <li>Opera (latest)</li>\n                    </ul>\n                    <p><b>Note:</b> IE9 does not support transitions or animations. The template will function properly\n                        but it won't use animations/transitions on IE9.</p>\n                </section>\n\n\n                <!-- ============================================================= -->\n\n                <section id=\"upgrade\">\n                    <h2 class=\"page-header\"><a href=\"#upgrade\">Upgrade Guide</a></h2>\n                    <p class=\"lead\">To upgrade from version 1.x to the lateset version, follow this guide.</p>\n                    <h3>New Files</h3>\n                    <p>Make sure you update all CSS and JS files that are related to AdminLTE. Otherwise, the layout\n                        will not\n                        function properly. Most important files are AdminLTE.css, skins CSS files, and app.js.</p>\n                    <h3>Layout Changes</h3>\n                    <ol>\n                        <li>The .wrapper div must be placed immediately after the body tag rather than after the\n                            header\n                        </li>\n                        <li>Change the .header div to .main-header <code>&LT;div class=\"main-header\"></code></li>\n                        <li>Change the .right-side class to .content-wrapper <code>&LT;div\n                            class=\"content-wrapper\"></code></li>\n                        <li>Change the .left-side class to .main-sidebar <code>&LT;div class=\"main-sidebar\"></code></li>\n                        <li>In the navbar, change .navbar-right to .navbar-custom-menu <code>&LT;div\n                            class=\"navbar-custom-menu\"></code></li>\n                    </ol>\n                    <h3>Navbar Custom Dropdown Menus</h3>\n                    <ol>\n                        <li>The icons in the notification menu do not need bg-* classes. They should be replaced with\n                            contextual text color class such as text-aqua or text-red.\n                        </li>\n                    </ol>\n                    <h3>Login, Registration and Lockscreen Pages</h3>\n                    <p>There are major changes to the HTML markup and style to these pages. The best way is to copy the\n                        page's code and customize it.</p>\n                    <p>And you should be set to go!</p>\n                    <h3>Mailbox</h3>\n                    <p>Mailbox got an upgrade to include three different views. The views are inbox, read mail, and\n                        compose new email. To use these views,\n                        you should use the provided HTML files in the pages/mailbox folder.</p>\n                    <p><b class=\"text-red\">Note:</b> the old mailbox layout has been deprecated in favor of the new one\n                        and will be removed by the next release.</p>\n                </section>\n\n\n                <!-- ============================================================= -->\n\n                <section id=\"implementations\">\n                    <h2 class=\"page-header\"><a href=\"#implementations\">Implementations</a></h2>\n                    <p class=\"lead\">Thanks to many of AdminLTE users, there are multiple implementations of the template\n                        for easy integration with back-end frameworks. The following are some of them:</p>\n\n                    <ul>\n                        <li><a href=\"https://github.com/mmdsharifi/AdminLTE-RTL\">Persian RTL</a> by <a\n                                href=\"https://github.com/mmdsharifi\">Mohammad Sharifi</a></li>\n                        <li><a href=\"https://github.com/dmstr/yii2-adminlte-asset\" target=\"_blank\">Yii 2</a> by <a\n                                href=\"https://github.com/schmunk42\" target=\"_blank\">Tobias Munk</a></li>\n                        <li><a href=\"https://github.com/yajra/laravel-admin-template\" target=\"_blank\">Laravel</a> by <a\n                                href=\"https://github.com/yajra\" target=\"_blank\">Arjay Angeles</a></li>\n                        <li><a href=\"https://github.com/acacha/adminlte-laravel\" target=\"_blank\">Laravel 5 package</a>\n                            by <a href=\"https://github.com/acacha\" target=\"_blank\">Sergi Tur Badenas</a></li>\n                        <li><a href=\"https://github.com/avanzu/AdminThemeBundle\" target=\"_blank\">Symfony</a> by <a\n                                href=\"https://github.com/avanzu\" target=\"_blank\">Marc Bach</a></li>\n                        <li>Rails gems: <a href=\"https://github.com/nicolas-besnard/adminlte2-rails\" target=\"_blank\">adminlte2-rails</a>\n                            by <a href=\"https://github.com/nicolas-besnard\" target=\"_blank\">Nicolas Besnard</a> and <a\n                                    href=\"https://github.com/racketlogger/lte-rails\" target=\"_blank\">lte-rails</a>\n                            (using AdminLTE sources) by <a href=\"https://github.com/racketlogger\" target=\"_blank\">Carlos\n                                at RacketLogger</a></li>\n                    </ul>\n\n                    <p><b class=\"text-red\">Note:</b> these implementations are not supported by Almsaeed Studio.\n                        However,\n                        they do provide a good example of how to integrate AdminLTE into different frameworks. For the\n                        latest release\n                        of AdminLTE, please visit our <a href=\"https://github.com/almasaeed2010/AdminLTE\">repository</a>\n                        or <a href=\"https://almsaeedstudio.com\">website</a></p>\n                </section>\n\n\n                <!-- ============================================================= -->\n\n                <section id=\"faq\">\n                    <h2 class=\"page-header\"><a href=\"#faq\">FAQ</a></h2>\n                    <h3>Can AdminLTE be used with Wordpress?</h3>\n                    <p class=\"lead\">AdminLTE is an HTML template that can be used for any purpose. However, it is not\n                        made to be easily installed on Wordpress. It will require some effort and enough knowledge of\n                        the Wordpress script to do so.</p>\n\n                    <h3>Is there an integration guide for PHP frameworks such as Yii or Symfony?</h3>\n                    <p class=\"lead\">Short answer, no. However, there are forks and tutorials around the web that provide\n                        info on how to integrate with many different frameworks. There are even versions of AdminLTE\n                        that are integrated with jQuery ajax, AngularJS and/or MVC5 ASP .NET.</p>\n\n                    <h3>How do I get notified of new AdminLTE versions?</h3>\n                    <p class=\"lead\">The best option is to subscribe to our mailing list using the <a\n                            href=\"http://almsaeedstudio.com/#subscribe\">subscription form on Almsaeed Studio</a>.\n                        If that's not appealing to you, you may watch the <a\n                                href=\"https://github.com/almasaeed2010/AdminLTE\">repository on Github</a> or visit <a\n                                href=\"http://almsaeedstudio.com\">Almsaeed Studio</a> every now and then for updates and\n                        announcements.</p>\n                </section>\n\n\n                <!-- ============================================================= -->\n\n                <section id=\"license\">\n                    <h2 class=\"page-header\"><a href=\"#license\">License</a></h2>\n                    <h3>AdminLTE</h3>\n                    <p class=\"lead\">\n                        AdminLTE is an open source project that is licensed under the <a\n                            href=\"http://opensource.org/licenses/MIT\">MIT license</a>.\n                        This allows you to do pretty much anything you want as long as you include\n                        the copyright in \"all copies or substantial portions of the Software.\"\n                        Attribution is not required (though very much appreciated).\n                    </p>\n                </section>\n\n\n            </div><!-- /.content -->\n        </div><!-- /.content-wrapper -->\n\n        <footer class=\"main-footer\">\n            <div class=\"pull-right hidden-xs\">\n                <b>Version</b> 2.3.3\n            </div>\n            <strong>Copyright &copy; 2014-2015 <a href=\"http://almsaeedstudio.com\">Almsaeed Studio</a>.</strong> All\n            rights reserved.\n        </footer>\n\n        <!-- Control Sidebar -->\n        <aside class=\"control-sidebar control-sidebar-dark\">\n            <!-- Create the tabs -->\n            <div class=\"pad\">\n                This is an example of the control sidebar.\n            </div>\n        </aside><!-- /.control-sidebar -->\n        <!-- Add the sidebar's background. This div must be placed\n             immediately after the control sidebar -->\n        <div class=\"control-sidebar-bg\"></div>\n\n    </div><!-- ./wrapper -->\n</div>";
+	module.exports = "<div>\n\n    <header class=\"main-header\">\n        <!-- Logo -->\n        <!-- Logo -->\n        <a href=\"../index2.html\" class=\"logo\">\n            <!-- mini logo for sidebar mini 50x50 pixels -->\n            <span class=\"logo-mini\"><b>A</b>LT</span>\n            <!-- logo for regular state and mobile devices -->\n            <span class=\"logo-lg\"><b>Admin</b>LTE</span>\n        </a>\n        <!-- Header Navbar: style can be found in header.less -->\n        <nav class=\"navbar navbar-static-top\" role=\"navigation\">\n            <!-- Sidebar toggle button-->\n            <a href=\"#\" class=\"sidebar-toggle\" data-toggle=\"offcanvas\" role=\"button\">\n                <span class=\"sr-only\">Toggle navigation</span>\n            </a>\n            <!-- Navbar Right Menu -->\n            <div class=\"navbar-custom-menu\">\n                <ul class=\"nav navbar-nav\">\n                    <li><a href=\"http://almsaeedstudio.com\">Almsaeed Studio</a></li>\n                    <li><a href=\"http://almsaeedstudio.com/premium\">Premium Templates</a></li>\n                </ul>\n            </div>\n        </nav>\n    </header>\n    <!-- Left side column. contains the logo and sidebar -->\n    <aside class=\"main-sidebar\">\n        <!-- sidebar: style can be found in sidebar.less -->\n        <div class=\"sidebar\" id=\"scrollspy\">\n\n            <!-- sidebar menu: : style can be found in sidebar.less -->\n            <ul class=\"nav sidebar-menu\">\n                <li class=\"header\">TABLE OF CONTENTS</li>\n                <li class=\"active\"><a href=\"#introduction\"><i class=\"fa fa-circle-o\"></i> Introduction</a></li>\n                <li><a href=\"#download\"><i class=\"fa fa-circle-o\"></i> Download</a></li>\n                <li><a href=\"#dependencies\"><i class=\"fa fa-circle-o\"></i> Dependencies</a></li>\n                <li><a href=\"#advice\"><i class=\"fa fa-circle-o\"></i> Advice</a></li>\n                <li><a href=\"#layout\"><i class=\"fa fa-circle-o\"></i> Layout</a></li>\n                <li><a href=\"#adminlte-options\"><i class=\"fa fa-circle-o\"></i> Javascript Options</a></li>\n                <li class=\"treeview\" id=\"scrollspy-components\">\n                    <a href=\"javascript:void(0)\"><i class=\"fa fa-circle-o\"></i> Components</a>\n                    <ul class=\"nav treeview-menu\">\n                        <li><a href=\"#component-main-header\">Main Header</a></li>\n                        <li><a href=\"#component-sidebar\">Sidebar</a></li>\n                        <li><a href=\"#component-control-sidebar\">Control Sidebar</a></li>\n                        <li><a href=\"#component-info-box\">Info Box</a></li>\n                        <li><a href=\"#component-box\">Boxes</a></li>\n                        <li><a href=\"#component-direct-chat\">Direct Chat</a></li>\n                    </ul>\n                </li>\n                <li><a href=\"#plugins\"><i class=\"fa fa-circle-o\"></i> Plugins</a></li>\n                <li><a href=\"#browsers\"><i class=\"fa fa-circle-o\"></i> Browser Support</a></li>\n                <li><a href=\"#upgrade\"><i class=\"fa fa-circle-o\"></i> Upgrade Guide</a></li>\n                <li><a href=\"#implementations\"><i class=\"fa fa-circle-o\"></i> Implementations</a></li>\n                <li><a href=\"#faq\"><i class=\"fa fa-circle-o\"></i> FAQ</a></li>\n                <li><a href=\"#license\"><i class=\"fa fa-circle-o\"></i> License</a></li>\n            </ul>\n        </div>\n        <!-- /.sidebar -->\n    </aside>\n\n    <!-- Content Wrapper. Contains page content -->\n    <div class=\"content-wrapper\">\n        <!-- Content Header (Page header) -->\n        <div class=\"content-header\">\n            <h1>\n                AdminLTE Documentation\n                <small>Current version 2.3.0</small>\n            </h1>\n            <ol class=\"breadcrumb\">\n                <li><a href=\"#\"><i class=\"fa fa-dashboard\"></i> Home</a></li>\n                <li class=\"active\">Documentation</li>\n            </ol>\n        </div>\n\n        <!-- Main content -->\n        <div class=\"content body\">\n\n            <section id=\"introduction\">\n                <h2 class=\"page-header\"><a href=\"#introduction\">Introduction</a></h2>\n                <p class=\"lead\">\n                    <b>AdminLTE</b> is a popular open source WebApp template for admin dashboards and control\n                    panels.\n                    It is a responsive HTML template that is based on the CSS framework Bootstrap 3.\n                    It utilizes all of the Bootstrap components in its design and re-styles many\n                    commonly used plugins to create a consistent design that can be used as a user\n                    interface for backend applications. AdminLTE is based on a modular design, which\n                    allows it to be easily customized and built upon. This documentation will guide you through\n                    installing the template and exploring the various components that are bundled with the template.\n                </p>\n            </section><!-- /#introduction -->\n\n\n            <!-- ============================================================= -->\n\n            <section id=\"download\">\n                <h2 class=\"page-header\"><a href=\"#download\">Download</a></h2>\n                <p class=\"lead\">\n                    AdminLTE can be downloaded in two different versions, each appealing to different skill levels\n                    and use case.\n                </p>\n                <div class=\"row\">\n                    <div class=\"col-sm-6\">\n                        <div class=\"box box-primary\">\n                            <div class=\"box-header with-border\">\n                                <h3 class=\"box-title\">Ready</h3>\n                                <span class=\"label label-primary pull-right\"><i class=\"fa fa-html5\"></i></span>\n                            </div><!-- /.box-header -->\n                            <div class=\"box-body\">\n                                <p>Compiled and ready to use in production. Download this version if you don't want\n                                    to customize AdminLTE's LESS files.</p>\n                                <a href=\"http://almsaeedstudio.com/download/AdminLTE-dist\"\n                                   class=\"btn btn-primary\"><i class=\"fa fa-download\"></i> Download</a>\n                            </div><!-- /.box-body -->\n                        </div><!-- /.box -->\n                    </div><!-- /.col -->\n                    <div class=\"col-sm-6\">\n                        <div class=\"box box-danger\">\n                            <div class=\"box-header with-border\">\n                                <h3 class=\"box-title\">Source Code</h3>\n                                <span class=\"label label-danger pull-right\"><i class=\"fa fa-database\"></i></span>\n                            </div><!-- /.box-header -->\n                            <div class=\"box-body\">\n                                <p>All files including the compiled CSS. Download this version if you plan on\n                                    customizing the template. <b>Requires a LESS compiler.</b></p>\n                                <a href=\"http://almsaeedstudio.com/download/AdminLTE\" class=\"btn btn-danger\"><i\n                                        class=\"fa fa-download\"></i> Download</a>\n                            </div><!-- /.box-body -->\n                        </div><!-- /.box -->\n                    </div><!-- /.col -->\n                </div><!-- /.row -->\n  <pre class=\"hierarchy bring-up\"><code class=\"language-bash\" data-lang=\"bash\">File Hierarchy of the Source Code Package\n\n      AdminLTE/\n      ├── dist/\n      │ ├── CSS/\n      │ ├── JS\n      │ ├── img\n      ├── build/\n      │ ├── less/\n      │ │ ├── AdminLTE's Less files\n      │ └── Bootstrap-less/ (Only for reference. No modifications have been made)\n      │ ├── mixins/\n      │ ├── variables.less\n      │ ├── mixins.less\n      └── plugins/\n      ├── All the customized plugins CSS and JS files</code></pre>\n            </section>\n\n\n            <!-- ============================================================= -->\n\n            <section id=\"dependencies\">\n                <h2 class=\"page-header\"><a href=\"#dependencies\">Dependencies</a></h2>\n                <p class=\"lead\">AdminLTE depends on two main frameworks.\n                    The downloadable package contains both of these libraries, so you don't have to manually\n                    download them.</p>\n                <ul class=\"bring-up\">\n                    <li><a href=\"http://getbootstrap.com\" target=\"_blank\">Bootstrap 3</a></li>\n                    <li><a href=\"http://jquery.com/\" target=\"_blank\">jQuery 1.11+</a></li>\n                    <li><a href=\"#plugins\">All other plugins are listed below</a></li>\n                </ul>\n            </section>\n\n\n            <!-- ============================================================= -->\n\n            <section id=\"advice\">\n                <h2 class=\"page-header\"><a href=\"#advice\">A Word of Advice</a></h2>\n                <p class=\"lead\">\n                    Before you go to see your new awesome theme, here are few tips on how to familiarize yourself\n                    with it:\n                </p>\n\n                <ul>\n                    <li><b>AdminLTE is based on <a href=\"http://getbootstrap.com/\" target=\"_blank\">Bootstrap 3</a>.</b>\n                        If you are unfamiliar with Bootstrap, visit their website and read through the\n                        documentation. All of Bootstrap components have been modified to fit the style of AdminLTE\n                        and provide a consistent look throughout the template. This way, we guarantee you will get\n                        the best of AdminLTE.\n                    </li>\n                    <li><b>Go through the pages that are bundled with the theme.</b> Most of the template example\n                        pages contain quick tips on how to create or use a component which can be really helpful\n                        when you need to create something on the fly.\n                    </li>\n                    <li><b>Documentation.</b> We are trying our best to make your experience with AdminLTE be\n                        smooth. One way to achieve that is to provide documentation and support. If you think that\n                        something is missing from the documentation, please do not hesitate to create an issue to\n                        tell us about it. Also, if you would like to contribute, email the support team at <a\n                                href=\"mailto:support@almsaeedstudio.com\">support@almsaeedstudio.com</a>.\n                    </li>\n                    <li><b>Built with <a href=\"http://lesscss.org/\" target=\"_blank\">LESS</a>.</b> This theme uses\n                        the LESS compiler to make it easier to customize and use. LESS is easy to learn if you know\n                        CSS or SASS. It is not necessary to learn LESS but it will benefit you a lot in the future.\n                    </li>\n                    <li><b>Hosted on <a href=\"https://github.com/almasaeed2010/AdminLTE/\"\n                                        target=\"_blank\">GitHub</a>.</b>\n                        Visit our GitHub repository to view issues, make requests, or contribute to the project.\n                    </li>\n                </ul>\n                <p>\n                    <b>Note:</b> LESS files are better commented than the compiled CSS file.\n                </p>\n            </section>\n\n\n            <!-- ============================================================= -->\n\n            <section id=\"layout\">\n                <h2 class=\"page-header\"><a href=\"#layout\">Layout</a></h2>\n                <p class=\"lead\">The layout consists of four major parts:</p>\n                <ul>\n                    <li>Wrapper <code>.wrapper</code>. A div that wraps the whole site.</li>\n                    <li>Main Header <code>.main-header</code>. Contains the logo and navbar.</li>\n                    <li>Sidebar <code>.sidebar-wrapper</code>. Contains the user panel and sidebar menu.</li>\n                    <li>Content <code>.content-wrapper</code>. Contains the page header and content.</li>\n                </ul>\n                <div class=\"callout callout-danger lead\">\n                    <h4>Tip!</h4>\n                    <p>The <a href=\"../starter.html\">starter page</a> is a good place to start building your app if\n                        you'd like to start from scratch.</p>\n                </div>\n\n                <h3>Layout Options</h3>\n                <p class=\"lead\">AdminLTE 2.0 provides a set of options to apply to your main layout. Each on of\n                    these classes can be added\n                    to the body tag to get the desired goal.</p>\n                <ul>\n                    <li><b>Fixed:</b> use the class <code>.fixed</code> to get a fixed header and sidebar.</li>\n                    <li><b>Collapsed Sidebar:</b> use the class <code>.sidebar-collapse</code> to have a collapsed\n                        sidebar upon loading.\n                    </li>\n                    <li><b>Boxed Layout:</b> use the class <code>.layout-boxed</code> to get a boxed layout that\n                        stretches only to 1250px.\n                    </li>\n                    <li><b>Top Navigation</b> use the class <code>.layout-top-nav</code> to remove the sidebar and\n                        have your links at the top navbar.\n                    </li>\n                </ul>\n                <p><b>Note:</b> you cannot use both layout-boxed and fixed at the same time. Anything else can be\n                    mixed together.</p>\n\n                <h3>Skins</h3>\n                <p class=\"lead\">Skins can be found in the dist/css/skins folder.\n                    Choose and the skin file that you want then add the appropriate\n                    class to the body tag to change the template's appearance. Here is the list of available\n                    skins:</p>\n                <div class=\"box box-solid\" style=\"max-width: 300px;\">\n                    <div class=\"box-body no-padding\">\n                        <table id=\"layout-skins-list\" class=\"table table-striped bring-up nth-2-center\">\n                            <thead>\n                            <tr>\n                                <th style=\"width: 210px;\">Skin Class</th>\n                                <th>Preview</th>\n                            </tr>\n                            </thead>\n                            <tbody>\n                            <tr>\n                                <td><code>skin-blue</code></td>\n                                <td><a href=\"#\" data-skin=\"skin-blue\" class=\"btn btn-primary btn-xs\"><i\n                                        class=\"fa fa-eye\"></i></a></td>\n                            </tr>\n                            <tr>\n                                <td><code>skin-blue-light</code></td>\n                                <td><a href=\"#\" data-skin=\"skin-blue-light\" class=\"btn btn-primary btn-xs\"><i\n                                        class=\"fa fa-eye\"></i></a></td>\n                            </tr>\n                            <tr>\n                                <td><code>skin-yellow</code></td>\n                                <td><a href=\"#\" data-skin=\"skin-yellow\" class=\"btn btn-warning btn-xs\"><i\n                                        class=\"fa fa-eye\"></i></a></td>\n                            </tr>\n                            <tr>\n                                <td><code>skin-yellow-light</code></td>\n                                <td><a href=\"#\" data-skin=\"skin-yellow-light\" class=\"btn btn-warning btn-xs\"><i\n                                        class=\"fa fa-eye\"></i></a></td>\n                            </tr>\n                            <tr>\n                                <td><code>skin-green</code></td>\n                                <td><a href=\"#\" data-skin=\"skin-green\" class=\"btn btn-success btn-xs\"><i\n                                        class=\"fa fa-eye\"></i></a></td>\n                            </tr>\n                            <tr>\n                                <td><code>skin-green-light</code></td>\n                                <td><a href=\"#\" data-skin=\"skin-green-light\" class=\"btn btn-success btn-xs\"><i\n                                        class=\"fa fa-eye\"></i></a></td>\n                            </tr>\n                            <tr>\n                                <td><code>skin-purple</code></td>\n                                <td><a href=\"#\" data-skin=\"skin-purple\" class=\"btn bg-purple btn-xs\"><i\n                                        class=\"fa fa-eye\"></i></a></td>\n                            </tr>\n                            <tr>\n                                <td><code>skin-purple-light</code></td>\n                                <td><a href=\"#\" data-skin=\"skin-purple-light\" class=\"btn bg-purple btn-xs\"><i\n                                        class=\"fa fa-eye\"></i></a></td>\n                            </tr>\n                            <tr>\n                                <td><code>skin-red</code></td>\n                                <td><a href=\"#\" data-skin=\"skin-red\" class=\"btn btn-danger btn-xs\"><i\n                                        class=\"fa fa-eye\"></i></a></td>\n                            </tr>\n                            <tr>\n                                <td><code>skin-red-light</code></td>\n                                <td><a href=\"#\" data-skin=\"skin-red-light\" class=\"btn btn-danger btn-xs\"><i\n                                        class=\"fa fa-eye\"></i></a></td>\n                            </tr>\n                            <tr>\n                                <td><code>skin-black</code></td>\n                                <td><a href=\"#\" data-skin=\"skin-black\" class=\"btn bg-black btn-xs\"><i\n                                        class=\"fa fa-eye\"></i></a></td>\n                            </tr>\n                            <tr>\n                                <td><code>skin-black-light</code></td>\n                                <td><a href=\"#\" data-skin=\"skin-black-light\" class=\"btn bg-black btn-xs\"><i\n                                        class=\"fa fa-eye\"></i></a></td>\n                            </tr>\n                            </tbody>\n                        </table>\n                    </div><!-- /.box-body -->\n                </div><!-- /.box -->\n            </section>\n\n\n            <!-- ============================================================= -->\n\n            <section id=\"adminlte-options\">\n                <h2 class=\"page-header\"><a href=\"#adminlte-options\">AdminLTE Javascript Options</a></h2>\n                <p class=\"lead\">Modifying the options of AdminLTE's app.js can be done using one of the following\n                    ways.</p>\n\n                <h3>Editing app.js</h3>\n                <p>Within the main Javascript file, modify the <code>$.AdminLTE.options</code> object to suit your\n                    use case.</p>\n\n                <h3>Defining AdminLTEOptions</h3>\n                <p>Alternatively, you can define a global options variable named <code>AdminLTEOptions</code> and\n                    initialize it before loading app.js.</p>\n                <p>Example</p>\n  <pre class=\"prettyprint\"><code class=\"html\">&LT;script>\n      var AdminLTEOptions = {\n      //Enable sidebar expand on hover effect for sidebar mini\n      //This option is forced to true if both the fixed layout and sidebar mini\n      //are used together\n      sidebarExpandOnHover: true,\n      //BoxRefresh Plugin\n      enableBoxRefresh: true,\n      //Bootstrap.js tooltip\n      enableBSToppltip: true\n      };\n      &LT;/script>\n      &LT;script src=\"dist/js/app.js\" type=\"text/javascript\">&LT;/script></code></pre>\n\n                <h3>Available AdminLTE Options</h3>\n  <pre class=\"prettyprint\"><code class=\"javascript\">{\n      //Add slimscroll to navbar menus\n      //This requires you to load the slimscroll plugin\n      //in every page before app.js\n      navbarMenuSlimscroll: true,\n      navbarMenuSlimscrollWidth: \"3px\", //The width of the scroll bar\n      navbarMenuHeight: \"200px\", //The height of the inner menu\n      //General animation speed for JS animated elements such as box collapse/expand and\n      //sidebar treeview slide up/down. This options accepts an integer as milliseconds,\n      //'fast', 'normal', or 'slow'\n      animationSpeed: 500,\n      //Sidebar push menu toggle button selector\n      sidebarToggleSelector: \"[data-toggle='offcanvas']\",\n      //Activate sidebar push menu\n      sidebarPushMenu: true,\n      //Activate sidebar slimscroll if the fixed layout is set (requires SlimScroll Plugin)\n      sidebarSlimScroll: true,\n      //Enable sidebar expand on hover effect for sidebar mini\n      //This option is forced to true if both the fixed layout and sidebar mini\n      //are used together\n      sidebarExpandOnHover: false,\n      //BoxRefresh Plugin\n      enableBoxRefresh: true,\n      //Bootstrap.js tooltip\n      enableBSToppltip: true,\n      BSTooltipSelector: \"[data-toggle='tooltip']\",\n      //Enable Fast Click. Fastclick.js creates a more\n      //native touch experience with touch devices. If you\n      //choose to enable the plugin, make sure you load the script\n      //before AdminLTE's app.js\n      enableFastclick: true,\n      //Control Sidebar Options\n      enableControlSidebar: true,\n      controlSidebarOptions: {\n      //Which button should trigger the open/close event\n      toggleBtnSelector: \"[data-toggle='control-sidebar']\",\n      //The sidebar selector\n      selector: \".control-sidebar\",\n      //Enable slide over content\n      slide: true\n      },\n      //Box Widget Plugin. Enable this plugin\n      //to allow boxes to be collapsed and/or removed\n      enableBoxWidget: true,\n      //Box Widget plugin options\n      boxWidgetOptions: {\n      boxWidgetIcons: {\n      //Collapse icon\n      collapse: 'fa-minus',\n      //Open icon\n      open: 'fa-plus',\n      //Remove icon\n      remove: 'fa-times'\n      },\n      boxWidgetSelectors: {\n      //Remove button selector\n      remove: '[data-widget=\"remove\"]',\n      //Collapse button selector\n      collapse: '[data-widget=\"collapse\"]'\n      }\n      },\n      //Direct Chat plugin options\n      directChat: {\n      //Enable direct chat by default\n      enable: true,\n      //The button to open and close the chat contacts pane\n      contactToggleSelector: '[data-widget=\"chat-pane-toggle\"]'\n      },\n      //Define the set of colors to use globally around the website\n      colors: {\n      lightBlue: \"#3c8dbc\",\n      red: \"#f56954\",\n      green: \"#00a65a\",\n      aqua: \"#00c0ef\",\n      yellow: \"#f39c12\",\n      blue: \"#0073b7\",\n      navy: \"#001F3F\",\n      teal: \"#39CCCC\",\n      olive: \"#3D9970\",\n      lime: \"#01FF70\",\n      orange: \"#FF851B\",\n      fuchsia: \"#F012BE\",\n      purple: \"#8E24AA\",\n      maroon: \"#D81B60\",\n      black: \"#222222\",\n      gray: \"#d2d6de\"\n      },\n      //The standard screen sizes that bootstrap uses.\n      //If you change these in the variables.less file, change\n      //them here too.\n      screenSizes: {\n      xs: 480,\n      sm: 768,\n      md: 992,\n      lg: 1200\n      }\n      }</code></pre>\n            </section>\n\n\n            <!-- ============================================================= -->\n\n            <section id=\"components\" data-spy=\"scroll\" data-target=\"#scrollspy-components\">\n                <h2 class=\"page-header\"><a href=\"#components\">Components</a></h2>\n                <div class=\"callout callout-info lead\">\n                    <h4>Reminder!</h4>\n                    <p>\n                        AdminLTE uses all of Bootstrap 3 components. It's a good start to review\n                        the <a href=\"http://getbootstrap.com\">Bootstrap documentation</a> to get an idea of the\n                        various components\n                        that this documentation <b>does not</b> cover.\n                    </p>\n                </div>\n                <div class=\"callout callout-danger lead\">\n                    <h4>Tip!</h4>\n                    <p>\n                        If you go through the example pages and would like to copy a component, right-click on\n                        the component and choose \"inspect element\" to get to the HTML quicker than scanning\n                        the HTML page.\n                    </p>\n                </div>\n                <h3 id=\"component-main-header\">Main Header</h3>\n                <p class=\"lead\">The main header contains the logo and navbar. Construction of the\n                    navbar differs slightly from Bootstrap because it has components that Bootstrap doesn't provide.\n                    The navbar can be constructed in two way. This an example for the normal navbar and next we will\n                    provide an example for\n                    the top nav layout.</p>\n                <div class=\"box box-solid\">\n                    <div class=\"box-body\" style=\"position: relative;\">\n                        <span class=\"eg\">Main Header Example</span>\n                        <header class=\"main-header\" style=\"position: relative;\">\n                            <!-- Logo -->\n                            <a href=\"index2.html\" class=\"logo\" style=\"position: relative;\"><b>Admin</b>LTE</a>\n                            <!-- Header Navbar: style can be found in header.less -->\n                            <nav class=\"navbar\" role=\"navigation\" style=\"border: 0;max-height: 50px;\">\n                                <!-- Sidebar toggle button-->\n                                <a href=\"#\" class=\"sidebar-toggle\" role=\"button\">\n                                    <span class=\"sr-only\">Toggle navigation</span>\n                                </a>\n                                <!-- Navbar Right Menu -->\n                                <div class=\"navbar-custom-menu\">\n                                    <ul class=\"nav navbar-nav\">\n                                        <!-- Messages: style can be found in dropdown.less-->\n                                        <li class=\"dropdown messages-menu\">\n                                            <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">\n                                                <i class=\"fa fa-envelope-o\"></i>\n                                                <span class=\"label label-success\">4</span>\n                                            </a>\n                                            <ul class=\"dropdown-menu\">\n                                                <li class=\"header\">You have 4 messages</li>\n                                                <li>\n                                                    <!-- inner menu: contains the actual data -->\n                                                    <ul class=\"menu\">\n                                                        <li><!-- start message -->\n                                                            <a href=\"#\">\n                                                                <div class=\"pull-left\">\n                                                                </div>\n                                                                <h4>\n                                                                    Support Team\n                                                                    <small><i class=\"fa fa-clock-o\"></i> 5 mins\n                                                                    </small>\n                                                                </h4>\n                                                                <p>Why not buy a new awesome theme?</p>\n                                                            </a>\n                                                        </li><!-- end message -->\n                                                    </ul>\n                                                </li>\n                                                <li class=\"footer\"><a href=\"#\">See All Messages</a></li>\n                                            </ul>\n                                        </li>\n                                        <!-- Notifications: style can be found in dropdown.less -->\n                                        <li class=\"dropdown notifications-menu\">\n                                            <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">\n                                                <i class=\"fa fa-bell-o\"></i>\n                                                <span class=\"label label-warning\">10</span>\n                                            </a>\n                                            <ul class=\"dropdown-menu\">\n                                                <li class=\"header\">You have 10 notifications</li>\n                                                <li>\n                                                    <!-- inner menu: contains the actual data -->\n                                                    <ul class=\"menu\">\n                                                        <li>\n                                                            <a href=\"#\">\n                                                                <i class=\"fa fa-users text-aqua\"></i> 5 new members\n                                                                joined today\n                                                            </a>\n                                                        </li>\n                                                    </ul>\n                                                </li>\n                                                <li class=\"footer\"><a href=\"#\">View all</a></li>\n                                            </ul>\n                                        </li>\n                                        <!-- Tasks: style can be found in dropdown.less -->\n                                        <li class=\"dropdown tasks-menu\">\n                                            <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">\n                                                <i class=\"fa fa-flag-o\"></i>\n                                                <span class=\"label label-danger\">9</span>\n                                            </a>\n                                            <ul class=\"dropdown-menu\">\n                                                <li class=\"header\">You have 9 tasks</li>\n                                                <li>\n                                                    <!-- inner menu: contains the actual data -->\n                                                    <ul class=\"menu\">\n                                                        <li><!-- Task item -->\n                                                            <a href=\"#\">\n                                                                <h3>\n                                                                    Design some buttons\n                                                                    <small class=\"pull-right\">20%</small>\n                                                                </h3>\n                                                                <div class=\"progress xs\">\n                                                                    <div class=\"progress-bar progress-bar-aqua\"\n                                                                         style=\"width: 20%\" role=\"progressbar\"\n                                                                         aria-valuenow=\"20\" aria-valuemin=\"0\"\n                                                                         aria-valuemax=\"100\">\n                                                                        <span class=\"sr-only\">20% Complete</span>\n                                                                    </div>\n                                                                </div>\n                                                            </a>\n                                                        </li><!-- end task item -->\n                                                    </ul>\n                                                </li>\n                                                <li class=\"footer\">\n                                                    <a href=\"#\">View all tasks</a>\n                                                </li>\n                                            </ul>\n                                        </li>\n                                        <!-- User Account: style can be found in dropdown.less -->\n                                        <li class=\"dropdown user user-menu\">\n                                            <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">\n                                                <span class=\"hidden-xs\">Alexander Pierce</span>\n                                            </a>\n                                            <ul class=\"dropdown-menu\">\n                                                <!-- User image -->\n                                                <li class=\"user-header\">\n                                                    <p>\n                                                        Alexander Pierce - Web Developer\n                                                        <small>Member since Nov. 2012</small>\n                                                    </p>\n                                                </li>\n                                                <!-- Menu Body -->\n                                                <li class=\"user-body\">\n                                                    <div class=\"col-xs-4 text-center\">\n                                                        <a href=\"#\">Followers</a>\n                                                    </div>\n                                                    <div class=\"col-xs-4 text-center\">\n                                                        <a href=\"#\">Sales</a>\n                                                    </div>\n                                                    <div class=\"col-xs-4 text-center\">\n                                                        <a href=\"#\">Friends</a>\n                                                    </div>\n                                                </li>\n                                                <!-- Menu Footer-->\n                                                <li class=\"user-footer\">\n                                                    <div class=\"pull-left\">\n                                                        <a href=\"#\" class=\"btn btn-default btn-flat\">Profile</a>\n                                                    </div>\n                                                    <div class=\"pull-right\">\n                                                        <a href=\"#\" class=\"btn btn-default btn-flat\">Sign out</a>\n                                                    </div>\n                                                </li>\n                                            </ul>\n                                        </li>\n                                    </ul>\n                                </div>\n                            </nav>\n                        </header>\n                    </div>\n                </div>\n  <pre class=\"prettyprint\">&LT;header class=\"main-header\">\n      &LT;a href=\"../../index2.html\" class=\"logo\">\n      &LT;!-- LOGO -->\n    AdminLTE\n      &LT;/a>\n      &LT;!-- Header Navbar: style can be found in header.less -->\n      &LT;nav class=\"navbar navbar-static-top\" role=\"navigation\">\n      &LT;!-- Navbar Right Menu -->\n      &LT;div class=\"navbar-custom-menu\">\n      &LT;ul class=\"nav navbar-nav\">\n      &LT;!-- Messages: style can be found in dropdown.less-->\n      &LT;li class=\"dropdown messages-menu\">\n      &LT;a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">\n      &LT;i class=\"fa fa-envelope-o\">&LT;/i>\n      &LT;span class=\"label label-success\">4&LT;/span>\n      &LT;/a>\n      &LT;ul class=\"dropdown-menu\">\n      &LT;li class=\"header\">You have 4 messages&LT;/li>\n      &LT;li>\n      &LT;!-- inner menu: contains the actual data -->\n      &LT;ul class=\"menu\">\n      &LT;li>&LT;!-- start message -->\n      &LT;a href=\"#\">\n      &LT;div class=\"pull-left\">\n      &LT;img src=\"dist/img/user2-160x160.jpg\" class=\"img-circle\" alt=\"User Image\">\n      &LT;/div>\n      &LT;h4>\n                      Sender Name\n      &LT;small>&LT;i class=\"fa fa-clock-o\">&LT;/i> 5 mins&LT;/small>\n      &LT;/h4>\n      &LT;p>Message Excerpt&LT;/p>\n      &LT;/a>\n      &LT;/li>&LT;!-- end message -->\n                ...\n      &LT;/ul>\n      &LT;/li>\n      &LT;li class=\"footer\">&LT;a href=\"#\">See All Messages&LT;/a>&LT;/li>\n      &LT;/ul>\n      &LT;/li>\n      &LT;!-- Notifications: style can be found in dropdown.less -->\n      &LT;li class=\"dropdown notifications-menu\">\n      &LT;a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">\n      &LT;i class=\"fa fa-bell-o\">&LT;/i>\n      &LT;span class=\"label label-warning\">10&LT;/span>\n      &LT;/a>\n      &LT;ul class=\"dropdown-menu\">\n      &LT;li class=\"header\">You have 10 notifications&LT;/li>\n      &LT;li>\n      &LT;!-- inner menu: contains the actual data -->\n      &LT;ul class=\"menu\">\n      &LT;li>\n      &LT;a href=\"#\">\n      &LT;i class=\"ion ion-ios-people info\">&LT;/i> Notification title\n      &LT;/a>\n      &LT;/li>\n                ...\n      &LT;/ul>\n      &LT;/li>\n      &LT;li class=\"footer\">&LT;a href=\"#\">View all&LT;/a>&LT;/li>\n      &LT;/ul>\n      &LT;/li>\n      &LT;!-- Tasks: style can be found in dropdown.less -->\n      &LT;li class=\"dropdown tasks-menu\">\n      &LT;a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">\n      &LT;i class=\"fa fa-flag-o\">&LT;/i>\n      &LT;span class=\"label label-danger\">9&LT;/span>\n      &LT;/a>\n      &LT;ul class=\"dropdown-menu\">\n      &LT;li class=\"header\">You have 9 tasks&LT;/li>\n      &LT;li>\n      &LT;!-- inner menu: contains the actual data -->\n      &LT;ul class=\"menu\">\n      &LT;li>&LT;!-- Task item -->\n      &LT;a href=\"#\">\n      &LT;h3>\n                      Design some buttons\n      &LT;small class=\"pull-right\">20%&LT;/small>\n      &LT;/h3>\n      &LT;div class=\"progress xs\">\n      &LT;div class=\"progress-bar progress-bar-aqua\" style=\"width: 20%\" role=\"progressbar\" aria-valuenow=\"20\" aria-valuemin=\"0\" aria-valuemax=\"100\">\n      &LT;span class=\"sr-only\">20% Complete&LT;/span>\n      &LT;/div>\n      &LT;/div>\n      &LT;/a>\n      &LT;/li>&LT;!-- end task item -->\n                ...\n      &LT;/ul>\n      &LT;/li>\n      &LT;li class=\"footer\">\n      &LT;a href=\"#\">View all tasks&LT;/a>\n      &LT;/li>\n      &LT;/ul>\n      &LT;/li>\n      &LT;!-- User Account: style can be found in dropdown.less -->\n      &LT;li class=\"dropdown user user-menu\">\n      &LT;a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">\n      &LT;img src=\"dist/img/user2-160x160.jpg\" class=\"user-image\" alt=\"User Image\">\n      &LT;span class=\"hidden-xs\">Alexander Pierce&LT;/span>\n      &LT;/a>\n      &LT;ul class=\"dropdown-menu\">\n      &LT;!-- User image -->\n      &LT;li class=\"user-header\">\n      &LT;img src=\"dist/img/user2-160x160.jpg\" class=\"img-circle\" alt=\"User Image\">\n      &LT;p>\n                Alexander Pierce - Web Developer\n      &LT;small>Member since Nov. 2012&LT;/small>\n      &LT;/p>\n      &LT;/li>\n      &LT;!-- Menu Body -->\n      &LT;li class=\"user-body\">\n      &LT;div class=\"col-xs-4 text-center\">\n      &LT;a href=\"#\">Followers&LT;/a>\n      &LT;/div>\n      &LT;div class=\"col-xs-4 text-center\">\n      &LT;a href=\"#\">Sales&LT;/a>\n      &LT;/div>\n      &LT;div class=\"col-xs-4 text-center\">\n      &LT;a href=\"#\">Friends&LT;/a>\n      &LT;/div>\n      &LT;/li>\n      &LT;!-- Menu Footer-->\n      &LT;li class=\"user-footer\">\n      &LT;div class=\"pull-left\">\n      &LT;a href=\"#\" class=\"btn btn-default btn-flat\">Profile&LT;/a>\n      &LT;/div>\n      &LT;div class=\"pull-right\">\n      &LT;a href=\"#\" class=\"btn btn-default btn-flat\">Sign out&LT;/a>\n      &LT;/div>\n      &LT;/li>\n      &LT;/ul>\n      &LT;/li>\n      &LT;/ul>\n      &LT;/div>\n      &LT;/nav>\n      &LT;/header></pre>\n                <h4>Top Nav Layout. Main Header Example.</h4>\n                <div class=\"callout callout-info lead\">\n                    <h4>Reminder!</h4>\n                    <p>To use this main header instead of the regular one, you must add the\n                        <code>layout-top-nav</code> class to the body tag.</p>\n                </div>\n                <div class=\"box box-solid\">\n                    <div class=\"box-body layout-top-nav\">\n                        <span class=\"eg\">Top Nav Example</span>\n                        <header class=\"main-header\">\n                            <nav class=\"navbar navbar-static-top\">\n                                <div class=\"container-fluid\">\n                                    <div class=\"navbar-header\">\n                                        <a href=\"../../index2.html\" class=\"navbar-brand\"><b>Admin</b>LTE</a>\n                                        <button type=\"button\" class=\"navbar-toggle collapsed\" data-toggle=\"collapse\"\n                                                data-target=\"#navbar-collapse\">\n                                            <i class=\"fa fa-bars\"></i>\n                                        </button>\n                                    </div>\n\n                                    <!-- Collect the nav links, forms, and other content for toggling -->\n                                    <div class=\"collapse navbar-collapse\" id=\"navbar-collapse\">\n                                        <ul class=\"nav navbar-nav\">\n                                            <li class=\"active\"><a href=\"#\">Link <span\n                                                    class=\"sr-only\">(current)</span></a></li>\n                                            <li><a href=\"#\">Link</a></li>\n                                            <li class=\"dropdown\">\n                                                <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">Dropdown\n                                                    <span class=\"caret\"></span></a>\n                                                <ul class=\"dropdown-menu\" role=\"menu\">\n                                                    <li><a href=\"#\">Action</a></li>\n                                                    <li><a href=\"#\">Another action</a></li>\n                                                    <li><a href=\"#\">Something else here</a></li>\n                                                    <li class=\"divider\"></li>\n                                                    <li><a href=\"#\">Separated link</a></li>\n                                                    <li class=\"divider\"></li>\n                                                    <li><a href=\"#\">One more separated link</a></li>\n                                                </ul>\n                                            </li>\n                                        </ul>\n                                        <form class=\"navbar-form navbar-left\" role=\"search\">\n                                            <div class=\"form-group\">\n                                                <input type=\"text\" class=\"form-control\" id=\"navbar-search-input\"\n                                                       placeholder=\"Search\">\n                                            </div>\n                                        </form>\n                                        <ul class=\"nav navbar-nav navbar-right\">\n                                            <li><a href=\"#\">Link</a></li>\n                                            <li class=\"dropdown\">\n                                                <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">Dropdown\n                                                    <span class=\"caret\"></span></a>\n                                                <ul class=\"dropdown-menu\" role=\"menu\">\n                                                    <li><a href=\"#\">Action</a></li>\n                                                    <li><a href=\"#\">Another action</a></li>\n                                                    <li><a href=\"#\">Something else here</a></li>\n                                                    <li class=\"divider\"></li>\n                                                    <li><a href=\"#\">Separated link</a></li>\n                                                </ul>\n                                            </li>\n                                        </ul>\n                                    </div><!-- /.navbar-collapse -->\n                                </div><!-- /.container-fluid -->\n                            </nav>\n                        </header>\n                    </div>\n                </div>\n  <pre class=\"prettyprint\">\n&LT;header class=\"main-header\">\n      &LT;nav class=\"navbar navbar-static-top\">\n      &LT;div class=\"container-fluid\">\n      &LT;div class=\"navbar-header\">\n      &LT;a href=\"../../index2.html\" class=\"navbar-brand\">&LT;b>Admin&LT;/b>LTE&LT;/a>\n      &LT;button type=\"button\" class=\"navbar-toggle collapsed\" data-toggle=\"collapse\" data-target=\"#navbar-collapse\">\n      &LT;i class=\"fa fa-bars\">&LT;/i>\n      &LT;/button>\n      &LT;/div>\n\n      &LT;!-- Collect the nav links, forms, and other content for toggling -->\n      &LT;div class=\"collapse navbar-collapse\" id=\"navbar-collapse\">\n      &LT;ul class=\"nav navbar-nav\">\n      &LT;li class=\"active\">&LT;a href=\"#\">Link &LT;span class=\"sr-only\">(current)&LT;/span>&LT;/a>&LT;/li>\n      &LT;li>&LT;a href=\"#\">Link&LT;/a>&LT;/li>\n      &LT;li class=\"dropdown\">\n      &LT;a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">Dropdown &LT;span class=\"caret\">&LT;/span>&LT;/a>\n      &LT;ul class=\"dropdown-menu\" role=\"menu\">\n      &LT;li>&LT;a href=\"#\">Action&LT;/a>&LT;/li>\n      &LT;li>&LT;a href=\"#\">Another action&LT;/a>&LT;/li>\n      &LT;li>&LT;a href=\"#\">Something else here&LT;/a>&LT;/li>\n      &LT;li class=\"divider\">&LT;/li>\n      &LT;li>&LT;a href=\"#\">Separated link&LT;/a>&LT;/li>\n      &LT;li class=\"divider\">&LT;/li>\n      &LT;li>&LT;a href=\"#\">One more separated link&LT;/a>&LT;/li>\n      &LT;/ul>\n      &LT;/li>\n      &LT;/ul>\n      &LT;form class=\"navbar-form navbar-left\" role=\"search\">\n      &LT;div class=\"form-group\">\n      &LT;input type=\"text\" class=\"form-control\" id=\"navbar-search-input\" placeholder=\"Search\">\n      &LT;/div>\n      &LT;/form>\n      &LT;ul class=\"nav navbar-nav navbar-right\">\n      &LT;li>&LT;a href=\"#\">Link&LT;/a>&LT;/li>\n      &LT;li class=\"dropdown\">\n      &LT;a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">Dropdown &LT;span class=\"caret\">&LT;/span>&LT;/a>\n      &LT;ul class=\"dropdown-menu\" role=\"menu\">\n      &LT;li>&LT;a href=\"#\">Action&LT;/a>&LT;/li>\n      &LT;li>&LT;a href=\"#\">Another action&LT;/a>&LT;/li>\n      &LT;li>&LT;a href=\"#\">Something else here&LT;/a>&LT;/li>\n      &LT;li class=\"divider\">&LT;/li>\n      &LT;li>&LT;a href=\"#\">Separated link&LT;/a>&LT;/li>\n      &LT;/ul>\n      &LT;/li>\n      &LT;/ul>\n      &LT;/div>&LT;!-- /.navbar-collapse -->\n      &LT;/div>&LT;!-- /.container-fluid -->\n      &LT;/nav>\n      &LT;/header></pre>\n\n                <!-- ===================================================================== -->\n\n                <h3 id=\"component-sidebar\">Sidebar</h3>\n                <p class=\"lead\">\n                    The sidebar used in this page to the left provides an example of what your sidebar should like.\n                    Construction of a sidebar:\n                </p>\n  <pre class=\"prettyprint\">\n&LT;div class=\"main-sidebar\">\n      &LT;!-- Inner sidebar -->\n      &LT;div class=\"sidebar\">\n      &LT;!-- user panel (Optional) -->\n      &LT;div class=\"user-panel\">\n      &LT;div class=\"pull-left image\">\n      &LT;img src=\"dist/img/user2-160x160.jpg\" class=\"img-circle\" alt=\"User Image\">\n      &LT;/div>\n      &LT;div class=\"pull-left info\">\n      &LT;p>User Name&LT;/p>\n\n      &LT;a href=\"#\">&LT;i class=\"fa fa-circle text-success\">&LT;/i> Online&LT;/a>\n      &LT;/div>\n      &LT;/div>&LT;!-- /.user-panel -->\n\n      &LT;!-- Search Form (Optional) -->\n      &LT;form action=\"#\" method=\"get\" class=\"sidebar-form\">\n      &LT;div class=\"input-group\">\n      &LT;input type=\"text\" name=\"q\" class=\"form-control\" placeholder=\"Search...\">\n      &LT;span class=\"input-group-btn\">\n      &LT;button type=\"submit\" name=\"search\" id=\"search-btn\" class=\"btn btn-flat\">&LT;i class=\"fa fa-search\">&LT;/i>&LT;/button>\n      &LT;/span>\n      &LT;/div>\n      &LT;/form>&LT;!-- /.sidebar-form -->\n\n      &LT;!-- Sidebar Menu -->\n      &LT;ul class=\"sidebar-menu\">\n      &LT;li class=\"header\">HEADER&LT;/li>\n      &LT;!-- Optionally, you can add icons to the links -->\n      &LT;li class=\"active\">&LT;a href=\"#\">&LT;span>Link&LT;/span>&LT;/a>&LT;&LT;/li>\n      &LT;li>&LT;a href=\"#\">&LT;span>Another Link&LT;/span>&LT;/a>&LT;/li>\n      &LT;li class=\"treeview\">\n      &LT;a href=\"#\">&LT;span>Multilevel&LT;/span> &LT;i class=\"fa fa-angle-left pull-right\">&LT;/i>&LT;/a>\n      &LT;ul class=\"treeview-menu\">\n      &LT;li>&LT;a href=\"#\">Link in level 2&LT;/a>&LT;/li>\n      &LT;li>&LT;a href=\"#\">Link in level 2&LT;/a>&LT;/li>\n      &LT;/ul>\n      &LT;/li>\n      &LT;/ul>&LT;!-- /.sidebar-menu -->\n\n      &LT;/div>&LT;!-- /.sidebar -->\n      &LT;/div>&LT;!-- /.main-sidebar --></pre>\n\n                <h3 id=\"component-control-sidebar\">Control Sidebar</h3>\n                <p class=\"lead\">Control sidebar is the right side bar. It can be used for many purposes and is\n                    extremely easy\n                    to create. The sidebar ships with two different show/hide styles. The first allows the sidebar\n                    to\n                    slide over the content. The second pushes the content to make space for the sidebar. Either of\n                    these methods can be set through the <a href=\"#adminlte-options\">Javascript options</a>.</p>\n                <p class=\"lead\">The following code should be placed within the <code>.wrapper</code> div. I prefer\n                    to place it right after the footer.</p>\n                <p class=\"lead\">Dark Sidebar Markup</p>\n<pre class=\"prettyprint\"><code class=\"lang-html\">&LT;!-- The Right Sidebar -->\n    &LT;aside class=\"control-sidebar control-sidebar-dark\">\n    &LT;!-- Content of the sidebar goes here -->\n    &LT;/aside>\n    &LT;!-- The sidebar's background -->\n    &LT;!-- This div must placed right after the sidebar for it to work-->\n    &LT;div class=\"control-sidebar-bg\">&LT;/div></code></pre>\n\n                <p class=\"lead\">Light Sidebar Markup</p>\n<pre class=\"prettyprint\"><code class=\"lang-html\">&LT;!-- The Right Sidebar -->\n    &LT;aside class=\"control-sidebar control-sidebar-light\">\n    &LT;!-- Content of the sidebar goes here -->\n    &LT;/aside>\n    &LT;!-- The sidebar's background -->\n    &LT;!-- This div must placed right after the sidebar for it to work-->\n    &LT;div class=\"control-sidebar-bg\">&LT;/div></code></pre>\n\n                <p class=\"lead\">Once you create the sidebar, you will need a toggle button to open/close it.\n                    By adding the attribute <code>data-toggle=\"control-sidebar\"</code> to any button, it will\n                    automatically act as the toggle button.</p>\n\n                <p class=\"lead\">Toggle Button Example</p>\n                <button class=\"btn btn-primary\" data-toggle=\"control-sidebar\">Toggle Right Sidebar</button>\n                <br><br>\n\n                <p class=\"lead\">Sidebar Toggle Markup</p>\n                    <pre class=\"prettyprint\"><code class=\"lang-html\">&LT;button class=\"btn btn-default\"\n                        data-toggle=\"control-sidebar\">Toggle Right Sidebar&LT;/button></code></pre>\n                <!-- ===================================================================== -->\n\n                <h3 id=\"component-info-box\">Info Box</h3>\n                <p class=\"lead\">Info boxes are used to display statistical snippets. There are two types of info\n                    boxes.</p>\n                <h4>First Type of Info Boxes</h4>\n                <!-- Info Boxes -->\n                <div class=\"row\">\n                    <div class=\"col-md-3 col-sm-6 col-xs-12\">\n                        <div class=\"info-box\">\n                            <span class=\"info-box-icon bg-aqua\"><i class=\"fa fa-envelope-o\"></i></span>\n                            <div class=\"info-box-content\">\n                                <span class=\"info-box-text\">Messages</span>\n                                <span class=\"info-box-number\">1,410</span>\n                            </div><!-- /.info-box-content -->\n                        </div><!-- /.info-box -->\n                    </div><!-- /.col -->\n                    <div class=\"col-md-3 col-sm-6 col-xs-12\">\n                        <div class=\"info-box\">\n                            <span class=\"info-box-icon bg-green\"><i class=\"fa fa-flag-o\"></i></span>\n                            <div class=\"info-box-content\">\n                                <span class=\"info-box-text\">Bookmarks</span>\n                                <span class=\"info-box-number\">410</span>\n                            </div><!-- /.info-box-content -->\n                        </div><!-- /.info-box -->\n                    </div><!-- /.col -->\n                    <div class=\"col-md-3 col-sm-6 col-xs-12\">\n                        <div class=\"info-box\">\n                            <span class=\"info-box-icon bg-yellow\"><i class=\"fa fa-files-o\"></i></span>\n                            <div class=\"info-box-content\">\n                                <span class=\"info-box-text\">Uploads</span>\n                                <span class=\"info-box-number\">13,648</span>\n                            </div><!-- /.info-box-content -->\n                        </div><!-- /.info-box -->\n                    </div><!-- /.col -->\n                    <div class=\"col-md-3 col-sm-6 col-xs-12\">\n                        <div class=\"info-box\">\n                            <span class=\"info-box-icon bg-red\"><i class=\"fa fa-star-o\"></i></span>\n                            <div class=\"info-box-content\">\n                                <span class=\"info-box-text\">Likes</span>\n                                <span class=\"info-box-number\">93,139</span>\n                            </div><!-- /.info-box-content -->\n                        </div><!-- /.info-box -->\n                    </div><!-- /.col -->\n                </div><!-- /.row -->\n                <p class=\"lead\">Markup</p>\n  <pre class=\"prettyprint\"><code class=\"lang-html\">&LT;div class=\"info-box\">\n      &LT;!-- Apply any bg-* class to to the icon to color it -->\n      &LT;span class=\"info-box-icon bg-red\">&LT;i class=\"fa fa-star-o\">&LT;/i>&LT;/span>\n      &LT;div class=\"info-box-content\">\n      &LT;span class=\"info-box-text\">Likes&LT;/span>\n      &LT;span class=\"info-box-number\">93,139&LT;/span>\n      &LT;/div>&LT;!-- /.info-box-content -->\n      &LT;/div>&LT;!-- /.info-box --></code></pre>\n\n                <h4>Second Type of Info Boxes</h4>\n                <div class=\"row\">\n                    <div class=\"col-md-3 col-sm-6 col-xs-12\">\n                        <div class=\"info-box bg-aqua\">\n                            <span class=\"info-box-icon\"><i class=\"fa fa-bookmark-o\"></i></span>\n                            <div class=\"info-box-content\">\n                                <span class=\"info-box-text\">Bookmarks</span>\n                                <span class=\"info-box-number\">41,410</span>\n                                <div class=\"progress\">\n                                    <div class=\"progress-bar\" style=\"width: 70%\"></div>\n                                </div>\n          <span class=\"progress-description\">\n            70% Increase in 30 Days\n          </span>\n                            </div><!-- /.info-box-content -->\n                        </div><!-- /.info-box -->\n                    </div><!-- /.col -->\n                    <div class=\"col-md-3 col-sm-6 col-xs-12\">\n                        <div class=\"info-box bg-green\">\n                            <span class=\"info-box-icon\"><i class=\"fa fa-thumbs-o-up\"></i></span>\n                            <div class=\"info-box-content\">\n                                <span class=\"info-box-text\">Likes</span>\n                                <span class=\"info-box-number\">41,410</span>\n                                <div class=\"progress\">\n                                    <div class=\"progress-bar\" style=\"width: 70%\"></div>\n                                </div>\n          <span class=\"progress-description\">\n            70% Increase in 30 Days\n          </span>\n                            </div><!-- /.info-box-content -->\n                        </div><!-- /.info-box -->\n                    </div><!-- /.col -->\n                    <div class=\"col-md-3 col-sm-6 col-xs-12\">\n                        <div class=\"info-box bg-yellow\">\n                            <span class=\"info-box-icon\"><i class=\"fa fa-calendar\"></i></span>\n                            <div class=\"info-box-content\">\n                                <span class=\"info-box-text\">Events</span>\n                                <span class=\"info-box-number\">41,410</span>\n                                <div class=\"progress\">\n                                    <div class=\"progress-bar\" style=\"width: 70%\"></div>\n                                </div>\n          <span class=\"progress-description\">\n            70% Increase in 30 Days\n          </span>\n                            </div><!-- /.info-box-content -->\n                        </div><!-- /.info-box -->\n                    </div><!-- /.col -->\n                    <div class=\"col-md-3 col-sm-6 col-xs-12\">\n                        <div class=\"info-box bg-red\">\n                            <span class=\"info-box-icon\"><i class=\"fa fa-comments-o\"></i></span>\n                            <div class=\"info-box-content\">\n                                <span class=\"info-box-text\">Comments</span>\n                                <span class=\"info-box-number\">41,410</span>\n                                <div class=\"progress\">\n                                    <div class=\"progress-bar\" style=\"width: 70%\"></div>\n                                </div>\n          <span class=\"progress-description\">\n            70% Increase in 30 Days\n          </span>\n                            </div><!-- /.info-box-content -->\n                        </div><!-- /.info-box -->\n                    </div><!-- /.col -->\n                </div><!-- /.row -->\n                <p class=\"lead\">Markup</p>\n  <pre class=\"prettyprint\"><code class=\"lang-html\">&LT;!-- Apply any bg-* class to to the info-box to color it -->\n      &LT;div class=\"info-box bg-red\">\n      &LT;span class=\"info-box-icon\">&LT;i class=\"fa fa-comments-o\">&LT;/i>&LT;/span>\n      &LT;div class=\"info-box-content\">\n      &LT;span class=\"info-box-text\">Likes&LT;/span>\n      &LT;span class=\"info-box-number\">41,410&LT;/span>\n      &LT;!-- The progress section is optional -->\n      &LT;div class=\"progress\">\n      &LT;div class=\"progress-bar\" style=\"width: 70%\">&LT;/div>\n      &LT;/div>\n      &LT;span class=\"progress-description\">\n      70% Increase in 30 Days\n      &LT;/span>\n      &LT;/div>&LT;!-- /.info-box-content -->\n      &LT;/div>&LT;!-- /.info-box --></code></pre>\n                <p class=\"lead\">The only thing you need to change to alternate between these style is change the\n                    placement of the bg-* class. For the\n                    first style apply any bg-* class to the icon itself. For the other style, apply the bg-* class\n                    to the info-box div.</p>\n                <!-- ===================================================================== -->\n\n                <h3 id=\"component-box\">Box</h3>\n                <p class=\"lead\">The box component is the most widely used component through out this template. You\n                    can\n                    use it for anything from displaying charts to just blocks of text. It comes in many different\n                    styles that we will explore below.</p>\n                <h4>Default Box Markup</h4>\n                <div class=\"box\">\n                    <div class=\"box-header with-border\">\n                        <h3 class=\"box-title\">Default Box Example</h3>\n                        <div class=\"box-tools pull-right\">\n                            <!-- Buttons, labels, and many other things can be placed here! -->\n                            <!-- Here is a label for example -->\n                            <span class=\"label label-primary\">Label</span>\n                        </div><!-- /.box-tools -->\n                    </div><!-- /.box-header -->\n                    <div class=\"box-body\">\n                        The body of the box\n                    </div><!-- /.box-body -->\n                    <div class=\"box-footer\">\n                        The footer of the box\n                    </div><!-- box-footer -->\n                </div><!-- /.box -->\n  <pre class=\"prettyprint\">&LT;div class=\"box\">\n      &LT;div class=\"box-header with-border\">\n      &LT;h3 class=\"box-title\">Default Box Example&LT;/h3>\n      &LT;div class=\"box-tools pull-right\">\n      &LT;!-- Buttons, labels, and many other things can be placed here! -->\n      &LT;!-- Here is a label for example -->\n      &LT;span class=\"label label-primary\">Label&LT;/span>\n      &LT;/div>&LT;!-- /.box-tools -->\n      &LT;/div>&LT;!-- /.box-header -->\n      &LT;div class=\"box-body\">\n    The body of the box\n      &LT;/div>&LT;!-- /.box-body -->\n      &LT;div class=\"box-footer\">\n    The footer of the box\n      &LT;/div>&LT;!-- box-footer -->\n      &LT;/div>&LT;!-- /.box --></pre>\n                <h4>Box Variants</h4>\n                <p class=\"lead\">You can change the style of the box by adding any of the contextual classes.</p>\n                <div class=\"row\">\n                    <div class=\"col-md-4\">\n                        <div class=\"box\">\n                            <div class=\"box-header with-border\">\n                                <h3 class=\"box-title\">Default Box Example</h3>\n                            </div><!-- /.box-header -->\n                            <div class=\"box-body\">\n                                The body of the box\n                            </div><!-- /.box-body -->\n                        </div><!-- /.box -->\n                    </div>\n                    <div class=\"col-md-4\">\n                        <div class=\"box box-primary\">\n                            <div class=\"box-header with-border\">\n                                <h3 class=\"box-title\">Primary Box Example</h3>\n                            </div><!-- /.box-header -->\n                            <div class=\"box-body\">\n                                The body of the box\n                            </div><!-- /.box-body -->\n                        </div><!-- /.box -->\n                    </div>\n                    <div class=\"col-md-4\">\n                        <div class=\"box box-info\">\n                            <div class=\"box-header with-border\">\n                                <h3 class=\"box-title\">Info Box Example</h3>\n                            </div><!-- /.box-header -->\n                            <div class=\"box-body\">\n                                The body of the box\n                            </div><!-- /.box-body -->\n                        </div><!-- /.box -->\n                    </div>\n                    <div class=\"clearfix\"></div>\n                    <div class=\"col-md-4\">\n                        <div class=\"box box-warning\">\n                            <div class=\"box-header with-border\">\n                                <h3 class=\"box-title\">Warning Box Example</h3>\n                            </div><!-- /.box-header -->\n                            <div class=\"box-body\">\n                                The body of the box\n                            </div><!-- /.box-body -->\n                        </div><!-- /.box -->\n                    </div>\n                    <div class=\"col-md-4\">\n                        <div class=\"box box-success\">\n                            <div class=\"box-header with-border\">\n                                <h3 class=\"box-title\">Success Box Example</h3>\n                            </div><!-- /.box-header -->\n                            <div class=\"box-body\">\n                                The body of the box\n                            </div><!-- /.box-body -->\n                        </div><!-- /.box -->\n                    </div>\n                    <div class=\"col-md-4\">\n                        <div class=\"box box-danger\">\n                            <div class=\"box-header with-border\">\n                                <h3 class=\"box-title\">Danger Box Example</h3>\n                            </div><!-- /.box-header -->\n                            <div class=\"box-body\">\n                                The body of the box\n                            </div><!-- /.box-body -->\n                        </div><!-- /.box -->\n                    </div>\n                </div><!-- /.row -->\n  <pre class=\"prettyprint\">&LT;div class=\"box box-default\">...&LT;/div>\n      &LT;div class=\"box box-primary\">...&LT;/div>\n      &LT;div class=\"box box-info\">...&LT;/div>\n      &LT;div class=\"box box-warning\">...&LT;/div>\n      &LT;div class=\"box box-success\">...&LT;/div>\n      &LT;div class=\"box box-danger\">...&LT;/div></pre>\n\n                <h4>Solid Box</h4>\n                <p class=\"lead\">Solid Boxes are alternative ways to display boxes.\n                    They can be created by simply adding the box-solid class to the box component.\n                    You may also use contextual classes with you solid boxes.</p>\n                <div class=\"row\">\n                    <div class=\"col-md-4\">\n                        <div class=\"box box-solid box-default\">\n                            <div class=\"box-header\">\n                                <h3 class=\"box-title\">Default Solid Box Example</h3>\n                            </div><!-- /.box-header -->\n                            <div class=\"box-body\">\n                                The body of the box\n                            </div><!-- /.box-body -->\n                        </div><!-- /.box -->\n                    </div>\n                    <div class=\"col-md-4\">\n                        <div class=\"box box-solid box-primary\">\n                            <div class=\"box-header\">\n                                <h3 class=\"box-title\">Primary Solid Box Example</h3>\n                            </div><!-- /.box-header -->\n                            <div class=\"box-body\">\n                                The body of the box\n                            </div><!-- /.box-body -->\n                        </div><!-- /.box -->\n                    </div>\n                    <div class=\"col-md-4\">\n                        <div class=\"box box-solid box-info\">\n                            <div class=\"box-header\">\n                                <h3 class=\"box-title\">Info Solid Box Example</h3>\n                            </div><!-- /.box-header -->\n                            <div class=\"box-body\">\n                                The body of the box\n                            </div><!-- /.box-body -->\n                        </div><!-- /.box -->\n                    </div>\n                    <div class=\"clearfix\"></div>\n                    <div class=\"col-md-4\">\n                        <div class=\"box box-solid box-warning\">\n                            <div class=\"box-header\">\n                                <h3 class=\"box-title\">Warning Solid Box Example</h3>\n                            </div><!-- /.box-header -->\n                            <div class=\"box-body\">\n                                The body of the box\n                            </div><!-- /.box-body -->\n                        </div><!-- /.box -->\n                    </div>\n                    <div class=\"col-md-4\">\n                        <div class=\"box box-solid box-success\">\n                            <div class=\"box-header\">\n                                <h3 class=\"box-title\">Success Solid Box Example</h3>\n                            </div><!-- /.box-header -->\n                            <div class=\"box-body\">\n                                The body of the box\n                            </div><!-- /.box-body -->\n                        </div><!-- /.box -->\n                    </div>\n                    <div class=\"col-md-4\">\n                        <div class=\"box box-solid box-danger\">\n                            <div class=\"box-header\">\n                                <h3 class=\"box-title\">Danger Solid Box Example</h3>\n                            </div><!-- /.box-header -->\n                            <div class=\"box-body\">\n                                The body of the box\n                            </div><!-- /.box-body -->\n                        </div><!-- /.box -->\n                    </div>\n                </div><!-- /.row -->\n  <pre class=\"prettyprint\">\n&LT;div class=\"box box-solid box-default\">...&LT;/div>\n      &LT;div class=\"box box-solid box-primary\">...&LT;/div>\n      &LT;div class=\"box box-solid box-info\">...&LT;/div>\n      &LT;div class=\"box box-solid box-warning\">...&LT;/div>\n      &LT;div class=\"box box-solid box-success\">...&LT;/div>\n      &LT;div class=\"box box-solid box-danger\">...&LT;/div></pre>\n                <h4>Box Tools</h4>\n                <p class=\"lead\">Boxes can contain tools to deploy a specific event or provide simple info. The\n                    following examples makes use\n                    of multiple AdminLTE components within the header of the box.</p>\n                <p>AdminLTE data-widget attribute provides boxes with the ability to collapse or be removed. The\n                    buttons\n                    are placed in the box-tools which is placed in the box-header.</p>\n  <pre class=\"prettyprint\">\n&LT;!-- This will cause the box to be removed when clicked -->\n      &LT;button class=\"btn btn-box-tool\" data-widget=\"remove\" data-toggle=\"tooltip\" title=\"Remove\">&LT;i class=\"fa fa-times\">&LT;/i>&LT;/button>\n      &LT;!-- This will cause the box to collapse when clicked -->\n      &LT;button class=\"btn btn-box-tool\" data-widget=\"collapse\" data-toggle=\"tooltip\" title=\"Collapse\">&LT;i class=\"fa fa-minus\">&LT;/i>&LT;/button></pre>\n                <div class=\"row\">\n                    <div class=\"col-md-4\">\n                        <div class=\"box box-default\">\n                            <div class=\"box-header with-border\">\n                                <h3 class=\"box-title\">Collapsable</h3>\n                                <div class=\"box-tools pull-right\">\n                                    <button class=\"btn btn-box-tool\" data-widget=\"collapse\"><i\n                                            class=\"fa fa-minus\"></i></button>\n                                </div><!-- /.box-tools -->\n                            </div><!-- /.box-header -->\n                            <div class=\"box-body\">\n                                The body of the box\n                            </div><!-- /.box-body -->\n                        </div><!-- /.box -->\n      <pre class=\"prettyprint\">\n&LT;div class=\"box box-default\">\n          &LT;div class=\"box-header with-border\">\n          &LT;h3 class=\"box-title\">Collapsable&LT;/h3>\n          &LT;div class=\"box-tools pull-right\">\n          &LT;button class=\"btn btn-box-tool\" data-widget=\"collapse\">&LT;i class=\"fa fa-minus\">&LT;/i>&LT;/button>\n          &LT;/div>&LT;!-- /.box-tools -->\n          &LT;/div>&LT;!-- /.box-header -->\n          &LT;div class=\"box-body\">\n    The body of the box\n          &LT;/div>&LT;!-- /.box-body -->\n          &LT;/div>&LT;!-- /.box --></pre>\n                    </div>\n                    <div class=\"col-md-4\">\n                        <div class=\"box box-default\">\n                            <div class=\"box-header with-border\">\n                                <h3 class=\"box-title\">Removable</h3>\n                                <div class=\"box-tools pull-right\">\n                                    <button class=\"btn btn-box-tool\" data-widget=\"remove\"><i\n                                            class=\"fa fa-times\"></i></button>\n                                </div><!-- /.box-tools -->\n                            </div><!-- /.box-header -->\n                            <div class=\"box-body\">\n                                The body of the box\n                            </div><!-- /.box-body -->\n                        </div><!-- /.box -->\n      <pre class=\"prettyprint\">\n&LT;div class=\"box box-default\">\n          &LT;div class=\"box-header with-border\">\n          &LT;h3 class=\"box-title\">Removable&LT;/h3>\n          &LT;div class=\"box-tools pull-right\">\n          &LT;button class=\"btn btn-box-tool\" data-widget=\"remove\">&LT;i class=\"fa fa-times\">&LT;/i>&LT;/button>\n          &LT;/div>&LT;!-- /.box-tools -->\n          &LT;/div>&LT;!-- /.box-header -->\n          &LT;div class=\"box-body\">\n    The body of the box\n          &LT;/div>&LT;!-- /.box-body -->\n          &LT;/div>&LT;!-- /.box --></pre>\n                    </div>\n                    <div class=\"col-md-4\">\n                        <div class=\"box box-default collapsed-box\">\n                            <div class=\"box-header with-border\">\n                                <h3 class=\"box-title\">Expandable</h3>\n                                <div class=\"box-tools pull-right\">\n                                    <button class=\"btn btn-box-tool\" data-widget=\"collapse\"><i\n                                            class=\"fa fa-plus\"></i></button>\n                                </div><!-- /.box-tools -->\n                            </div><!-- /.box-header -->\n                            <div class=\"box-body\">\n                                The body of the box\n                            </div><!-- /.box-body -->\n                        </div><!-- /.box -->\n      <pre class=\"prettyprint\">\n&LT;div class=\"box box-default collapsed-box\">\n          &LT;div class=\"box-header with-border\">\n          &LT;h3 class=\"box-title\">Expandable&LT;/h3>\n          &LT;div class=\"box-tools pull-right\">\n          &LT;button class=\"btn btn-box-tool\" data-widget=\"collapse\">&LT;i class=\"fa fa-plus\">&LT;/i>&LT;/button>\n          &LT;/div>&LT;!-- /.box-tools -->\n          &LT;/div>&LT;!-- /.box-header -->\n          &LT;div class=\"box-body\">\n    The body of the box\n          &LT;/div>&LT;!-- /.box-body -->\n          &LT;/div>&LT;!-- /.box --></pre>\n                    </div>\n                </div><!-- /.row -->\n                <p>We can also add labels, badges, pagination, tooltips, inputs and many more in the box tools. A\n                    few examples:</p>\n                <div class=\"row\">\n                    <div class=\"col-md-4\">\n                        <div class=\"box box-default\">\n                            <div class=\"box-header with-border\">\n                                <h3 class=\"box-title\">Labels</h3>\n                                <div class=\"box-tools pull-right\">\n                                    <span class=\"label label-default\">Some Label</span>\n                                </div><!-- /.box-tools -->\n                            </div><!-- /.box-header -->\n                            <div class=\"box-body\">\n                                The body of the box\n                            </div><!-- /.box-body -->\n                        </div><!-- /.box -->\n      <pre class=\"prettyprint\">\n&LT;div class=\"box box-default\">\n          &LT;div class=\"box-header with-border\">\n          &LT;h3 class=\"box-title\">Labels&LT;/h3>\n          &LT;div class=\"box-tools pull-right\">\n          &LT;span class=\"label label-default\">8 New Messages&LT;/span>\n          &LT;/div>&LT;!-- /.box-tools -->\n          &LT;/div>&LT;!-- /.box-header -->\n          &LT;div class=\"box-body\">\n    The body of the box\n          &LT;/div>&LT;!-- /.box-body -->\n          &LT;/div>&LT;!-- /.box --></pre>\n                    </div>\n                    <div class=\"col-md-4\">\n                        <div class=\"box box-default\">\n                            <div class=\"box-header with-border\">\n                                <h3 class=\"box-title\">Input</h3>\n                                <div class=\"box-tools pull-right\">\n                                    <div class=\"has-feedback\">\n                                        <input type=\"text\" class=\"form-control input-sm\" placeholder=\"Search...\">\n                                        <span class=\"glyphicon glyphicon-search form-control-feedback text-muted\"></span>\n                                    </div>\n                                </div><!-- /.box-tools -->\n                            </div><!-- /.box-header -->\n                            <div class=\"box-body\">\n                                The body of the box\n                            </div><!-- /.box-body -->\n                        </div><!-- /.box -->\n      <pre class=\"prettyprint\">\n&LT;div class=\"box box-default\">\n          &LT;div class=\"box-header with-border\">\n          &LT;h3 class=\"box-title\">Input&LT;/h3>\n          &LT;div class=\"box-tools pull-right\">\n          &LT;div class=\"has-feedback\">\n          &LT;input type=\"text\" class=\"form-control input-sm\" placeholder=\"Search...\">\n          &LT;span class=\"glyphicon glyphicon-search form-control-feedback\">&LT;/span>\n          &LT;/div>\n          &LT;/div>&LT;!-- /.box-tools -->\n          &LT;/div>&LT;!-- /.box-header -->\n          &LT;div class=\"box-body\">\n    The body of the box\n          &LT;/div>&LT;!-- /.box-body -->\n          &LT;/div>&LT;!-- /.box --></pre>\n                    </div>\n                    <div class=\"col-md-4\">\n                        <div class=\"box box-default\">\n                            <div class=\"box-header with-border\">\n                                <h3 class=\"box-title\">Tootips on buttons</h3>\n                                <div class=\"box-tools pull-right\">\n                                    <button class=\"btn btn-box-tool\" data-widget=\"collapse\" data-toggle=\"tooltip\"\n                                            title=\"Collapse\"><i class=\"fa fa-minus\"></i></button>\n                                    <button class=\"btn btn-box-tool\" data-widget=\"remove\" data-toggle=\"tooltip\"\n                                            title=\"Remove\"><i class=\"fa fa-times\"></i></button>\n                                </div><!-- /.box-tools -->\n                            </div><!-- /.box-header -->\n                            <div class=\"box-body\">\n                                The body of the box\n                            </div><!-- /.box-body -->\n                        </div><!-- /.box -->\n      <pre class=\"prettyprint\">\n&LT;div class=\"box box-default\">\n          &LT;div class=\"box-header with-border\">\n          &LT;h3 class=\"box-title\">Tooltips on buttons&LT;/h3>\n          &LT;div class=\"box-tools pull-right\">\n          &LT;button class=\"btn btn-box-tool\" data-widget=\"collapse\" data-toggle=\"tooltip\" title=\"Collapse\">&LT;i class=\"fa fa-minus\">&LT;/i>&LT;/button>\n          &LT;button class=\"btn btn-box-tool\" data-widget=\"remove\" data-toggle=\"tooltip\" title=\"Remove\">&LT;i class=\"fa fa-times\">&LT;/i>&LT;/button>\n          &LT;/div>&LT;!-- /.box-tools -->\n          &LT;/div>&LT;!-- /.box-header -->\n          &LT;div class=\"box-body\">\n    The body of the box\n          &LT;/div>&LT;!-- /.box-body -->\n          &LT;/div>&LT;!-- /.box --></pre>\n                    </div><!-- /.col -->\n                </div><!-- /.row -->\n                <p>\n                    If you inserted a box into the document after <code>app.js</code> was loaded, you have to\n                    activate\n                    the collapse/remove buttons explicitly by calling <code>.activateBox()</code>:\n                </p>\n  <pre class=\"prettyprint\"><code class=\"html\">&LT;script>\n      $(\"#box-widget\").activateBox();\n      &LT;/script></code></pre>\n\n                <h4>Loading States</h4>\n                <div class=\"row\">\n                    <div class=\"col-md-6\">\n                        <div class=\"box box-default\">\n                            <div class=\"box-header with-border\">\n                                <h3 class=\"box-title\">Loading state</h3>\n                            </div>\n                            <div class=\"box-body\">\n                                The body of the box\n                            </div><!-- /.box-body -->\n                            <!-- Loading (remove the following to stop the loading)-->\n                            <div class=\"overlay\">\n                                <i class=\"fa fa-refresh fa-spin\"></i>\n                            </div>\n                            <!-- end loading -->\n                        </div><!-- /.box -->\n                    </div><!-- /.col -->\n\n                    <div class=\"col-md-6\">\n                        <div class=\"box box-default box-solid\">\n                            <div class=\"box-header with-border\">\n                                <h3 class=\"box-title\">Loading state (.box-solid)</h3>\n                            </div>\n                            <div class=\"box-body\">\n                                The body of the box\n                            </div><!-- /.box-body -->\n                            <!-- Loading (remove the following to stop the loading)-->\n                            <div class=\"overlay\">\n                                <i class=\"fa fa-refresh fa-spin\"></i>\n                            </div>\n                            <!-- end loading -->\n                        </div><!-- /.box -->\n                    </div><!-- /.col -->\n                </div><!-- /.row -->\n                <p class=\"lead\">\n                    To simulate a loading state, simply place this code before the <code>.box</code> closing tag.\n                </p>\n  <pre class=\"prettyprint\"><code class=\"html\">&LT;div class=\"overlay\">\n      &LT;i class=\"fa fa-refresh fa-spin\">&LT;/i>\n      &LT;/div>\n  </code></pre>\n                <h3 id=\"component-direct-chat\">Direct Chat</h3>\n                <p class=\"lead\">The direct chat widget extends the box component to create a beautiful chat\n                    interface. This widget\n                    consists of a required messages pane and an <b>optional</b> contacts pane. Examples:</p>\n                <!-- Direct Chat -->\n                <div class=\"row\">\n                    <div class=\"col-md-3\">\n                        <!-- DIRECT CHAT PRIMARY -->\n                        <div class=\"box box-primary direct-chat direct-chat-primary\">\n                            <div class=\"box-header with-border\">\n                                <h3 class=\"box-title\">Direct Chat</h3>\n                                <div class=\"box-tools pull-right\">\n                                        <span data-toggle=\"tooltip\" title=\"3 New Messages\"\n                                              class=\"badge bg-light-blue\">3</span>\n                                    <button class=\"btn btn-box-tool\" data-widget=\"collapse\"><i\n                                            class=\"fa fa-minus\"></i></button>\n                                    <button class=\"btn btn-box-tool\" data-toggle=\"tooltip\" title=\"Contacts\"\n                                            data-widget=\"chat-pane-toggle\"><i class=\"fa fa-comments\"></i></button>\n                                    <button class=\"btn btn-box-tool\" data-widget=\"remove\"><i\n                                            class=\"fa fa-times\"></i></button>\n                                </div>\n                            </div><!-- /.box-header -->\n                            <div class=\"box-body\">\n                                <!-- Conversations are loaded here -->\n                                <div class=\"direct-chat-messages\">\n                                    <!-- Message. Default to the left -->\n                                    <div class=\"direct-chat-msg\">\n                                        <div class=\"direct-chat-info clearfix\">\n                                            <span class=\"direct-chat-name pull-left\">Alexander Pierce</span>\n                                            <span class=\"direct-chat-timestamp pull-right\">23 Jan 2:00 pm</span>\n                                        </div><!-- /.direct-chat-info -->\n                                        <div class=\"direct-chat-text\">\n                                            Is this template really for free? That's unbelievable!\n                                        </div><!-- /.direct-chat-text -->\n                                    </div><!-- /.direct-chat-msg -->\n\n                                    <!-- Message to the right -->\n                                    <div class=\"direct-chat-msg right\">\n                                        <div class=\"direct-chat-info clearfix\">\n                                            <span class=\"direct-chat-name pull-right\">Sarah Bullock</span>\n                                            <span class=\"direct-chat-timestamp pull-left\">23 Jan 2:05 pm</span>\n                                        </div><!-- /.direct-chat-info -->\n                                        <div class=\"direct-chat-text\">\n                                            You better believe it!\n                                        </div><!-- /.direct-chat-text -->\n                                    </div><!-- /.direct-chat-msg -->\n                                </div><!--/.direct-chat-messages-->\n\n                                <!-- Contacts are loaded here -->\n                                <div class=\"direct-chat-contacts\">\n                                    <ul class=\"contacts-list\">\n                                        <li>\n                                            <a href=\"#\">\n                                                <div class=\"contacts-list-info\">\n                    <span class=\"contacts-list-name\">\n                      Count Dracula\n                      <small class=\"contacts-list-date pull-right\">2/28/2015</small>\n                    </span>\n                                                    <span class=\"contacts-list-msg\">How have you been? I was...</span>\n                                                </div><!-- /.contacts-list-info -->\n                                            </a>\n                                        </li><!-- End Contact Item -->\n                                    </ul><!-- /.contatcts-list -->\n                                </div><!-- /.direct-chat-pane -->\n                            </div><!-- /.box-body -->\n                            <div class=\"box-footer\">\n                                <form action=\"#\" method=\"post\">\n                                    <div class=\"input-group\">\n                                        <input type=\"text\" name=\"message\" placeholder=\"Type Message ...\"\n                                               class=\"form-control\">\n              <span class=\"input-group-btn\">\n                <button type=\"button\" class=\"btn btn-primary btn-flat\">Send</button>\n              </span>\n                                    </div>\n                                </form>\n                            </div><!-- /.box-footer-->\n                        </div><!--/.direct-chat -->\n                    </div><!-- /.col -->\n\n                    <div class=\"col-md-3\">\n                        <!-- DIRECT CHAT SUCCESS -->\n                        <div class=\"box box-success direct-chat direct-chat-success\">\n                            <div class=\"box-header with-border\">\n                                <h3 class=\"box-title\">Direct Chat</h3>\n                                <div class=\"box-tools pull-right\">\n                                        <span data-toggle=\"tooltip\" title=\"3 New Messages\"\n                                              class=\"badge bg-green\">3</span>\n                                    <button class=\"btn btn-box-tool\" data-widget=\"collapse\"><i\n                                            class=\"fa fa-minus\"></i></button>\n                                    <button class=\"btn btn-box-tool\" data-toggle=\"tooltip\" title=\"Contacts\"\n                                            data-widget=\"chat-pane-toggle\"><i class=\"fa fa-comments\"></i></button>\n                                    <button class=\"btn btn-box-tool\" data-widget=\"remove\"><i\n                                            class=\"fa fa-times\"></i></button>\n                                </div>\n                            </div><!-- /.box-header -->\n                            <div class=\"box-body\">\n                                <!-- Conversations are loaded here -->\n                                <div class=\"direct-chat-messages\">\n                                    <!-- Message. Default to the left -->\n                                    <div class=\"direct-chat-msg\">\n                                        <div class=\"direct-chat-info clearfix\">\n                                            <span class=\"direct-chat-name pull-left\">Alexander Pierce</span>\n                                            <span class=\"direct-chat-timestamp pull-right\">23 Jan 2:00 pm</span>\n                                        </div><!-- /.direct-chat-info -->\n                                        <div class=\"direct-chat-text\">\n                                            Is this template really for free? That's unbelievable!\n                                        </div><!-- /.direct-chat-text -->\n                                    </div><!-- /.direct-chat-msg -->\n\n                                    <!-- Message to the right -->\n                                    <div class=\"direct-chat-msg right\">\n                                        <div class=\"direct-chat-info clearfix\">\n                                            <span class=\"direct-chat-name pull-right\">Sarah Bullock</span>\n                                            <span class=\"direct-chat-timestamp pull-left\">23 Jan 2:05 pm</span>\n                                        </div><!-- /.direct-chat-info -->\n                                        <div class=\"direct-chat-text\">\n                                            You better believe it!\n                                        </div><!-- /.direct-chat-text -->\n                                    </div><!-- /.direct-chat-msg -->\n                                </div><!--/.direct-chat-messages-->\n\n                                <!-- Contacts are loaded here -->\n                                <div class=\"direct-chat-contacts\">\n                                    <ul class=\"contacts-list\">\n                                        <li>\n                                            <a href=\"#\">\n                                                <div class=\"contacts-list-info\">\n                    <span class=\"contacts-list-name\">\n                      Count Dracula\n                      <small class=\"contacts-list-date pull-right\">2/28/2015</small>\n                    </span>\n                                                    <span class=\"contacts-list-msg\">How have you been? I was...</span>\n                                                </div><!-- /.contacts-list-info -->\n                                            </a>\n                                        </li><!-- End Contact Item -->\n                                    </ul><!-- /.contatcts-list -->\n                                </div><!-- /.direct-chat-pane -->\n                            </div><!-- /.box-body -->\n                            <div class=\"box-footer\">\n                                <form action=\"#\" method=\"post\">\n                                    <div class=\"input-group\">\n                                        <input type=\"text\" name=\"message\" placeholder=\"Type Message ...\"\n                                               class=\"form-control\">\n              <span class=\"input-group-btn\">\n                <button type=\"button\" class=\"btn btn-success btn-flat\">Send</button>\n              </span>\n                                    </div>\n                                </form>\n                            </div><!-- /.box-footer-->\n                        </div><!--/.direct-chat -->\n                    </div><!-- /.col -->\n\n                    <div class=\"col-md-3\">\n                        <!-- DIRECT CHAT WARNING -->\n                        <div class=\"box box-warning direct-chat direct-chat-warning\">\n                            <div class=\"box-header with-border\">\n                                <h3 class=\"box-title\">Direct Chat</h3>\n                                <div class=\"box-tools pull-right\">\n                                        <span data-toggle=\"tooltip\" title=\"3 New Messages\"\n                                              class=\"badge bg-yellow\">3</span>\n                                    <button class=\"btn btn-box-tool\" data-widget=\"collapse\"><i\n                                            class=\"fa fa-minus\"></i></button>\n                                    <button class=\"btn btn-box-tool\" data-toggle=\"tooltip\" title=\"Contacts\"\n                                            data-widget=\"chat-pane-toggle\"><i class=\"fa fa-comments\"></i></button>\n                                    <button class=\"btn btn-box-tool\" data-widget=\"remove\"><i\n                                            class=\"fa fa-times\"></i></button>\n                                </div>\n                            </div><!-- /.box-header -->\n                            <div class=\"box-body\">\n                                <!-- Conversations are loaded here -->\n                                <div class=\"direct-chat-messages\">\n                                    <!-- Message. Default to the left -->\n                                    <div class=\"direct-chat-msg\">\n                                        <div class=\"direct-chat-info clearfix\">\n                                            <span class=\"direct-chat-name pull-left\">Alexander Pierce</span>\n                                            <span class=\"direct-chat-timestamp pull-right\">23 Jan 2:00 pm</span>\n                                        </div><!-- /.direct-chat-info -->\n                                        <div class=\"direct-chat-text\">\n                                            Is this template really for free? That's unbelievable!\n                                        </div><!-- /.direct-chat-text -->\n                                    </div><!-- /.direct-chat-msg -->\n\n                                    <!-- Message to the right -->\n                                    <div class=\"direct-chat-msg right\">\n                                        <div class=\"direct-chat-info clearfix\">\n                                            <span class=\"direct-chat-name pull-right\">Sarah Bullock</span>\n                                            <span class=\"direct-chat-timestamp pull-left\">23 Jan 2:05 pm</span>\n                                        </div><!-- /.direct-chat-info -->\n                                        <div class=\"direct-chat-text\">\n                                            You better believe it!\n                                        </div><!-- /.direct-chat-text -->\n                                    </div><!-- /.direct-chat-msg -->\n                                </div><!--/.direct-chat-messages-->\n\n                                <!-- Contacts are loaded here -->\n                                <div class=\"direct-chat-contacts\">\n                                    <ul class=\"contacts-list\">\n                                        <li>\n                                            <a href=\"#\">\n                                                <div class=\"contacts-list-info\">\n                    <span class=\"contacts-list-name\">\n                      Count Dracula\n                      <small class=\"contacts-list-date pull-right\">2/28/2015</small>\n                    </span>\n                                                    <span class=\"contacts-list-msg\">How have you been? I was...</span>\n                                                </div><!-- /.contacts-list-info -->\n                                            </a>\n                                        </li><!-- End Contact Item -->\n                                    </ul><!-- /.contatcts-list -->\n                                </div><!-- /.direct-chat-pane -->\n                            </div><!-- /.box-body -->\n                            <div class=\"box-footer\">\n                                <form action=\"#\" method=\"post\">\n                                    <div class=\"input-group\">\n                                        <input type=\"text\" name=\"message\" placeholder=\"Type Message ...\"\n                                               class=\"form-control\">\n              <span class=\"input-group-btn\">\n                <button type=\"button\" class=\"btn btn-warning btn-flat\">Send</button>\n              </span>\n                                    </div>\n                                </form>\n                            </div><!-- /.box-footer-->\n                        </div><!--/.direct-chat -->\n                    </div><!-- /.col -->\n\n                    <div class=\"col-md-3\">\n                        <!-- DIRECT CHAT DANGER -->\n                        <div class=\"box box-danger direct-chat direct-chat-danger\">\n                            <div class=\"box-header with-border\">\n                                <h3 class=\"box-title\">Direct Chat</h3>\n                                <div class=\"box-tools pull-right\">\n                                    <span data-toggle=\"tooltip\" title=\"3 New Messages\" class=\"badge bg-red\">3</span>\n                                    <button class=\"btn btn-box-tool\" data-widget=\"collapse\"><i\n                                            class=\"fa fa-minus\"></i></button>\n                                    <button class=\"btn btn-box-tool\" data-toggle=\"tooltip\" title=\"Contacts\"\n                                            data-widget=\"chat-pane-toggle\"><i class=\"fa fa-comments\"></i></button>\n                                    <button class=\"btn btn-box-tool\" data-widget=\"remove\"><i\n                                            class=\"fa fa-times\"></i></button>\n                                </div>\n                            </div><!-- /.box-header -->\n                            <div class=\"box-body\">\n                                <!-- Conversations are loaded here -->\n                                <div class=\"direct-chat-messages\">\n                                    <!-- Message. Default to the left -->\n                                    <div class=\"direct-chat-msg\">\n                                        <div class=\"direct-chat-info clearfix\">\n                                            <span class=\"direct-chat-name pull-left\">Alexander Pierce</span>\n                                            <span class=\"direct-chat-timestamp pull-right\">23 Jan 2:00 pm</span>\n                                        </div><!-- /.direct-chat-info -->\n                                        <div class=\"direct-chat-text\">\n                                            Is this template really for free? That's unbelievable!\n                                        </div><!-- /.direct-chat-text -->\n                                    </div><!-- /.direct-chat-msg -->\n\n                                    <!-- Message to the right -->\n                                    <div class=\"direct-chat-msg right\">\n                                        <div class=\"direct-chat-info clearfix\">\n                                            <span class=\"direct-chat-name pull-right\">Sarah Bullock</span>\n                                            <span class=\"direct-chat-timestamp pull-left\">23 Jan 2:05 pm</span>\n                                        </div><!-- /.direct-chat-info -->\n                                        <div class=\"direct-chat-text\">\n                                            You better believe it!\n                                        </div><!-- /.direct-chat-text -->\n                                    </div><!-- /.direct-chat-msg -->\n                                </div><!--/.direct-chat-messages-->\n\n                                <!-- Contacts are loaded here -->\n                                <div class=\"direct-chat-contacts\">\n                                    <ul class=\"contacts-list\">\n                                        <li>\n                                            <a href=\"#\">\n                                                <div class=\"contacts-list-info\">\n                    <span class=\"contacts-list-name\">\n                      Count Dracula\n                      <small class=\"contacts-list-date pull-right\">2/28/2015</small>\n                    </span>\n                                                    <span class=\"contacts-list-msg\">How have you been? I was...</span>\n                                                </div><!-- /.contacts-list-info -->\n                                            </a>\n                                        </li><!-- End Contact Item -->\n                                    </ul><!-- /.contatcts-list -->\n                                </div><!-- /.direct-chat-pane -->\n                            </div><!-- /.box-body -->\n                            <div class=\"box-footer\">\n                                <form action=\"#\" method=\"post\">\n                                    <div class=\"input-group\">\n                                        <input type=\"text\" name=\"message\" placeholder=\"Type Message ...\"\n                                               class=\"form-control\">\n              <span class=\"input-group-btn\">\n                <button type=\"button\" class=\"btn btn-danger btn-flat\">Send</button>\n              </span>\n                                    </div>\n                                </form>\n                            </div><!-- /.box-footer-->\n                        </div><!--/.direct-chat -->\n                    </div><!-- /.col -->\n                </div><!-- /.row -->\n                <p class=\"lead\">Direct Chat Markup</p>\n  <pre class=\"prettyprint\"><code class=\"html\">\n      &LT;!-- Construct the box with style you want. Here we are using box-danger -->\n      &LT;!-- Then add the class direct-chat and choose the direct-chat-* contexual class -->\n      &LT;!-- The contextual class should match the box, so we are using direct-chat-danger -->\n      &LT;div class=\"box box-danger direct-chat direct-chat-danger\">\n      &LT;div class=\"box-header with-border\">\n      &LT;h3 class=\"box-title\">Direct Chat&LT;/h3>\n      &LT;div class=\"box-tools pull-right\">\n      &LT;span data-toggle=\"tooltip\" title=\"3 New Messages\" class=\"badge bg-red\">3&LT;/span>\n      &LT;button class=\"btn btn-box-tool\" data-widget=\"collapse\">&LT;i class=\"fa fa-minus\">&LT;/i>&LT;/button>\n      &LT;!-- In box-tools add this button if you intend to use the contacts pane -->\n      &LT;button class=\"btn btn-box-tool\" data-toggle=\"tooltip\" title=\"Contacts\" data-widget=\"chat-pane-toggle\">&LT;i\n      class=\"fa fa-comments\">&LT;/i>&LT;/button>\n      &LT;button class=\"btn btn-box-tool\" data-widget=\"remove\">&LT;i class=\"fa fa-times\">&LT;/i>&LT;/button>\n      &LT;/div>\n      &LT;/div>&LT;!-- /.box-header -->\n      &LT;div class=\"box-body\">\n      &LT;!-- Conversations are loaded here -->\n      &LT;div class=\"direct-chat-messages\">\n      &LT;!-- Message. Default to the left -->\n      &LT;div class=\"direct-chat-msg\">\n      &LT;div class=\"direct-chat-info clearfix\">\n      &LT;span class=\"direct-chat-name pull-left\">Alexander Pierce&LT;/span>\n      &LT;span class=\"direct-chat-timestamp pull-right\">23 Jan 2:00 pm&LT;/span>\n      &LT;/div>&LT;!-- /.direct-chat-info -->\n      &LT;img class=\"direct-chat-img\" src=\"../dist/img/user1-128x128.jpg\" alt=\"message user image\">&LT;!--\n      /.direct-chat-img -->\n      &LT;div class=\"direct-chat-text\">\n      Is this template really for free? That's unbelievable!\n      &LT;/div>&LT;!-- /.direct-chat-text -->\n      &LT;/div>&LT;!-- /.direct-chat-msg -->\n\n      &LT;!-- Message to the right -->\n      &LT;div class=\"direct-chat-msg right\">\n      &LT;div class=\"direct-chat-info clearfix\">\n      &LT;span class=\"direct-chat-name pull-right\">Sarah Bullock&LT;/span>\n      &LT;span class=\"direct-chat-timestamp pull-left\">23 Jan 2:05 pm&LT;/span>\n      &LT;/div>&LT;!-- /.direct-chat-info -->\n      &LT;img class=\"direct-chat-img\" src=\"../dist/img/user3-128x128.jpg\" alt=\"message user image\">&LT;!--\n      /.direct-chat-img -->\n      &LT;div class=\"direct-chat-text\">\n      You better believe it!\n      &LT;/div>&LT;!-- /.direct-chat-text -->\n      &LT;/div>&LT;!-- /.direct-chat-msg -->\n      &LT;/div>&LT;!--/.direct-chat-messages-->\n\n      &LT;!-- Contacts are loaded here -->\n      &LT;div class=\"direct-chat-contacts\">\n      &LT;ul class=\"contacts-list\">\n      &LT;li>\n      &LT;a href=\"#\">\n      &LT;img class=\"contacts-list-img\" src=\"../dist/img/user1-128x128.jpg\" alt=\"Contact Avatar\">\n      &LT;div class=\"contacts-list-info\">\n      &LT;span class=\"contacts-list-name\">\n      Count Dracula\n      &LT;small class=\"contacts-list-date pull-right\">2/28/2015&LT;/small>\n      &LT;/span>\n      &LT;span class=\"contacts-list-msg\">How have you been? I was...&LT;/span>\n      &LT;/div>&LT;!-- /.contacts-list-info -->\n      &LT;/a>\n      &LT;/li>&LT;!-- End Contact Item -->\n      &LT;/ul>&LT;!-- /.contatcts-list -->\n      &LT;/div>&LT;!-- /.direct-chat-pane -->\n      &LT;/div>&LT;!-- /.box-body -->\n      &LT;div class=\"box-footer\">\n      &LT;div class=\"input-group\">\n      &LT;input type=\"text\" name=\"message\" placeholder=\"Type Message ...\" class=\"form-control\">\n      &LT;span class=\"input-group-btn\">\n      &LT;button type=\"button\" class=\"btn btn-danger btn-flat\">Send&LT;/button>\n      &LT;/span>\n      &LT;/div>\n      &LT;/div>&LT;!-- /.box-footer-->\n      &LT;/div>&LT;!--/.direct-chat -->\n  </code></pre>\n\n                <p>Of course you can use direct chat with a solid box by adding the class <code>solid-box</code> to\n                    the box. Here are a couple of examples:</p>\n\n                <!-- Direct Chat With Solid Boxes -->\n                <div class=\"row\">\n                    <div class=\"col-md-6\">\n                        <!-- DIRECT CHAT WARNING -->\n                        <div class=\"box box-primary box-solid direct-chat direct-chat-primary\">\n                            <div class=\"box-header\">\n                                <h3 class=\"box-title\">Direct Chat in a Solid Box</h3>\n                                <div class=\"box-tools pull-right\">\n                                        <span data-toggle=\"tooltip\" title=\"3 New Messages\"\n                                              class=\"badge bg-light-blue\">3</span>\n                                    <button class=\"btn btn-box-tool\" data-widget=\"collapse\"><i\n                                            class=\"fa fa-minus\"></i></button>\n                                    <button class=\"btn btn-box-tool\" data-toggle=\"tooltip\" title=\"Contacts\"\n                                            data-widget=\"chat-pane-toggle\"><i class=\"fa fa-comments\"></i></button>\n                                    <button class=\"btn btn-box-tool\" data-widget=\"remove\"><i\n                                            class=\"fa fa-times\"></i></button>\n                                </div>\n                            </div><!-- /.box-header -->\n                            <div class=\"box-body\">\n                                <!-- Conversations are loaded here -->\n                                <div class=\"direct-chat-messages\">\n                                    <!-- Message. Default to the left -->\n                                    <div class=\"direct-chat-msg\">\n                                        <div class=\"direct-chat-info clearfix\">\n                                            <span class=\"direct-chat-name pull-left\">Alexander Pierce</span>\n                                            <span class=\"direct-chat-timestamp pull-right\">23 Jan 2:00 pm</span>\n                                        </div><!-- /.direct-chat-info -->\n                                        <div class=\"direct-chat-text\">\n                                            Is this template really for free? That's unbelievable!\n                                        </div><!-- /.direct-chat-text -->\n                                    </div><!-- /.direct-chat-msg -->\n\n                                    <!-- Message to the right -->\n                                    <div class=\"direct-chat-msg right\">\n                                        <div class=\"direct-chat-info clearfix\">\n                                            <span class=\"direct-chat-name pull-right\">Sarah Bullock</span>\n                                            <span class=\"direct-chat-timestamp pull-left\">23 Jan 2:05 pm</span>\n                                        </div><!-- /.direct-chat-info -->\n                                        <div class=\"direct-chat-text\">\n                                            You better believe it!\n                                        </div><!-- /.direct-chat-text -->\n                                    </div><!-- /.direct-chat-msg -->\n                                </div><!--/.direct-chat-messages-->\n\n                                <!-- Contacts are loaded here -->\n                                <div class=\"direct-chat-contacts\">\n                                    <ul class=\"contacts-list\">\n                                        <li>\n                                            <a href=\"#\">\n                                                <div class=\"contacts-list-info\">\n                    <span class=\"contacts-list-name\">\n                      Count Dracula\n                      <small class=\"contacts-list-date pull-right\">2/28/2015</small>\n                    </span>\n                                                    <span class=\"contacts-list-msg\">How have you been? I was...</span>\n                                                </div><!-- /.contacts-list-info -->\n                                            </a>\n                                        </li><!-- End Contact Item -->\n                                    </ul><!-- /.contatcts-list -->\n                                </div><!-- /.direct-chat-pane -->\n                            </div><!-- /.box-body -->\n                            <div class=\"box-footer\">\n                                <form action=\"#\" method=\"post\">\n                                    <div class=\"input-group\">\n                                        <input type=\"text\" name=\"message\" placeholder=\"Type Message ...\"\n                                               class=\"form-control\">\n              <span class=\"input-group-btn\">\n                <button type=\"button\" class=\"btn btn-primary btn-flat\">Send</button>\n              </span>\n                                    </div>\n                                </form>\n                            </div><!-- /.box-footer-->\n                        </div><!--/.direct-chat -->\n                    </div><!-- /.col -->\n\n                    <div class=\"col-md-6\">\n                        <!-- DIRECT CHAT DANGER -->\n                        <div class=\"box box-info box-solid direct-chat direct-chat-info\">\n                            <div class=\"box-header\">\n                                <h3 class=\"box-title\">Direct Chat in a Solid Box</h3>\n                                <div class=\"box-tools pull-right\">\n                                        <span data-toggle=\"tooltip\" title=\"3 New Messages\"\n                                              class=\"badge bg-aqua\">3</span>\n                                    <button class=\"btn btn-box-tool\" data-widget=\"collapse\"><i\n                                            class=\"fa fa-minus\"></i></button>\n                                    <button class=\"btn btn-box-tool\" data-toggle=\"tooltip\" title=\"Contacts\"\n                                            data-widget=\"chat-pane-toggle\"><i class=\"fa fa-comments\"></i></button>\n                                    <button class=\"btn btn-box-tool\" data-widget=\"remove\"><i\n                                            class=\"fa fa-times\"></i></button>\n                                </div>\n                            </div><!-- /.box-header -->\n                            <div class=\"box-body\">\n                                <!-- Conversations are loaded here -->\n                                <div class=\"direct-chat-messages\">\n                                    <!-- Message. Default to the left -->\n                                    <div class=\"direct-chat-msg\">\n                                        <div class=\"direct-chat-info clearfix\">\n                                            <span class=\"direct-chat-name pull-left\">Alexander Pierce</span>\n                                            <span class=\"direct-chat-timestamp pull-right\">23 Jan 2:00 pm</span>\n                                        </div><!-- /.direct-chat-info -->\n                                        <div class=\"direct-chat-text\">\n                                            Is this template really for free? That's unbelievable!\n                                        </div><!-- /.direct-chat-text -->\n                                    </div><!-- /.direct-chat-msg -->\n\n                                    <!-- Message to the right -->\n                                    <div class=\"direct-chat-msg right\">\n                                        <div class=\"direct-chat-info clearfix\">\n                                            <span class=\"direct-chat-name pull-right\">Sarah Bullock</span>\n                                            <span class=\"direct-chat-timestamp pull-left\">23 Jan 2:05 pm</span>\n                                        </div><!-- /.direct-chat-info -->\n                                        <div class=\"direct-chat-text\">\n                                            You better believe it!\n                                        </div><!-- /.direct-chat-text -->\n                                    </div><!-- /.direct-chat-msg -->\n                                </div><!--/.direct-chat-messages-->\n\n                                <!-- Contacts are loaded here -->\n                                <div class=\"direct-chat-contacts\">\n                                    <ul class=\"contacts-list\">\n                                        <li>\n                                            <a href=\"#\">\n                                                <div class=\"contacts-list-info\">\n                    <span class=\"contacts-list-name\">\n                      Count Dracula\n                      <small class=\"contacts-list-date pull-right\">2/28/2015</small>\n                    </span>\n                                                    <span class=\"contacts-list-msg\">How have you been? I was...</span>\n                                                </div><!-- /.contacts-list-info -->\n                                            </a>\n                                        </li><!-- End Contact Item -->\n                                    </ul><!-- /.contatcts-list -->\n                                </div><!-- /.direct-chat-pane -->\n                            </div><!-- /.box-body -->\n                            <div class=\"box-footer\">\n                                <form action=\"#\" method=\"post\">\n                                    <div class=\"input-group\">\n                                        <input type=\"text\" name=\"message\" placeholder=\"Type Message ...\"\n                                               class=\"form-control\">\n              <span class=\"input-group-btn\">\n                <button type=\"button\" class=\"btn btn-info btn-flat\">Send</button>\n              </span>\n                                    </div>\n                                </form>\n                            </div><!-- /.box-footer-->\n                        </div><!--/.direct-chat -->\n                    </div><!-- /.col -->\n                </div><!-- /.row -->\n            </section>\n\n\n            <!-- ============================================================= -->\n\n            <section id=\"plugins\">\n                <h2 class=\"page-header\"><a href=\"#plugins\">Plugins</a></h2>\n                <p class=\"lead\">AdminLTE makes use of the following plugins. For documentation, updates or license\n                    information, please visit the provided links.</p>\n                <div class=\"row bring-up\">\n                    <div class=\"col-sm-3\">\n                        <ul class=\"list-unstyled\">\n                            <li><h4>Charts</h4></li>\n                            <li><a href=\"http://www.chartjs.org/\" target=\"_blank\">ChartJS</a></li>\n                            <li><a href=\"http://www.flotcharts.org/\" target=\"_blank\">Flot</a></li>\n                            <li><a href=\"http://morrisjs.github.io/morris.js/\" target=\"_blank\">Morris.js</a></li>\n                            <li><a href=\"http://omnipotent.net/jquery.sparkline/\" target=\"_blank\">Sparkline</a></li>\n                        </ul>\n                    </div><!-- /.col -->\n                    <div class=\"col-sm-3\">\n                        <ul class=\"list-unstyled\">\n                            <li><h4>Form Elements</h4></li>\n                            <li><a href=\"https://github.com/seiyria/bootstrap-slider/\">Bootstrap Slider</a></li>\n                            <li><a href=\"http://ionden.com/a/plugins/ion.rangeSlider/en.html\" target=\"_blank\">Ion\n                                Slider</a></li>\n                            <li><a href=\"http://bootstrap-datepicker.readthedocs.org/\" target=\"_blank\">Date\n                                Picker</a></li>\n                            <li><a href=\"http://www.daterangepicker.com/\" target=\"_blank\">Date Range Picker</a></li>\n                            <li><a href=\"http://mjolnic.com/bootstrap-colorpicker/\" target=\"_blank\">Color Picker</a>\n                            </li>\n                            <li><a href=\"https://github.com/jdewit/bootstrap-timepicker/\" target=\"_blank\">Time\n                                Picker</a></li>\n                            <li><a href=\"http://fronteed.com/iCheck/\" target=\"_blank\">iCheck</a></li>\n                            <li><a href=\"https://github.com/RobinHerbots/jquery.inputmask/\" target=\"_blank\">Input\n                                Mask</a></li>\n                        </ul>\n                    </div><!-- /.col -->\n                    <div class=\"col-sm-3\">\n                        <ul class=\"list-unstyled\">\n                            <li><h4>Editors</h4></li>\n                            <li><a href=\"https://github.com/bootstrap-wysiwyg/bootstrap3-wysiwyg/\" target=\"_blank\">Bootstrap\n                                WYSIHTML5</a></li>\n                            <li><a href=\"http://ckeditor.com/\" target=\"_blank\">CK Editor</a></li>\n                        </ul>\n                    </div><!-- /. col -->\n                    <div class=\"col-sm-3\">\n                        <ul class=\"list-unstyled\">\n                            <li><h4>Other</h4></li>\n                            <li><a href=\"https://datatables.net/examples/styling/bootstrap.html\" target=\"_blank\">DataTables</a>\n                            </li>\n                            <li><a href=\"http://fullcalendar.io/\" target=\"_blank\">Full Calendar</a></li>\n                            <li><a href=\"http://jqueryui.com/\" target=\"_blank\">jQuery UI</a></li>\n                            <li><a href=\"http://anthonyterrien.com/knob/\" target=\"_blank\">jQuery Knob</a></li>\n                            <li><a href=\"http://jvectormap.com/\" target=\"_blank\">jVector Map</a></li>\n                            <li><a href=\"http://rocha.la/jQuery-slimScroll/\" target=\"_blank\">Slim Scroll</a></li>\n                            <li><a href=\"http://github.hubspot.com/pace/docs/welcome/\" target=\"_blank\">Pace</a></li>\n                        </ul>\n                    </div><!-- /.col -->\n                </div><!-- /.row -->\n            </section>\n\n\n            <!-- ============================================================= -->\n\n            <section id=\"browsers\">\n                <h2 class=\"page-header\"><a href=\"#browsers\">Browser Support</a></h2>\n                <p class=\"lead\">AdminLTE supports the following browsers:</p>\n                <ul>\n                    <li>IE9+</li>\n                    <li>Firefox (latest)</li>\n                    <li>Safari (latest)</li>\n                    <li>Chrome (latest)</li>\n                    <li>Opera (latest)</li>\n                </ul>\n                <p><b>Note:</b> IE9 does not support transitions or animations. The template will function properly\n                    but it won't use animations/transitions on IE9.</p>\n            </section>\n\n\n            <!-- ============================================================= -->\n\n            <section id=\"upgrade\">\n                <h2 class=\"page-header\"><a href=\"#upgrade\">Upgrade Guide</a></h2>\n                <p class=\"lead\">To upgrade from version 1.x to the lateset version, follow this guide.</p>\n                <h3>New Files</h3>\n                <p>Make sure you update all CSS and JS files that are related to AdminLTE. Otherwise, the layout\n                    will not\n                    function properly. Most important files are AdminLTE.css, skins CSS files, and app.js.</p>\n                <h3>Layout Changes</h3>\n                <ol>\n                    <li>The .wrapper div must be placed immediately after the body tag rather than after the\n                        header\n                    </li>\n                    <li>Change the .header div to .main-header <code>&LT;div class=\"main-header\"></code></li>\n                    <li>Change the .right-side class to .content-wrapper <code>&LT;div\n                        class=\"content-wrapper\"></code></li>\n                    <li>Change the .left-side class to .main-sidebar <code>&LT;div class=\"main-sidebar\"></code></li>\n                    <li>In the navbar, change .navbar-right to .navbar-custom-menu <code>&LT;div\n                        class=\"navbar-custom-menu\"></code></li>\n                </ol>\n                <h3>Navbar Custom Dropdown Menus</h3>\n                <ol>\n                    <li>The icons in the notification menu do not need bg-* classes. They should be replaced with\n                        contextual text color class such as text-aqua or text-red.\n                    </li>\n                </ol>\n                <h3>Login, Registration and Lockscreen Pages</h3>\n                <p>There are major changes to the HTML markup and style to these pages. The best way is to copy the\n                    page's code and customize it.</p>\n                <p>And you should be set to go!</p>\n                <h3>Mailbox</h3>\n                <p>Mailbox got an upgrade to include three different views. The views are inbox, read mail, and\n                    compose new email. To use these views,\n                    you should use the provided HTML files in the pages/mailbox folder.</p>\n                <p><b class=\"text-red\">Note:</b> the old mailbox layout has been deprecated in favor of the new one\n                    and will be removed by the next release.</p>\n            </section>\n\n\n            <!-- ============================================================= -->\n\n            <section id=\"implementations\">\n                <h2 class=\"page-header\"><a href=\"#implementations\">Implementations</a></h2>\n                <p class=\"lead\">Thanks to many of AdminLTE users, there are multiple implementations of the template\n                    for easy integration with back-end frameworks. The following are some of them:</p>\n\n                <ul>\n                    <li><a href=\"https://github.com/mmdsharifi/AdminLTE-RTL\">Persian RTL</a> by <a\n                            href=\"https://github.com/mmdsharifi\">Mohammad Sharifi</a></li>\n                    <li><a href=\"https://github.com/dmstr/yii2-adminlte-asset\" target=\"_blank\">Yii 2</a> by <a\n                            href=\"https://github.com/schmunk42\" target=\"_blank\">Tobias Munk</a></li>\n                    <li><a href=\"https://github.com/yajra/laravel-admin-template\" target=\"_blank\">Laravel</a> by <a\n                            href=\"https://github.com/yajra\" target=\"_blank\">Arjay Angeles</a></li>\n                    <li><a href=\"https://github.com/acacha/adminlte-laravel\" target=\"_blank\">Laravel 5 package</a>\n                        by <a href=\"https://github.com/acacha\" target=\"_blank\">Sergi Tur Badenas</a></li>\n                    <li><a href=\"https://github.com/avanzu/AdminThemeBundle\" target=\"_blank\">Symfony</a> by <a\n                            href=\"https://github.com/avanzu\" target=\"_blank\">Marc Bach</a></li>\n                    <li>Rails gems: <a href=\"https://github.com/nicolas-besnard/adminlte2-rails\" target=\"_blank\">adminlte2-rails</a>\n                        by <a href=\"https://github.com/nicolas-besnard\" target=\"_blank\">Nicolas Besnard</a> and <a\n                                href=\"https://github.com/racketlogger/lte-rails\" target=\"_blank\">lte-rails</a>\n                        (using AdminLTE sources) by <a href=\"https://github.com/racketlogger\" target=\"_blank\">Carlos\n                            at RacketLogger</a></li>\n                </ul>\n\n                <p><b class=\"text-red\">Note:</b> these implementations are not supported by Almsaeed Studio.\n                    However,\n                    they do provide a good example of how to integrate AdminLTE into different frameworks. For the\n                    latest release\n                    of AdminLTE, please visit our <a href=\"https://github.com/almasaeed2010/AdminLTE\">repository</a>\n                    or <a href=\"https://almsaeedstudio.com\">website</a></p>\n            </section>\n\n\n            <!-- ============================================================= -->\n\n            <section id=\"faq\">\n                <h2 class=\"page-header\"><a href=\"#faq\">FAQ</a></h2>\n                <h3>Can AdminLTE be used with Wordpress?</h3>\n                <p class=\"lead\">AdminLTE is an HTML template that can be used for any purpose. However, it is not\n                    made to be easily installed on Wordpress. It will require some effort and enough knowledge of\n                    the Wordpress script to do so.</p>\n\n                <h3>Is there an integration guide for PHP frameworks such as Yii or Symfony?</h3>\n                <p class=\"lead\">Short answer, no. However, there are forks and tutorials around the web that provide\n                    info on how to integrate with many different frameworks. There are even versions of AdminLTE\n                    that are integrated with jQuery ajax, AngularJS and/or MVC5 ASP .NET.</p>\n\n                <h3>How do I get notified of new AdminLTE versions?</h3>\n                <p class=\"lead\">The best option is to subscribe to our mailing list using the <a\n                        href=\"http://almsaeedstudio.com/#subscribe\">subscription form on Almsaeed Studio</a>.\n                    If that's not appealing to you, you may watch the <a\n                            href=\"https://github.com/almasaeed2010/AdminLTE\">repository on Github</a> or visit <a\n                            href=\"http://almsaeedstudio.com\">Almsaeed Studio</a> every now and then for updates and\n                    announcements.</p>\n            </section>\n\n\n            <!-- ============================================================= -->\n\n            <section id=\"license\">\n                <h2 class=\"page-header\"><a href=\"#license\">License</a></h2>\n                <h3>AdminLTE</h3>\n                <p class=\"lead\">\n                    AdminLTE is an open source project that is licensed under the <a\n                        href=\"http://opensource.org/licenses/MIT\">MIT license</a>.\n                    This allows you to do pretty much anything you want as long as you include\n                    the copyright in \"all copies or substantial portions of the Software.\"\n                    Attribution is not required (though very much appreciated).\n                </p>\n            </section>\n\n\n        </div><!-- /.content -->\n    </div><!-- /.content-wrapper -->\n\n    <footer class=\"main-footer\">\n        <div class=\"pull-right hidden-xs\">\n            <b>Version</b> 2.3.3\n        </div>\n        <strong>Copyright &copy; 2014-2015 <a href=\"http://almsaeedstudio.com\">Almsaeed Studio</a>.</strong> All\n        rights reserved.\n    </footer>\n\n    <!-- Control Sidebar -->\n    <aside class=\"control-sidebar control-sidebar-dark\">\n        <!-- Create the tabs -->\n        <div class=\"pad\">\n            This is an example of the control sidebar.\n        </div>\n    </aside><!-- /.control-sidebar -->\n    <!-- Add the sidebar's background. This div must be placed\n         immediately after the control sidebar -->\n    <div class=\"control-sidebar-bg\"></div>\n\n</div><!-- ./wrapper -->";
 
 /***/ },
 /* 14 */
@@ -7532,11 +7532,13 @@
 	var BoxWidget = __webpack_require__(19);
 
 	var FastClick = __webpack_require__(20);
-	var Slimscroll = __webpack_require__(22);
 
 	function AdminLTE($, userSettings) {
 	    var jQuery = this.$ = $,
 	        _this = this;
+
+	    __webpack_require__(36)(jQuery);
+	    __webpack_require__(37)(jQuery);
 
 	    $("body").removeClass("hold-transition");
 
@@ -7558,16 +7560,11 @@
 
 	    //Add slimscroll to navbar dropdown
 	    if (o.navbarMenuSlimscroll) {
-
-	        var navbarMenus = document.querySelectorAll('.navbar .menu');
-
-	        for (var i = 0; i < navbarMenus.length; i++) {
-	            _this._instances.navbarMenuSlimscroll.push(new Slimscroll({
-	                height: o.navbarMenuHeight,
-	                alwaysVisible: false,
-	                size: o.navbarMenuSlimscrollWidth
-	            }, navbarMenus[i]));
-	        }
+	        $(".navbar .menu").slimscroll({
+	            height: o.navbarMenuHeight,
+	            alwaysVisible: false,
+	            size: o.navbarMenuSlimscrollWidth
+	        }).css("width", "100%");
 	    }
 
 	    //Activate sidebar push menu
@@ -7575,12 +7572,12 @@
 	        this.pushMenu.activate(o.sidebarToggleSelector);
 	    }
 
-	    ////Activate Bootstrap tooltip
-	    //if (o.enableBSToppltip) {
-	    //    $('body').tooltip({
-	    //        selector: o.BSTooltipSelector
-	    //    });
-	    //}
+	    //Activate Bootstrap tooltip
+	    if (o.enableBSToppltip) {
+	        $('body').tooltip({
+	            selector: o.BSTooltipSelector
+	        });
+	    }
 
 	    //Activate box widget
 	    if (o.enableBoxWidget) {
@@ -7681,10 +7678,6 @@
 	                e.preventDefault();
 	            }
 	        });
-	    };
-
-	    this._instances = {
-	        navbarMenuSlimscroll: []
 	    };
 	};
 
@@ -7972,13 +7965,13 @@
 	//instantiate the object
 	ControlSidebar.prototype.activate = function () {
 	    //Get the object
-	    var $ = this.$;
-	    //Update options
-	    var o = this.settings;
+	    var $ = this.$,
+	        o = this.settings,
+	        _this = this;
 	    //Get the sidebar
-	    var sidebar = $(o.selector);
+	    var sidebar = $(o.controlSidebarOptions.selector);
 	    //The toggle button
-	    var btn = $(o.toggleBtnSelector);
+	    var btn = $(o.controlSidebarOptions.toggleBtnSelector);
 
 	    //Listen to the click event
 	    btn.on('click', function (e) {
@@ -7986,23 +7979,23 @@
 	        //If the sidebar is not open
 	        if (!sidebar.hasClass('control-sidebar-open') && !$('body').hasClass('control-sidebar-open')) {
 	            //Open the sidebar
-	            this.open(sidebar, o.slide);
+	            _this.open(sidebar, o.controlSidebarOptions.slide);
 	        } else {
-	            this.close(sidebar, o.slide);
+	            _this.close(sidebar, o.controlSidebarOptions.slide);
 	        }
 	    });
 
 	    //If the body has a boxed layout, fix the sidebar bg position
 	    var bg = $(".control-sidebar-bg");
-	    this._fix(bg);
+	    _this._fix(bg);
 
 	    //If the body has a fixed layout, make the control sidebar fixed
 	    if ($('body').hasClass('fixed')) {
-	        this._fixForFixed(sidebar);
+	        _this._fixForFixed(sidebar);
 	    } else {
 	        //If the content height is less than the sidebar's height, force max height
 	        if ($('.content-wrapper, .right-side').height() < sidebar.height()) {
-	            this._fixForContent(sidebar);
+	            _this._fixForContent(sidebar);
 	        }
 	    }
 	};
@@ -8972,1248 +8965,14 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, {}))
 
 /***/ },
-/* 22 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	/*
-	 * slimscroll
-	 * http://github.com/yawetse/slimscroll
-	 *
-	 * Copyright (c) 2014 Yaw Joseph Etse. All rights reserved.
-	 */
-
-	module.exports = __webpack_require__(23);
-
-/***/ },
-/* 23 */
-/***/ function(module, exports, __webpack_require__) {
-
-	/*
-	 * slimscroll
-	 * http://github.com/yawetse/slimscroll
-	 *
-	 * Copyright (c) 2014 Yaw Joseph Etse. All rights reserved.
-	 */
-	'use strict';
-
-	var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol ? "symbol" : typeof obj; };
-
-	var classie = __webpack_require__(24),
-	    extend = __webpack_require__(27),
-	    domhelper = __webpack_require__(28);
-
-	/**
-	 * Slimscroll is a small commonjs module with no library dependencies (sans jquery) that transforms any div into a scrollable area with a nice scrollbar
-	 * @{@link https://github.com/yawetse/slimscroll}
-	 * @author Yaw Joseph Etse
-	 * @copyright Copyright (c) 2014 Yaw Joseph Etse. All rights reserved.
-	 * @license MIT
-	 * @module slimscroll
-	 * @requires module:classie
-	 * @requires module:util-extent
-	 * @requires module:util
-	 * @requires module:domhelper
-	 * @requires module:events
-	 * @todo need to switch to node events
-	 */
-	var slimscroll = function slimscroll(options, elementsArray) {
-		/** module default configuration */
-		var defaults = {
-			idSelector: 'body',
-			width: 'auto', // width in pixels of the visible scroll area
-			height: '250px', // height in pixels of the visible scroll area
-			size: '7px', // width in pixels of the scrollbar and rail
-			color: '#000', // scrollbar color, accepts any hex/color value
-			position: 'right', // scrollbar position - left/right
-			distance: '1px', // distance in pixels between the side edge and the scrollbar
-			start: 'top', // default scroll position on load - top / bottom / $('selector')
-			opacity: 0.4, // sets scrollbar opacity
-			alwaysVisible: false, // enables always-on mode for the scrollbar
-			disableFadeOut: false, // check if we should hide the scrollbar when user is hovering over
-			railVisible: false, // sets visibility of the rail
-			railColor: '#333', // sets rail color
-			railOpacity: 0.2, // sets rail opacity
-			railDraggable: true, // whether  we should use jQuery UI Draggable to enable bar dragging
-			railClass: 'slimScrollRail', // defautlt CSS class of the slimscroll rail
-			barClass: 'slimScrollBar', // defautlt CSS class of the slimscroll bar
-			wrapperClass: 'slimScrollDiv', // defautlt CSS class of the slimscroll wrapper
-			allowPageScroll: false, // check if mousewheel should scroll the window if we reach top/bottom
-			wheelStep: 20, // scroll amount applied to each mouse wheel step
-			touchScrollStep: 200, // scroll amount applied when user is using gestures
-			addedOriginalClass: 'originalScrollableElement',
-			borderRadius: '7px', // sets border radius
-			railBorderRadius: '7px' // sets border radius of the rail
-		},
-		    o = extend(defaults, options),
-		    thisElements = elementsArray ? elementsArray : document.querySelectorAll(options.idSelector),
-		    me,
-		    rail,
-		    bar,
-		    barHeight,
-		    minBarHeight = 30,
-		    mousedownPageY,
-		    mousedownT,
-		    isDragg,
-		    currentBar,
-		    currentTouchDif,
-		    releaseScroll,
-		    isOverBar,
-		    percentScroll,
-		    queueHide,
-		    lastScroll,
-		    isOverPanel;
-
-		/**
-	  * creates new slimscrolls
-	  */
-		this.init = function () {
-			// do it for every element that matches selector
-			for (var x = 0; x < thisElements.length; x++) {
-				var touchDif,
-				    barHeight,
-				    divS = '<div></div>';
-				releaseScroll = false;
-				// used in event handlers and for better minification
-				me = thisElements[x];
-				classie.addClass(me, o.addedOriginalClass);
-
-				// ensure we are not binding it again
-				if (classie.hasClass(me.parentNode, o.wrapperClass)) {
-					// start from last bar position
-					var offset = me.scrollTop;
-					bar = me.parentNode.querSelector('.' + o.barClass), // find bar and rail,
-					rail = me.parentNode.querSelector('.' + o.railClass);
-
-					getBarHeight();
-
-					// check if we should scroll existing instance
-					if ((typeof options === 'undefined' ? 'undefined' : _typeof(options)) === 'object') {
-						// Pass height: auto to an existing slimscroll object to force a resize after contents have changed
-						if ('height' in options && options.height === 'auto') {
-							me.parentNode.style.height = 'auto';
-							me.style.height = 'auto';
-							var height = me.parentNode.parentNode.scrollHeight;
-							me.parent.style.height = height;
-							me.style.height = height;
-						}
-
-						if ('scrollTo' in options) {
-							// jump to a static point
-							offset = parseInt(o.scrollTo, 10);
-						} else if ('scrollBy' in options) {
-							// jump by value pixels
-							offset += parseInt(o.scrollBy, 10);
-						} else if ('destroy' in options) {
-							// remove slimscroll elements
-							domhelper.removeElement(bar);
-							domhelper.removeElement(rail);
-							domhelper.unwrapElement(me);
-							return;
-						}
-
-						// scroll content by the given offset
-						// console.log("add scrollContent");
-						scrollContent(offset, false, true, me);
-					}
-					return;
-				}
-
-				// optionally set height to the parent's height
-				o.height = options.height === 'auto' ? me.parentNode.offsetHeight : options.height;
-
-				// wrap content
-				var wrapper = document.createElement("div");
-				classie.addClass(wrapper, o.wrapperClass);
-				wrapper.style.position = 'relative';
-				wrapper.style.overflow = 'hidden';
-				wrapper.style.width = o.width;
-				wrapper.style.height = o.height;
-
-				// update style for the div
-				me.style.overflow = 'hidden';
-				me.style.width = o.width;
-				me.style.height = o.height;
-
-				// create scrollbar rail
-				rail = document.createElement("div");
-				classie.addClass(rail, o.railClass);
-				rail.style.width = o.size;
-				rail.style.height = '100%';
-				rail.style.position = 'absolute';
-				rail.style.top = 0;
-				rail.style.display = o.alwaysVisible && o.railVisible ? 'block' : 'none';
-				rail.style['border-radius'] = o.railBorderRadius;
-				rail.style.background = o.railColor;
-				rail.style.opacity = o.railOpacity;
-				rail.style.zIndex = 90;
-
-				// create scrollbar
-				bar = document.createElement("div");
-				classie.addClass(bar, o.barClass);
-				bar.style.background = o.color;
-				bar.style.width = o.size;
-				bar.style.position = 'absolute';
-				bar.style.top = 0;
-				bar.style.opacity = o.opacity;
-				bar.style.display = o.alwaysVisible ? 'block' : 'none';
-				bar.style['border-radius'] = o.borderRadius;
-				bar.style.BorderRadius = o.borderRadius;
-				bar.style.MozBorderRadius = o.borderRadius;
-				bar.style.WebkitBorderRadius = o.borderRadius;
-				bar.style.zIndex = 99;
-
-				// set position
-				if (o.position === 'right') {
-					rail.style.right = o.distance;
-					bar.style.right = o.distance;
-				} else {
-					rail.style.left = o.distance;
-					bar.style.left = o.distance;
-				}
-
-				// wrap it
-				domhelper.elementWrap(me, wrapper);
-
-				// append to parent div
-				me.parentNode.appendChild(bar);
-				me.parentNode.appendChild(rail);
-
-				// set up initial height
-				getBarHeight();
-
-				// make it draggable and no longer dependent on the jqueryUI
-				bar.addEventListener("mousedown", mousedownEventHandler);
-				document.addEventListener("mouseup", mouseupEventHandler);
-				bar.addEventListener("selectstart", selectstartEventHandler);
-				bar.addEventListener("mouseover", mouseoverEventHandler);
-				bar.addEventListener("mouseleave", mouseleaveEventHandler);
-				bar.addEventListener('touchstart', scrollContainerTouchStartEventHandler);
-
-				rail.addEventListener("mouseover", railMouseOverEventHandler);
-				rail.addEventListener("mouseleave", railMouseLeaveEventHandler);
-
-				me.addEventListener("mouseover", scrollContainerMouseOverEventHandler);
-				me.addEventListener("mouseleave", scrollContainerMouseLeaveEventHandler);
-				me.addEventListener('DOMMouseScroll', mouseWheelEventHandler, false);
-				me.addEventListener('mousewheel', mouseWheelEventHandler, false);
-			}
-
-			// check start position
-			if (o.start === 'bottom') {
-				// scroll content to bottom
-				bar.style.top = me.offsetHeight - bar.offsetHeight;
-				scrollContent(0, true);
-			} else if (o.start !== 'top') {
-				// assume jQuery selector
-				scrollContent(domhelper.getPosition(document.querSelector(o.start).top, null, true));
-
-				// make sure bar stays hidden
-				if (!o.alwaysVisible) {
-					domhelper.elementHideCss(bar);
-				}
-			}
-			document.addEventListener('touchmove', scrollContainerTouchMoveEventHandler);
-		}.bind(this);
-
-		/**
-	  * Removes the auto scrolling for touch devices.
-	  * @memberOf slimscroll
-	  * @private
-	  */
-		function getBarHeight() {
-			if (!bar) {
-				bar = currentBar;
-			}
-			// calculate scrollbar height and make sure it is not too small
-			barHeight = Math.max(me.offsetHeight / me.scrollHeight * me.offsetHeight, minBarHeight);
-			bar.style.height = barHeight + 'px';
-
-			// hide scrollbar if content is not long enough
-			var display = me.offsetHeight === barHeight ? 'none' : 'block';
-			bar.style.display = display;
-		}
-
-		/**
-	  * Removes the auto scrolling for touch devices.
-	  * @function
-	  */
-		function scrollContent(y, isWheel, isJump, element, bar, isTouch) {
-			releaseScroll = false;
-			var delta = y;
-			me = element;
-			bar = bar ? bar : me.parentNode.querySelector('.' + o.barClass);
-			var maxTop = me.offsetHeight - bar.offsetHeight;
-
-			if (isWheel) {
-				// move bar with mouse wheel
-				delta = parseInt(bar.style.top, 10) + y * parseInt(o.wheelStep, 10) / 100 * bar.offsetHeight;
-
-				// move bar, make sure it doesn't go out
-				delta = Math.min(Math.max(delta, 0), maxTop);
-
-				// if scrolling down, make sure a fractional change to the
-				// scroll position isn't rounded away when the scrollbar's CSS is set
-				// this flooring of delta would happened automatically when
-				// bar.css is set below, but we floor here for clarity
-				delta = y > 0 ? Math.ceil(delta) : Math.floor(delta);
-
-				// scroll the scrollbar
-				bar.style.top = delta + 'px';
-			} else if (isTouch) {
-				// calculate actual scroll amount
-				percentScroll = parseInt(bar.style.top, 10) / (me.offsetHeight - bar.offsetHeight);
-				delta = percentScroll * (me.scrollHeight - me.offsetHeight);
-
-				// scroll the scrollbar
-				bar.style.top = delta + 'px';
-			}
-
-			// calculate actual scroll amount
-			percentScroll = parseInt(bar.style.top, 10) / (me.offsetHeight - bar.offsetHeight);
-			delta = percentScroll * (me.scrollHeight - me.offsetHeight);
-
-			if (isJump) {
-				delta = y;
-				var offsetTop = delta / me.scrollHeight * me.offsetHeight;
-				offsetTop = Math.min(Math.max(offsetTop, 0), maxTop);
-				bar.style.top = offsetTop + 'px';
-			}
-
-			// scroll content
-			me.scrollTop = delta;
-
-			// console.log("delta",delta,"~~delta",~~delta);
-			// fire scrolling event
-			// me.dispatchEvent(slimScrollEvent)
-			var newevent = document.createEvent("Event");
-			newevent.initEvent('slimscrolling', true, true, "blah");
-			me.dispatchEvent(newevent, ~ ~delta);
-			// me.trigger('slimscrolling', ~~delta);
-
-			// ensure bar is visible
-			showBar();
-
-			// trigger hide when scroll is stopped
-			hideBar();
-		}
-		function showBar() {
-			// recalculate bar height
-			getBarHeight();
-			clearTimeout(queueHide);
-
-			// when bar reached top or bottom
-			if (percentScroll === ~ ~percentScroll) {
-				//release wheel
-				releaseScroll = o.allowPageScroll;
-
-				// publish approporiate event
-				if (lastScroll !== percentScroll) {
-					var msg = ~ ~percentScroll === 0 ? 'top' : 'bottom';
-					var newevent = document.createEvent("Event");
-					newevent.initEvent('slimscroll', true, true);
-					me.dispatchEvent(newevent, msg);
-				}
-			} else {
-				releaseScroll = false;
-			}
-			lastScroll = percentScroll;
-
-			// show only when required
-			if (barHeight >= me.offsetHeight) {
-				//allow window scroll
-				releaseScroll = true;
-				return;
-			}
-			bar.style.transition = "opacity .5s";
-			bar.style.opacity = o.opacity;
-			if (o.railVisible) {
-				rail.style.transform = "opacity .5s";
-				rail.style.opacity = 1;
-			}
-		}
-
-		function hideBar() {
-			// only hide when options allow it
-			if (!o.alwaysVisible) {
-				queueHide = setTimeout(function () {
-					if (!(o.disableFadeOut && isOverPanel) && !isOverBar && !isDragg) {
-						bar.style.transition = "opacity 1s";
-						bar.style.opacity = 0;
-						rail.style.transition = "opacity 1s";
-						rail.style.opacity = 0;
-					}
-				}, 500);
-			}
-		}
-
-		function mouseWheelEventHandler(e) {
-			// use mouse wheel only when mouse is over
-			if (!isOverPanel) {
-				return;
-			}
-
-			var delta = 0;
-			if (e.wheelDelta) {
-				delta = -e.wheelDelta / 120;
-			}
-			if (e.detail) {
-				delta = e.detail / 3;
-			}
-
-			var target = e.target;
-			var parentWrapper = domhelper.getParentElement(target, o.wrapperClass);
-			if (parentWrapper /* && parentWrapper.isEqualNode(me.parentNode)*/) {
-					// scroll content
-					scrollContent(delta, true, null, parentWrapper.querySelector('.' + o.addedOriginalClass));
-				} else {
-				console.log("not the right parent node");
-			}
-
-			// stop window scroll
-			if (!releaseScroll) {
-				e.preventDefault();
-			}
-		}
-
-		function mousedownEventHandler(e) {
-			var eTarget = e.target;
-			currentBar = eTarget;
-			isDragg = true;
-			mousedownT = parseInt(eTarget.style.top, 10);
-			mousedownPageY = e.pageY;
-			if (currentBar) {
-				currentBar.addEventListener("mousemove", mousemoveEventHandler);
-			}
-			e.preventDefault();
-			return false;
-		}
-
-		function mousemoveEventHandler(e) {
-			var currTop = mousedownT + e.pageY - mousedownPageY;
-			if (currentBar) {
-				currentBar.style.top = currTop;
-				scrollContent(0, domhelper.getPosition(currentBar).top, false, me, currentBar); // scroll content
-			}
-		}
-
-		function mouseupEventHandler(e) {
-			isDragg = false;
-			if (currentBar) {
-				hideBar(currentBar);
-				currentBar.removeEventListener('mousemove', mousemoveEventHandler);
-			}
-		}
-
-		function mouseoverEventHandler(e) {
-			isOverBar = true;
-		}
-
-		function mouseleaveEventHandler(e) {
-			isOverBar = false;
-		}
-
-		function selectstartEventHandler(e) {
-			// e.stopPropagation();
-			// e.preventDefault();
-			return false;
-		}
-
-		function railMouseOverEventHandler(e) {
-			showBar();
-		}
-
-		function railMouseLeaveEventHandler(e) {
-			hideBar();
-		}
-
-		function scrollContainerMouseOverEventHandler(e) {
-			isOverPanel = true;
-			showBar(bar);
-			hideBar(bar);
-		}
-
-		function scrollContainerMouseLeaveEventHandler(e) {
-			isOverPanel = true;
-			showBar(bar);
-			hideBar(bar);
-		}
-
-		function scrollContainerTouchStartEventHandler(e) {
-			// console.log(e.target);
-			if (e.touches.length) {
-				// record where touch started
-				currentTouchDif = e.touches[0].pageY;
-			}
-		}
-
-		function scrollContainerTouchMoveEventHandler(e) {
-			// prevent scrolling the page if necessary
-			if (!releaseScroll) {
-				e.preventDefault();
-			}
-			if (e.touches.length) {
-				// see how far user swiped
-				var diff = (currentTouchDif - e.touches[0].pageY) / o.touchScrollStep;
-				// scroll content
-				scrollContent(diff, true, null, me, currentBar, true);
-				currentTouchDif = e.touches[0].pageY;
-			}
-		}
-	};
-
-	module.exports = slimscroll;
-
-	// If there is a window object, that at least has a document property,
-	// define linotype
-	if ((typeof window === 'undefined' ? 'undefined' : _typeof(window)) === "object" && _typeof(window.document) === "object") {
-		window.slimscroll = slimscroll;
-	}
-
-/***/ },
-/* 24 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	/*
-	 * classie
-	 * http://github.amexpub.com/modules/classie
-	 *
-	 * Copyright (c) 2013 AmexPub. All rights reserved.
-	 */
-
-	module.exports = __webpack_require__(25);
-
-/***/ },
-/* 25 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_RESULT__;/* WEBPACK VAR INJECTION */(function(module) {/*!
-	 * classie - class helper functions
-	 * from bonzo https://github.com/ded/bonzo
-	 * 
-	 * classie.has( elem, 'my-class' ) -> true/false
-	 * classie.add( elem, 'my-new-class' )
-	 * classie.remove( elem, 'my-unwanted-class' )
-	 * classie.toggle( elem, 'my-class' )
-	 */
-
-	/*jshint browser: true, strict: true, undef: true */
-	/*global define: false */
-	'use strict';
-
-	// class helper functions from bonzo https://github.com/ded/bonzo
-
-	var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol ? "symbol" : typeof obj; };
-
-	var classList = __webpack_require__(26),
-	    classie;
-
-	function classReg(className) {
-	    return new RegExp("(^|\\s+)" + className + "(\\s+|$)");
-	}
-
-	function noop() {}
-
-	function isArr(classes) {
-	    if (Array.isArray(classes)) {
-	        return true;
-	    } else if (Object.prototype.toString.call(classes) === '[object Array]') {
-	        return true;
-	    } else {
-	        return false;
-	    }
-	}
-
-	function removeMultiple() {
-	    var c = arguments[1],
-	        elem = arguments[0];
-	    c.forEach(function (value) {
-	        if (classie.has(elem, value)) {
-	            noop();
-	        }
-	        classie.removeClass(elem, value);
-	    });
-	}
-
-	function addMultiple() {
-	    var c = arguments[1],
-	        elem = arguments[0];
-	    c.forEach(function (value) {
-	        if (classie.has(elem, value)) {
-	            noop();
-	        }
-	        classie.addClass(elem, value);
-	    });
-	}
-
-	function hasClass(elem, c) {
-	    return elem.classList.contains(c);
-	}
-
-	function addClass(elem, c) {
-	    if (isArr(c)) {
-	        addMultiple.apply(this, arguments);
-	    } else {
-	        elem.classList.add(c);
-	    }
-	}
-
-	function removeClass(elem, c) {
-	    if (isArr(c)) {
-	        removeMultiple.apply(this, arguments);
-	    } else {
-	        elem.classList.remove(c);
-	    }
-	}
-
-	function toggleClass(elem, c) {
-	    var fn = hasClass(elem, c) ? removeClass : addClass;
-	    fn(elem, c);
-	}
-
-	var classie = {
-	    // full names
-	    hasClass: hasClass,
-	    addClass: addClass,
-	    removeClass: removeClass,
-	    toggleClass: toggleClass,
-	    // short names
-	    has: hasClass,
-	    add: addClass,
-	    remove: removeClass,
-	    toggle: toggleClass
-	};
-
-	// transport
-
-	if (( false ? 'undefined' : _typeof(module)) === "object" && module && _typeof(module.exports) === "object") {
-	    // commonjs / browserify
-	    module.exports = classie;
-	} else {
-	    // AMD
-	    !(__WEBPACK_AMD_DEFINE_FACTORY__ = (classie), __WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ? (__WEBPACK_AMD_DEFINE_FACTORY__.call(exports, __webpack_require__, exports, module)) : __WEBPACK_AMD_DEFINE_FACTORY__), __WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
-	}
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(12)(module)))
-
-/***/ },
-/* 26 */
-/***/ function(module, exports) {
-
-	"use strict";
-
-	/* 
-	 * classList.js: Cross-browser full element.classList implementation.
-	 * 2014-07-23
-	 *
-	 * By Eli Grey, http://eligrey.com
-	 * Public Domain.
-	 * NO WARRANTY EXPRESSED OR IMPLIED. USE AT YOUR OWN RISK.
-	 */
-
-	/*global self, document, DOMException, DOMTokenList */
-
-	/*! @source http://purl.eligrey.com/github/classList.js/blob/master/classList.js*/
-
-	if ("document" in self) {
-
-	    // Full polyfill for browsers with no classList support
-	    if (!("classList" in document.createElement("_")) || document.createElementNS && !("classList" in document.createElementNS("http://www.w3.org/2000/svg", "g"))) {
-
-	        (function (view) {
-
-	            "use strict";
-
-	            if (!('Element' in view)) {
-	                return;
-	            }
-
-	            var classListProp = "classList",
-	                protoProp = "prototype",
-	                elemCtrProto = view.Element[protoProp],
-	                objCtr = Object,
-	                strTrim = String[protoProp].trim || function () {
-	                return this.replace(/^\s+|\s+$/g, "");
-	            },
-	                arrIndexOf = Array[protoProp].indexOf || function (item) {
-	                var i = 0,
-	                    len = this.length;
-	                for (; i < len; i++) {
-	                    if (i in this && this[i] === item) {
-	                        return i;
-	                    }
-	                }
-	                return -1;
-	            },
-
-	            // Vendors: please allow content code to instantiate DOMExceptions
-	            DOMEx = function DOMEx(type, message) {
-	                this.name = type;
-	                this.code = DOMException[type];
-	                this.message = message;
-	            },
-	                checkTokenAndGetIndex = function checkTokenAndGetIndex(classList, token) {
-	                if (token === "") {
-	                    throw new DOMEx("SYNTAX_ERR", "An invalid or illegal string was specified");
-	                }
-	                if (/\s/.test(token)) {
-	                    throw new DOMEx("INVALID_CHARACTER_ERR", "String contains an invalid character");
-	                }
-	                return arrIndexOf.call(classList, token);
-	            },
-	                ClassList = function ClassList(elem) {
-	                var trimmedClasses = strTrim.call(elem.getAttribute("class") || ""),
-	                    classes = trimmedClasses ? trimmedClasses.split(/\s+/) : [],
-	                    i = 0,
-	                    len = classes.length;
-	                for (; i < len; i++) {
-	                    this.push(classes[i]);
-	                }
-	                this._updateClassName = function () {
-	                    elem.setAttribute("class", this.toString());
-	                };
-	            },
-	                classListProto = ClassList[protoProp] = [],
-	                classListGetter = function classListGetter() {
-	                return new ClassList(this);
-	            };
-	            // Most DOMException implementations don't allow calling DOMException's toString()
-	            // on non-DOMExceptions. Error's toString() is sufficient here.
-	            DOMEx[protoProp] = Error[protoProp];
-	            classListProto.item = function (i) {
-	                return this[i] || null;
-	            };
-	            classListProto.contains = function (token) {
-	                token += "";
-	                return checkTokenAndGetIndex(this, token) !== -1;
-	            };
-	            classListProto.add = function () {
-	                var tokens = arguments,
-	                    i = 0,
-	                    l = tokens.length,
-	                    token,
-	                    updated = false;
-	                do {
-	                    token = tokens[i] + "";
-	                    if (checkTokenAndGetIndex(this, token) === -1) {
-	                        this.push(token);
-	                        updated = true;
-	                    }
-	                } while (++i < l);
-
-	                if (updated) {
-	                    this._updateClassName();
-	                }
-	            };
-	            classListProto.remove = function () {
-	                var tokens = arguments,
-	                    i = 0,
-	                    l = tokens.length,
-	                    token,
-	                    updated = false,
-	                    index;
-	                do {
-	                    token = tokens[i] + "";
-	                    index = checkTokenAndGetIndex(this, token);
-	                    while (index !== -1) {
-	                        this.splice(index, 1);
-	                        updated = true;
-	                        index = checkTokenAndGetIndex(this, token);
-	                    }
-	                } while (++i < l);
-
-	                if (updated) {
-	                    this._updateClassName();
-	                }
-	            };
-	            classListProto.toggle = function (token, force) {
-	                token += "";
-
-	                var result = this.contains(token),
-	                    method = result ? force !== true && "remove" : force !== false && "add";
-
-	                if (method) {
-	                    this[method](token);
-	                }
-
-	                if (force === true || force === false) {
-	                    return force;
-	                } else {
-	                    return !result;
-	                }
-	            };
-	            classListProto.toString = function () {
-	                return this.join(" ");
-	            };
-
-	            if (objCtr.defineProperty) {
-	                var classListPropDesc = {
-	                    get: classListGetter,
-	                    enumerable: true,
-	                    configurable: true
-	                };
-	                try {
-	                    objCtr.defineProperty(elemCtrProto, classListProp, classListPropDesc);
-	                } catch (ex) {
-	                    // IE 8 doesn't support enumerable:true
-	                    if (ex.number === -0x7FF5EC54) {
-	                        classListPropDesc.enumerable = false;
-	                        objCtr.defineProperty(elemCtrProto, classListProp, classListPropDesc);
-	                    }
-	                }
-	            } else if (objCtr[protoProp].__defineGetter__) {
-	                elemCtrProto.__defineGetter__(classListProp, classListGetter);
-	            }
-	        })(self);
-	    } else {
-	        // There is full or partial native classList support, so just check if we need
-	        // to normalize the add/remove and toggle APIs.
-
-	        (function () {
-	            "use strict";
-
-	            var testElement = document.createElement("_");
-
-	            testElement.classList.add("c1", "c2");
-
-	            // Polyfill for IE 10/11 and Firefox <26, where classList.add and
-	            // classList.remove exist but support only one argument at a time.
-	            if (!testElement.classList.contains("c2")) {
-	                var createMethod = function createMethod(method) {
-	                    var original = DOMTokenList.prototype[method];
-
-	                    DOMTokenList.prototype[method] = function (token) {
-	                        var i,
-	                            len = arguments.length;
-
-	                        for (i = 0; i < len; i++) {
-	                            token = arguments[i];
-	                            original.call(this, token);
-	                        }
-	                    };
-	                };
-	                createMethod('add');
-	                createMethod('remove');
-	            }
-
-	            testElement.classList.toggle("c3", false);
-
-	            // Polyfill for IE 10 and Firefox <24, where classList.toggle does not
-	            // support the second argument.
-	            if (testElement.classList.contains("c3")) {
-	                var _toggle = DOMTokenList.prototype.toggle;
-
-	                DOMTokenList.prototype.toggle = function (token, force) {
-	                    if (1 in arguments && !this.contains(token) === !force) {
-	                        return force;
-	                    } else {
-	                        return _toggle.call(this, token);
-	                    }
-	                };
-	            }
-
-	            testElement = null;
-	        })();
-	    }
-	}
-
-/***/ },
-/* 27 */
-/***/ function(module, exports) {
-
-	'use strict';
-
-	var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol ? "symbol" : typeof obj; };
-
-	// Copyright Joyent, Inc. and other Node contributors.
-	//
-	// Permission is hereby granted, free of charge, to any person obtaining a
-	// copy of this software and associated documentation files (the
-	// "Software"), to deal in the Software without restriction, including
-	// without limitation the rights to use, copy, modify, merge, publish,
-	// distribute, sublicense, and/or sell copies of the Software, and to permit
-	// persons to whom the Software is furnished to do so, subject to the
-	// following conditions:
-	//
-	// The above copyright notice and this permission notice shall be included
-	// in all copies or substantial portions of the Software.
-	//
-	// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
-	// OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
-	// MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN
-	// NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
-	// DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
-	// OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE
-	// USE OR OTHER DEALINGS IN THE SOFTWARE.
-
-	module.exports = extend;
-	function extend(origin, add) {
-	  // Don't do anything if add isn't an object
-	  if (!add || (typeof add === 'undefined' ? 'undefined' : _typeof(add)) !== 'object') return origin;
-
-	  var keys = Object.keys(add);
-	  var i = keys.length;
-	  while (i--) {
-	    origin[keys[i]] = add[keys[i]];
-	  }
-	  return origin;
-	}
-
-/***/ },
-/* 28 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	/*
-	 * domhelper
-	 * http://github.com/yawetse/domhelper
-	 *
-	 * Copyright (c) 2014 Yaw Joseph Etse. All rights reserved.
-	 */
-
-	module.exports = __webpack_require__(29);
-
-/***/ },
-/* 29 */
-/***/ function(module, exports, __webpack_require__) {
-
-	/*
-	 * linotype
-	 * https://github.com/typesettin/linotype
-	 * @author yaw joseph etse
-	 * Copyright (c) 2014 Typesettin. All rights reserved.
-	 */
-
-	'use strict';
-
-	var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol ? "symbol" : typeof obj; };
-
-	var classie = __webpack_require__(24);
-	// 	extend = require('util-extend'),
-	// 	events = require('events'),
-	// 	util = require('util');
-
-	/**
-	 * A module that adds simple dom utility functionality.
-	 * @author yaw joseph etse
-	 * @constructor
-	 */
-
-	var domhelper = {
-
-		/**
-	  * returns the highest zindex
-	  * @param {string} selector - query selector
-	  * @return {number} highest z-index
-	  * @public
-	  */
-		getHighIndex: function getHighIndex(selector) {
-			if (!selector) {
-				selector = "*";
-			}
-
-			var elements = document.querySelectorAll(selector),
-			    i = 0,
-			    e,
-			    s,
-			    max = elements.length,
-			    found = [];
-
-			for (; i < max; i += 1) {
-				e = elements[i].style.zIndex;
-				s = elements[i].style.position;
-				if (e && s !== "static") {
-					found.push(parseInt(e, 10));
-				}
-			}
-
-			return found.length ? Math.max.apply(null, found) : 0;
-		},
-
-		/**
-	  * toggles class across nodelist/elementcollection
-	  * @param {object} elementCollection - html dom element
-	  * @param {object} element - html dom element
-	  * @param {string} name of class!
-	  * @public
-	  */
-		removeAllClassAndToggle: function removeAllClassAndToggle(element, elementCollection, toggleClass) {
-			//updating the active class
-			for (var h = 0; h < elementCollection.length; h++) {
-				classie.removeClass(elementCollection[h], toggleClass);
-			}
-			classie.addClass(element, toggleClass);
-		},
-		/**
-	  * removes element from dom
-	  * @param {object} elementCollection - html dom element
-	  * @public
-	  */
-		removeElement: function removeElement(element) {
-			//updating the active class
-			element.parentNode.removeChild(element);
-		},
-		/**
-	  * converts idnex of node in nodelist
-	  * @param {object} nodelist - html dom element
-	  * @param {object} element - html dom element
-	  * @return {number} index of element in nodelist
-	  * @method
-	  */
-		nodeIndexOfNodeList: function nodeIndexOfNodeList(nodelist, element) {
-			return domhelper.nodelistToArray(nodelist, true).indexOf(element.outerHTML);
-		},
-
-		/**
-	  * converts nodelists to arrays
-	  * @param {node} nl - html dom element
-	  * @return { array} array of html nodes
-	  * @method
-	  */
-		nodelistToArray: function nodelistToArray(nl, useStrings) {
-			var arr = [];
-			for (var i = 0, ref = arr.length = nl.length; i < ref; i++) {
-				arr[i] = useStrings ? nl[i].outerHTML : nl[i];
-			}
-			return arr;
-		},
-
-		/**
-	  * Returns cloaset DOM element.
-	  * @param {node} element - html dom element
-	  * @return {node} - closet node element
-	  * @method
-	  */
-		closetElement: function closetElement(element) {
-			if (typeof element.length === 'number') {
-				return undefined;
-			}
-			var matches = domhelper.nodelistToArray(document.querySelectorAll(element.nodeName + '.' + element.className.trim().split(" ").join("."))),
-			    cleanMatches = [];
-			// console.log("matches",matches.length,matches);
-
-			for (var x = 0; x < matches.length; x++) {
-				// console.log('x',x,'element',element,'matches[x]',matches[x],'isEqualNode',matches[x].isEqualNode(element),'compareDocumentPosition',element.compareDocumentPosition(matches[x]));
-				if (element.compareDocumentPosition(matches[x]) < 4 && !matches[x].isEqualNode(element)) {
-					cleanMatches.push(matches[x]);
-				}
-			}
-
-			function compareNumbers(a, b) {
-				return a.compareDocumentPosition(b) - b.compareDocumentPosition(a);
-			}
-			// console.log("matches cleaned",cleanMatches.length,cleanMatches);
-			// console.log("matches sorted",cleanMatches.sort(compareNumbers));
-			return cleanMatches[0];
-		},
-
-		/**
-	  * Hides DOM elements.
-	  * @method
-	  * @param {node} element - html dom element
-	  */
-		elementHideCss: function elementHideCss(element) {
-			element.style.display = "none";
-		},
-
-		/**
-	  * Shows DOM elements.
-	  * @method
-	  * @param {node} element - html dom element
-	  */
-		elementShowCss: function elementShowCss(element) {
-			element.setAttribute('style', element.getAttribute('style').replace("display: none;"));
-		},
-
-		/**
-	  * Wraps inner elements
-	  * @method
-	  * @param {node} element - html dom element
-	  * @param {node} innerElement - element to wrap html dom element
-	  */
-		elementContentWrapInner: function elementContentWrapInner(element, innerElement) {
-			var wrapper = element,
-			    w = innerElement,
-			    len = element.childElementCount,
-			    wrapper_clone = wrapper.cloneNode(true);
-
-			wrapper.innerHTML = '';
-			wrapper.appendChild(w);
-			var newFirstChild = wrapper.firstChild;
-
-			newFirstChild.innerHTML = wrapper_clone.innerHTML;
-		},
-
-		/**
-	  * Wraps element with wrapper
-	  * @method
-	  * @param {node} element - html dom element
-	  * @param {node} wrapperElement - element to wrap html dom element
-	  */
-		elementWrap: function elementWrap(element, wrapperElement) {
-			var elementParent = element.parentNode,
-			    element_clone = element.cloneNode(true);
-
-			elementParent.replaceChild(wrapperElement, element);
-			wrapperElement.appendChild(element);
-		},
-
-		/**
-	  * get scroll position of element
-	  * @method
-	  * @param {node} element - html dom element
-	  * @return {number} position of scroll
-	  */
-		getScrollTop: function getScrollTop(element) {
-			// console.log(typeof element);
-			if (element === window && typeof window.pageYOffset !== 'undefined') {
-				//most browsers except IE before #9
-				return window.pageYOffset;
-			} else if ((typeof element === 'undefined' ? 'undefined' : _typeof(element)) === "object") {
-				return element.scrollTop;
-			} else {
-				var B = document.body; //IE 'quirks'
-				var D = document.documentElement; //IE with doctype
-				D = D.clientHeight ? D : B;
-				return D.scrollTop;
-			}
-		},
-
-		/**
-	  * get scroll position of element
-	  * @method
-	  * @param {node} element - html dom element
-	  * @return {object} position element
-	  */
-		getPosition: function getPosition(element) {
-			var xPosition = 0;
-			var yPosition = 0;
-
-			while (element) {
-				xPosition += element.offsetLeft - element.scrollLeft + element.clientLeft;
-				yPosition += element.offsetTop - element.scrollTop + element.clientTop;
-				element = element.offsetParent;
-			}
-			return { x: xPosition, y: yPosition, left: xPosition, top: yPosition };
-		},
-
-		/**
-	  * get element selector
-	  * @method
-	  * @param {node} element - html dom element
-	  * @return {string} query selector string
-	  */
-		getElementSelector: function getElementSelector(element) {
-			var tagSelector = element.tagName ? element.tagName : '',
-			    idSelector = element.id ? '#' + element.id + '' : '',
-			    classSelector = '';
-			if (element.classList) {
-				for (var x = 0; x < element.classList.length; x++) {
-					classSelector += '.' + element.classList[x] + "";
-				}
-			}
-			return tagSelector + idSelector + classSelector;
-		},
-
-		/**
-	  * get parent element
-	  * @method
-	  * @param {node} element - html dom element
-	  * @param {string} selector - selector
-	  * @param {string} selectorType - selector type (id or class)
-	  */
-		getParentElement: function getParentElement(element, selector, selectorType) {
-			if (element.tagName === 'BODY' || element.tagName === 'HTML' || selector === 'body' || selector === 'html' || selector === undefined) {
-				// console.log('body selected');
-				return undefined;
-			} else if (selectorType === 'id' && element.parentNode.id === selector || element.parentNode.className.match(new RegExp(selector, 'g'))) {
-				// console.log("parent node");
-				return element.parentNode;
-
-				//new RegExp(pattern,modifiers)
-			} else {
-					// console.log("look up higher");
-					return domhelper.getParentElement(element.parentNode, selector, selectorType);
-				}
-		},
-
-		getPreviousElements: function getPreviousElements(element, returnArray) {
-			if (element.previousElementSibling) {
-				returnArray.push(element.previousElementSibling);
-				return domhelper.getPreviousElements(element.previousElementSibling, returnArray);
-			} else {
-				return returnArray;
-			}
-		},
-
-		getNextElements: function getNextElements(element, returnArray) {
-			if (element.nextElementSibling) {
-				returnArray.push(element.nextElementSibling);
-				return domhelper.getNextElements(element.nextElementSibling, returnArray);
-			} else {
-				return returnArray;
-			}
-		},
-
-		insertAllBefore: function insertAllBefore(element, elementsToInsert) {
-			var parentElement = element.parentNode;
-			// console.log("parentElement",parentElement,"element",element,"elementsToInsert",elementsToInsert);
-			if (elementsToInsert.length) {
-				for (var x = 0; x < elementsToInsert.length; x++) {
-					// console.log(x,"elementsToInsert[x]",elementsToInsert[x])
-					parentElement.insertBefore(elementsToInsert[x], element);
-				}
-			} else {
-				parentElement.insertBefore(elementsToInsert, element);
-			}
-		},
-
-		insertAllAfter: function insertAllAfter(element, elementsToInsert) {
-			var parentElement = element.parentNode;
-			var nextSibling = element.nextSibling;
-			// console.log("parentElement",parentElement,"element",element,"elementsToInsert",elementsToInsert);
-			if (elementsToInsert.length) {
-				for (var x = 0; x < elementsToInsert.length; x++) {
-					// console.log(x,"elementsToInsert[x]",elementsToInsert[x])
-					// elementsToInsert[x].style.background="green";
-					parentElement.insertBefore(elementsToInsert[x], nextSibling);
-				}
-			} else {
-				parentElement.insertBefore(elementsToInsert, nextSibling);
-			}
-		},
-
-		unwrapElement: function unwrapElement(element) {
-			var parentNodeElem = element.parentNode;
-			if (parentNodeElem.nodeName !== "BODY") {
-				var parentParentNodeElem = parentNodeElem.parentNode;
-				parentParentNodeElem.innerHTML = '';
-				parentParentNodeElem.appendChild(element);
-			}
-		},
-		onWindowLoaded: function onWindowLoaded(callback) {
-			var readyStateCheckInterval = setInterval(function () {
-				if (document.readyState === "complete") {
-					callback();
-					clearInterval(readyStateCheckInterval);
-				}
-			}, 10);
-		}
-
-	};
-
-	module.exports = domhelper;
-
-	// If there is a window object, that at least has a document property,
-	// define linotype
-	if ((typeof window === 'undefined' ? 'undefined' : _typeof(window)) === "object" && _typeof(window.document) === "object") {
-		window.domhelper = domhelper;
-	}
-
-/***/ },
+/* 22 */,
+/* 23 */,
+/* 24 */,
+/* 25 */,
+/* 26 */,
+/* 27 */,
+/* 28 */,
+/* 29 */,
 /* 30 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -10336,7 +9095,8 @@
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 	var App = (_dec = (0, _vueClassComponent2.default)({
-	    template: _appTpl2.default
+	    template: _appTpl2.default,
+	    replace: false
 	}), _dec(_class = function () {
 	    function App() {
 	        _classCallCheck(this, App);
@@ -10355,7 +9115,953 @@
 /* 35 */
 /***/ function(module, exports) {
 
-	module.exports = "<div>\n    <div style=\"position: relative;\">\n        <h1>Hello App!</h1>\n        <p>\n            <!-- use v-link directive for navigation. -->\n            <a v-link=\"{ path: '/dashboard' }\">Go to Dashboard</a>\n            <a v-link=\"{ path: '/about' }\">Go to About</a>\n            <a v-link=\"{ path: '/home' }\">Go to Home</a>\n            <a v-link=\"{ path: '/login' }\">Go to Login</a>\n            <a v-link=\"{ path: '/register' }\">Go to Register</a>\n        </p>\n    </div>\n\n    <div style=\"position: relative;\">\n        <router-view></router-view>\n    </div>\n</div>";
+	module.exports = "<div class=\"wrapper\">\n    <div style=\"position: relative;\">\n        <h1>Hello App!</h1>\n        <p>\n            <!-- use v-link directive for navigation. -->\n            <a v-link=\"{ path: '/dashboard' }\">Go to Dashboard</a>\n            <a v-link=\"{ path: '/about' }\">Go to About</a>\n            <a v-link=\"{ path: '/home' }\">Go to Home</a>\n            <a v-link=\"{ path: '/login' }\">Go to Login</a>\n            <a v-link=\"{ path: '/register' }\">Go to Register</a>\n        </p>\n    </div>\n\n    <div style=\"position: relative;\">\n        <router-view></router-view>\n    </div>\n</div>";
+
+/***/ },
+/* 36 */
+/***/ function(module, exports) {
+
+	'use strict';
+
+	/*! Copyright (c) 2011 Piotr Rochala (http://rocha.la)
+	 * Dual licensed under the MIT (http://www.opensource.org/licenses/mit-license.php)
+	 * and GPL (http://www.opensource.org/licenses/gpl-license.php) licenses.
+	 *
+	 * Version: 1.3.6
+	 *
+	 */
+	module.exports = function ($) {
+
+	  $.fn.extend({
+	    slimScroll: function slimScroll(options) {
+
+	      var defaults = {
+
+	        // width in pixels of the visible scroll area
+	        width: 'auto',
+
+	        // height in pixels of the visible scroll area
+	        height: '250px',
+
+	        // width in pixels of the scrollbar and rail
+	        size: '7px',
+
+	        // scrollbar color, accepts any hex/color value
+	        color: '#000',
+
+	        // scrollbar position - left/right
+	        position: 'right',
+
+	        // distance in pixels between the side edge and the scrollbar
+	        distance: '1px',
+
+	        // default scroll position on load - top / bottom / $('selector')
+	        start: 'top',
+
+	        // sets scrollbar opacity
+	        opacity: .4,
+
+	        // enables always-on mode for the scrollbar
+	        alwaysVisible: false,
+
+	        // check if we should hide the scrollbar when user is hovering over
+	        disableFadeOut: false,
+
+	        // sets visibility of the rail
+	        railVisible: false,
+
+	        // sets rail color
+	        railColor: '#333',
+
+	        // sets rail opacity
+	        railOpacity: .2,
+
+	        // whether  we should use jQuery UI Draggable to enable bar dragging
+	        railDraggable: true,
+
+	        // defautlt CSS class of the slimscroll rail
+	        railClass: 'slimScrollRail',
+
+	        // defautlt CSS class of the slimscroll bar
+	        barClass: 'slimScrollBar',
+
+	        // defautlt CSS class of the slimscroll wrapper
+	        wrapperClass: 'slimScrollDiv',
+
+	        // check if mousewheel should scroll the window if we reach top/bottom
+	        allowPageScroll: false,
+
+	        // scroll amount applied to each mouse wheel step
+	        wheelStep: 20,
+
+	        // scroll amount applied when user is using gestures
+	        touchScrollStep: 200,
+
+	        // sets border radius
+	        borderRadius: '7px',
+
+	        // sets border radius of the rail
+	        railBorderRadius: '7px'
+	      };
+
+	      var o = $.extend(defaults, options);
+
+	      // do it for every element that matches selector
+	      this.each(function () {
+
+	        var isOverPanel,
+	            isOverBar,
+	            isDragg,
+	            queueHide,
+	            touchDif,
+	            barHeight,
+	            percentScroll,
+	            lastScroll,
+	            divS = '<div></div>',
+	            minBarHeight = 30,
+	            releaseScroll = false;
+
+	        // used in event handlers and for better minification
+	        var me = $(this);
+
+	        // ensure we are not binding it again
+	        if (me.parent().hasClass(o.wrapperClass)) {
+	          // start from last bar position
+	          var offset = me.scrollTop();
+
+	          // find bar and rail
+	          bar = me.closest('.' + o.barClass);
+	          rail = me.closest('.' + o.railClass);
+
+	          getBarHeight();
+
+	          // check if we should scroll existing instance
+	          if ($.isPlainObject(options)) {
+	            // Pass height: auto to an existing slimscroll object to force a resize after contents have changed
+	            if ('height' in options && options.height == 'auto') {
+	              me.parent().css('height', 'auto');
+	              me.css('height', 'auto');
+	              var height = me.parent().parent().height();
+	              me.parent().css('height', height);
+	              me.css('height', height);
+	            }
+
+	            if ('scrollTo' in options) {
+	              // jump to a static point
+	              offset = parseInt(o.scrollTo);
+	            } else if ('scrollBy' in options) {
+	              // jump by value pixels
+	              offset += parseInt(o.scrollBy);
+	            } else if ('destroy' in options) {
+	              // remove slimscroll elements
+	              bar.remove();
+	              rail.remove();
+	              me.unwrap();
+	              return;
+	            }
+
+	            // scroll content by the given offset
+	            scrollContent(offset, false, true);
+	          }
+
+	          return;
+	        } else if ($.isPlainObject(options)) {
+	          if ('destroy' in options) {
+	            return;
+	          }
+	        }
+
+	        // optionally set height to the parent's height
+	        o.height = o.height == 'auto' ? me.parent().height() : o.height;
+
+	        // wrap content
+	        var wrapper = $(divS).addClass(o.wrapperClass).css({
+	          position: 'relative',
+	          overflow: 'hidden',
+	          width: o.width,
+	          height: o.height
+	        });
+
+	        // update style for the div
+	        me.css({
+	          overflow: 'hidden',
+	          width: o.width,
+	          height: o.height
+	        });
+
+	        // create scrollbar rail
+	        var rail = $(divS).addClass(o.railClass).css({
+	          width: o.size,
+	          height: '100%',
+	          position: 'absolute',
+	          top: 0,
+	          display: o.alwaysVisible && o.railVisible ? 'block' : 'none',
+	          'border-radius': o.railBorderRadius,
+	          background: o.railColor,
+	          opacity: o.railOpacity,
+	          zIndex: 90
+	        });
+
+	        // create scrollbar
+	        var bar = $(divS).addClass(o.barClass).css({
+	          background: o.color,
+	          width: o.size,
+	          position: 'absolute',
+	          top: 0,
+	          opacity: o.opacity,
+	          display: o.alwaysVisible ? 'block' : 'none',
+	          'border-radius': o.borderRadius,
+	          BorderRadius: o.borderRadius,
+	          MozBorderRadius: o.borderRadius,
+	          WebkitBorderRadius: o.borderRadius,
+	          zIndex: 99
+	        });
+
+	        // set position
+	        var posCss = o.position == 'right' ? { right: o.distance } : { left: o.distance };
+	        rail.css(posCss);
+	        bar.css(posCss);
+
+	        // wrap it
+	        me.wrap(wrapper);
+
+	        // append to parent div
+	        me.parent().append(bar);
+	        me.parent().append(rail);
+
+	        // make it draggable and no longer dependent on the jqueryUI
+	        if (o.railDraggable) {
+	          bar.bind("mousedown", function (e) {
+	            var $doc = $(document);
+	            isDragg = true;
+	            t = parseFloat(bar.css('top'));
+	            pageY = e.pageY;
+
+	            $doc.bind("mousemove.slimscroll", function (e) {
+	              currTop = t + e.pageY - pageY;
+	              bar.css('top', currTop);
+	              scrollContent(0, bar.position().top, false); // scroll content
+	            });
+
+	            $doc.bind("mouseup.slimscroll", function (e) {
+	              isDragg = false;hideBar();
+	              $doc.unbind('.slimscroll');
+	            });
+	            return false;
+	          }).bind("selectstart.slimscroll", function (e) {
+	            e.stopPropagation();
+	            e.preventDefault();
+	            return false;
+	          });
+	        }
+
+	        // on rail over
+	        rail.hover(function () {
+	          showBar();
+	        }, function () {
+	          hideBar();
+	        });
+
+	        // on bar over
+	        bar.hover(function () {
+	          isOverBar = true;
+	        }, function () {
+	          isOverBar = false;
+	        });
+
+	        // show on parent mouseover
+	        me.hover(function () {
+	          isOverPanel = true;
+	          showBar();
+	          hideBar();
+	        }, function () {
+	          isOverPanel = false;
+	          hideBar();
+	        });
+
+	        // support for mobile
+	        me.bind('touchstart', function (e, b) {
+	          if (e.originalEvent.touches.length) {
+	            // record where touch started
+	            touchDif = e.originalEvent.touches[0].pageY;
+	          }
+	        });
+
+	        me.bind('touchmove', function (e) {
+	          // prevent scrolling the page if necessary
+	          if (!releaseScroll) {
+	            e.originalEvent.preventDefault();
+	          }
+	          if (e.originalEvent.touches.length) {
+	            // see how far user swiped
+	            var diff = (touchDif - e.originalEvent.touches[0].pageY) / o.touchScrollStep;
+	            // scroll content
+	            scrollContent(diff, true);
+	            touchDif = e.originalEvent.touches[0].pageY;
+	          }
+	        });
+
+	        // set up initial height
+	        getBarHeight();
+
+	        // check start position
+	        if (o.start === 'bottom') {
+	          // scroll content to bottom
+	          bar.css({ top: me.outerHeight() - bar.outerHeight() });
+	          scrollContent(0, true);
+	        } else if (o.start !== 'top') {
+	          // assume jQuery selector
+	          scrollContent($(o.start).position().top, null, true);
+
+	          // make sure bar stays hidden
+	          if (!o.alwaysVisible) {
+	            bar.hide();
+	          }
+	        }
+
+	        // attach scroll events
+	        attachWheel(this);
+
+	        function _onWheel(e) {
+	          // use mouse wheel only when mouse is over
+	          if (!isOverPanel) {
+	            return;
+	          }
+
+	          var e = e || window.event;
+
+	          var delta = 0;
+	          if (e.wheelDelta) {
+	            delta = -e.wheelDelta / 120;
+	          }
+	          if (e.detail) {
+	            delta = e.detail / 3;
+	          }
+
+	          var target = e.target || e.srcTarget || e.srcElement;
+	          if ($(target).closest('.' + o.wrapperClass).is(me.parent())) {
+	            // scroll content
+	            scrollContent(delta, true);
+	          }
+
+	          // stop window scroll
+	          if (e.preventDefault && !releaseScroll) {
+	            e.preventDefault();
+	          }
+	          if (!releaseScroll) {
+	            e.returnValue = false;
+	          }
+	        }
+
+	        function scrollContent(y, isWheel, isJump) {
+	          releaseScroll = false;
+	          var delta = y;
+	          var maxTop = me.outerHeight() - bar.outerHeight();
+
+	          if (isWheel) {
+	            // move bar with mouse wheel
+	            delta = parseInt(bar.css('top')) + y * parseInt(o.wheelStep) / 100 * bar.outerHeight();
+
+	            // move bar, make sure it doesn't go out
+	            delta = Math.min(Math.max(delta, 0), maxTop);
+
+	            // if scrolling down, make sure a fractional change to the
+	            // scroll position isn't rounded away when the scrollbar's CSS is set
+	            // this flooring of delta would happened automatically when
+	            // bar.css is set below, but we floor here for clarity
+	            delta = y > 0 ? Math.ceil(delta) : Math.floor(delta);
+
+	            // scroll the scrollbar
+	            bar.css({ top: delta + 'px' });
+	          }
+
+	          // calculate actual scroll amount
+	          percentScroll = parseInt(bar.css('top')) / (me.outerHeight() - bar.outerHeight());
+	          delta = percentScroll * (me[0].scrollHeight - me.outerHeight());
+
+	          if (isJump) {
+	            delta = y;
+	            var offsetTop = delta / me[0].scrollHeight * me.outerHeight();
+	            offsetTop = Math.min(Math.max(offsetTop, 0), maxTop);
+	            bar.css({ top: offsetTop + 'px' });
+	          }
+
+	          // scroll content
+	          me.scrollTop(delta);
+
+	          // fire scrolling event
+	          me.trigger('slimscrolling', ~ ~delta);
+
+	          // ensure bar is visible
+	          showBar();
+
+	          // trigger hide when scroll is stopped
+	          hideBar();
+	        }
+
+	        function attachWheel(target) {
+	          if (window.addEventListener) {
+	            target.addEventListener('DOMMouseScroll', _onWheel, false);
+	            target.addEventListener('mousewheel', _onWheel, false);
+	          } else {
+	            document.attachEvent("onmousewheel", _onWheel);
+	          }
+	        }
+
+	        function getBarHeight() {
+	          // calculate scrollbar height and make sure it is not too small
+	          barHeight = Math.max(me.outerHeight() / me[0].scrollHeight * me.outerHeight(), minBarHeight);
+	          bar.css({ height: barHeight + 'px' });
+
+	          // hide scrollbar if content is not long enough
+	          var display = barHeight == me.outerHeight() ? 'none' : 'block';
+	          bar.css({ display: display });
+	        }
+
+	        function showBar() {
+	          // recalculate bar height
+	          getBarHeight();
+	          clearTimeout(queueHide);
+
+	          // when bar reached top or bottom
+	          if (percentScroll == ~ ~percentScroll) {
+	            //release wheel
+	            releaseScroll = o.allowPageScroll;
+
+	            // publish approporiate event
+	            if (lastScroll != percentScroll) {
+	              var msg = ~ ~percentScroll == 0 ? 'top' : 'bottom';
+	              me.trigger('slimscroll', msg);
+	            }
+	          } else {
+	            releaseScroll = false;
+	          }
+	          lastScroll = percentScroll;
+
+	          // show only when required
+	          if (barHeight >= me.outerHeight()) {
+	            //allow window scroll
+	            releaseScroll = true;
+	            return;
+	          }
+	          bar.stop(true, true).fadeIn('fast');
+	          if (o.railVisible) {
+	            rail.stop(true, true).fadeIn('fast');
+	          }
+	        }
+
+	        function hideBar() {
+	          // only hide when options allow it
+	          if (!o.alwaysVisible) {
+	            queueHide = setTimeout(function () {
+	              if (!(o.disableFadeOut && isOverPanel) && !isOverBar && !isDragg) {
+	                bar.fadeOut('slow');
+	                rail.fadeOut('slow');
+	              }
+	            }, 1000);
+	          }
+	        }
+	      });
+
+	      // maintain chainability
+	      return this;
+	    }
+	  });
+
+	  $.fn.extend({
+	    slimscroll: $.fn.slimScroll
+	  });
+	};
+
+/***/ },
+/* 37 */
+/***/ function(module, exports) {
+
+	'use strict';
+
+	var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol ? "symbol" : typeof obj; };
+
+	/* ========================================================================
+	 * Bootstrap: tooltip.js v3.3.6
+	 * http://getbootstrap.com/javascript/#tooltip
+	 * Inspired by the original jQuery.tipsy by Jason Frame
+	 * ========================================================================
+	 * Copyright 2011-2015 Twitter, Inc.
+	 * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+	 * ======================================================================== */
+
+	module.exports = function ($) {
+	  'use strict';
+
+	  // TOOLTIP PUBLIC CLASS DEFINITION
+	  // ===============================
+
+	  var Tooltip = function Tooltip(element, options) {
+	    this.type = null;
+	    this.options = null;
+	    this.enabled = null;
+	    this.timeout = null;
+	    this.hoverState = null;
+	    this.$element = null;
+	    this.inState = null;
+
+	    this.init('tooltip', element, options);
+	  };
+
+	  Tooltip.VERSION = '3.3.6';
+
+	  Tooltip.TRANSITION_DURATION = 150;
+
+	  Tooltip.DEFAULTS = {
+	    animation: true,
+	    placement: 'top',
+	    selector: false,
+	    template: '<div class="tooltip" role="tooltip"><div class="tooltip-arrow"></div><div class="tooltip-inner"></div></div>',
+	    trigger: 'hover focus',
+	    title: '',
+	    delay: 0,
+	    html: false,
+	    container: false,
+	    viewport: {
+	      selector: 'body',
+	      padding: 0
+	    }
+	  };
+
+	  Tooltip.prototype.init = function (type, element, options) {
+	    this.enabled = true;
+	    this.type = type;
+	    this.$element = $(element);
+	    this.options = this.getOptions(options);
+	    this.$viewport = this.options.viewport && $($.isFunction(this.options.viewport) ? this.options.viewport.call(this, this.$element) : this.options.viewport.selector || this.options.viewport);
+	    this.inState = { click: false, hover: false, focus: false };
+
+	    if (this.$element[0] instanceof document.constructor && !this.options.selector) {
+	      throw new Error('`selector` option must be specified when initializing ' + this.type + ' on the window.document object!');
+	    }
+
+	    var triggers = this.options.trigger.split(' ');
+
+	    for (var i = triggers.length; i--;) {
+	      var trigger = triggers[i];
+
+	      if (trigger == 'click') {
+	        this.$element.on('click.' + this.type, this.options.selector, $.proxy(this.toggle, this));
+	      } else if (trigger != 'manual') {
+	        var eventIn = trigger == 'hover' ? 'mouseenter' : 'focusin';
+	        var eventOut = trigger == 'hover' ? 'mouseleave' : 'focusout';
+
+	        this.$element.on(eventIn + '.' + this.type, this.options.selector, $.proxy(this.enter, this));
+	        this.$element.on(eventOut + '.' + this.type, this.options.selector, $.proxy(this.leave, this));
+	      }
+	    }
+
+	    this.options.selector ? this._options = $.extend({}, this.options, { trigger: 'manual', selector: '' }) : this.fixTitle();
+	  };
+
+	  Tooltip.prototype.getDefaults = function () {
+	    return Tooltip.DEFAULTS;
+	  };
+
+	  Tooltip.prototype.getOptions = function (options) {
+	    options = $.extend({}, this.getDefaults(), this.$element.data(), options);
+
+	    if (options.delay && typeof options.delay == 'number') {
+	      options.delay = {
+	        show: options.delay,
+	        hide: options.delay
+	      };
+	    }
+
+	    return options;
+	  };
+
+	  Tooltip.prototype.getDelegateOptions = function () {
+	    var options = {};
+	    var defaults = this.getDefaults();
+
+	    this._options && $.each(this._options, function (key, value) {
+	      if (defaults[key] != value) options[key] = value;
+	    });
+
+	    return options;
+	  };
+
+	  Tooltip.prototype.enter = function (obj) {
+	    var self = obj instanceof this.constructor ? obj : $(obj.currentTarget).data('bs.' + this.type);
+
+	    if (!self) {
+	      self = new this.constructor(obj.currentTarget, this.getDelegateOptions());
+	      $(obj.currentTarget).data('bs.' + this.type, self);
+	    }
+
+	    if (obj instanceof $.Event) {
+	      self.inState[obj.type == 'focusin' ? 'focus' : 'hover'] = true;
+	    }
+
+	    if (self.tip().hasClass('in') || self.hoverState == 'in') {
+	      self.hoverState = 'in';
+	      return;
+	    }
+
+	    clearTimeout(self.timeout);
+
+	    self.hoverState = 'in';
+
+	    if (!self.options.delay || !self.options.delay.show) return self.show();
+
+	    self.timeout = setTimeout(function () {
+	      if (self.hoverState == 'in') self.show();
+	    }, self.options.delay.show);
+	  };
+
+	  Tooltip.prototype.isInStateTrue = function () {
+	    for (var key in this.inState) {
+	      if (this.inState[key]) return true;
+	    }
+
+	    return false;
+	  };
+
+	  Tooltip.prototype.leave = function (obj) {
+	    var self = obj instanceof this.constructor ? obj : $(obj.currentTarget).data('bs.' + this.type);
+
+	    if (!self) {
+	      self = new this.constructor(obj.currentTarget, this.getDelegateOptions());
+	      $(obj.currentTarget).data('bs.' + this.type, self);
+	    }
+
+	    if (obj instanceof $.Event) {
+	      self.inState[obj.type == 'focusout' ? 'focus' : 'hover'] = false;
+	    }
+
+	    if (self.isInStateTrue()) return;
+
+	    clearTimeout(self.timeout);
+
+	    self.hoverState = 'out';
+
+	    if (!self.options.delay || !self.options.delay.hide) return self.hide();
+
+	    self.timeout = setTimeout(function () {
+	      if (self.hoverState == 'out') self.hide();
+	    }, self.options.delay.hide);
+	  };
+
+	  Tooltip.prototype.show = function () {
+	    var e = $.Event('show.bs.' + this.type);
+
+	    if (this.hasContent() && this.enabled) {
+	      this.$element.trigger(e);
+
+	      var inDom = $.contains(this.$element[0].ownerDocument.documentElement, this.$element[0]);
+	      if (e.isDefaultPrevented() || !inDom) return;
+	      var that = this;
+
+	      var $tip = this.tip();
+
+	      var tipId = this.getUID(this.type);
+
+	      this.setContent();
+	      $tip.attr('id', tipId);
+	      this.$element.attr('aria-describedby', tipId);
+
+	      if (this.options.animation) $tip.addClass('fade');
+
+	      var placement = typeof this.options.placement == 'function' ? this.options.placement.call(this, $tip[0], this.$element[0]) : this.options.placement;
+
+	      var autoToken = /\s?auto?\s?/i;
+	      var autoPlace = autoToken.test(placement);
+	      if (autoPlace) placement = placement.replace(autoToken, '') || 'top';
+
+	      $tip.detach().css({ top: 0, left: 0, display: 'block' }).addClass(placement).data('bs.' + this.type, this);
+
+	      this.options.container ? $tip.appendTo(this.options.container) : $tip.insertAfter(this.$element);
+	      this.$element.trigger('inserted.bs.' + this.type);
+
+	      var pos = this.getPosition();
+	      var actualWidth = $tip[0].offsetWidth;
+	      var actualHeight = $tip[0].offsetHeight;
+
+	      if (autoPlace) {
+	        var orgPlacement = placement;
+	        var viewportDim = this.getPosition(this.$viewport);
+
+	        placement = placement == 'bottom' && pos.bottom + actualHeight > viewportDim.bottom ? 'top' : placement == 'top' && pos.top - actualHeight < viewportDim.top ? 'bottom' : placement == 'right' && pos.right + actualWidth > viewportDim.width ? 'left' : placement == 'left' && pos.left - actualWidth < viewportDim.left ? 'right' : placement;
+
+	        $tip.removeClass(orgPlacement).addClass(placement);
+	      }
+
+	      var calculatedOffset = this.getCalculatedOffset(placement, pos, actualWidth, actualHeight);
+
+	      this.applyPlacement(calculatedOffset, placement);
+
+	      var complete = function complete() {
+	        var prevHoverState = that.hoverState;
+	        that.$element.trigger('shown.bs.' + that.type);
+	        that.hoverState = null;
+
+	        if (prevHoverState == 'out') that.leave(that);
+	      };
+
+	      $.support.transition && this.$tip.hasClass('fade') ? $tip.one('bsTransitionEnd', complete).emulateTransitionEnd(Tooltip.TRANSITION_DURATION) : complete();
+	    }
+	  };
+
+	  Tooltip.prototype.applyPlacement = function (offset, placement) {
+	    var $tip = this.tip();
+	    var width = $tip[0].offsetWidth;
+	    var height = $tip[0].offsetHeight;
+
+	    // manually read margins because getBoundingClientRect includes difference
+	    var marginTop = parseInt($tip.css('margin-top'), 10);
+	    var marginLeft = parseInt($tip.css('margin-left'), 10);
+
+	    // we must check for NaN for ie 8/9
+	    if (isNaN(marginTop)) marginTop = 0;
+	    if (isNaN(marginLeft)) marginLeft = 0;
+
+	    offset.top += marginTop;
+	    offset.left += marginLeft;
+
+	    // $.fn.offset doesn't round pixel values
+	    // so we use setOffset directly with our own function B-0
+	    $.offset.setOffset($tip[0], $.extend({
+	      using: function using(props) {
+	        $tip.css({
+	          top: Math.round(props.top),
+	          left: Math.round(props.left)
+	        });
+	      }
+	    }, offset), 0);
+
+	    $tip.addClass('in');
+
+	    // check to see if placing tip in new offset caused the tip to resize itself
+	    var actualWidth = $tip[0].offsetWidth;
+	    var actualHeight = $tip[0].offsetHeight;
+
+	    if (placement == 'top' && actualHeight != height) {
+	      offset.top = offset.top + height - actualHeight;
+	    }
+
+	    var delta = this.getViewportAdjustedDelta(placement, offset, actualWidth, actualHeight);
+
+	    if (delta.left) offset.left += delta.left;else offset.top += delta.top;
+
+	    var isVertical = /top|bottom/.test(placement);
+	    var arrowDelta = isVertical ? delta.left * 2 - width + actualWidth : delta.top * 2 - height + actualHeight;
+	    var arrowOffsetPosition = isVertical ? 'offsetWidth' : 'offsetHeight';
+
+	    $tip.offset(offset);
+	    this.replaceArrow(arrowDelta, $tip[0][arrowOffsetPosition], isVertical);
+	  };
+
+	  Tooltip.prototype.replaceArrow = function (delta, dimension, isVertical) {
+	    this.arrow().css(isVertical ? 'left' : 'top', 50 * (1 - delta / dimension) + '%').css(isVertical ? 'top' : 'left', '');
+	  };
+
+	  Tooltip.prototype.setContent = function () {
+	    var $tip = this.tip();
+	    var title = this.getTitle();
+
+	    $tip.find('.tooltip-inner')[this.options.html ? 'html' : 'text'](title);
+	    $tip.removeClass('fade in top bottom left right');
+	  };
+
+	  Tooltip.prototype.hide = function (callback) {
+	    var that = this;
+	    var $tip = $(this.$tip);
+	    var e = $.Event('hide.bs.' + this.type);
+
+	    function complete() {
+	      if (that.hoverState != 'in') $tip.detach();
+	      that.$element.removeAttr('aria-describedby').trigger('hidden.bs.' + that.type);
+	      callback && callback();
+	    }
+
+	    this.$element.trigger(e);
+
+	    if (e.isDefaultPrevented()) return;
+
+	    $tip.removeClass('in');
+
+	    $.support.transition && $tip.hasClass('fade') ? $tip.one('bsTransitionEnd', complete).emulateTransitionEnd(Tooltip.TRANSITION_DURATION) : complete();
+
+	    this.hoverState = null;
+
+	    return this;
+	  };
+
+	  Tooltip.prototype.fixTitle = function () {
+	    var $e = this.$element;
+	    if ($e.attr('title') || typeof $e.attr('data-original-title') != 'string') {
+	      $e.attr('data-original-title', $e.attr('title') || '').attr('title', '');
+	    }
+	  };
+
+	  Tooltip.prototype.hasContent = function () {
+	    return this.getTitle();
+	  };
+
+	  Tooltip.prototype.getPosition = function ($element) {
+	    $element = $element || this.$element;
+
+	    var el = $element[0];
+	    var isBody = el.tagName == 'BODY';
+
+	    var elRect = el.getBoundingClientRect();
+	    if (elRect.width == null) {
+	      // width and height are missing in IE8, so compute them manually; see https://github.com/twbs/bootstrap/issues/14093
+	      elRect = $.extend({}, elRect, { width: elRect.right - elRect.left, height: elRect.bottom - elRect.top });
+	    }
+	    var elOffset = isBody ? { top: 0, left: 0 } : $element.offset();
+	    var scroll = { scroll: isBody ? document.documentElement.scrollTop || document.body.scrollTop : $element.scrollTop() };
+	    var outerDims = isBody ? { width: $(window).width(), height: $(window).height() } : null;
+
+	    return $.extend({}, elRect, scroll, outerDims, elOffset);
+	  };
+
+	  Tooltip.prototype.getCalculatedOffset = function (placement, pos, actualWidth, actualHeight) {
+	    return placement == 'bottom' ? { top: pos.top + pos.height, left: pos.left + pos.width / 2 - actualWidth / 2 } : placement == 'top' ? { top: pos.top - actualHeight, left: pos.left + pos.width / 2 - actualWidth / 2 } : placement == 'left' ? { top: pos.top + pos.height / 2 - actualHeight / 2, left: pos.left - actualWidth } :
+	    /* placement == 'right' */{ top: pos.top + pos.height / 2 - actualHeight / 2, left: pos.left + pos.width };
+	  };
+
+	  Tooltip.prototype.getViewportAdjustedDelta = function (placement, pos, actualWidth, actualHeight) {
+	    var delta = { top: 0, left: 0 };
+	    if (!this.$viewport) return delta;
+
+	    var viewportPadding = this.options.viewport && this.options.viewport.padding || 0;
+	    var viewportDimensions = this.getPosition(this.$viewport);
+
+	    if (/right|left/.test(placement)) {
+	      var topEdgeOffset = pos.top - viewportPadding - viewportDimensions.scroll;
+	      var bottomEdgeOffset = pos.top + viewportPadding - viewportDimensions.scroll + actualHeight;
+	      if (topEdgeOffset < viewportDimensions.top) {
+	        // top overflow
+	        delta.top = viewportDimensions.top - topEdgeOffset;
+	      } else if (bottomEdgeOffset > viewportDimensions.top + viewportDimensions.height) {
+	        // bottom overflow
+	        delta.top = viewportDimensions.top + viewportDimensions.height - bottomEdgeOffset;
+	      }
+	    } else {
+	      var leftEdgeOffset = pos.left - viewportPadding;
+	      var rightEdgeOffset = pos.left + viewportPadding + actualWidth;
+	      if (leftEdgeOffset < viewportDimensions.left) {
+	        // left overflow
+	        delta.left = viewportDimensions.left - leftEdgeOffset;
+	      } else if (rightEdgeOffset > viewportDimensions.right) {
+	        // right overflow
+	        delta.left = viewportDimensions.left + viewportDimensions.width - rightEdgeOffset;
+	      }
+	    }
+
+	    return delta;
+	  };
+
+	  Tooltip.prototype.getTitle = function () {
+	    var title;
+	    var $e = this.$element;
+	    var o = this.options;
+
+	    title = $e.attr('data-original-title') || (typeof o.title == 'function' ? o.title.call($e[0]) : o.title);
+
+	    return title;
+	  };
+
+	  Tooltip.prototype.getUID = function (prefix) {
+	    do {
+	      prefix += ~ ~(Math.random() * 1000000);
+	    } while (document.getElementById(prefix));
+	    return prefix;
+	  };
+
+	  Tooltip.prototype.tip = function () {
+	    if (!this.$tip) {
+	      this.$tip = $(this.options.template);
+	      if (this.$tip.length != 1) {
+	        throw new Error(this.type + ' `template` option must consist of exactly 1 top-level element!');
+	      }
+	    }
+	    return this.$tip;
+	  };
+
+	  Tooltip.prototype.arrow = function () {
+	    return this.$arrow = this.$arrow || this.tip().find('.tooltip-arrow');
+	  };
+
+	  Tooltip.prototype.enable = function () {
+	    this.enabled = true;
+	  };
+
+	  Tooltip.prototype.disable = function () {
+	    this.enabled = false;
+	  };
+
+	  Tooltip.prototype.toggleEnabled = function () {
+	    this.enabled = !this.enabled;
+	  };
+
+	  Tooltip.prototype.toggle = function (e) {
+	    var self = this;
+	    if (e) {
+	      self = $(e.currentTarget).data('bs.' + this.type);
+	      if (!self) {
+	        self = new this.constructor(e.currentTarget, this.getDelegateOptions());
+	        $(e.currentTarget).data('bs.' + this.type, self);
+	      }
+	    }
+
+	    if (e) {
+	      self.inState.click = !self.inState.click;
+	      if (self.isInStateTrue()) self.enter(self);else self.leave(self);
+	    } else {
+	      self.tip().hasClass('in') ? self.leave(self) : self.enter(self);
+	    }
+	  };
+
+	  Tooltip.prototype.destroy = function () {
+	    var that = this;
+	    clearTimeout(this.timeout);
+	    this.hide(function () {
+	      that.$element.off('.' + that.type).removeData('bs.' + that.type);
+	      if (that.$tip) {
+	        that.$tip.detach();
+	      }
+	      that.$tip = null;
+	      that.$arrow = null;
+	      that.$viewport = null;
+	    });
+	  };
+
+	  // TOOLTIP PLUGIN DEFINITION
+	  // =========================
+
+	  function Plugin(option) {
+	    return this.each(function () {
+	      var $this = $(this);
+	      var data = $this.data('bs.tooltip');
+	      var options = (typeof option === 'undefined' ? 'undefined' : _typeof(option)) == 'object' && option;
+
+	      if (!data && /destroy|hide/.test(option)) return;
+	      if (!data) $this.data('bs.tooltip', data = new Tooltip(this, options));
+	      if (typeof option == 'string') data[option]();
+	    });
+	  }
+
+	  var old = $.fn.tooltip;
+
+	  $.fn.tooltip = Plugin;
+	  $.fn.tooltip.Constructor = Tooltip;
+
+	  // TOOLTIP NO CONFLICT
+	  // ===================
+
+	  $.fn.tooltip.noConflict = function () {
+	    $.fn.tooltip = old;
+	    return this;
+	  };
+	};
 
 /***/ }
 /******/ ]);

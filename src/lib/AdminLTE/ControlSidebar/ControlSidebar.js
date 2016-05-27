@@ -9,13 +9,11 @@ function ControlSidebar(jQuery, settings) {
 //instantiate the object
 ControlSidebar.prototype.activate = function () {
     //Get the object
-    var $ = this.$;
-    //Update options
-    var o = this.settings;
+    var $ = this.$, o = this.settings, _this = this;
     //Get the sidebar
-    var sidebar = $(o.selector);
+    var sidebar = $(o.controlSidebarOptions.selector);
     //The toggle button
-    var btn = $(o.toggleBtnSelector);
+    var btn = $(o.controlSidebarOptions.toggleBtnSelector);
 
     //Listen to the click event
     btn.on('click', function (e) {
@@ -24,23 +22,23 @@ ControlSidebar.prototype.activate = function () {
         if (!sidebar.hasClass('control-sidebar-open')
             && !$('body').hasClass('control-sidebar-open')) {
             //Open the sidebar
-            this.open(sidebar, o.slide);
+            _this.open(sidebar, o.controlSidebarOptions.slide);
         } else {
-            this.close(sidebar, o.slide);
+            _this.close(sidebar, o.controlSidebarOptions.slide);
         }
     });
 
     //If the body has a boxed layout, fix the sidebar bg position
     var bg = $(".control-sidebar-bg");
-    this._fix(bg);
+    _this._fix(bg);
 
     //If the body has a fixed layout, make the control sidebar fixed
     if ($('body').hasClass('fixed')) {
-        this._fixForFixed(sidebar);
+        _this._fixForFixed(sidebar);
     } else {
         //If the content height is less than the sidebar's height, force max height
         if ($('.content-wrapper, .right-side').height() < sidebar.height()) {
-            this._fixForContent(sidebar);
+            _this._fixForContent(sidebar);
         }
     }
 };

@@ -12,6 +12,6 @@ var router = new VueRouter({
 
 router.map(routers);
 
-router.start(App, '#app');
+router.start(App, 'body');
 
 window.router = router;
