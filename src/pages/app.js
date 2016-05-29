@@ -1,8 +1,8 @@
 import Component from 'vue-class-component';
-import tpl from './app.tpl.html'
-import style from './app.scss'
+import tpl from './app.tpl.html';
+import style from './app.scss';
 
-import vSidebar from '../components/siderbar/sidebar'
+import vSidebar from '../components/siderbar/sidebar';
 
 @Component({
     template: tpl,
@@ -12,7 +12,6 @@ import vSidebar from '../components/siderbar/sidebar'
     }
 })
 class App{
-    constructor() {}
     ready() {
     }
 }

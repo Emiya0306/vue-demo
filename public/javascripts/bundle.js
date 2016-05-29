@@ -15493,6 +15493,10 @@
 
 	var _authTpl2 = _interopRequireDefault(_authTpl);
 
+	var _auth = __webpack_require__(221);
+
+	var _auth2 = _interopRequireDefault(_auth);
+
 	var _sign_in = __webpack_require__(219);
 
 	var _sign_in2 = _interopRequireDefault(_sign_in);
@@ -15500,14 +15504,6 @@
 	var _sign_up = __webpack_require__(217);
 
 	var _sign_up2 = _interopRequireDefault(_sign_up);
-
-	var _queueAnim = __webpack_require__(143);
-
-	var _queueAnim2 = _interopRequireDefault(_queueAnim);
-
-	var _auth = __webpack_require__(221);
-
-	var _auth2 = _interopRequireDefault(_auth);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -15517,8 +15513,7 @@
 	    template: _authTpl2.default,
 	    components: {
 	        vLogin: _sign_in2.default,
-	        vRegister: _sign_up2.default,
-	        vQueueAnim: _queueAnim2.default
+	        vRegister: _sign_up2.default
 	    }
 	}), _dec(_class = function () {
 	    function Auth() {
@@ -15555,7 +15550,7 @@
 /* 216 */
 /***/ function(module, exports) {
 
-	module.exports = "<div class=\"container\">\n    <v-queue-anim>\n        <div key=\"a\" class=\"Auth__header\">\n            <img class=\"Auth__logo\" src=\"/images/img_logo.png\">\n        </div>\n        <div key=\"b\" class=\"Auth__body\">\n            <div class=\"Auth__menu--container\">\n                <div class=\"Auth__menu\">\n                    <a class=\"Auth__menu--item\"\n                       @click=\"_showLogin\"\n                       v-link=\"{ path: '/sign_in', activeClass: 'active' }\">登陆</a>\n                    <b class=\"Auth__menu--split\">·</b>\n                    <a class=\"Auth__menu--item\"\n                       @click=\"_showRegister\"\n                       v-link=\"{ path: '/sign_up', activeClass: 'active' }\">注册</a>\n                </div>\n            </div>\n\n            <v-login :show=\"isLogin\"></v-login>\n\n            <v-register :show=\"!isLogin\"></v-register>\n\n        </div>\n    </v-queue-anim>\n</div>";
+	module.exports = "<div class=\"container\">\n    <div class=\"Auth__header\">\n        <img class=\"Auth__logo\" src=\"/images/img_logo.png\">\n    </div>\n\n    <div class=\"Auth__menu--container\">\n        <div class=\"Auth__menu\">\n            <a class=\"Auth__menu--item\"\n               @click=\"_showLogin\"\n               v-link=\"{ path: '/sign_in', activeClass: 'active' }\">登陆</a>\n            <b class=\"Auth__menu--split\">·</b>\n            <a class=\"Auth__menu--item\"\n               @click=\"_showRegister\"\n               v-link=\"{ path: '/sign_up', activeClass: 'active' }\">注册</a>\n        </div>\n    </div>\n\n    <div class=\"Auth__body\">\n        <div :class=\"[ isLogin ? '' : 'hidden' ]\">\n            <v-login></v-login>\n        </div>\n        <div :class=\"[ !isLogin ? '' : 'hidden' ]\">\n            <v-register></v-register>\n        </div>\n    </div>\n</div>";
 
 /***/ },
 /* 217 */
@@ -15579,20 +15574,12 @@
 
 	var _sign_upTpl2 = _interopRequireDefault(_sign_upTpl);
 
-	var _queueAnim = __webpack_require__(143);
-
-	var _queueAnim2 = _interopRequireDefault(_queueAnim);
-
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 	var Register = (_dec = (0, _vueClassComponent2.default)({
-	    template: _sign_upTpl2.default,
-	    components: {
-	        vQueueAnim: _queueAnim2.default
-	    },
-	    props: ['show']
+	    template: _sign_upTpl2.default
 	}), _dec(_class = function () {
 	    function Register() {
 	        _classCallCheck(this, Register);
@@ -15611,7 +15598,7 @@
 /* 218 */
 /***/ function(module, exports) {
 
-	module.exports = "<div>\n    <v-queue-anim :show=\"show\">\n        <div key=\"a\">register</div>\n        <div key=\"b\">register</div>\n        <div key=\"c\">register</div>\n        <div key=\"d\">register</div>\n        <div key=\"e\">register</div>\n    </v-queue-anim>\n</div>";
+	module.exports = "<div>\n    <h1>register</h1>\n</div>";
 
 /***/ },
 /* 219 */
@@ -15635,9 +15622,9 @@
 
 	var _sign_inTpl2 = _interopRequireDefault(_sign_inTpl);
 
-	var _queueAnim = __webpack_require__(143);
+	var _inputGroup = __webpack_require__(225);
 
-	var _queueAnim2 = _interopRequireDefault(_queueAnim);
+	var _inputGroup2 = _interopRequireDefault(_inputGroup);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -15646,15 +15633,22 @@
 	var Login = (_dec = (0, _vueClassComponent2.default)({
 	    template: _sign_inTpl2.default,
 	    components: {
-	        vQueueAnim: _queueAnim2.default
-	    },
-	    props: ['show']
+	        vInputGroup: _inputGroup2.default
+	    }
 	}), _dec(_class = function () {
 	    function Login() {
 	        _classCallCheck(this, Login);
 	    }
 
 	    _createClass(Login, [{
+	        key: 'data',
+	        value: function data() {
+	            return {
+	                passport: '',
+	                password: ''
+	            };
+	        }
+	    }, {
 	        key: 'ready',
 	        value: function ready() {}
 	    }]);
@@ -15667,7 +15661,7 @@
 /* 220 */
 /***/ function(module, exports) {
 
-	module.exports = "<div>\n    <v-queue-anim :show=\"show\">\n        <div key=\"a\">login</div>\n        <div key=\"b\">login</div>\n        <div key=\"c\">login</div>\n        <div key=\"d\">login</div>\n        <div key=\"e\">login</div>\n    </v-queue-anim>\n</div>";
+	module.exports = "<form>\n    <v-input-group field=\"username\" type=\"text\" length=\"6\" :value.sync=\"passport\"></v-input-group>\n</form>";
 
 /***/ },
 /* 221 */
@@ -15704,7 +15698,124 @@
 
 
 	// module
-	exports.push([module.id, ".Auth__header {\n  margin-top: 150px;\n  text-align: center; }\n\n.Auth__logo {\n  width: 252px; }\n\n.Auth__menu--container {\n  position: relative;\n  border-bottom: 1px solid #eeeeee;\n  padding-top: 70px;\n  margin-bottom: 20px; }\n\n.Auth__menu {\n  position: absolute;\n  background: white;\n  bottom: 0;\n  left: 50%;\n  padding: 0 30px;\n  transform: translate(-50%, 50%); }\n\n.Auth__menu--item {\n  font-weight: 500;\n  font-size: 18px;\n  color: #b1b1b1; }\n  .Auth__menu--item.active {\n    color: #555555; }\n\n.Auth__menu--split {\n  font-weight: 500;\n  font-size: 18px;\n  color: #b1b1b1;\n  margin: 0 10px; }\n", ""]);
+	exports.push([module.id, ".Auth__header {\n  margin-top: 150px;\n  text-align: center; }\n\n.Auth__logo {\n  width: 252px; }\n\n.Auth__body {\n  width: 300px;\n  margin-left: auto;\n  margin-right: auto;\n  animation: Auth__slideInRight .5s 1; }\n\n.Auth__menu--container {\n  position: relative;\n  border-bottom: 1px solid #eeeeee;\n  padding-top: 70px;\n  margin-bottom: 20px; }\n\n.Auth__menu {\n  position: absolute;\n  background: white;\n  bottom: 0;\n  left: 50%;\n  padding: 0 25px;\n  transform: translate(-50%, 50%); }\n\n.Auth__menu--item {\n  font-weight: 500;\n  font-size: 18px;\n  color: #b1b1b1; }\n  .Auth__menu--item.active {\n    color: #555555; }\n\n.Auth__menu--split {\n  font-weight: 500;\n  font-size: 18px;\n  color: #b1b1b1;\n  margin: 0 10px; }\n\n@keyframes Auth__slideInRight {\n  from {\n    transform: translate3d(100%, 0, 0);\n    opacity: 0;\n    visibility: visible; }\n  to {\n    transform: translate3d(0, 0, 0);\n    opacity: 1; } }\n", ""]);
+
+	// exports
+
+
+/***/ },
+/* 223 */,
+/* 224 */,
+/* 225 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _dec, _class;
+
+	var _vueClassComponent = __webpack_require__(88);
+
+	var _vueClassComponent2 = _interopRequireDefault(_vueClassComponent);
+
+	var _inputGroupTpl = __webpack_require__(226);
+
+	var _inputGroupTpl2 = _interopRequireDefault(_inputGroupTpl);
+
+	var _inputGroup = __webpack_require__(227);
+
+	var _inputGroup2 = _interopRequireDefault(_inputGroup);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	var InputGroup = (_dec = (0, _vueClassComponent2.default)({
+	    template: _inputGroupTpl2.default,
+	    props: {
+	        field: String,
+	        type: String,
+	        length: String,
+	        value: {
+	            type: String,
+	            twoWay: true
+	        }
+	    }
+	}), _dec(_class = function () {
+	    function InputGroup() {
+	        _classCallCheck(this, InputGroup);
+	    }
+
+	    _createClass(InputGroup, [{
+	        key: '_onKeyDown',
+	        value: function _onKeyDown(event) {
+	            this.value = event.target.value;
+	            console.log(event.target.value.length);
+	        }
+	    }, {
+	        key: '_onChange',
+	        value: function _onChange(event) {
+	            var value = event.target.value;
+	            this._setValue(value);
+	        }
+	    }, {
+	        key: '_setValue',
+	        value: function _setValue(value) {
+	            this.value = value;
+	        }
+	    }]);
+
+	    return InputGroup;
+	}()) || _class);
+	exports.default = InputGroup;
+
+/***/ },
+/* 226 */
+/***/ function(module, exports) {
+
+	module.exports = "<div class=\"Form__input-group\">\n    <label class=\"Form__input--label\"\n           :for=\"name\">{{ name }}</label>\n    <input class=\"Form__input--text\"\n           @keydown=\"_onKeyDown\"\n           @change=\"_onChange\"\n           :id=\"name\"\n           :name=\"field\"\n           :value=\"value\"\n           :maxlength=\"length\">\n</div>";
+
+/***/ },
+/* 227 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+
+	// load the styles
+	var content = __webpack_require__(228);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(174)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(false) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept("!!./../../../../node_modules/css-loader/index.js!./../../../../node_modules/sass-loader/index.js!./../../../../node_modules/postcss-loader/index.js?browsers=last 2 version!./input-group.scss", function() {
+				var newContent = require("!!./../../../../node_modules/css-loader/index.js!./../../../../node_modules/sass-loader/index.js!./../../../../node_modules/postcss-loader/index.js?browsers=last 2 version!./input-group.scss");
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ },
+/* 228 */
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(173)();
+	// imports
+
+
+	// module
+	exports.push([module.id, "", ""]);
 
 	// exports
 

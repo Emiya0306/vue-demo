@@ -1,16 +1,21 @@
 import Component from 'vue-class-component';
-import tpl from './sign_in.tpl.html'
-
-import vQueueAnim from 'vue-antd/components/queue-anim'
+import tpl from './sign_in.tpl.html';
+import vInputGroup from '../../../../components/form/input-group/input-group';
 
 @Component({
     template: tpl,
     components: {
-        vQueueAnim
-    },
-    props:['show']
+        vInputGroup
+    }
 })
 class Login{
+
+    data() {
+        return {
+            passport: '',
+            password: ''
+        }
+    }
 
     ready() {
     }

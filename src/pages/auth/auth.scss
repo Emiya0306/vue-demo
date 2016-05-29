@@ -10,7 +10,10 @@
 }
 
 .Auth__body {
-
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  animation: Auth__slideInRight .5s 1;
 }
 
 .Auth__menu--container {
@@ -25,7 +28,7 @@
   background: white;
   bottom: 0;
   left: 50%;
-  padding: 0 30px;
+  padding: 0 25px;
   transform: translate(-50%, 50%);
 }
 
@@ -43,6 +46,19 @@
   font-size: 18px;
   color: #b1b1b1;
   margin: 0 10px;
+}
+
+@keyframes Auth__slideInRight {
+  from {
+    transform: translate3d(100%, 0, 0);
+    opacity: 0;
+    visibility: visible;
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
 }
 
 @media screen and (max-width: $screen-xs-max) {

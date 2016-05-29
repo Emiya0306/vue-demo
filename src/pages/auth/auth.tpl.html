@@ -1,25 +1,26 @@
 <div class="container">
-    <v-queue-anim>
-        <div key="a" class="Auth__header">
-            <img class="Auth__logo" src="/images/img_logo.png">
+    <div class="Auth__header">
+        <img class="Auth__logo" src="/images/img_logo.png">
+    </div>
+
+    <div class="Auth__menu--container">
+        <div class="Auth__menu">
+            <a class="Auth__menu--item"
+               @click="_showLogin"
+               v-link="{ path: '/sign_in', activeClass: 'active' }">登陆</a>
+            <b class="Auth__menu--split">·</b>
+            <a class="Auth__menu--item"
+               @click="_showRegister"
+               v-link="{ path: '/sign_up', activeClass: 'active' }">注册</a>
         </div>
-        <div key="b" class="Auth__body">
-            <div class="Auth__menu--container">
-                <div class="Auth__menu">
-                    <a class="Auth__menu--item"
-                       @click="_showLogin"
-                       v-link="{ path: '/sign_in', activeClass: 'active' }">登陆</a>
-                    <b class="Auth__menu--split">·</b>
-                    <a class="Auth__menu--item"
-                       @click="_showRegister"
-                       v-link="{ path: '/sign_up', activeClass: 'active' }">注册</a>
-                </div>
-            </div>
+    </div>
 
-            <v-login :show="isLogin"></v-login>
-
-            <v-register :show="!isLogin"></v-register>
-
+    <div class="Auth__body">
+        <div :class="[ isLogin ? '' : 'hidden' ]">
+            <v-login></v-login>
         </div>
-    </v-queue-anim>
+        <div :class="[ !isLogin ? '' : 'hidden' ]">
+            <v-register></v-register>
+        </div>
+    </div>
 </div>

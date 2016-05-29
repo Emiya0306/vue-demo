@@ -1,18 +1,16 @@
 import Component from 'vue-class-component';
 import tpl from './auth.tpl.html'
+import style from './auth.scss'
 
 import vLogin from './components/sign_in/sign_in'
 import vRegister from './components/sign_up/sign_up'
-import vQueueAnim from 'vue-antd/components/queue-anim'
 
-import style from './auth.scss'
 
 @Component({
     template: tpl,
     components: {
         vLogin,
-        vRegister,
-        vQueueAnim
+        vRegister
     }
 })
 class Auth{

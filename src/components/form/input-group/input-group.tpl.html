@@ -1,0 +1,11 @@
+<div class="Form__input-group">
+    <label class="Form__input--label"
+           :for="name">{{ name }}</label>
+    <input class="Form__input--text"
+           @keydown="_onKeyDown"
+           @change="_onChange"
+           :id="name"
+           :name="field"
+           :value="value"
+           :maxlength="length">
+</div>
