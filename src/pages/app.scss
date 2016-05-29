@@ -1,0 +1,10 @@
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_variables.scss";
+
+.App__Container {
+  position: relative;
+  padding-left: 45px;
+}
+
+@media screen and (max-width: $screen-xs-max) {
+
+}

@@ -1,0 +1,72 @@
+<div>
+    <h1>About page</h1>
+    <v-button type="primary">主按钮</v-button>
+    <v-button>次按钮</v-button>
+    <v-button type="ghost">幽灵按钮</v-button>
+
+    <div style="width: 500px;display: block;background: white;">
+        <v-steps size="small" :current="1">
+            <v-step title="已完成" status="finish"></v-step>
+            <v-step title="进行中" status="process"></v-step>
+            <v-step title="待运行" status="wait"></v-step>
+            <v-step title="待运行" status="wait"></v-step>
+        </v-steps>
+    </div>
+
+    <div style="width: 500px;">
+        <v-timeline>
+            <v-timeline-item color="green">创建服务现场 2015-09-01</v-timeline-item>
+            <v-timeline-item color="green">初步排除网络异常 2015-09-01</v-timeline-item>
+            <v-timeline-item color="red">
+                <p>初步排除网络异常1</p>
+                <p>初步排除网络异常2</p>
+                <p>初步排除网络异常3 2015-09-01</p>
+            </v-timeline-item>
+            <v-timeline-item>
+                <p>技术测试异常1</p>
+                <p>技术测试异常2</p>
+                <p>技术测试异常3 2015-09-01</p>
+            </v-timeline-item>
+        </v-timeline>
+    </div>
+
+    <div style="width: 500px;">
+        <v-queue-anim :delay="1000">
+            <div key="a">依次进场</div>
+            <div key="b">依次进场</div>
+            <div key="c">依次进场</div>
+            <div key="d">依次进场</div>
+            <div key="e">依次进场</div>
+            <div key="f">依次进场</div>
+        </v-queue-anim>
+    </div>
+
+    <div style="width: 500px;">
+        <v-queue-anim class="demo-content" key="demo"
+                      :show="show"
+                      :type="['right', 'left']"
+                      :ease="['easeOutQuart', 'easeInOutQuart']"
+                      v-ref:test>
+            <div class="demo-kp" key="a">
+                <ul>
+                    <li>hahaha</li>
+                    <li>hahaha</li>
+                    <li>hahaha</li>
+                </ul>
+            </div>
+            <div class="demo-listBox" key="b">
+                <div class="demo-list">
+                    <div class="title"></div>
+                    <ul>
+                        <li>aaaaa</li>
+                        <li>aaaaa</li>
+                        <li>aaaaa</li>
+                    </ul>
+                </div>
+            </div>
+        </v-queue-anim>
+        <p class="buttons">
+            <v-button type="primary" @click="_handleClick">切换</v-button>
+        </p>
+    </div>
+</div>

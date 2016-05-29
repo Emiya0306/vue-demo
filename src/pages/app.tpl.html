@@ -1,17 +1,6 @@
-<div class="wrapper">
-    <div style="position: relative;">
-        <h1>Hello App!</h1>
-        <p>
-            <!-- use v-link directive for navigation. -->
-            <a v-link="{ path: '/dashboard' }">Go to Dashboard</a>
-            <a v-link="{ path: '/about' }">Go to About</a>
-            <a v-link="{ path: '/home' }">Go to Home</a>
-            <a v-link="{ path: '/login' }">Go to Login</a>
-            <a v-link="{ path: '/register' }">Go to Register</a>
-        </p>
-    </div>
-
-    <div style="position: relative;">
+<div>
+    <v-sidebar></v-sidebar>
+    <div class="App__Container">
         <router-view></router-view>
     </div>
 </div>

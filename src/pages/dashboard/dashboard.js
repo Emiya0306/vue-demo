@@ -2,7 +2,7 @@ import Component from 'vue-class-component';
 import tpl from './dashboard.tpl.html'
 
 @Component({
-    template: tpl
+    template: tpl,
 })
 class Dashboard{
     constructor() {}
