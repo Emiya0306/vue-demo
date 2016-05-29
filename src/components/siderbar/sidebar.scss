@@ -1,5 +1,13 @@
 @import "../../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_variables.scss";
 
+.hidden {
+  display: none;
+}
+
+.hiddenLink {
+  display: none;
+}
+
 .Sidebar__container {
   position: fixed;
   top: 0;
@@ -7,22 +15,65 @@
   height: 100vh;
   width: 45px;
   z-index: 100;
+  background-color: black;
 }
 
 .Sidebar__topList {
-  position: relative;
-  top: 0;
-  list-style: none;
+  margin: 0;
   padding: 0;
+  list-style: none;
+  .Sidebar__link {
+    &.active, &.activeLink {
+      color: white;
+      background-color: #e78170;
+    }
+    &:hover {
+      color: white;
+      background-color: #f49484;
+    }
+    &:active {
+      color: white;
+      background-color: #b34129;
+    }
+  }
 }
 
 .Sidebar__bottomList {
-  position: relative;
+  position: absolute;
   bottom: 0;
-  list-style: none;
+  margin: 0;
   padding: 0;
+  width: 100%;
+  list-style: none;
+  .Sidebar__link {
+    padding: 15px;
+    &.active {
+      color: white;
+    }
+    &:hover {
+      color: white;
+    }
+    &:active {
+      color: white;
+    }
+  }
+}
+
+.Sidebar__menu {
+  overflow-x: hidden;
+}
+
+.Sidebar__link {
+  padding: 14px;
+  font-size: 17px;
+  color: #999999;
+  text-decoration: none;
+}
+
+.Sidebar__link.fa-home {
+  font-size: 27px;
+  padding: 10px;
 }
 
 @media screen and (max-width: $screen-xs-max) {
-
 }

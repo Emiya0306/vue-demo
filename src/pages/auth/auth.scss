@@ -1,0 +1,50 @@
+@import "../../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_variables.scss";
+
+.Auth__header {
+  margin-top: 150px;
+  text-align: center;
+}
+
+.Auth__logo {
+  width: 252px;
+}
+
+.Auth__body {
+
+}
+
+.Auth__menu--container {
+  position: relative;
+  border-bottom: 1px solid #eeeeee;
+  padding-top: 70px;
+  margin-bottom: 20px;
+}
+
+.Auth__menu {
+  position: absolute;
+  background: white;
+  bottom: 0;
+  left: 50%;
+  padding: 0 30px;
+  transform: translate(-50%, 50%);
+}
+
+.Auth__menu--item {
+  font-weight: 500;
+  font-size: 18px;
+  color: #b1b1b1;
+  &.active {
+    color: #555555;
+  }
+}
+
+.Auth__menu--split {
+  font-weight: 500;
+  font-size: 18px;
+  color: #b1b1b1;
+  margin: 0 10px;
+}
+
+@media screen and (max-width: $screen-xs-max) {
+
+}

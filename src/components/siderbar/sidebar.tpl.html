@@ -1,21 +1,39 @@
 <nav class="Sidebar__container">
     <ul class="Sidebar__topList">
-        <li>
-            <a v-link="{ path: '/home' }">home</a>
+        <li class="Sidebar__menu">
+            <!-- 说明: a标签上面加上getRouteName点击事件的原因是为了获取当前点击是否是auth -->
+            <a class="Sidebar__link fa fa-home"
+               name="home"
+               @click="getRouteName"
+               v-bind:class="[ currentLink == 'auth' ? 'activeLink' : '' ]"
+               v-link="{ path: '/home', activeClass: 'active' }"></a>
         </li>
-        <li>
-            <a v-link="{ path: '/dashboard' }">dashboard</a>
+        <li class="Sidebar__menu">
+            <a class="Sidebar__link fa fa-th"
+               @click="getRouteName"
+               v-link="{ path: '/dashboard', activeClass: 'active' }"></a>
         </li>
-        <li>
-            <a v-link="{ path: '/anttest' }">antTest</a>
+        <li class="Sidebar__menu hidden">
+            <a class="Sidebar__link fa fa-tasks"
+               @click="getRouteName"
+               v-link="{ path: '/anttest', activeClass: 'active' }"></a>
         </li>
-        <li>
-            <a v-link="{ path: '/admintest' }">adminTest</a>
+        <li class="Sidebar__menu hidden">
+            <a class="Sidebar__link fa fa-users"
+               @click="getRouteName"
+               v-link="{ path: '/admintest', activeClass: 'active' }"></a>
         </li>
     </ul>
     <ul class="Sidebar__bottomList">
-        <li>
-            <a v-link="{ path: '/register' }">register</a>
+        <li class="Sidebar__menu">
+            <a class="Sidebar__link fa fa-cog"></a>
+        </li>
+        <li class="Sidebar__menu">
+            <a class="Sidebar__link fa fa-sign-in"
+               name="auth"
+               @click="getRouteName"
+               v-link="{ path: '/sign_in', activeClass: 'hidden' }"
+               v-bind:class="[ currentLink == 'auth' ? 'hiddenLink' : '' ]"></a>
         </li>
     </ul>
 </nav>

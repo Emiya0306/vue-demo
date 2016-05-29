@@ -2,20 +2,23 @@ import AntTest from './pages/antTest/antTest'
 import Dashboard from './pages/dashboard/dashboard'
 import Home from './pages/home/home'
 import AdminTest from './pages/adminTest/adminTest'
-import Login from './pages/login/login'
-import Register from './pages/register/register'
+import Auth from './pages/auth/auth'
 
 const routers = {
-    '/login': {
-        component: Login
+    '/sign_up': {
+        name: 'auth',
+        component: Auth
     },
-    '/register': {
-        component: Register
+    '/sign_in': {
+        name: 'auth',
+        component: Auth
     },
     '/home': {
+        name: 'home',
         component: Home
     },
     '/dashboard': {
+        name: 'dashboard',
         component: Dashboard
     },
     '/admintest': {

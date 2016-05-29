@@ -6407,27 +6407,27 @@
 
 	var _adminTest2 = _interopRequireDefault(_adminTest);
 
-	var _login = __webpack_require__(197);
+	var _auth = __webpack_require__(215);
 
-	var _login2 = _interopRequireDefault(_login);
-
-	var _register = __webpack_require__(199);
-
-	var _register2 = _interopRequireDefault(_register);
+	var _auth2 = _interopRequireDefault(_auth);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	var routers = {
-	    '/login': {
-	        component: _login2.default
+	    '/sign_up': {
+	        name: 'auth',
+	        component: _auth2.default
 	    },
-	    '/register': {
-	        component: _register2.default
+	    '/sign_in': {
+	        name: 'auth',
+	        component: _auth2.default
 	    },
 	    '/home': {
+	        name: 'home',
 	        component: _home2.default
 	    },
 	    '/dashboard': {
+	        name: 'dashboard',
 	        component: _dashboard2.default
 	    },
 	    '/admintest': {
@@ -15256,102 +15256,10 @@
 
 
 /***/ },
-/* 197 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	    value: true
-	});
-
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-	var _dec, _class;
-
-	var _vueClassComponent = __webpack_require__(88);
-
-	var _vueClassComponent2 = _interopRequireDefault(_vueClassComponent);
-
-	var _loginTpl = __webpack_require__(198);
-
-	var _loginTpl2 = _interopRequireDefault(_loginTpl);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-	var Login = (_dec = (0, _vueClassComponent2.default)({
-	    template: _loginTpl2.default
-	}), _dec(_class = function () {
-	    function Login() {
-	        _classCallCheck(this, Login);
-	    }
-
-	    _createClass(Login, [{
-	        key: 'ready',
-	        value: function ready() {}
-	    }]);
-
-	    return Login;
-	}()) || _class);
-	exports.default = Login;
-
-/***/ },
-/* 198 */
-/***/ function(module, exports) {
-
-	module.exports = "<h1>Login page</h1>";
-
-/***/ },
-/* 199 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	    value: true
-	});
-
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-	var _dec, _class;
-
-	var _vueClassComponent = __webpack_require__(88);
-
-	var _vueClassComponent2 = _interopRequireDefault(_vueClassComponent);
-
-	var _registerTpl = __webpack_require__(200);
-
-	var _registerTpl2 = _interopRequireDefault(_registerTpl);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-	var Register = (_dec = (0, _vueClassComponent2.default)({
-	    template: _registerTpl2.default
-	}), _dec(_class = function () {
-	    function Register() {
-	        _classCallCheck(this, Register);
-	    }
-
-	    _createClass(Register, [{
-	        key: 'ready',
-	        value: function ready() {}
-	    }]);
-
-	    return Register;
-	}()) || _class);
-	exports.default = Register;
-
-/***/ },
-/* 200 */
-/***/ function(module, exports) {
-
-	module.exports = "<h1>Register page</h1>";
-
-/***/ },
+/* 197 */,
+/* 198 */,
+/* 199 */,
+/* 200 */,
 /* 201 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -15446,7 +15354,7 @@
 
 
 	// module
-	exports.push([module.id, ".App__Container {\n  position: relative;\n  padding-left: 45px; }\n", ""]);
+	exports.push([module.id, ".App__Container {\n  position: relative;\n  padding-left: 45px; }\n\na {\n  text-decoration: none; }\n  a:hover, a:active, a:focus {\n    text-decoration: none; }\n", ""]);
 
 	// exports
 
@@ -15489,8 +15397,22 @@
 	    }
 
 	    _createClass(Sidebar, [{
+	        key: 'data',
+	        value: function data() {
+	            return {
+	                currentLink: this.$route.name
+	            };
+	        }
+	    }, {
 	        key: 'ready',
 	        value: function ready() {}
+	    }, {
+	        key: 'getRouteName',
+	        value: function getRouteName(event) {
+	            // 外部this.$route.name的变化,并不会引起this.currentLink watch的变化
+	            // 因此,只能通过获取DOM节点上的属性名,来判断点击的是哪个路由
+	            this.currentLink = event.target.attributes.getNamedItem('name') ? event.target.attributes.getNamedItem('name').value : '';
+	        }
 	    }]);
 
 	    return Sidebar;
@@ -15501,7 +15423,7 @@
 /* 206 */
 /***/ function(module, exports) {
 
-	module.exports = "<nav class=\"Sidebar__container\">\n    <ul class=\"Sidebar__topList\">\n        <li>\n            <a v-link=\"{ path: '/home' }\">home</a>\n        </li>\n        <li>\n            <a v-link=\"{ path: '/dashboard' }\">dashboard</a>\n        </li>\n        <li>\n            <a v-link=\"{ path: '/anttest' }\">antTest</a>\n        </li>\n        <li>\n            <a v-link=\"{ path: '/admintest' }\">adminTest</a>\n        </li>\n    </ul>\n    <ul class=\"Sidebar__bottomList\">\n        <li>\n            <a v-link=\"{ path: '/register' }\">register</a>\n        </li>\n    </ul>\n</nav>";
+	module.exports = "<nav class=\"Sidebar__container\">\n    <ul class=\"Sidebar__topList\">\n        <li class=\"Sidebar__menu\">\n            <!-- 说明: a标签上面加上getRouteName点击事件的原因是为了获取当前点击是否是auth -->\n            <a class=\"Sidebar__link fa fa-home\"\n               name=\"home\"\n               @click=\"getRouteName\"\n               v-bind:class=\"[ currentLink == 'auth' ? 'activeLink' : '' ]\"\n               v-link=\"{ path: '/home', activeClass: 'active' }\"></a>\n        </li>\n        <li class=\"Sidebar__menu\">\n            <a class=\"Sidebar__link fa fa-th\"\n               @click=\"getRouteName\"\n               v-link=\"{ path: '/dashboard', activeClass: 'active' }\"></a>\n        </li>\n        <li class=\"Sidebar__menu hidden\">\n            <a class=\"Sidebar__link fa fa-tasks\"\n               @click=\"getRouteName\"\n               v-link=\"{ path: '/anttest', activeClass: 'active' }\"></a>\n        </li>\n        <li class=\"Sidebar__menu hidden\">\n            <a class=\"Sidebar__link fa fa-users\"\n               @click=\"getRouteName\"\n               v-link=\"{ path: '/admintest', activeClass: 'active' }\"></a>\n        </li>\n    </ul>\n    <ul class=\"Sidebar__bottomList\">\n        <li class=\"Sidebar__menu\">\n            <a class=\"Sidebar__link fa fa-cog\"></a>\n        </li>\n        <li class=\"Sidebar__menu\">\n            <a class=\"Sidebar__link fa fa-sign-in\"\n               name=\"auth\"\n               @click=\"getRouteName\"\n               v-link=\"{ path: '/sign_in', activeClass: 'hidden' }\"\n               v-bind:class=\"[ currentLink == 'auth' ? 'hiddenLink' : '' ]\"></a>\n        </li>\n    </ul>\n</nav>";
 
 /***/ },
 /* 207 */
@@ -15538,7 +15460,251 @@
 
 
 	// module
-	exports.push([module.id, ".Sidebar__container {\n  position: fixed;\n  top: 0;\n  left: 0;\n  height: 100vh;\n  width: 45px;\n  z-index: 100; }\n\n.Sidebar__topList {\n  position: relative;\n  top: 0;\n  list-style: none;\n  padding: 0; }\n\n.Sidebar__bottomList {\n  position: relative;\n  bottom: 0;\n  list-style: none;\n  padding: 0; }\n", ""]);
+	exports.push([module.id, ".hidden {\n  display: none; }\n\n.hiddenLink {\n  display: none; }\n\n.Sidebar__container {\n  position: fixed;\n  top: 0;\n  left: 0;\n  height: 100vh;\n  width: 45px;\n  z-index: 100;\n  background-color: black; }\n\n.Sidebar__topList {\n  margin: 0;\n  padding: 0;\n  list-style: none; }\n  .Sidebar__topList .Sidebar__link.active, .Sidebar__topList .Sidebar__link.activeLink {\n    color: white;\n    background-color: #e78170; }\n  .Sidebar__topList .Sidebar__link:hover {\n    color: white;\n    background-color: #f49484; }\n  .Sidebar__topList .Sidebar__link:active {\n    color: white;\n    background-color: #b34129; }\n\n.Sidebar__bottomList {\n  position: absolute;\n  bottom: 0;\n  margin: 0;\n  padding: 0;\n  width: 100%;\n  list-style: none; }\n  .Sidebar__bottomList .Sidebar__link {\n    padding: 15px; }\n    .Sidebar__bottomList .Sidebar__link.active {\n      color: white; }\n    .Sidebar__bottomList .Sidebar__link:hover {\n      color: white; }\n    .Sidebar__bottomList .Sidebar__link:active {\n      color: white; }\n\n.Sidebar__menu {\n  overflow-x: hidden; }\n\n.Sidebar__link {\n  padding: 14px;\n  font-size: 17px;\n  color: #999999;\n  text-decoration: none; }\n\n.Sidebar__link.fa-home {\n  font-size: 27px;\n  padding: 10px; }\n", ""]);
+
+	// exports
+
+
+/***/ },
+/* 209 */,
+/* 210 */,
+/* 211 */,
+/* 212 */,
+/* 213 */,
+/* 214 */,
+/* 215 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _dec, _class;
+
+	var _vueClassComponent = __webpack_require__(88);
+
+	var _vueClassComponent2 = _interopRequireDefault(_vueClassComponent);
+
+	var _authTpl = __webpack_require__(216);
+
+	var _authTpl2 = _interopRequireDefault(_authTpl);
+
+	var _sign_in = __webpack_require__(219);
+
+	var _sign_in2 = _interopRequireDefault(_sign_in);
+
+	var _sign_up = __webpack_require__(217);
+
+	var _sign_up2 = _interopRequireDefault(_sign_up);
+
+	var _queueAnim = __webpack_require__(143);
+
+	var _queueAnim2 = _interopRequireDefault(_queueAnim);
+
+	var _auth = __webpack_require__(221);
+
+	var _auth2 = _interopRequireDefault(_auth);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	var Auth = (_dec = (0, _vueClassComponent2.default)({
+	    template: _authTpl2.default,
+	    components: {
+	        vLogin: _sign_in2.default,
+	        vRegister: _sign_up2.default,
+	        vQueueAnim: _queueAnim2.default
+	    }
+	}), _dec(_class = function () {
+	    function Auth() {
+	        _classCallCheck(this, Auth);
+	    }
+
+	    _createClass(Auth, [{
+	        key: 'data',
+	        value: function data() {
+	            return {
+	                isLogin: true
+	            };
+	        }
+	    }, {
+	        key: 'ready',
+	        value: function ready() {}
+	    }, {
+	        key: '_showLogin',
+	        value: function _showLogin() {
+	            this.isLogin = true;
+	        }
+	    }, {
+	        key: '_showRegister',
+	        value: function _showRegister() {
+	            this.isLogin = false;
+	        }
+	    }]);
+
+	    return Auth;
+	}()) || _class);
+	exports.default = Auth;
+
+/***/ },
+/* 216 */
+/***/ function(module, exports) {
+
+	module.exports = "<div class=\"container\">\n    <v-queue-anim>\n        <div key=\"a\" class=\"Auth__header\">\n            <img class=\"Auth__logo\" src=\"/images/img_logo.png\">\n        </div>\n        <div key=\"b\" class=\"Auth__body\">\n            <div class=\"Auth__menu--container\">\n                <div class=\"Auth__menu\">\n                    <a class=\"Auth__menu--item\"\n                       @click=\"_showLogin\"\n                       v-link=\"{ path: '/sign_in', activeClass: 'active' }\">登陆</a>\n                    <b class=\"Auth__menu--split\">·</b>\n                    <a class=\"Auth__menu--item\"\n                       @click=\"_showRegister\"\n                       v-link=\"{ path: '/sign_up', activeClass: 'active' }\">注册</a>\n                </div>\n            </div>\n\n            <v-login :show=\"isLogin\"></v-login>\n\n            <v-register :show=\"!isLogin\"></v-register>\n\n        </div>\n    </v-queue-anim>\n</div>";
+
+/***/ },
+/* 217 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _dec, _class;
+
+	var _vueClassComponent = __webpack_require__(88);
+
+	var _vueClassComponent2 = _interopRequireDefault(_vueClassComponent);
+
+	var _sign_upTpl = __webpack_require__(218);
+
+	var _sign_upTpl2 = _interopRequireDefault(_sign_upTpl);
+
+	var _queueAnim = __webpack_require__(143);
+
+	var _queueAnim2 = _interopRequireDefault(_queueAnim);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	var Register = (_dec = (0, _vueClassComponent2.default)({
+	    template: _sign_upTpl2.default,
+	    components: {
+	        vQueueAnim: _queueAnim2.default
+	    },
+	    props: ['show']
+	}), _dec(_class = function () {
+	    function Register() {
+	        _classCallCheck(this, Register);
+	    }
+
+	    _createClass(Register, [{
+	        key: 'ready',
+	        value: function ready() {}
+	    }]);
+
+	    return Register;
+	}()) || _class);
+	exports.default = Register;
+
+/***/ },
+/* 218 */
+/***/ function(module, exports) {
+
+	module.exports = "<div>\n    <v-queue-anim :show=\"show\">\n        <div key=\"a\">register</div>\n        <div key=\"b\">register</div>\n        <div key=\"c\">register</div>\n        <div key=\"d\">register</div>\n        <div key=\"e\">register</div>\n    </v-queue-anim>\n</div>";
+
+/***/ },
+/* 219 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _dec, _class;
+
+	var _vueClassComponent = __webpack_require__(88);
+
+	var _vueClassComponent2 = _interopRequireDefault(_vueClassComponent);
+
+	var _sign_inTpl = __webpack_require__(220);
+
+	var _sign_inTpl2 = _interopRequireDefault(_sign_inTpl);
+
+	var _queueAnim = __webpack_require__(143);
+
+	var _queueAnim2 = _interopRequireDefault(_queueAnim);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	var Login = (_dec = (0, _vueClassComponent2.default)({
+	    template: _sign_inTpl2.default,
+	    components: {
+	        vQueueAnim: _queueAnim2.default
+	    },
+	    props: ['show']
+	}), _dec(_class = function () {
+	    function Login() {
+	        _classCallCheck(this, Login);
+	    }
+
+	    _createClass(Login, [{
+	        key: 'ready',
+	        value: function ready() {}
+	    }]);
+
+	    return Login;
+	}()) || _class);
+	exports.default = Login;
+
+/***/ },
+/* 220 */
+/***/ function(module, exports) {
+
+	module.exports = "<div>\n    <v-queue-anim :show=\"show\">\n        <div key=\"a\">login</div>\n        <div key=\"b\">login</div>\n        <div key=\"c\">login</div>\n        <div key=\"d\">login</div>\n        <div key=\"e\">login</div>\n    </v-queue-anim>\n</div>";
+
+/***/ },
+/* 221 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+
+	// load the styles
+	var content = __webpack_require__(222);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(174)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(false) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept("!!./../../../node_modules/css-loader/index.js!./../../../node_modules/sass-loader/index.js!./../../../node_modules/postcss-loader/index.js?browsers=last 2 version!./auth.scss", function() {
+				var newContent = require("!!./../../../node_modules/css-loader/index.js!./../../../node_modules/sass-loader/index.js!./../../../node_modules/postcss-loader/index.js?browsers=last 2 version!./auth.scss");
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ },
+/* 222 */
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(173)();
+	// imports
+
+
+	// module
+	exports.push([module.id, ".Auth__header {\n  margin-top: 150px;\n  text-align: center; }\n\n.Auth__logo {\n  width: 252px; }\n\n.Auth__menu--container {\n  position: relative;\n  border-bottom: 1px solid #eeeeee;\n  padding-top: 70px;\n  margin-bottom: 20px; }\n\n.Auth__menu {\n  position: absolute;\n  background: white;\n  bottom: 0;\n  left: 50%;\n  padding: 0 30px;\n  transform: translate(-50%, 50%); }\n\n.Auth__menu--item {\n  font-weight: 500;\n  font-size: 18px;\n  color: #b1b1b1; }\n  .Auth__menu--item.active {\n    color: #555555; }\n\n.Auth__menu--split {\n  font-weight: 500;\n  font-size: 18px;\n  color: #b1b1b1;\n  margin: 0 10px; }\n", ""]);
 
 	// exports
 
