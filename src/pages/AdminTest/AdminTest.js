@@ -1,7 +1,7 @@
 import $ from 'jquery'
 import Component from 'vue-class-component';
 import tpl from './adminTest.tpl.html'
-import AdminLTE from '../../lib/AdminLTE'
+import AdminLTE from '../../lib/newAdminLTE'
 
 @Component({
     template: tpl

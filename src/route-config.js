@@ -2,6 +2,7 @@ import AntTest from './pages/antTest/antTest'
 import Dashboard from './pages/dashboard/dashboard'
 import Home from './pages/home/home'
 import AdminTest from './pages/adminTest/adminTest'
+import NewAdminTest from './pages/newAdminTest/newAdminTest'
 import Auth from './pages/auth/auth'
 
 const routers = {
@@ -23,6 +24,9 @@ const routers = {
     },
     '/admintest': {
         component: AdminTest
+    },
+    '/newadmintest': {
+        component: NewAdminTest
     },
     '/anttest': {
         component: AntTest

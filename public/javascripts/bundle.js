@@ -6407,6 +6407,10 @@
 
 	var _adminTest2 = _interopRequireDefault(_adminTest);
 
+	var _newAdminTest = __webpack_require__(229);
+
+	var _newAdminTest2 = _interopRequireDefault(_newAdminTest);
+
 	var _auth = __webpack_require__(215);
 
 	var _auth2 = _interopRequireDefault(_auth);
@@ -6432,6 +6436,9 @@
 	    },
 	    '/admintest': {
 	        component: _adminTest2.default
+	    },
+	    '/newadmintest': {
+	        component: _newAdminTest2.default
 	    },
 	    '/anttest': {
 	        component: _antTest2.default
@@ -11131,9 +11138,9 @@
 
 	var _adminTestTpl2 = _interopRequireDefault(_adminTestTpl);
 
-	var _AdminLTE = __webpack_require__(182);
+	var _newAdminLTE = __webpack_require__(231);
 
-	var _AdminLTE2 = _interopRequireDefault(_AdminLTE);
+	var _newAdminLTE2 = _interopRequireDefault(_newAdminLTE);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -11156,7 +11163,7 @@
 	    }, {
 	        key: 'ready',
 	        value: function ready() {
-	            var adminLTE = new _AdminLTE2.default(_jquery2.default);
+	            var adminLTE = new _newAdminLTE2.default(_jquery2.default);
 	            console.log(adminLTE);
 	        }
 	    }]);
@@ -12753,2389 +12760,15 @@
 	module.exports = "<div class=\"wrapper\">\n\n    <header class=\"main-header\">\n        <!-- Logo -->\n        <!-- Logo -->\n        <a href=\"../index2.html\" class=\"logo\">\n            <!-- mini logo for sidebar mini 50x50 pixels -->\n            <span class=\"logo-mini\"><b>A</b>LT</span>\n            <!-- logo for regular state and mobile devices -->\n            <span class=\"logo-lg\"><b>Admin</b>LTE</span>\n        </a>\n        <!-- Header Navbar: style can be found in header.less -->\n        <nav class=\"navbar navbar-static-top\" role=\"navigation\">\n            <!-- Sidebar toggle button-->\n            <a href=\"#\" class=\"sidebar-toggle\" data-toggle=\"offcanvas\" role=\"button\">\n                <span class=\"sr-only\">Toggle navigation</span>\n            </a>\n            <!-- Navbar Right Menu -->\n            <div class=\"navbar-custom-menu\">\n                <ul class=\"nav navbar-nav\">\n                    <li><a href=\"http://almsaeedstudio.com\">Almsaeed Studio</a></li>\n                    <li><a href=\"http://almsaeedstudio.com/premium\">Premium Templates</a></li>\n                </ul>\n            </div>\n        </nav>\n    </header>\n    <!-- Left side column. contains the logo and sidebar -->\n    <aside class=\"main-sidebar\">\n        <!-- sidebar: style can be found in sidebar.less -->\n        <div class=\"sidebar\" id=\"scrollspy\">\n\n            <!-- sidebar menu: : style can be found in sidebar.less -->\n            <ul class=\"nav sidebar-menu\">\n                <li class=\"header\">TABLE OF CONTENTS</li>\n                <li class=\"active\"><a href=\"#introduction\"><i class=\"fa fa-circle-o\"></i> Introduction</a></li>\n                <li><a href=\"#download\"><i class=\"fa fa-circle-o\"></i> Download</a></li>\n                <li><a href=\"#dependencies\"><i class=\"fa fa-circle-o\"></i> Dependencies</a></li>\n                <li><a href=\"#advice\"><i class=\"fa fa-circle-o\"></i> Advice</a></li>\n                <li><a href=\"#layout\"><i class=\"fa fa-circle-o\"></i> Layout</a></li>\n                <li><a href=\"#adminlte-options\"><i class=\"fa fa-circle-o\"></i> Javascript Options</a></li>\n                <li class=\"treeview\" id=\"scrollspy-components\">\n                    <a href=\"javascript:void(0)\"><i class=\"fa fa-circle-o\"></i> Components</a>\n                    <ul class=\"nav treeview-menu\">\n                        <li><a href=\"#component-main-header\">Main Header</a></li>\n                        <li><a href=\"#component-sidebar\">Sidebar</a></li>\n                        <li><a href=\"#component-control-sidebar\">Control Sidebar</a></li>\n                        <li><a href=\"#component-info-box\">Info Box</a></li>\n                        <li><a href=\"#component-box\">Boxes</a></li>\n                        <li><a href=\"#component-direct-chat\">Direct Chat</a></li>\n                    </ul>\n                </li>\n                <li><a href=\"#plugins\"><i class=\"fa fa-circle-o\"></i> Plugins</a></li>\n                <li><a href=\"#browsers\"><i class=\"fa fa-circle-o\"></i> Browser Support</a></li>\n                <li><a href=\"#upgrade\"><i class=\"fa fa-circle-o\"></i> Upgrade Guide</a></li>\n                <li><a href=\"#implementations\"><i class=\"fa fa-circle-o\"></i> Implementations</a></li>\n                <li><a href=\"#faq\"><i class=\"fa fa-circle-o\"></i> FAQ</a></li>\n                <li><a href=\"#license\"><i class=\"fa fa-circle-o\"></i> License</a></li>\n            </ul>\n        </div>\n        <!-- /.sidebar -->\n    </aside>\n\n    <!-- Content Wrapper. Contains page content -->\n    <div class=\"content-wrapper\">\n        <!-- Content Header (Page header) -->\n        <div class=\"content-header\">\n            <h1>\n                AdminLTE Documentation\n                <small>Current version 2.3.0</small>\n            </h1>\n            <ol class=\"breadcrumb\">\n                <li><a href=\"#\"><i class=\"fa fa-dashboard\"></i> Home</a></li>\n                <li class=\"active\">Documentation</li>\n            </ol>\n        </div>\n\n        <!-- Main content -->\n        <div class=\"content body\">\n\n            <section id=\"introduction\">\n                <h2 class=\"page-header\"><a href=\"#introduction\">Introduction</a></h2>\n                <p class=\"lead\">\n                    <b>AdminLTE</b> is a popular open source WebApp template for admin dashboards and control\n                    panels.\n                    It is a responsive HTML template that is based on the CSS framework Bootstrap 3.\n                    It utilizes all of the Bootstrap components in its design and re-styles many\n                    commonly used plugins to create a consistent design that can be used as a user\n                    interface for backend applications. AdminLTE is based on a modular design, which\n                    allows it to be easily customized and built upon. This documentation will guide you through\n                    installing the template and exploring the various components that are bundled with the template.\n                </p>\n            </section><!-- /#introduction -->\n\n\n            <!-- ============================================================= -->\n\n            <section id=\"download\">\n                <h2 class=\"page-header\"><a href=\"#download\">Download</a></h2>\n                <p class=\"lead\">\n                    AdminLTE can be downloaded in two different versions, each appealing to different skill levels\n                    and use case.\n                </p>\n                <div class=\"row\">\n                    <div class=\"col-sm-6\">\n                        <div class=\"box box-primary\">\n                            <div class=\"box-header with-border\">\n                                <h3 class=\"box-title\">Ready</h3>\n                                <span class=\"label label-primary pull-right\"><i class=\"fa fa-html5\"></i></span>\n                            </div><!-- /.box-header -->\n                            <div class=\"box-body\">\n                                <p>Compiled and ready to use in production. Download this version if you don't want\n                                    to customize AdminLTE's LESS files.</p>\n                                <a href=\"http://almsaeedstudio.com/download/AdminLTE-dist\"\n                                   class=\"btn btn-primary\"><i class=\"fa fa-download\"></i> Download</a>\n                            </div><!-- /.box-body -->\n                        </div><!-- /.box -->\n                    </div><!-- /.col -->\n                    <div class=\"col-sm-6\">\n                        <div class=\"box box-danger\">\n                            <div class=\"box-header with-border\">\n                                <h3 class=\"box-title\">Source Code</h3>\n                                <span class=\"label label-danger pull-right\"><i class=\"fa fa-database\"></i></span>\n                            </div><!-- /.box-header -->\n                            <div class=\"box-body\">\n                                <p>All files including the compiled CSS. Download this version if you plan on\n                                    customizing the template. <b>Requires a LESS compiler.</b></p>\n                                <a href=\"http://almsaeedstudio.com/download/AdminLTE\" class=\"btn btn-danger\"><i\n                                        class=\"fa fa-download\"></i> Download</a>\n                            </div><!-- /.box-body -->\n                        </div><!-- /.box -->\n                    </div><!-- /.col -->\n                </div><!-- /.row -->\n  <pre class=\"hierarchy bring-up\"><code class=\"language-bash\" data-lang=\"bash\">File Hierarchy of the Source Code Package\n\n      AdminLTE/\n      ├── dist/\n      │ ├── CSS/\n      │ ├── JS\n      │ ├── img\n      ├── build/\n      │ ├── less/\n      │ │ ├── AdminLTE's Less files\n      │ └── Bootstrap-less/ (Only for reference. No modifications have been made)\n      │ ├── mixins/\n      │ ├── variables.less\n      │ ├── mixins.less\n      └── plugins/\n      ├── All the customized plugins CSS and JS files</code></pre>\n            </section>\n\n\n            <!-- ============================================================= -->\n\n            <section id=\"dependencies\">\n                <h2 class=\"page-header\"><a href=\"#dependencies\">Dependencies</a></h2>\n                <p class=\"lead\">AdminLTE depends on two main frameworks.\n                    The downloadable package contains both of these libraries, so you don't have to manually\n                    download them.</p>\n                <ul class=\"bring-up\">\n                    <li><a href=\"http://getbootstrap.com\" target=\"_blank\">Bootstrap 3</a></li>\n                    <li><a href=\"http://jquery.com/\" target=\"_blank\">jQuery 1.11+</a></li>\n                    <li><a href=\"#plugins\">All other plugins are listed below</a></li>\n                </ul>\n            </section>\n\n\n            <!-- ============================================================= -->\n\n            <section id=\"advice\">\n                <h2 class=\"page-header\"><a href=\"#advice\">A Word of Advice</a></h2>\n                <p class=\"lead\">\n                    Before you go to see your new awesome theme, here are few tips on how to familiarize yourself\n                    with it:\n                </p>\n\n                <ul>\n                    <li><b>AdminLTE is based on <a href=\"http://getbootstrap.com/\" target=\"_blank\">Bootstrap 3</a>.</b>\n                        If you are unfamiliar with Bootstrap, visit their website and read through the\n                        documentation. All of Bootstrap components have been modified to fit the style of AdminLTE\n                        and provide a consistent look throughout the template. This way, we guarantee you will get\n                        the best of AdminLTE.\n                    </li>\n                    <li><b>Go through the pages that are bundled with the theme.</b> Most of the template example\n                        pages contain quick tips on how to create or use a component which can be really helpful\n                        when you need to create something on the fly.\n                    </li>\n                    <li><b>Documentation.</b> We are trying our best to make your experience with AdminLTE be\n                        smooth. One way to achieve that is to provide documentation and support. If you think that\n                        something is missing from the documentation, please do not hesitate to create an issue to\n                        tell us about it. Also, if you would like to contribute, email the support team at <a\n                                href=\"mailto:support@almsaeedstudio.com\">support@almsaeedstudio.com</a>.\n                    </li>\n                    <li><b>Built with <a href=\"http://lesscss.org/\" target=\"_blank\">LESS</a>.</b> This theme uses\n                        the LESS compiler to make it easier to customize and use. LESS is easy to learn if you know\n                        CSS or SASS. It is not necessary to learn LESS but it will benefit you a lot in the future.\n                    </li>\n                    <li><b>Hosted on <a href=\"https://github.com/almasaeed2010/AdminLTE/\"\n                                        target=\"_blank\">GitHub</a>.</b>\n                        Visit our GitHub repository to view issues, make requests, or contribute to the project.\n                    </li>\n                </ul>\n                <p>\n                    <b>Note:</b> LESS files are better commented than the compiled CSS file.\n                </p>\n            </section>\n\n\n            <!-- ============================================================= -->\n\n            <section id=\"layout\">\n                <h2 class=\"page-header\"><a href=\"#layout\">Layout</a></h2>\n                <p class=\"lead\">The layout consists of four major parts:</p>\n                <ul>\n                    <li>Wrapper <code>.wrapper</code>. A div that wraps the whole site.</li>\n                    <li>Main Header <code>.main-header</code>. Contains the logo and navbar.</li>\n                    <li>Sidebar <code>.sidebar-wrapper</code>. Contains the user panel and sidebar menu.</li>\n                    <li>Content <code>.content-wrapper</code>. Contains the page header and content.</li>\n                </ul>\n                <div class=\"callout callout-danger lead\">\n                    <h4>Tip!</h4>\n                    <p>The <a href=\"../starter.html\">starter page</a> is a good place to start building your app if\n                        you'd like to start from scratch.</p>\n                </div>\n\n                <h3>Layout Options</h3>\n                <p class=\"lead\">AdminLTE 2.0 provides a set of options to apply to your main layout. Each on of\n                    these classes can be added\n                    to the body tag to get the desired goal.</p>\n                <ul>\n                    <li><b>Fixed:</b> use the class <code>.fixed</code> to get a fixed header and sidebar.</li>\n                    <li><b>Collapsed Sidebar:</b> use the class <code>.sidebar-collapse</code> to have a collapsed\n                        sidebar upon loading.\n                    </li>\n                    <li><b>Boxed Layout:</b> use the class <code>.layout-boxed</code> to get a boxed layout that\n                        stretches only to 1250px.\n                    </li>\n                    <li><b>Top Navigation</b> use the class <code>.layout-top-nav</code> to remove the sidebar and\n                        have your links at the top navbar.\n                    </li>\n                </ul>\n                <p><b>Note:</b> you cannot use both layout-boxed and fixed at the same time. Anything else can be\n                    mixed together.</p>\n\n                <h3>Skins</h3>\n                <p class=\"lead\">Skins can be found in the dist/css/skins folder.\n                    Choose and the skin file that you want then add the appropriate\n                    class to the body tag to change the template's appearance. Here is the list of available\n                    skins:</p>\n                <div class=\"box box-solid\" style=\"max-width: 300px;\">\n                    <div class=\"box-body no-padding\">\n                        <table id=\"layout-skins-list\" class=\"table table-striped bring-up nth-2-center\">\n                            <thead>\n                            <tr>\n                                <th style=\"width: 210px;\">Skin Class</th>\n                                <th>Preview</th>\n                            </tr>\n                            </thead>\n                            <tbody>\n                            <tr>\n                                <td><code>skin-blue</code></td>\n                                <td><a href=\"#\" data-skin=\"skin-blue\" class=\"btn btn-primary btn-xs\"><i\n                                        class=\"fa fa-eye\"></i></a></td>\n                            </tr>\n                            <tr>\n                                <td><code>skin-blue-light</code></td>\n                                <td><a href=\"#\" data-skin=\"skin-blue-light\" class=\"btn btn-primary btn-xs\"><i\n                                        class=\"fa fa-eye\"></i></a></td>\n                            </tr>\n                            <tr>\n                                <td><code>skin-yellow</code></td>\n                                <td><a href=\"#\" data-skin=\"skin-yellow\" class=\"btn btn-warning btn-xs\"><i\n                                        class=\"fa fa-eye\"></i></a></td>\n                            </tr>\n                            <tr>\n                                <td><code>skin-yellow-light</code></td>\n                                <td><a href=\"#\" data-skin=\"skin-yellow-light\" class=\"btn btn-warning btn-xs\"><i\n                                        class=\"fa fa-eye\"></i></a></td>\n                            </tr>\n                            <tr>\n                                <td><code>skin-green</code></td>\n                                <td><a href=\"#\" data-skin=\"skin-green\" class=\"btn btn-success btn-xs\"><i\n                                        class=\"fa fa-eye\"></i></a></td>\n                            </tr>\n                            <tr>\n                                <td><code>skin-green-light</code></td>\n                                <td><a href=\"#\" data-skin=\"skin-green-light\" class=\"btn btn-success btn-xs\"><i\n                                        class=\"fa fa-eye\"></i></a></td>\n                            </tr>\n                            <tr>\n                                <td><code>skin-purple</code></td>\n                                <td><a href=\"#\" data-skin=\"skin-purple\" class=\"btn bg-purple btn-xs\"><i\n                                        class=\"fa fa-eye\"></i></a></td>\n                            </tr>\n                            <tr>\n                                <td><code>skin-purple-light</code></td>\n                                <td><a href=\"#\" data-skin=\"skin-purple-light\" class=\"btn bg-purple btn-xs\"><i\n                                        class=\"fa fa-eye\"></i></a></td>\n                            </tr>\n                            <tr>\n                                <td><code>skin-red</code></td>\n                                <td><a href=\"#\" data-skin=\"skin-red\" class=\"btn btn-danger btn-xs\"><i\n                                        class=\"fa fa-eye\"></i></a></td>\n                            </tr>\n                            <tr>\n                                <td><code>skin-red-light</code></td>\n                                <td><a href=\"#\" data-skin=\"skin-red-light\" class=\"btn btn-danger btn-xs\"><i\n                                        class=\"fa fa-eye\"></i></a></td>\n                            </tr>\n                            <tr>\n                                <td><code>skin-black</code></td>\n                                <td><a href=\"#\" data-skin=\"skin-black\" class=\"btn bg-black btn-xs\"><i\n                                        class=\"fa fa-eye\"></i></a></td>\n                            </tr>\n                            <tr>\n                                <td><code>skin-black-light</code></td>\n                                <td><a href=\"#\" data-skin=\"skin-black-light\" class=\"btn bg-black btn-xs\"><i\n                                        class=\"fa fa-eye\"></i></a></td>\n                            </tr>\n                            </tbody>\n                        </table>\n                    </div><!-- /.box-body -->\n                </div><!-- /.box -->\n            </section>\n\n\n            <!-- ============================================================= -->\n\n            <section id=\"adminlte-options\">\n                <h2 class=\"page-header\"><a href=\"#adminlte-options\">AdminLTE Javascript Options</a></h2>\n                <p class=\"lead\">Modifying the options of AdminLTE's app.js can be done using one of the following\n                    ways.</p>\n\n                <h3>Editing app.js</h3>\n                <p>Within the main Javascript file, modify the <code>$.AdminLTE.options</code> object to suit your\n                    use case.</p>\n\n                <h3>Defining AdminLTEOptions</h3>\n                <p>Alternatively, you can define a global options variable named <code>AdminLTEOptions</code> and\n                    initialize it before loading app.js.</p>\n                <p>Example</p>\n  <pre class=\"prettyprint\"><code class=\"html\">&LT;script>\n      var AdminLTEOptions = {\n      //Enable sidebar expand on hover effect for sidebar mini\n      //This option is forced to true if both the fixed layout and sidebar mini\n      //are used together\n      sidebarExpandOnHover: true,\n      //BoxRefresh Plugin\n      enableBoxRefresh: true,\n      //Bootstrap.js tooltip\n      enableBSToppltip: true\n      };\n      &LT;/script>\n      &LT;script src=\"dist/js/app.js\" type=\"text/javascript\">&LT;/script></code></pre>\n\n                <h3>Available AdminLTE Options</h3>\n  <pre class=\"prettyprint\"><code class=\"javascript\">{\n      //Add slimscroll to navbar menus\n      //This requires you to load the slimscroll plugin\n      //in every page before app.js\n      navbarMenuSlimscroll: true,\n      navbarMenuSlimscrollWidth: \"3px\", //The width of the scroll bar\n      navbarMenuHeight: \"200px\", //The height of the inner menu\n      //General animation speed for JS animated elements such as box collapse/expand and\n      //sidebar treeview slide up/down. This options accepts an integer as milliseconds,\n      //'fast', 'normal', or 'slow'\n      animationSpeed: 500,\n      //Sidebar push menu toggle button selector\n      sidebarToggleSelector: \"[data-toggle='offcanvas']\",\n      //Activate sidebar push menu\n      sidebarPushMenu: true,\n      //Activate sidebar slimscroll if the fixed layout is set (requires SlimScroll Plugin)\n      sidebarSlimScroll: true,\n      //Enable sidebar expand on hover effect for sidebar mini\n      //This option is forced to true if both the fixed layout and sidebar mini\n      //are used together\n      sidebarExpandOnHover: false,\n      //BoxRefresh Plugin\n      enableBoxRefresh: true,\n      //Bootstrap.js tooltip\n      enableBSToppltip: true,\n      BSTooltipSelector: \"[data-toggle='tooltip']\",\n      //Enable Fast Click. Fastclick.js creates a more\n      //native touch experience with touch devices. If you\n      //choose to enable the plugin, make sure you load the script\n      //before AdminLTE's app.js\n      enableFastclick: true,\n      //Control Sidebar Options\n      enableControlSidebar: true,\n      controlSidebarOptions: {\n      //Which button should trigger the open/close event\n      toggleBtnSelector: \"[data-toggle='control-sidebar']\",\n      //The sidebar selector\n      selector: \".control-sidebar\",\n      //Enable slide over content\n      slide: true\n      },\n      //Box Widget Plugin. Enable this plugin\n      //to allow boxes to be collapsed and/or removed\n      enableBoxWidget: true,\n      //Box Widget plugin options\n      boxWidgetOptions: {\n      boxWidgetIcons: {\n      //Collapse icon\n      collapse: 'fa-minus',\n      //Open icon\n      open: 'fa-plus',\n      //Remove icon\n      remove: 'fa-times'\n      },\n      boxWidgetSelectors: {\n      //Remove button selector\n      remove: '[data-widget=\"remove\"]',\n      //Collapse button selector\n      collapse: '[data-widget=\"collapse\"]'\n      }\n      },\n      //Direct Chat plugin options\n      directChat: {\n      //Enable direct chat by default\n      enable: true,\n      //The button to open and close the chat contacts pane\n      contactToggleSelector: '[data-widget=\"chat-pane-toggle\"]'\n      },\n      //Define the set of colors to use globally around the website\n      colors: {\n      lightBlue: \"#3c8dbc\",\n      red: \"#f56954\",\n      green: \"#00a65a\",\n      aqua: \"#00c0ef\",\n      yellow: \"#f39c12\",\n      blue: \"#0073b7\",\n      navy: \"#001F3F\",\n      teal: \"#39CCCC\",\n      olive: \"#3D9970\",\n      lime: \"#01FF70\",\n      orange: \"#FF851B\",\n      fuchsia: \"#F012BE\",\n      purple: \"#8E24AA\",\n      maroon: \"#D81B60\",\n      black: \"#222222\",\n      gray: \"#d2d6de\"\n      },\n      //The standard screen sizes that bootstrap uses.\n      //If you change these in the variables.less file, change\n      //them here too.\n      screenSizes: {\n      xs: 480,\n      sm: 768,\n      md: 992,\n      lg: 1200\n      }\n      }</code></pre>\n            </section>\n\n\n            <!-- ============================================================= -->\n\n            <section id=\"components\" data-spy=\"scroll\" data-target=\"#scrollspy-components\">\n                <h2 class=\"page-header\"><a href=\"#components\">Components</a></h2>\n                <div class=\"callout callout-info lead\">\n                    <h4>Reminder!</h4>\n                    <p>\n                        AdminLTE uses all of Bootstrap 3 components. It's a good start to review\n                        the <a href=\"http://getbootstrap.com\">Bootstrap documentation</a> to get an idea of the\n                        various components\n                        that this documentation <b>does not</b> cover.\n                    </p>\n                </div>\n                <div class=\"callout callout-danger lead\">\n                    <h4>Tip!</h4>\n                    <p>\n                        If you go through the example pages and would like to copy a component, right-click on\n                        the component and choose \"inspect element\" to get to the HTML quicker than scanning\n                        the HTML page.\n                    </p>\n                </div>\n                <h3 id=\"component-main-header\">Main Header</h3>\n                <p class=\"lead\">The main header contains the logo and navbar. Construction of the\n                    navbar differs slightly from Bootstrap because it has components that Bootstrap doesn't provide.\n                    The navbar can be constructed in two way. This an example for the normal navbar and next we will\n                    provide an example for\n                    the top nav layout.</p>\n                <div class=\"box box-solid\">\n                    <div class=\"box-body\" style=\"position: relative;\">\n                        <span class=\"eg\">Main Header Example</span>\n                        <header class=\"main-header\" style=\"position: relative;\">\n                            <!-- Logo -->\n                            <a href=\"index2.html\" class=\"logo\" style=\"position: relative;\"><b>Admin</b>LTE</a>\n                            <!-- Header Navbar: style can be found in header.less -->\n                            <nav class=\"navbar\" role=\"navigation\" style=\"border: 0;max-height: 50px;\">\n                                <!-- Sidebar toggle button-->\n                                <a href=\"#\" class=\"sidebar-toggle\" role=\"button\">\n                                    <span class=\"sr-only\">Toggle navigation</span>\n                                </a>\n                                <!-- Navbar Right Menu -->\n                                <div class=\"navbar-custom-menu\">\n                                    <ul class=\"nav navbar-nav\">\n                                        <!-- Messages: style can be found in dropdown.less-->\n                                        <li class=\"dropdown messages-menu\">\n                                            <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">\n                                                <i class=\"fa fa-envelope-o\"></i>\n                                                <span class=\"label label-success\">4</span>\n                                            </a>\n                                            <ul class=\"dropdown-menu\">\n                                                <li class=\"header\">You have 4 messages</li>\n                                                <li>\n                                                    <!-- inner menu: contains the actual data -->\n                                                    <ul class=\"menu\">\n                                                        <li><!-- start message -->\n                                                            <a href=\"#\">\n                                                                <div class=\"pull-left\">\n                                                                </div>\n                                                                <h4>\n                                                                    Support Team\n                                                                    <small><i class=\"fa fa-clock-o\"></i> 5 mins\n                                                                    </small>\n                                                                </h4>\n                                                                <p>Why not buy a new awesome theme?</p>\n                                                            </a>\n                                                        </li><!-- end message -->\n                                                    </ul>\n                                                </li>\n                                                <li class=\"footer\"><a href=\"#\">See All Messages</a></li>\n                                            </ul>\n                                        </li>\n                                        <!-- Notifications: style can be found in dropdown.less -->\n                                        <li class=\"dropdown notifications-menu\">\n                                            <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">\n                                                <i class=\"fa fa-bell-o\"></i>\n                                                <span class=\"label label-warning\">10</span>\n                                            </a>\n                                            <ul class=\"dropdown-menu\">\n                                                <li class=\"header\">You have 10 notifications</li>\n                                                <li>\n                                                    <!-- inner menu: contains the actual data -->\n                                                    <ul class=\"menu\">\n                                                        <li>\n                                                            <a href=\"#\">\n                                                                <i class=\"fa fa-users text-aqua\"></i> 5 new members\n                                                                joined today\n                                                            </a>\n                                                        </li>\n                                                    </ul>\n                                                </li>\n                                                <li class=\"footer\"><a href=\"#\">View all</a></li>\n                                            </ul>\n                                        </li>\n                                        <!-- Tasks: style can be found in dropdown.less -->\n                                        <li class=\"dropdown tasks-menu\">\n                                            <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">\n                                                <i class=\"fa fa-flag-o\"></i>\n                                                <span class=\"label label-danger\">9</span>\n                                            </a>\n                                            <ul class=\"dropdown-menu\">\n                                                <li class=\"header\">You have 9 tasks</li>\n                                                <li>\n                                                    <!-- inner menu: contains the actual data -->\n                                                    <ul class=\"menu\">\n                                                        <li><!-- Task item -->\n                                                            <a href=\"#\">\n                                                                <h3>\n                                                                    Design some buttons\n                                                                    <small class=\"pull-right\">20%</small>\n                                                                </h3>\n                                                                <div class=\"progress xs\">\n                                                                    <div class=\"progress-bar progress-bar-aqua\"\n                                                                         style=\"width: 20%\" role=\"progressbar\"\n                                                                         aria-valuenow=\"20\" aria-valuemin=\"0\"\n                                                                         aria-valuemax=\"100\">\n                                                                        <span class=\"sr-only\">20% Complete</span>\n                                                                    </div>\n                                                                </div>\n                                                            </a>\n                                                        </li><!-- end task item -->\n                                                    </ul>\n                                                </li>\n                                                <li class=\"footer\">\n                                                    <a href=\"#\">View all tasks</a>\n                                                </li>\n                                            </ul>\n                                        </li>\n                                        <!-- User Account: style can be found in dropdown.less -->\n                                        <li class=\"dropdown user user-menu\">\n                                            <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">\n                                                <span class=\"hidden-xs\">Alexander Pierce</span>\n                                            </a>\n                                            <ul class=\"dropdown-menu\">\n                                                <!-- User image -->\n                                                <li class=\"user-header\">\n                                                    <p>\n                                                        Alexander Pierce - Web Developer\n                                                        <small>Member since Nov. 2012</small>\n                                                    </p>\n                                                </li>\n                                                <!-- Menu Body -->\n                                                <li class=\"user-body\">\n                                                    <div class=\"col-xs-4 text-center\">\n                                                        <a href=\"#\">Followers</a>\n                                                    </div>\n                                                    <div class=\"col-xs-4 text-center\">\n                                                        <a href=\"#\">Sales</a>\n                                                    </div>\n                                                    <div class=\"col-xs-4 text-center\">\n                                                        <a href=\"#\">Friends</a>\n                                                    </div>\n                                                </li>\n                                                <!-- Menu Footer-->\n                                                <li class=\"user-footer\">\n                                                    <div class=\"pull-left\">\n                                                        <a href=\"#\" class=\"btn btn-default btn-flat\">Profile</a>\n                                                    </div>\n                                                    <div class=\"pull-right\">\n                                                        <a href=\"#\" class=\"btn btn-default btn-flat\">Sign out</a>\n                                                    </div>\n                                                </li>\n                                            </ul>\n                                        </li>\n                                    </ul>\n                                </div>\n                            </nav>\n                        </header>\n                    </div>\n                </div>\n  <pre class=\"prettyprint\">&LT;header class=\"main-header\">\n      &LT;a href=\"../../index2.html\" class=\"logo\">\n      &LT;!-- LOGO -->\n    AdminLTE\n      &LT;/a>\n      &LT;!-- Header Navbar: style can be found in header.less -->\n      &LT;nav class=\"navbar navbar-static-top\" role=\"navigation\">\n      &LT;!-- Navbar Right Menu -->\n      &LT;div class=\"navbar-custom-menu\">\n      &LT;ul class=\"nav navbar-nav\">\n      &LT;!-- Messages: style can be found in dropdown.less-->\n      &LT;li class=\"dropdown messages-menu\">\n      &LT;a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">\n      &LT;i class=\"fa fa-envelope-o\">&LT;/i>\n      &LT;span class=\"label label-success\">4&LT;/span>\n      &LT;/a>\n      &LT;ul class=\"dropdown-menu\">\n      &LT;li class=\"header\">You have 4 messages&LT;/li>\n      &LT;li>\n      &LT;!-- inner menu: contains the actual data -->\n      &LT;ul class=\"menu\">\n      &LT;li>&LT;!-- start message -->\n      &LT;a href=\"#\">\n      &LT;div class=\"pull-left\">\n      &LT;img src=\"dist/img/user2-160x160.jpg\" class=\"img-circle\" alt=\"User Image\">\n      &LT;/div>\n      &LT;h4>\n                      Sender Name\n      &LT;small>&LT;i class=\"fa fa-clock-o\">&LT;/i> 5 mins&LT;/small>\n      &LT;/h4>\n      &LT;p>Message Excerpt&LT;/p>\n      &LT;/a>\n      &LT;/li>&LT;!-- end message -->\n                ...\n      &LT;/ul>\n      &LT;/li>\n      &LT;li class=\"footer\">&LT;a href=\"#\">See All Messages&LT;/a>&LT;/li>\n      &LT;/ul>\n      &LT;/li>\n      &LT;!-- Notifications: style can be found in dropdown.less -->\n      &LT;li class=\"dropdown notifications-menu\">\n      &LT;a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">\n      &LT;i class=\"fa fa-bell-o\">&LT;/i>\n      &LT;span class=\"label label-warning\">10&LT;/span>\n      &LT;/a>\n      &LT;ul class=\"dropdown-menu\">\n      &LT;li class=\"header\">You have 10 notifications&LT;/li>\n      &LT;li>\n      &LT;!-- inner menu: contains the actual data -->\n      &LT;ul class=\"menu\">\n      &LT;li>\n      &LT;a href=\"#\">\n      &LT;i class=\"ion ion-ios-people info\">&LT;/i> Notification title\n      &LT;/a>\n      &LT;/li>\n                ...\n      &LT;/ul>\n      &LT;/li>\n      &LT;li class=\"footer\">&LT;a href=\"#\">View all&LT;/a>&LT;/li>\n      &LT;/ul>\n      &LT;/li>\n      &LT;!-- Tasks: style can be found in dropdown.less -->\n      &LT;li class=\"dropdown tasks-menu\">\n      &LT;a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">\n      &LT;i class=\"fa fa-flag-o\">&LT;/i>\n      &LT;span class=\"label label-danger\">9&LT;/span>\n      &LT;/a>\n      &LT;ul class=\"dropdown-menu\">\n      &LT;li class=\"header\">You have 9 tasks&LT;/li>\n      &LT;li>\n      &LT;!-- inner menu: contains the actual data -->\n      &LT;ul class=\"menu\">\n      &LT;li>&LT;!-- Task item -->\n      &LT;a href=\"#\">\n      &LT;h3>\n                      Design some buttons\n      &LT;small class=\"pull-right\">20%&LT;/small>\n      &LT;/h3>\n      &LT;div class=\"progress xs\">\n      &LT;div class=\"progress-bar progress-bar-aqua\" style=\"width: 20%\" role=\"progressbar\" aria-valuenow=\"20\" aria-valuemin=\"0\" aria-valuemax=\"100\">\n      &LT;span class=\"sr-only\">20% Complete&LT;/span>\n      &LT;/div>\n      &LT;/div>\n      &LT;/a>\n      &LT;/li>&LT;!-- end task item -->\n                ...\n      &LT;/ul>\n      &LT;/li>\n      &LT;li class=\"footer\">\n      &LT;a href=\"#\">View all tasks&LT;/a>\n      &LT;/li>\n      &LT;/ul>\n      &LT;/li>\n      &LT;!-- User Account: style can be found in dropdown.less -->\n      &LT;li class=\"dropdown user user-menu\">\n      &LT;a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">\n      &LT;img src=\"dist/img/user2-160x160.jpg\" class=\"user-image\" alt=\"User Image\">\n      &LT;span class=\"hidden-xs\">Alexander Pierce&LT;/span>\n      &LT;/a>\n      &LT;ul class=\"dropdown-menu\">\n      &LT;!-- User image -->\n      &LT;li class=\"user-header\">\n      &LT;img src=\"dist/img/user2-160x160.jpg\" class=\"img-circle\" alt=\"User Image\">\n      &LT;p>\n                Alexander Pierce - Web Developer\n      &LT;small>Member since Nov. 2012&LT;/small>\n      &LT;/p>\n      &LT;/li>\n      &LT;!-- Menu Body -->\n      &LT;li class=\"user-body\">\n      &LT;div class=\"col-xs-4 text-center\">\n      &LT;a href=\"#\">Followers&LT;/a>\n      &LT;/div>\n      &LT;div class=\"col-xs-4 text-center\">\n      &LT;a href=\"#\">Sales&LT;/a>\n      &LT;/div>\n      &LT;div class=\"col-xs-4 text-center\">\n      &LT;a href=\"#\">Friends&LT;/a>\n      &LT;/div>\n      &LT;/li>\n      &LT;!-- Menu Footer-->\n      &LT;li class=\"user-footer\">\n      &LT;div class=\"pull-left\">\n      &LT;a href=\"#\" class=\"btn btn-default btn-flat\">Profile&LT;/a>\n      &LT;/div>\n      &LT;div class=\"pull-right\">\n      &LT;a href=\"#\" class=\"btn btn-default btn-flat\">Sign out&LT;/a>\n      &LT;/div>\n      &LT;/li>\n      &LT;/ul>\n      &LT;/li>\n      &LT;/ul>\n      &LT;/div>\n      &LT;/nav>\n      &LT;/header></pre>\n                <h4>Top Nav Layout. Main Header Example.</h4>\n                <div class=\"callout callout-info lead\">\n                    <h4>Reminder!</h4>\n                    <p>To use this main header instead of the regular one, you must add the\n                        <code>layout-top-nav</code> class to the body tag.</p>\n                </div>\n                <div class=\"box box-solid\">\n                    <div class=\"box-body layout-top-nav\">\n                        <span class=\"eg\">Top Nav Example</span>\n                        <header class=\"main-header\">\n                            <nav class=\"navbar navbar-static-top\">\n                                <div class=\"container-fluid\">\n                                    <div class=\"navbar-header\">\n                                        <a href=\"../../index2.html\" class=\"navbar-brand\"><b>Admin</b>LTE</a>\n                                        <button type=\"button\" class=\"navbar-toggle collapsed\" data-toggle=\"collapse\"\n                                                data-target=\"#navbar-collapse\">\n                                            <i class=\"fa fa-bars\"></i>\n                                        </button>\n                                    </div>\n\n                                    <!-- Collect the nav links, forms, and other content for toggling -->\n                                    <div class=\"collapse navbar-collapse\" id=\"navbar-collapse\">\n                                        <ul class=\"nav navbar-nav\">\n                                            <li class=\"active\"><a href=\"#\">Link <span\n                                                    class=\"sr-only\">(current)</span></a></li>\n                                            <li><a href=\"#\">Link</a></li>\n                                            <li class=\"dropdown\">\n                                                <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">Dropdown\n                                                    <span class=\"caret\"></span></a>\n                                                <ul class=\"dropdown-menu\" role=\"menu\">\n                                                    <li><a href=\"#\">Action</a></li>\n                                                    <li><a href=\"#\">Another action</a></li>\n                                                    <li><a href=\"#\">Something else here</a></li>\n                                                    <li class=\"divider\"></li>\n                                                    <li><a href=\"#\">Separated link</a></li>\n                                                    <li class=\"divider\"></li>\n                                                    <li><a href=\"#\">One more separated link</a></li>\n                                                </ul>\n                                            </li>\n                                        </ul>\n                                        <form class=\"navbar-form navbar-left\" role=\"search\">\n                                            <div class=\"form-group\">\n                                                <input type=\"text\" class=\"form-control\" id=\"navbar-search-input\"\n                                                       placeholder=\"Search\">\n                                            </div>\n                                        </form>\n                                        <ul class=\"nav navbar-nav navbar-right\">\n                                            <li><a href=\"#\">Link</a></li>\n                                            <li class=\"dropdown\">\n                                                <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">Dropdown\n                                                    <span class=\"caret\"></span></a>\n                                                <ul class=\"dropdown-menu\" role=\"menu\">\n                                                    <li><a href=\"#\">Action</a></li>\n                                                    <li><a href=\"#\">Another action</a></li>\n                                                    <li><a href=\"#\">Something else here</a></li>\n                                                    <li class=\"divider\"></li>\n                                                    <li><a href=\"#\">Separated link</a></li>\n                                                </ul>\n                                            </li>\n                                        </ul>\n                                    </div><!-- /.navbar-collapse -->\n                                </div><!-- /.container-fluid -->\n                            </nav>\n                        </header>\n                    </div>\n                </div>\n  <pre class=\"prettyprint\">\n&LT;header class=\"main-header\">\n      &LT;nav class=\"navbar navbar-static-top\">\n      &LT;div class=\"container-fluid\">\n      &LT;div class=\"navbar-header\">\n      &LT;a href=\"../../index2.html\" class=\"navbar-brand\">&LT;b>Admin&LT;/b>LTE&LT;/a>\n      &LT;button type=\"button\" class=\"navbar-toggle collapsed\" data-toggle=\"collapse\" data-target=\"#navbar-collapse\">\n      &LT;i class=\"fa fa-bars\">&LT;/i>\n      &LT;/button>\n      &LT;/div>\n\n      &LT;!-- Collect the nav links, forms, and other content for toggling -->\n      &LT;div class=\"collapse navbar-collapse\" id=\"navbar-collapse\">\n      &LT;ul class=\"nav navbar-nav\">\n      &LT;li class=\"active\">&LT;a href=\"#\">Link &LT;span class=\"sr-only\">(current)&LT;/span>&LT;/a>&LT;/li>\n      &LT;li>&LT;a href=\"#\">Link&LT;/a>&LT;/li>\n      &LT;li class=\"dropdown\">\n      &LT;a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">Dropdown &LT;span class=\"caret\">&LT;/span>&LT;/a>\n      &LT;ul class=\"dropdown-menu\" role=\"menu\">\n      &LT;li>&LT;a href=\"#\">Action&LT;/a>&LT;/li>\n      &LT;li>&LT;a href=\"#\">Another action&LT;/a>&LT;/li>\n      &LT;li>&LT;a href=\"#\">Something else here&LT;/a>&LT;/li>\n      &LT;li class=\"divider\">&LT;/li>\n      &LT;li>&LT;a href=\"#\">Separated link&LT;/a>&LT;/li>\n      &LT;li class=\"divider\">&LT;/li>\n      &LT;li>&LT;a href=\"#\">One more separated link&LT;/a>&LT;/li>\n      &LT;/ul>\n      &LT;/li>\n      &LT;/ul>\n      &LT;form class=\"navbar-form navbar-left\" role=\"search\">\n      &LT;div class=\"form-group\">\n      &LT;input type=\"text\" class=\"form-control\" id=\"navbar-search-input\" placeholder=\"Search\">\n      &LT;/div>\n      &LT;/form>\n      &LT;ul class=\"nav navbar-nav navbar-right\">\n      &LT;li>&LT;a href=\"#\">Link&LT;/a>&LT;/li>\n      &LT;li class=\"dropdown\">\n      &LT;a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\">Dropdown &LT;span class=\"caret\">&LT;/span>&LT;/a>\n      &LT;ul class=\"dropdown-menu\" role=\"menu\">\n      &LT;li>&LT;a href=\"#\">Action&LT;/a>&LT;/li>\n      &LT;li>&LT;a href=\"#\">Another action&LT;/a>&LT;/li>\n      &LT;li>&LT;a href=\"#\">Something else here&LT;/a>&LT;/li>\n      &LT;li class=\"divider\">&LT;/li>\n      &LT;li>&LT;a href=\"#\">Separated link&LT;/a>&LT;/li>\n      &LT;/ul>\n      &LT;/li>\n      &LT;/ul>\n      &LT;/div>&LT;!-- /.navbar-collapse -->\n      &LT;/div>&LT;!-- /.container-fluid -->\n      &LT;/nav>\n      &LT;/header></pre>\n\n                <!-- ===================================================================== -->\n\n                <h3 id=\"component-sidebar\">Sidebar</h3>\n                <p class=\"lead\">\n                    The sidebar used in this page to the left provides an example of what your sidebar should like.\n                    Construction of a sidebar:\n                </p>\n  <pre class=\"prettyprint\">\n&LT;div class=\"main-sidebar\">\n      &LT;!-- Inner sidebar -->\n      &LT;div class=\"sidebar\">\n      &LT;!-- user panel (Optional) -->\n      &LT;div class=\"user-panel\">\n      &LT;div class=\"pull-left image\">\n      &LT;img src=\"dist/img/user2-160x160.jpg\" class=\"img-circle\" alt=\"User Image\">\n      &LT;/div>\n      &LT;div class=\"pull-left info\">\n      &LT;p>User Name&LT;/p>\n\n      &LT;a href=\"#\">&LT;i class=\"fa fa-circle text-success\">&LT;/i> Online&LT;/a>\n      &LT;/div>\n      &LT;/div>&LT;!-- /.user-panel -->\n\n      &LT;!-- Search Form (Optional) -->\n      &LT;form action=\"#\" method=\"get\" class=\"sidebar-form\">\n      &LT;div class=\"input-group\">\n      &LT;input type=\"text\" name=\"q\" class=\"form-control\" placeholder=\"Search...\">\n      &LT;span class=\"input-group-btn\">\n      &LT;button type=\"submit\" name=\"search\" id=\"search-btn\" class=\"btn btn-flat\">&LT;i class=\"fa fa-search\">&LT;/i>&LT;/button>\n      &LT;/span>\n      &LT;/div>\n      &LT;/form>&LT;!-- /.sidebar-form -->\n\n      &LT;!-- Sidebar Menu -->\n      &LT;ul class=\"sidebar-menu\">\n      &LT;li class=\"header\">HEADER&LT;/li>\n      &LT;!-- Optionally, you can add icons to the links -->\n      &LT;li class=\"active\">&LT;a href=\"#\">&LT;span>Link&LT;/span>&LT;/a>&LT;&LT;/li>\n      &LT;li>&LT;a href=\"#\">&LT;span>Another Link&LT;/span>&LT;/a>&LT;/li>\n      &LT;li class=\"treeview\">\n      &LT;a href=\"#\">&LT;span>Multilevel&LT;/span> &LT;i class=\"fa fa-angle-left pull-right\">&LT;/i>&LT;/a>\n      &LT;ul class=\"treeview-menu\">\n      &LT;li>&LT;a href=\"#\">Link in level 2&LT;/a>&LT;/li>\n      &LT;li>&LT;a href=\"#\">Link in level 2&LT;/a>&LT;/li>\n      &LT;/ul>\n      &LT;/li>\n      &LT;/ul>&LT;!-- /.sidebar-menu -->\n\n      &LT;/div>&LT;!-- /.sidebar -->\n      &LT;/div>&LT;!-- /.main-sidebar --></pre>\n\n                <h3 id=\"component-control-sidebar\">Control Sidebar</h3>\n                <p class=\"lead\">Control sidebar is the right side bar. It can be used for many purposes and is\n                    extremely easy\n                    to create. The sidebar ships with two different show/hide styles. The first allows the sidebar\n                    to\n                    slide over the content. The second pushes the content to make space for the sidebar. Either of\n                    these methods can be set through the <a href=\"#adminlte-options\">Javascript options</a>.</p>\n                <p class=\"lead\">The following code should be placed within the <code>.wrapper</code> div. I prefer\n                    to place it right after the footer.</p>\n                <p class=\"lead\">Dark Sidebar Markup</p>\n<pre class=\"prettyprint\"><code class=\"lang-html\">&LT;!-- The Right Sidebar -->\n    &LT;aside class=\"control-sidebar control-sidebar-dark\">\n    &LT;!-- Content of the sidebar goes here -->\n    &LT;/aside>\n    &LT;!-- The sidebar's background -->\n    &LT;!-- This div must placed right after the sidebar for it to work-->\n    &LT;div class=\"control-sidebar-bg\">&LT;/div></code></pre>\n\n                <p class=\"lead\">Light Sidebar Markup</p>\n<pre class=\"prettyprint\"><code class=\"lang-html\">&LT;!-- The Right Sidebar -->\n    &LT;aside class=\"control-sidebar control-sidebar-light\">\n    &LT;!-- Content of the sidebar goes here -->\n    &LT;/aside>\n    &LT;!-- The sidebar's background -->\n    &LT;!-- This div must placed right after the sidebar for it to work-->\n    &LT;div class=\"control-sidebar-bg\">&LT;/div></code></pre>\n\n                <p class=\"lead\">Once you create the sidebar, you will need a toggle button to open/close it.\n                    By adding the attribute <code>data-toggle=\"control-sidebar\"</code> to any button, it will\n                    automatically act as the toggle button.</p>\n\n                <p class=\"lead\">Toggle Button Example</p>\n                <button class=\"btn btn-primary\" data-toggle=\"control-sidebar\">Toggle Right Sidebar</button>\n                <br><br>\n\n                <p class=\"lead\">Sidebar Toggle Markup</p>\n                    <pre class=\"prettyprint\"><code class=\"lang-html\">&LT;button class=\"btn btn-default\"\n                        data-toggle=\"control-sidebar\">Toggle Right Sidebar&LT;/button></code></pre>\n                <!-- ===================================================================== -->\n\n                <h3 id=\"component-info-box\">Info Box</h3>\n                <p class=\"lead\">Info boxes are used to display statistical snippets. There are two types of info\n                    boxes.</p>\n                <h4>First Type of Info Boxes</h4>\n                <!-- Info Boxes -->\n                <div class=\"row\">\n                    <div class=\"col-md-3 col-sm-6 col-xs-12\">\n                        <div class=\"info-box\">\n                            <span class=\"info-box-icon bg-aqua\"><i class=\"fa fa-envelope-o\"></i></span>\n                            <div class=\"info-box-content\">\n                                <span class=\"info-box-text\">Messages</span>\n                                <span class=\"info-box-number\">1,410</span>\n                            </div><!-- /.info-box-content -->\n                        </div><!-- /.info-box -->\n                    </div><!-- /.col -->\n                    <div class=\"col-md-3 col-sm-6 col-xs-12\">\n                        <div class=\"info-box\">\n                            <span class=\"info-box-icon bg-green\"><i class=\"fa fa-flag-o\"></i></span>\n                            <div class=\"info-box-content\">\n                                <span class=\"info-box-text\">Bookmarks</span>\n                                <span class=\"info-box-number\">410</span>\n                            </div><!-- /.info-box-content -->\n                        </div><!-- /.info-box -->\n                    </div><!-- /.col -->\n                    <div class=\"col-md-3 col-sm-6 col-xs-12\">\n                        <div class=\"info-box\">\n                            <span class=\"info-box-icon bg-yellow\"><i class=\"fa fa-files-o\"></i></span>\n                            <div class=\"info-box-content\">\n                                <span class=\"info-box-text\">Uploads</span>\n                                <span class=\"info-box-number\">13,648</span>\n                            </div><!-- /.info-box-content -->\n                        </div><!-- /.info-box -->\n                    </div><!-- /.col -->\n                    <div class=\"col-md-3 col-sm-6 col-xs-12\">\n                        <div class=\"info-box\">\n                            <span class=\"info-box-icon bg-red\"><i class=\"fa fa-star-o\"></i></span>\n                            <div class=\"info-box-content\">\n                                <span class=\"info-box-text\">Likes</span>\n                                <span class=\"info-box-number\">93,139</span>\n                            </div><!-- /.info-box-content -->\n                        </div><!-- /.info-box -->\n                    </div><!-- /.col -->\n                </div><!-- /.row -->\n                <p class=\"lead\">Markup</p>\n  <pre class=\"prettyprint\"><code class=\"lang-html\">&LT;div class=\"info-box\">\n      &LT;!-- Apply any bg-* class to to the icon to color it -->\n      &LT;span class=\"info-box-icon bg-red\">&LT;i class=\"fa fa-star-o\">&LT;/i>&LT;/span>\n      &LT;div class=\"info-box-content\">\n      &LT;span class=\"info-box-text\">Likes&LT;/span>\n      &LT;span class=\"info-box-number\">93,139&LT;/span>\n      &LT;/div>&LT;!-- /.info-box-content -->\n      &LT;/div>&LT;!-- /.info-box --></code></pre>\n\n                <h4>Second Type of Info Boxes</h4>\n                <div class=\"row\">\n                    <div class=\"col-md-3 col-sm-6 col-xs-12\">\n                        <div class=\"info-box bg-aqua\">\n                            <span class=\"info-box-icon\"><i class=\"fa fa-bookmark-o\"></i></span>\n                            <div class=\"info-box-content\">\n                                <span class=\"info-box-text\">Bookmarks</span>\n                                <span class=\"info-box-number\">41,410</span>\n                                <div class=\"progress\">\n                                    <div class=\"progress-bar\" style=\"width: 70%\"></div>\n                                </div>\n          <span class=\"progress-description\">\n            70% Increase in 30 Days\n          </span>\n                            </div><!-- /.info-box-content -->\n                        </div><!-- /.info-box -->\n                    </div><!-- /.col -->\n                    <div class=\"col-md-3 col-sm-6 col-xs-12\">\n                        <div class=\"info-box bg-green\">\n                            <span class=\"info-box-icon\"><i class=\"fa fa-thumbs-o-up\"></i></span>\n                            <div class=\"info-box-content\">\n                                <span class=\"info-box-text\">Likes</span>\n                                <span class=\"info-box-number\">41,410</span>\n                                <div class=\"progress\">\n                                    <div class=\"progress-bar\" style=\"width: 70%\"></div>\n                                </div>\n          <span class=\"progress-description\">\n            70% Increase in 30 Days\n          </span>\n                            </div><!-- /.info-box-content -->\n                        </div><!-- /.info-box -->\n                    </div><!-- /.col -->\n                    <div class=\"col-md-3 col-sm-6 col-xs-12\">\n                        <div class=\"info-box bg-yellow\">\n                            <span class=\"info-box-icon\"><i class=\"fa fa-calendar\"></i></span>\n                            <div class=\"info-box-content\">\n                                <span class=\"info-box-text\">Events</span>\n                                <span class=\"info-box-number\">41,410</span>\n                                <div class=\"progress\">\n                                    <div class=\"progress-bar\" style=\"width: 70%\"></div>\n                                </div>\n          <span class=\"progress-description\">\n            70% Increase in 30 Days\n          </span>\n                            </div><!-- /.info-box-content -->\n                        </div><!-- /.info-box -->\n                    </div><!-- /.col -->\n                    <div class=\"col-md-3 col-sm-6 col-xs-12\">\n                        <div class=\"info-box bg-red\">\n                            <span class=\"info-box-icon\"><i class=\"fa fa-comments-o\"></i></span>\n                            <div class=\"info-box-content\">\n                                <span class=\"info-box-text\">Comments</span>\n                                <span class=\"info-box-number\">41,410</span>\n                                <div class=\"progress\">\n                                    <div class=\"progress-bar\" style=\"width: 70%\"></div>\n                                </div>\n          <span class=\"progress-description\">\n            70% Increase in 30 Days\n          </span>\n                            </div><!-- /.info-box-content -->\n                        </div><!-- /.info-box -->\n                    </div><!-- /.col -->\n                </div><!-- /.row -->\n                <p class=\"lead\">Markup</p>\n  <pre class=\"prettyprint\"><code class=\"lang-html\">&LT;!-- Apply any bg-* class to to the info-box to color it -->\n      &LT;div class=\"info-box bg-red\">\n      &LT;span class=\"info-box-icon\">&LT;i class=\"fa fa-comments-o\">&LT;/i>&LT;/span>\n      &LT;div class=\"info-box-content\">\n      &LT;span class=\"info-box-text\">Likes&LT;/span>\n      &LT;span class=\"info-box-number\">41,410&LT;/span>\n      &LT;!-- The progress section is optional -->\n      &LT;div class=\"progress\">\n      &LT;div class=\"progress-bar\" style=\"width: 70%\">&LT;/div>\n      &LT;/div>\n      &LT;span class=\"progress-description\">\n      70% Increase in 30 Days\n      &LT;/span>\n      &LT;/div>&LT;!-- /.info-box-content -->\n      &LT;/div>&LT;!-- /.info-box --></code></pre>\n                <p class=\"lead\">The only thing you need to change to alternate between these style is change the\n                    placement of the bg-* class. For the\n                    first style apply any bg-* class to the icon itself. For the other style, apply the bg-* class\n                    to the info-box div.</p>\n                <!-- ===================================================================== -->\n\n                <h3 id=\"component-box\">Box</h3>\n                <p class=\"lead\">The box component is the most widely used component through out this template. You\n                    can\n                    use it for anything from displaying charts to just blocks of text. It comes in many different\n                    styles that we will explore below.</p>\n                <h4>Default Box Markup</h4>\n                <div class=\"box\">\n                    <div class=\"box-header with-border\">\n                        <h3 class=\"box-title\">Default Box Example</h3>\n                        <div class=\"box-tools pull-right\">\n                            <!-- Buttons, labels, and many other things can be placed here! -->\n                            <!-- Here is a label for example -->\n                            <span class=\"label label-primary\">Label</span>\n                        </div><!-- /.box-tools -->\n                    </div><!-- /.box-header -->\n                    <div class=\"box-body\">\n                        The body of the box\n                    </div><!-- /.box-body -->\n                    <div class=\"box-footer\">\n                        The footer of the box\n                    </div><!-- box-footer -->\n                </div><!-- /.box -->\n  <pre class=\"prettyprint\">&LT;div class=\"box\">\n      &LT;div class=\"box-header with-border\">\n      &LT;h3 class=\"box-title\">Default Box Example&LT;/h3>\n      &LT;div class=\"box-tools pull-right\">\n      &LT;!-- Buttons, labels, and many other things can be placed here! -->\n      &LT;!-- Here is a label for example -->\n      &LT;span class=\"label label-primary\">Label&LT;/span>\n      &LT;/div>&LT;!-- /.box-tools -->\n      &LT;/div>&LT;!-- /.box-header -->\n      &LT;div class=\"box-body\">\n    The body of the box\n      &LT;/div>&LT;!-- /.box-body -->\n      &LT;div class=\"box-footer\">\n    The footer of the box\n      &LT;/div>&LT;!-- box-footer -->\n      &LT;/div>&LT;!-- /.box --></pre>\n                <h4>Box Variants</h4>\n                <p class=\"lead\">You can change the style of the box by adding any of the contextual classes.</p>\n                <div class=\"row\">\n                    <div class=\"col-md-4\">\n                        <div class=\"box\">\n                            <div class=\"box-header with-border\">\n                                <h3 class=\"box-title\">Default Box Example</h3>\n                            </div><!-- /.box-header -->\n                            <div class=\"box-body\">\n                                The body of the box\n                            </div><!-- /.box-body -->\n                        </div><!-- /.box -->\n                    </div>\n                    <div class=\"col-md-4\">\n                        <div class=\"box box-primary\">\n                            <div class=\"box-header with-border\">\n                                <h3 class=\"box-title\">Primary Box Example</h3>\n                            </div><!-- /.box-header -->\n                            <div class=\"box-body\">\n                                The body of the box\n                            </div><!-- /.box-body -->\n                        </div><!-- /.box -->\n                    </div>\n                    <div class=\"col-md-4\">\n                        <div class=\"box box-info\">\n                            <div class=\"box-header with-border\">\n                                <h3 class=\"box-title\">Info Box Example</h3>\n                            </div><!-- /.box-header -->\n                            <div class=\"box-body\">\n                                The body of the box\n                            </div><!-- /.box-body -->\n                        </div><!-- /.box -->\n                    </div>\n                    <div class=\"clearfix\"></div>\n                    <div class=\"col-md-4\">\n                        <div class=\"box box-warning\">\n                            <div class=\"box-header with-border\">\n                                <h3 class=\"box-title\">Warning Box Example</h3>\n                            </div><!-- /.box-header -->\n                            <div class=\"box-body\">\n                                The body of the box\n                            </div><!-- /.box-body -->\n                        </div><!-- /.box -->\n                    </div>\n                    <div class=\"col-md-4\">\n                        <div class=\"box box-success\">\n                            <div class=\"box-header with-border\">\n                                <h3 class=\"box-title\">Success Box Example</h3>\n                            </div><!-- /.box-header -->\n                            <div class=\"box-body\">\n                                The body of the box\n                            </div><!-- /.box-body -->\n                        </div><!-- /.box -->\n                    </div>\n                    <div class=\"col-md-4\">\n                        <div class=\"box box-danger\">\n                            <div class=\"box-header with-border\">\n                                <h3 class=\"box-title\">Danger Box Example</h3>\n                            </div><!-- /.box-header -->\n                            <div class=\"box-body\">\n                                The body of the box\n                            </div><!-- /.box-body -->\n                        </div><!-- /.box -->\n                    </div>\n                </div><!-- /.row -->\n  <pre class=\"prettyprint\">&LT;div class=\"box box-default\">...&LT;/div>\n      &LT;div class=\"box box-primary\">...&LT;/div>\n      &LT;div class=\"box box-info\">...&LT;/div>\n      &LT;div class=\"box box-warning\">...&LT;/div>\n      &LT;div class=\"box box-success\">...&LT;/div>\n      &LT;div class=\"box box-danger\">...&LT;/div></pre>\n\n                <h4>Solid Box</h4>\n                <p class=\"lead\">Solid Boxes are alternative ways to display boxes.\n                    They can be created by simply adding the box-solid class to the box component.\n                    You may also use contextual classes with you solid boxes.</p>\n                <div class=\"row\">\n                    <div class=\"col-md-4\">\n                        <div class=\"box box-solid box-default\">\n                            <div class=\"box-header\">\n                                <h3 class=\"box-title\">Default Solid Box Example</h3>\n                            </div><!-- /.box-header -->\n                            <div class=\"box-body\">\n                                The body of the box\n                            </div><!-- /.box-body -->\n                        </div><!-- /.box -->\n                    </div>\n                    <div class=\"col-md-4\">\n                        <div class=\"box box-solid box-primary\">\n                            <div class=\"box-header\">\n                                <h3 class=\"box-title\">Primary Solid Box Example</h3>\n                            </div><!-- /.box-header -->\n                            <div class=\"box-body\">\n                                The body of the box\n                            </div><!-- /.box-body -->\n                        </div><!-- /.box -->\n                    </div>\n                    <div class=\"col-md-4\">\n                        <div class=\"box box-solid box-info\">\n                            <div class=\"box-header\">\n                                <h3 class=\"box-title\">Info Solid Box Example</h3>\n                            </div><!-- /.box-header -->\n                            <div class=\"box-body\">\n                                The body of the box\n                            </div><!-- /.box-body -->\n                        </div><!-- /.box -->\n                    </div>\n                    <div class=\"clearfix\"></div>\n                    <div class=\"col-md-4\">\n                        <div class=\"box box-solid box-warning\">\n                            <div class=\"box-header\">\n                                <h3 class=\"box-title\">Warning Solid Box Example</h3>\n                            </div><!-- /.box-header -->\n                            <div class=\"box-body\">\n                                The body of the box\n                            </div><!-- /.box-body -->\n                        </div><!-- /.box -->\n                    </div>\n                    <div class=\"col-md-4\">\n                        <div class=\"box box-solid box-success\">\n                            <div class=\"box-header\">\n                                <h3 class=\"box-title\">Success Solid Box Example</h3>\n                            </div><!-- /.box-header -->\n                            <div class=\"box-body\">\n                                The body of the box\n                            </div><!-- /.box-body -->\n                        </div><!-- /.box -->\n                    </div>\n                    <div class=\"col-md-4\">\n                        <div class=\"box box-solid box-danger\">\n                            <div class=\"box-header\">\n                                <h3 class=\"box-title\">Danger Solid Box Example</h3>\n                            </div><!-- /.box-header -->\n                            <div class=\"box-body\">\n                                The body of the box\n                            </div><!-- /.box-body -->\n                        </div><!-- /.box -->\n                    </div>\n                </div><!-- /.row -->\n  <pre class=\"prettyprint\">\n&LT;div class=\"box box-solid box-default\">...&LT;/div>\n      &LT;div class=\"box box-solid box-primary\">...&LT;/div>\n      &LT;div class=\"box box-solid box-info\">...&LT;/div>\n      &LT;div class=\"box box-solid box-warning\">...&LT;/div>\n      &LT;div class=\"box box-solid box-success\">...&LT;/div>\n      &LT;div class=\"box box-solid box-danger\">...&LT;/div></pre>\n                <h4>Box Tools</h4>\n                <p class=\"lead\">Boxes can contain tools to deploy a specific event or provide simple info. The\n                    following examples makes use\n                    of multiple AdminLTE components within the header of the box.</p>\n                <p>AdminLTE data-widget attribute provides boxes with the ability to collapse or be removed. The\n                    buttons\n                    are placed in the box-tools which is placed in the box-header.</p>\n  <pre class=\"prettyprint\">\n&LT;!-- This will cause the box to be removed when clicked -->\n      &LT;button class=\"btn btn-box-tool\" data-widget=\"remove\" data-toggle=\"tooltip\" title=\"Remove\">&LT;i class=\"fa fa-times\">&LT;/i>&LT;/button>\n      &LT;!-- This will cause the box to collapse when clicked -->\n      &LT;button class=\"btn btn-box-tool\" data-widget=\"collapse\" data-toggle=\"tooltip\" title=\"Collapse\">&LT;i class=\"fa fa-minus\">&LT;/i>&LT;/button></pre>\n                <div class=\"row\">\n                    <div class=\"col-md-4\">\n                        <div class=\"box box-default\">\n                            <div class=\"box-header with-border\">\n                                <h3 class=\"box-title\">Collapsable</h3>\n                                <div class=\"box-tools pull-right\">\n                                    <button class=\"btn btn-box-tool\" data-widget=\"collapse\"><i\n                                            class=\"fa fa-minus\"></i></button>\n                                </div><!-- /.box-tools -->\n                            </div><!-- /.box-header -->\n                            <div class=\"box-body\">\n                                The body of the box\n                            </div><!-- /.box-body -->\n                        </div><!-- /.box -->\n      <pre class=\"prettyprint\">\n&LT;div class=\"box box-default\">\n          &LT;div class=\"box-header with-border\">\n          &LT;h3 class=\"box-title\">Collapsable&LT;/h3>\n          &LT;div class=\"box-tools pull-right\">\n          &LT;button class=\"btn btn-box-tool\" data-widget=\"collapse\">&LT;i class=\"fa fa-minus\">&LT;/i>&LT;/button>\n          &LT;/div>&LT;!-- /.box-tools -->\n          &LT;/div>&LT;!-- /.box-header -->\n          &LT;div class=\"box-body\">\n    The body of the box\n          &LT;/div>&LT;!-- /.box-body -->\n          &LT;/div>&LT;!-- /.box --></pre>\n                    </div>\n                    <div class=\"col-md-4\">\n                        <div class=\"box box-default\">\n                            <div class=\"box-header with-border\">\n                                <h3 class=\"box-title\">Removable</h3>\n                                <div class=\"box-tools pull-right\">\n                                    <button class=\"btn btn-box-tool\" data-widget=\"remove\"><i\n                                            class=\"fa fa-times\"></i></button>\n                                </div><!-- /.box-tools -->\n                            </div><!-- /.box-header -->\n                            <div class=\"box-body\">\n                                The body of the box\n                            </div><!-- /.box-body -->\n                        </div><!-- /.box -->\n      <pre class=\"prettyprint\">\n&LT;div class=\"box box-default\">\n          &LT;div class=\"box-header with-border\">\n          &LT;h3 class=\"box-title\">Removable&LT;/h3>\n          &LT;div class=\"box-tools pull-right\">\n          &LT;button class=\"btn btn-box-tool\" data-widget=\"remove\">&LT;i class=\"fa fa-times\">&LT;/i>&LT;/button>\n          &LT;/div>&LT;!-- /.box-tools -->\n          &LT;/div>&LT;!-- /.box-header -->\n          &LT;div class=\"box-body\">\n    The body of the box\n          &LT;/div>&LT;!-- /.box-body -->\n          &LT;/div>&LT;!-- /.box --></pre>\n                    </div>\n                    <div class=\"col-md-4\">\n                        <div class=\"box box-default collapsed-box\">\n                            <div class=\"box-header with-border\">\n                                <h3 class=\"box-title\">Expandable</h3>\n                                <div class=\"box-tools pull-right\">\n                                    <button class=\"btn btn-box-tool\" data-widget=\"collapse\"><i\n                                            class=\"fa fa-plus\"></i></button>\n                                </div><!-- /.box-tools -->\n                            </div><!-- /.box-header -->\n                            <div class=\"box-body\">\n                                The body of the box\n                            </div><!-- /.box-body -->\n                        </div><!-- /.box -->\n      <pre class=\"prettyprint\">\n&LT;div class=\"box box-default collapsed-box\">\n          &LT;div class=\"box-header with-border\">\n          &LT;h3 class=\"box-title\">Expandable&LT;/h3>\n          &LT;div class=\"box-tools pull-right\">\n          &LT;button class=\"btn btn-box-tool\" data-widget=\"collapse\">&LT;i class=\"fa fa-plus\">&LT;/i>&LT;/button>\n          &LT;/div>&LT;!-- /.box-tools -->\n          &LT;/div>&LT;!-- /.box-header -->\n          &LT;div class=\"box-body\">\n    The body of the box\n          &LT;/div>&LT;!-- /.box-body -->\n          &LT;/div>&LT;!-- /.box --></pre>\n                    </div>\n                </div><!-- /.row -->\n                <p>We can also add labels, badges, pagination, tooltips, inputs and many more in the box tools. A\n                    few examples:</p>\n                <div class=\"row\">\n                    <div class=\"col-md-4\">\n                        <div class=\"box box-default\">\n                            <div class=\"box-header with-border\">\n                                <h3 class=\"box-title\">Labels</h3>\n                                <div class=\"box-tools pull-right\">\n                                    <span class=\"label label-default\">Some Label</span>\n                                </div><!-- /.box-tools -->\n                            </div><!-- /.box-header -->\n                            <div class=\"box-body\">\n                                The body of the box\n                            </div><!-- /.box-body -->\n                        </div><!-- /.box -->\n      <pre class=\"prettyprint\">\n&LT;div class=\"box box-default\">\n          &LT;div class=\"box-header with-border\">\n          &LT;h3 class=\"box-title\">Labels&LT;/h3>\n          &LT;div class=\"box-tools pull-right\">\n          &LT;span class=\"label label-default\">8 New Messages&LT;/span>\n          &LT;/div>&LT;!-- /.box-tools -->\n          &LT;/div>&LT;!-- /.box-header -->\n          &LT;div class=\"box-body\">\n    The body of the box\n          &LT;/div>&LT;!-- /.box-body -->\n          &LT;/div>&LT;!-- /.box --></pre>\n                    </div>\n                    <div class=\"col-md-4\">\n                        <div class=\"box box-default\">\n                            <div class=\"box-header with-border\">\n                                <h3 class=\"box-title\">Input</h3>\n                                <div class=\"box-tools pull-right\">\n                                    <div class=\"has-feedback\">\n                                        <input type=\"text\" class=\"form-control input-sm\" placeholder=\"Search...\">\n                                        <span class=\"glyphicon glyphicon-search form-control-feedback text-muted\"></span>\n                                    </div>\n                                </div><!-- /.box-tools -->\n                            </div><!-- /.box-header -->\n                            <div class=\"box-body\">\n                                The body of the box\n                            </div><!-- /.box-body -->\n                        </div><!-- /.box -->\n      <pre class=\"prettyprint\">\n&LT;div class=\"box box-default\">\n          &LT;div class=\"box-header with-border\">\n          &LT;h3 class=\"box-title\">Input&LT;/h3>\n          &LT;div class=\"box-tools pull-right\">\n          &LT;div class=\"has-feedback\">\n          &LT;input type=\"text\" class=\"form-control input-sm\" placeholder=\"Search...\">\n          &LT;span class=\"glyphicon glyphicon-search form-control-feedback\">&LT;/span>\n          &LT;/div>\n          &LT;/div>&LT;!-- /.box-tools -->\n          &LT;/div>&LT;!-- /.box-header -->\n          &LT;div class=\"box-body\">\n    The body of the box\n          &LT;/div>&LT;!-- /.box-body -->\n          &LT;/div>&LT;!-- /.box --></pre>\n                    </div>\n                    <div class=\"col-md-4\">\n                        <div class=\"box box-default\">\n                            <div class=\"box-header with-border\">\n                                <h3 class=\"box-title\">Tootips on buttons</h3>\n                                <div class=\"box-tools pull-right\">\n                                    <button class=\"btn btn-box-tool\" data-widget=\"collapse\" data-toggle=\"tooltip\"\n                                            title=\"Collapse\"><i class=\"fa fa-minus\"></i></button>\n                                    <button class=\"btn btn-box-tool\" data-widget=\"remove\" data-toggle=\"tooltip\"\n                                            title=\"Remove\"><i class=\"fa fa-times\"></i></button>\n                                </div><!-- /.box-tools -->\n                            </div><!-- /.box-header -->\n                            <div class=\"box-body\">\n                                The body of the box\n                            </div><!-- /.box-body -->\n                        </div><!-- /.box -->\n      <pre class=\"prettyprint\">\n&LT;div class=\"box box-default\">\n          &LT;div class=\"box-header with-border\">\n          &LT;h3 class=\"box-title\">Tooltips on buttons&LT;/h3>\n          &LT;div class=\"box-tools pull-right\">\n          &LT;button class=\"btn btn-box-tool\" data-widget=\"collapse\" data-toggle=\"tooltip\" title=\"Collapse\">&LT;i class=\"fa fa-minus\">&LT;/i>&LT;/button>\n          &LT;button class=\"btn btn-box-tool\" data-widget=\"remove\" data-toggle=\"tooltip\" title=\"Remove\">&LT;i class=\"fa fa-times\">&LT;/i>&LT;/button>\n          &LT;/div>&LT;!-- /.box-tools -->\n          &LT;/div>&LT;!-- /.box-header -->\n          &LT;div class=\"box-body\">\n    The body of the box\n          &LT;/div>&LT;!-- /.box-body -->\n          &LT;/div>&LT;!-- /.box --></pre>\n                    </div><!-- /.col -->\n                </div><!-- /.row -->\n                <p>\n                    If you inserted a box into the document after <code>app.js</code> was loaded, you have to\n                    activate\n                    the collapse/remove buttons explicitly by calling <code>.activateBox()</code>:\n                </p>\n  <pre class=\"prettyprint\"><code class=\"html\">&LT;script>\n      $(\"#box-widget\").activateBox();\n      &LT;/script></code></pre>\n\n                <h4>Loading States</h4>\n                <div class=\"row\">\n                    <div class=\"col-md-6\">\n                        <div class=\"box box-default\">\n                            <div class=\"box-header with-border\">\n                                <h3 class=\"box-title\">Loading state</h3>\n                            </div>\n                            <div class=\"box-body\">\n                                The body of the box\n                            </div><!-- /.box-body -->\n                            <!-- Loading (remove the following to stop the loading)-->\n                            <div class=\"overlay\">\n                                <i class=\"fa fa-refresh fa-spin\"></i>\n                            </div>\n                            <!-- end loading -->\n                        </div><!-- /.box -->\n                    </div><!-- /.col -->\n\n                    <div class=\"col-md-6\">\n                        <div class=\"box box-default box-solid\">\n                            <div class=\"box-header with-border\">\n                                <h3 class=\"box-title\">Loading state (.box-solid)</h3>\n                            </div>\n                            <div class=\"box-body\">\n                                The body of the box\n                            </div><!-- /.box-body -->\n                            <!-- Loading (remove the following to stop the loading)-->\n                            <div class=\"overlay\">\n                                <i class=\"fa fa-refresh fa-spin\"></i>\n                            </div>\n                            <!-- end loading -->\n                        </div><!-- /.box -->\n                    </div><!-- /.col -->\n                </div><!-- /.row -->\n                <p class=\"lead\">\n                    To simulate a loading state, simply place this code before the <code>.box</code> closing tag.\n                </p>\n  <pre class=\"prettyprint\"><code class=\"html\">&LT;div class=\"overlay\">\n      &LT;i class=\"fa fa-refresh fa-spin\">&LT;/i>\n      &LT;/div>\n  </code></pre>\n                <h3 id=\"component-direct-chat\">Direct Chat</h3>\n                <p class=\"lead\">The direct chat widget extends the box component to create a beautiful chat\n                    interface. This widget\n                    consists of a required messages pane and an <b>optional</b> contacts pane. Examples:</p>\n                <!-- Direct Chat -->\n                <div class=\"row\">\n                    <div class=\"col-md-3\">\n                        <!-- DIRECT CHAT PRIMARY -->\n                        <div class=\"box box-primary direct-chat direct-chat-primary\">\n                            <div class=\"box-header with-border\">\n                                <h3 class=\"box-title\">Direct Chat</h3>\n                                <div class=\"box-tools pull-right\">\n                                        <span data-toggle=\"tooltip\" title=\"3 New Messages\"\n                                              class=\"badge bg-light-blue\">3</span>\n                                    <button class=\"btn btn-box-tool\" data-widget=\"collapse\"><i\n                                            class=\"fa fa-minus\"></i></button>\n                                    <button class=\"btn btn-box-tool\" data-toggle=\"tooltip\" title=\"Contacts\"\n                                            data-widget=\"chat-pane-toggle\"><i class=\"fa fa-comments\"></i></button>\n                                    <button class=\"btn btn-box-tool\" data-widget=\"remove\"><i\n                                            class=\"fa fa-times\"></i></button>\n                                </div>\n                            </div><!-- /.box-header -->\n                            <div class=\"box-body\">\n                                <!-- Conversations are loaded here -->\n                                <div class=\"direct-chat-messages\">\n                                    <!-- Message. Default to the left -->\n                                    <div class=\"direct-chat-msg\">\n                                        <div class=\"direct-chat-info clearfix\">\n                                            <span class=\"direct-chat-name pull-left\">Alexander Pierce</span>\n                                            <span class=\"direct-chat-timestamp pull-right\">23 Jan 2:00 pm</span>\n                                        </div><!-- /.direct-chat-info -->\n                                        <div class=\"direct-chat-text\">\n                                            Is this template really for free? That's unbelievable!\n                                        </div><!-- /.direct-chat-text -->\n                                    </div><!-- /.direct-chat-msg -->\n\n                                    <!-- Message to the right -->\n                                    <div class=\"direct-chat-msg right\">\n                                        <div class=\"direct-chat-info clearfix\">\n                                            <span class=\"direct-chat-name pull-right\">Sarah Bullock</span>\n                                            <span class=\"direct-chat-timestamp pull-left\">23 Jan 2:05 pm</span>\n                                        </div><!-- /.direct-chat-info -->\n                                        <div class=\"direct-chat-text\">\n                                            You better believe it!\n                                        </div><!-- /.direct-chat-text -->\n                                    </div><!-- /.direct-chat-msg -->\n                                </div><!--/.direct-chat-messages-->\n\n                                <!-- Contacts are loaded here -->\n                                <div class=\"direct-chat-contacts\">\n                                    <ul class=\"contacts-list\">\n                                        <li>\n                                            <a href=\"#\">\n                                                <div class=\"contacts-list-info\">\n                    <span class=\"contacts-list-name\">\n                      Count Dracula\n                      <small class=\"contacts-list-date pull-right\">2/28/2015</small>\n                    </span>\n                                                    <span class=\"contacts-list-msg\">How have you been? I was...</span>\n                                                </div><!-- /.contacts-list-info -->\n                                            </a>\n                                        </li><!-- End Contact Item -->\n                                    </ul><!-- /.contatcts-list -->\n                                </div><!-- /.direct-chat-pane -->\n                            </div><!-- /.box-body -->\n                            <div class=\"box-footer\">\n                                <form action=\"#\" method=\"post\">\n                                    <div class=\"input-group\">\n                                        <input type=\"text\" name=\"message\" placeholder=\"Type Message ...\"\n                                               class=\"form-control\">\n              <span class=\"input-group-btn\">\n                <button type=\"button\" class=\"btn btn-primary btn-flat\">Send</button>\n              </span>\n                                    </div>\n                                </form>\n                            </div><!-- /.box-footer-->\n                        </div><!--/.direct-chat -->\n                    </div><!-- /.col -->\n\n                    <div class=\"col-md-3\">\n                        <!-- DIRECT CHAT SUCCESS -->\n                        <div class=\"box box-success direct-chat direct-chat-success\">\n                            <div class=\"box-header with-border\">\n                                <h3 class=\"box-title\">Direct Chat</h3>\n                                <div class=\"box-tools pull-right\">\n                                        <span data-toggle=\"tooltip\" title=\"3 New Messages\"\n                                              class=\"badge bg-green\">3</span>\n                                    <button class=\"btn btn-box-tool\" data-widget=\"collapse\"><i\n                                            class=\"fa fa-minus\"></i></button>\n                                    <button class=\"btn btn-box-tool\" data-toggle=\"tooltip\" title=\"Contacts\"\n                                            data-widget=\"chat-pane-toggle\"><i class=\"fa fa-comments\"></i></button>\n                                    <button class=\"btn btn-box-tool\" data-widget=\"remove\"><i\n                                            class=\"fa fa-times\"></i></button>\n                                </div>\n                            </div><!-- /.box-header -->\n                            <div class=\"box-body\">\n                                <!-- Conversations are loaded here -->\n                                <div class=\"direct-chat-messages\">\n                                    <!-- Message. Default to the left -->\n                                    <div class=\"direct-chat-msg\">\n                                        <div class=\"direct-chat-info clearfix\">\n                                            <span class=\"direct-chat-name pull-left\">Alexander Pierce</span>\n                                            <span class=\"direct-chat-timestamp pull-right\">23 Jan 2:00 pm</span>\n                                        </div><!-- /.direct-chat-info -->\n                                        <div class=\"direct-chat-text\">\n                                            Is this template really for free? That's unbelievable!\n                                        </div><!-- /.direct-chat-text -->\n                                    </div><!-- /.direct-chat-msg -->\n\n                                    <!-- Message to the right -->\n                                    <div class=\"direct-chat-msg right\">\n                                        <div class=\"direct-chat-info clearfix\">\n                                            <span class=\"direct-chat-name pull-right\">Sarah Bullock</span>\n                                            <span class=\"direct-chat-timestamp pull-left\">23 Jan 2:05 pm</span>\n                                        </div><!-- /.direct-chat-info -->\n                                        <div class=\"direct-chat-text\">\n                                            You better believe it!\n                                        </div><!-- /.direct-chat-text -->\n                                    </div><!-- /.direct-chat-msg -->\n                                </div><!--/.direct-chat-messages-->\n\n                                <!-- Contacts are loaded here -->\n                                <div class=\"direct-chat-contacts\">\n                                    <ul class=\"contacts-list\">\n                                        <li>\n                                            <a href=\"#\">\n                                                <div class=\"contacts-list-info\">\n                    <span class=\"contacts-list-name\">\n                      Count Dracula\n                      <small class=\"contacts-list-date pull-right\">2/28/2015</small>\n                    </span>\n                                                    <span class=\"contacts-list-msg\">How have you been? I was...</span>\n                                                </div><!-- /.contacts-list-info -->\n                                            </a>\n                                        </li><!-- End Contact Item -->\n                                    </ul><!-- /.contatcts-list -->\n                                </div><!-- /.direct-chat-pane -->\n                            </div><!-- /.box-body -->\n                            <div class=\"box-footer\">\n                                <form action=\"#\" method=\"post\">\n                                    <div class=\"input-group\">\n                                        <input type=\"text\" name=\"message\" placeholder=\"Type Message ...\"\n                                               class=\"form-control\">\n              <span class=\"input-group-btn\">\n                <button type=\"button\" class=\"btn btn-success btn-flat\">Send</button>\n              </span>\n                                    </div>\n                                </form>\n                            </div><!-- /.box-footer-->\n                        </div><!--/.direct-chat -->\n                    </div><!-- /.col -->\n\n                    <div class=\"col-md-3\">\n                        <!-- DIRECT CHAT WARNING -->\n                        <div class=\"box box-warning direct-chat direct-chat-warning\">\n                            <div class=\"box-header with-border\">\n                                <h3 class=\"box-title\">Direct Chat</h3>\n                                <div class=\"box-tools pull-right\">\n                                        <span data-toggle=\"tooltip\" title=\"3 New Messages\"\n                                              class=\"badge bg-yellow\">3</span>\n                                    <button class=\"btn btn-box-tool\" data-widget=\"collapse\"><i\n                                            class=\"fa fa-minus\"></i></button>\n                                    <button class=\"btn btn-box-tool\" data-toggle=\"tooltip\" title=\"Contacts\"\n                                            data-widget=\"chat-pane-toggle\"><i class=\"fa fa-comments\"></i></button>\n                                    <button class=\"btn btn-box-tool\" data-widget=\"remove\"><i\n                                            class=\"fa fa-times\"></i></button>\n                                </div>\n                            </div><!-- /.box-header -->\n                            <div class=\"box-body\">\n                                <!-- Conversations are loaded here -->\n                                <div class=\"direct-chat-messages\">\n                                    <!-- Message. Default to the left -->\n                                    <div class=\"direct-chat-msg\">\n                                        <div class=\"direct-chat-info clearfix\">\n                                            <span class=\"direct-chat-name pull-left\">Alexander Pierce</span>\n                                            <span class=\"direct-chat-timestamp pull-right\">23 Jan 2:00 pm</span>\n                                        </div><!-- /.direct-chat-info -->\n                                        <div class=\"direct-chat-text\">\n                                            Is this template really for free? That's unbelievable!\n                                        </div><!-- /.direct-chat-text -->\n                                    </div><!-- /.direct-chat-msg -->\n\n                                    <!-- Message to the right -->\n                                    <div class=\"direct-chat-msg right\">\n                                        <div class=\"direct-chat-info clearfix\">\n                                            <span class=\"direct-chat-name pull-right\">Sarah Bullock</span>\n                                            <span class=\"direct-chat-timestamp pull-left\">23 Jan 2:05 pm</span>\n                                        </div><!-- /.direct-chat-info -->\n                                        <div class=\"direct-chat-text\">\n                                            You better believe it!\n                                        </div><!-- /.direct-chat-text -->\n                                    </div><!-- /.direct-chat-msg -->\n                                </div><!--/.direct-chat-messages-->\n\n                                <!-- Contacts are loaded here -->\n                                <div class=\"direct-chat-contacts\">\n                                    <ul class=\"contacts-list\">\n                                        <li>\n                                            <a href=\"#\">\n                                                <div class=\"contacts-list-info\">\n                    <span class=\"contacts-list-name\">\n                      Count Dracula\n                      <small class=\"contacts-list-date pull-right\">2/28/2015</small>\n                    </span>\n                                                    <span class=\"contacts-list-msg\">How have you been? I was...</span>\n                                                </div><!-- /.contacts-list-info -->\n                                            </a>\n                                        </li><!-- End Contact Item -->\n                                    </ul><!-- /.contatcts-list -->\n                                </div><!-- /.direct-chat-pane -->\n                            </div><!-- /.box-body -->\n                            <div class=\"box-footer\">\n                                <form action=\"#\" method=\"post\">\n                                    <div class=\"input-group\">\n                                        <input type=\"text\" name=\"message\" placeholder=\"Type Message ...\"\n                                               class=\"form-control\">\n              <span class=\"input-group-btn\">\n                <button type=\"button\" class=\"btn btn-warning btn-flat\">Send</button>\n              </span>\n                                    </div>\n                                </form>\n                            </div><!-- /.box-footer-->\n                        </div><!--/.direct-chat -->\n                    </div><!-- /.col -->\n\n                    <div class=\"col-md-3\">\n                        <!-- DIRECT CHAT DANGER -->\n                        <div class=\"box box-danger direct-chat direct-chat-danger\">\n                            <div class=\"box-header with-border\">\n                                <h3 class=\"box-title\">Direct Chat</h3>\n                                <div class=\"box-tools pull-right\">\n                                    <span data-toggle=\"tooltip\" title=\"3 New Messages\" class=\"badge bg-red\">3</span>\n                                    <button class=\"btn btn-box-tool\" data-widget=\"collapse\"><i\n                                            class=\"fa fa-minus\"></i></button>\n                                    <button class=\"btn btn-box-tool\" data-toggle=\"tooltip\" title=\"Contacts\"\n                                            data-widget=\"chat-pane-toggle\"><i class=\"fa fa-comments\"></i></button>\n                                    <button class=\"btn btn-box-tool\" data-widget=\"remove\"><i\n                                            class=\"fa fa-times\"></i></button>\n                                </div>\n                            </div><!-- /.box-header -->\n                            <div class=\"box-body\">\n                                <!-- Conversations are loaded here -->\n                                <div class=\"direct-chat-messages\">\n                                    <!-- Message. Default to the left -->\n                                    <div class=\"direct-chat-msg\">\n                                        <div class=\"direct-chat-info clearfix\">\n                                            <span class=\"direct-chat-name pull-left\">Alexander Pierce</span>\n                                            <span class=\"direct-chat-timestamp pull-right\">23 Jan 2:00 pm</span>\n                                        </div><!-- /.direct-chat-info -->\n                                        <div class=\"direct-chat-text\">\n                                            Is this template really for free? That's unbelievable!\n                                        </div><!-- /.direct-chat-text -->\n                                    </div><!-- /.direct-chat-msg -->\n\n                                    <!-- Message to the right -->\n                                    <div class=\"direct-chat-msg right\">\n                                        <div class=\"direct-chat-info clearfix\">\n                                            <span class=\"direct-chat-name pull-right\">Sarah Bullock</span>\n                                            <span class=\"direct-chat-timestamp pull-left\">23 Jan 2:05 pm</span>\n                                        </div><!-- /.direct-chat-info -->\n                                        <div class=\"direct-chat-text\">\n                                            You better believe it!\n                                        </div><!-- /.direct-chat-text -->\n                                    </div><!-- /.direct-chat-msg -->\n                                </div><!--/.direct-chat-messages-->\n\n                                <!-- Contacts are loaded here -->\n                                <div class=\"direct-chat-contacts\">\n                                    <ul class=\"contacts-list\">\n                                        <li>\n                                            <a href=\"#\">\n                                                <div class=\"contacts-list-info\">\n                    <span class=\"contacts-list-name\">\n                      Count Dracula\n                      <small class=\"contacts-list-date pull-right\">2/28/2015</small>\n                    </span>\n                                                    <span class=\"contacts-list-msg\">How have you been? I was...</span>\n                                                </div><!-- /.contacts-list-info -->\n                                            </a>\n                                        </li><!-- End Contact Item -->\n                                    </ul><!-- /.contatcts-list -->\n                                </div><!-- /.direct-chat-pane -->\n                            </div><!-- /.box-body -->\n                            <div class=\"box-footer\">\n                                <form action=\"#\" method=\"post\">\n                                    <div class=\"input-group\">\n                                        <input type=\"text\" name=\"message\" placeholder=\"Type Message ...\"\n                                               class=\"form-control\">\n              <span class=\"input-group-btn\">\n                <button type=\"button\" class=\"btn btn-danger btn-flat\">Send</button>\n              </span>\n                                    </div>\n                                </form>\n                            </div><!-- /.box-footer-->\n                        </div><!--/.direct-chat -->\n                    </div><!-- /.col -->\n                </div><!-- /.row -->\n                <p class=\"lead\">Direct Chat Markup</p>\n  <pre class=\"prettyprint\"><code class=\"html\">\n      &LT;!-- Construct the box with style you want. Here we are using box-danger -->\n      &LT;!-- Then add the class direct-chat and choose the direct-chat-* contexual class -->\n      &LT;!-- The contextual class should match the box, so we are using direct-chat-danger -->\n      &LT;div class=\"box box-danger direct-chat direct-chat-danger\">\n      &LT;div class=\"box-header with-border\">\n      &LT;h3 class=\"box-title\">Direct Chat&LT;/h3>\n      &LT;div class=\"box-tools pull-right\">\n      &LT;span data-toggle=\"tooltip\" title=\"3 New Messages\" class=\"badge bg-red\">3&LT;/span>\n      &LT;button class=\"btn btn-box-tool\" data-widget=\"collapse\">&LT;i class=\"fa fa-minus\">&LT;/i>&LT;/button>\n      &LT;!-- In box-tools add this button if you intend to use the contacts pane -->\n      &LT;button class=\"btn btn-box-tool\" data-toggle=\"tooltip\" title=\"Contacts\" data-widget=\"chat-pane-toggle\">&LT;i\n      class=\"fa fa-comments\">&LT;/i>&LT;/button>\n      &LT;button class=\"btn btn-box-tool\" data-widget=\"remove\">&LT;i class=\"fa fa-times\">&LT;/i>&LT;/button>\n      &LT;/div>\n      &LT;/div>&LT;!-- /.box-header -->\n      &LT;div class=\"box-body\">\n      &LT;!-- Conversations are loaded here -->\n      &LT;div class=\"direct-chat-messages\">\n      &LT;!-- Message. Default to the left -->\n      &LT;div class=\"direct-chat-msg\">\n      &LT;div class=\"direct-chat-info clearfix\">\n      &LT;span class=\"direct-chat-name pull-left\">Alexander Pierce&LT;/span>\n      &LT;span class=\"direct-chat-timestamp pull-right\">23 Jan 2:00 pm&LT;/span>\n      &LT;/div>&LT;!-- /.direct-chat-info -->\n      &LT;img class=\"direct-chat-img\" src=\"../dist/img/user1-128x128.jpg\" alt=\"message user image\">&LT;!--\n      /.direct-chat-img -->\n      &LT;div class=\"direct-chat-text\">\n      Is this template really for free? That's unbelievable!\n      &LT;/div>&LT;!-- /.direct-chat-text -->\n      &LT;/div>&LT;!-- /.direct-chat-msg -->\n\n      &LT;!-- Message to the right -->\n      &LT;div class=\"direct-chat-msg right\">\n      &LT;div class=\"direct-chat-info clearfix\">\n      &LT;span class=\"direct-chat-name pull-right\">Sarah Bullock&LT;/span>\n      &LT;span class=\"direct-chat-timestamp pull-left\">23 Jan 2:05 pm&LT;/span>\n      &LT;/div>&LT;!-- /.direct-chat-info -->\n      &LT;img class=\"direct-chat-img\" src=\"../dist/img/user3-128x128.jpg\" alt=\"message user image\">&LT;!--\n      /.direct-chat-img -->\n      &LT;div class=\"direct-chat-text\">\n      You better believe it!\n      &LT;/div>&LT;!-- /.direct-chat-text -->\n      &LT;/div>&LT;!-- /.direct-chat-msg -->\n      &LT;/div>&LT;!--/.direct-chat-messages-->\n\n      &LT;!-- Contacts are loaded here -->\n      &LT;div class=\"direct-chat-contacts\">\n      &LT;ul class=\"contacts-list\">\n      &LT;li>\n      &LT;a href=\"#\">\n      &LT;img class=\"contacts-list-img\" src=\"../dist/img/user1-128x128.jpg\" alt=\"Contact Avatar\">\n      &LT;div class=\"contacts-list-info\">\n      &LT;span class=\"contacts-list-name\">\n      Count Dracula\n      &LT;small class=\"contacts-list-date pull-right\">2/28/2015&LT;/small>\n      &LT;/span>\n      &LT;span class=\"contacts-list-msg\">How have you been? I was...&LT;/span>\n      &LT;/div>&LT;!-- /.contacts-list-info -->\n      &LT;/a>\n      &LT;/li>&LT;!-- End Contact Item -->\n      &LT;/ul>&LT;!-- /.contatcts-list -->\n      &LT;/div>&LT;!-- /.direct-chat-pane -->\n      &LT;/div>&LT;!-- /.box-body -->\n      &LT;div class=\"box-footer\">\n      &LT;div class=\"input-group\">\n      &LT;input type=\"text\" name=\"message\" placeholder=\"Type Message ...\" class=\"form-control\">\n      &LT;span class=\"input-group-btn\">\n      &LT;button type=\"button\" class=\"btn btn-danger btn-flat\">Send&LT;/button>\n      &LT;/span>\n      &LT;/div>\n      &LT;/div>&LT;!-- /.box-footer-->\n      &LT;/div>&LT;!--/.direct-chat -->\n  </code></pre>\n\n                <p>Of course you can use direct chat with a solid box by adding the class <code>solid-box</code> to\n                    the box. Here are a couple of examples:</p>\n\n                <!-- Direct Chat With Solid Boxes -->\n                <div class=\"row\">\n                    <div class=\"col-md-6\">\n                        <!-- DIRECT CHAT WARNING -->\n                        <div class=\"box box-primary box-solid direct-chat direct-chat-primary\">\n                            <div class=\"box-header\">\n                                <h3 class=\"box-title\">Direct Chat in a Solid Box</h3>\n                                <div class=\"box-tools pull-right\">\n                                        <span data-toggle=\"tooltip\" title=\"3 New Messages\"\n                                              class=\"badge bg-light-blue\">3</span>\n                                    <button class=\"btn btn-box-tool\" data-widget=\"collapse\"><i\n                                            class=\"fa fa-minus\"></i></button>\n                                    <button class=\"btn btn-box-tool\" data-toggle=\"tooltip\" title=\"Contacts\"\n                                            data-widget=\"chat-pane-toggle\"><i class=\"fa fa-comments\"></i></button>\n                                    <button class=\"btn btn-box-tool\" data-widget=\"remove\"><i\n                                            class=\"fa fa-times\"></i></button>\n                                </div>\n                            </div><!-- /.box-header -->\n                            <div class=\"box-body\">\n                                <!-- Conversations are loaded here -->\n                                <div class=\"direct-chat-messages\">\n                                    <!-- Message. Default to the left -->\n                                    <div class=\"direct-chat-msg\">\n                                        <div class=\"direct-chat-info clearfix\">\n                                            <span class=\"direct-chat-name pull-left\">Alexander Pierce</span>\n                                            <span class=\"direct-chat-timestamp pull-right\">23 Jan 2:00 pm</span>\n                                        </div><!-- /.direct-chat-info -->\n                                        <div class=\"direct-chat-text\">\n                                            Is this template really for free? That's unbelievable!\n                                        </div><!-- /.direct-chat-text -->\n                                    </div><!-- /.direct-chat-msg -->\n\n                                    <!-- Message to the right -->\n                                    <div class=\"direct-chat-msg right\">\n                                        <div class=\"direct-chat-info clearfix\">\n                                            <span class=\"direct-chat-name pull-right\">Sarah Bullock</span>\n                                            <span class=\"direct-chat-timestamp pull-left\">23 Jan 2:05 pm</span>\n                                        </div><!-- /.direct-chat-info -->\n                                        <div class=\"direct-chat-text\">\n                                            You better believe it!\n                                        </div><!-- /.direct-chat-text -->\n                                    </div><!-- /.direct-chat-msg -->\n                                </div><!--/.direct-chat-messages-->\n\n                                <!-- Contacts are loaded here -->\n                                <div class=\"direct-chat-contacts\">\n                                    <ul class=\"contacts-list\">\n                                        <li>\n                                            <a href=\"#\">\n                                                <div class=\"contacts-list-info\">\n                    <span class=\"contacts-list-name\">\n                      Count Dracula\n                      <small class=\"contacts-list-date pull-right\">2/28/2015</small>\n                    </span>\n                                                    <span class=\"contacts-list-msg\">How have you been? I was...</span>\n                                                </div><!-- /.contacts-list-info -->\n                                            </a>\n                                        </li><!-- End Contact Item -->\n                                    </ul><!-- /.contatcts-list -->\n                                </div><!-- /.direct-chat-pane -->\n                            </div><!-- /.box-body -->\n                            <div class=\"box-footer\">\n                                <form action=\"#\" method=\"post\">\n                                    <div class=\"input-group\">\n                                        <input type=\"text\" name=\"message\" placeholder=\"Type Message ...\"\n                                               class=\"form-control\">\n              <span class=\"input-group-btn\">\n                <button type=\"button\" class=\"btn btn-primary btn-flat\">Send</button>\n              </span>\n                                    </div>\n                                </form>\n                            </div><!-- /.box-footer-->\n                        </div><!--/.direct-chat -->\n                    </div><!-- /.col -->\n\n                    <div class=\"col-md-6\">\n                        <!-- DIRECT CHAT DANGER -->\n                        <div class=\"box box-info box-solid direct-chat direct-chat-info\">\n                            <div class=\"box-header\">\n                                <h3 class=\"box-title\">Direct Chat in a Solid Box</h3>\n                                <div class=\"box-tools pull-right\">\n                                        <span data-toggle=\"tooltip\" title=\"3 New Messages\"\n                                              class=\"badge bg-aqua\">3</span>\n                                    <button class=\"btn btn-box-tool\" data-widget=\"collapse\"><i\n                                            class=\"fa fa-minus\"></i></button>\n                                    <button class=\"btn btn-box-tool\" data-toggle=\"tooltip\" title=\"Contacts\"\n                                            data-widget=\"chat-pane-toggle\"><i class=\"fa fa-comments\"></i></button>\n                                    <button class=\"btn btn-box-tool\" data-widget=\"remove\"><i\n                                            class=\"fa fa-times\"></i></button>\n                                </div>\n                            </div><!-- /.box-header -->\n                            <div class=\"box-body\">\n                                <!-- Conversations are loaded here -->\n                                <div class=\"direct-chat-messages\">\n                                    <!-- Message. Default to the left -->\n                                    <div class=\"direct-chat-msg\">\n                                        <div class=\"direct-chat-info clearfix\">\n                                            <span class=\"direct-chat-name pull-left\">Alexander Pierce</span>\n                                            <span class=\"direct-chat-timestamp pull-right\">23 Jan 2:00 pm</span>\n                                        </div><!-- /.direct-chat-info -->\n                                        <div class=\"direct-chat-text\">\n                                            Is this template really for free? That's unbelievable!\n                                        </div><!-- /.direct-chat-text -->\n                                    </div><!-- /.direct-chat-msg -->\n\n                                    <!-- Message to the right -->\n                                    <div class=\"direct-chat-msg right\">\n                                        <div class=\"direct-chat-info clearfix\">\n                                            <span class=\"direct-chat-name pull-right\">Sarah Bullock</span>\n                                            <span class=\"direct-chat-timestamp pull-left\">23 Jan 2:05 pm</span>\n                                        </div><!-- /.direct-chat-info -->\n                                        <div class=\"direct-chat-text\">\n                                            You better believe it!\n                                        </div><!-- /.direct-chat-text -->\n                                    </div><!-- /.direct-chat-msg -->\n                                </div><!--/.direct-chat-messages-->\n\n                                <!-- Contacts are loaded here -->\n                                <div class=\"direct-chat-contacts\">\n                                    <ul class=\"contacts-list\">\n                                        <li>\n                                            <a href=\"#\">\n                                                <div class=\"contacts-list-info\">\n                    <span class=\"contacts-list-name\">\n                      Count Dracula\n                      <small class=\"contacts-list-date pull-right\">2/28/2015</small>\n                    </span>\n                                                    <span class=\"contacts-list-msg\">How have you been? I was...</span>\n                                                </div><!-- /.contacts-list-info -->\n                                            </a>\n                                        </li><!-- End Contact Item -->\n                                    </ul><!-- /.contatcts-list -->\n                                </div><!-- /.direct-chat-pane -->\n                            </div><!-- /.box-body -->\n                            <div class=\"box-footer\">\n                                <form action=\"#\" method=\"post\">\n                                    <div class=\"input-group\">\n                                        <input type=\"text\" name=\"message\" placeholder=\"Type Message ...\"\n                                               class=\"form-control\">\n              <span class=\"input-group-btn\">\n                <button type=\"button\" class=\"btn btn-info btn-flat\">Send</button>\n              </span>\n                                    </div>\n                                </form>\n                            </div><!-- /.box-footer-->\n                        </div><!--/.direct-chat -->\n                    </div><!-- /.col -->\n                </div><!-- /.row -->\n            </section>\n\n\n            <!-- ============================================================= -->\n\n            <section id=\"plugins\">\n                <h2 class=\"page-header\"><a href=\"#plugins\">Plugins</a></h2>\n                <p class=\"lead\">AdminLTE makes use of the following plugins. For documentation, updates or license\n                    information, please visit the provided links.</p>\n                <div class=\"row bring-up\">\n                    <div class=\"col-sm-3\">\n                        <ul class=\"list-unstyled\">\n                            <li><h4>Charts</h4></li>\n                            <li><a href=\"http://www.chartjs.org/\" target=\"_blank\">ChartJS</a></li>\n                            <li><a href=\"http://www.flotcharts.org/\" target=\"_blank\">Flot</a></li>\n                            <li><a href=\"http://morrisjs.github.io/morris.js/\" target=\"_blank\">Morris.js</a></li>\n                            <li><a href=\"http://omnipotent.net/jquery.sparkline/\" target=\"_blank\">Sparkline</a></li>\n                        </ul>\n                    </div><!-- /.col -->\n                    <div class=\"col-sm-3\">\n                        <ul class=\"list-unstyled\">\n                            <li><h4>Form Elements</h4></li>\n                            <li><a href=\"https://github.com/seiyria/bootstrap-slider/\">Bootstrap Slider</a></li>\n                            <li><a href=\"http://ionden.com/a/plugins/ion.rangeSlider/en.html\" target=\"_blank\">Ion\n                                Slider</a></li>\n                            <li><a href=\"http://bootstrap-datepicker.readthedocs.org/\" target=\"_blank\">Date\n                                Picker</a></li>\n                            <li><a href=\"http://www.daterangepicker.com/\" target=\"_blank\">Date Range Picker</a></li>\n                            <li><a href=\"http://mjolnic.com/bootstrap-colorpicker/\" target=\"_blank\">Color Picker</a>\n                            </li>\n                            <li><a href=\"https://github.com/jdewit/bootstrap-timepicker/\" target=\"_blank\">Time\n                                Picker</a></li>\n                            <li><a href=\"http://fronteed.com/iCheck/\" target=\"_blank\">iCheck</a></li>\n                            <li><a href=\"https://github.com/RobinHerbots/jquery.inputmask/\" target=\"_blank\">Input\n                                Mask</a></li>\n                        </ul>\n                    </div><!-- /.col -->\n                    <div class=\"col-sm-3\">\n                        <ul class=\"list-unstyled\">\n                            <li><h4>Editors</h4></li>\n                            <li><a href=\"https://github.com/bootstrap-wysiwyg/bootstrap3-wysiwyg/\" target=\"_blank\">Bootstrap\n                                WYSIHTML5</a></li>\n                            <li><a href=\"http://ckeditor.com/\" target=\"_blank\">CK Editor</a></li>\n                        </ul>\n                    </div><!-- /. col -->\n                    <div class=\"col-sm-3\">\n                        <ul class=\"list-unstyled\">\n                            <li><h4>Other</h4></li>\n                            <li><a href=\"https://datatables.net/examples/styling/bootstrap.html\" target=\"_blank\">DataTables</a>\n                            </li>\n                            <li><a href=\"http://fullcalendar.io/\" target=\"_blank\">Full Calendar</a></li>\n                            <li><a href=\"http://jqueryui.com/\" target=\"_blank\">jQuery UI</a></li>\n                            <li><a href=\"http://anthonyterrien.com/knob/\" target=\"_blank\">jQuery Knob</a></li>\n                            <li><a href=\"http://jvectormap.com/\" target=\"_blank\">jVector Map</a></li>\n                            <li><a href=\"http://rocha.la/jQuery-slimScroll/\" target=\"_blank\">Slim Scroll</a></li>\n                            <li><a href=\"http://github.hubspot.com/pace/docs/welcome/\" target=\"_blank\">Pace</a></li>\n                        </ul>\n                    </div><!-- /.col -->\n                </div><!-- /.row -->\n            </section>\n\n\n            <!-- ============================================================= -->\n\n            <section id=\"browsers\">\n                <h2 class=\"page-header\"><a href=\"#browsers\">Browser Support</a></h2>\n                <p class=\"lead\">AdminLTE supports the following browsers:</p>\n                <ul>\n                    <li>IE9+</li>\n                    <li>Firefox (latest)</li>\n                    <li>Safari (latest)</li>\n                    <li>Chrome (latest)</li>\n                    <li>Opera (latest)</li>\n                </ul>\n                <p><b>Note:</b> IE9 does not support transitions or animations. The template will function properly\n                    but it won't use animations/transitions on IE9.</p>\n            </section>\n\n\n            <!-- ============================================================= -->\n\n            <section id=\"upgrade\">\n                <h2 class=\"page-header\"><a href=\"#upgrade\">Upgrade Guide</a></h2>\n                <p class=\"lead\">To upgrade from version 1.x to the lateset version, follow this guide.</p>\n                <h3>New Files</h3>\n                <p>Make sure you update all CSS and JS files that are related to AdminLTE. Otherwise, the layout\n                    will not\n                    function properly. Most important files are AdminLTE.css, skins CSS files, and app.js.</p>\n                <h3>Layout Changes</h3>\n                <ol>\n                    <li>The .wrapper div must be placed immediately after the body tag rather than after the\n                        header\n                    </li>\n                    <li>Change the .header div to .main-header <code>&LT;div class=\"main-header\"></code></li>\n                    <li>Change the .right-side class to .content-wrapper <code>&LT;div\n                        class=\"content-wrapper\"></code></li>\n                    <li>Change the .left-side class to .main-sidebar <code>&LT;div class=\"main-sidebar\"></code></li>\n                    <li>In the navbar, change .navbar-right to .navbar-custom-menu <code>&LT;div\n                        class=\"navbar-custom-menu\"></code></li>\n                </ol>\n                <h3>Navbar Custom Dropdown Menus</h3>\n                <ol>\n                    <li>The icons in the notification menu do not need bg-* classes. They should be replaced with\n                        contextual text color class such as text-aqua or text-red.\n                    </li>\n                </ol>\n                <h3>Login, Registration and Lockscreen Pages</h3>\n                <p>There are major changes to the HTML markup and style to these pages. The best way is to copy the\n                    page's code and customize it.</p>\n                <p>And you should be set to go!</p>\n                <h3>Mailbox</h3>\n                <p>Mailbox got an upgrade to include three different views. The views are inbox, read mail, and\n                    compose new email. To use these views,\n                    you should use the provided HTML files in the pages/mailbox folder.</p>\n                <p><b class=\"text-red\">Note:</b> the old mailbox layout has been deprecated in favor of the new one\n                    and will be removed by the next release.</p>\n            </section>\n\n\n            <!-- ============================================================= -->\n\n            <section id=\"implementations\">\n                <h2 class=\"page-header\"><a href=\"#implementations\">Implementations</a></h2>\n                <p class=\"lead\">Thanks to many of AdminLTE users, there are multiple implementations of the template\n                    for easy integration with back-end frameworks. The following are some of them:</p>\n\n                <ul>\n                    <li><a href=\"https://github.com/mmdsharifi/AdminLTE-RTL\">Persian RTL</a> by <a\n                            href=\"https://github.com/mmdsharifi\">Mohammad Sharifi</a></li>\n                    <li><a href=\"https://github.com/dmstr/yii2-adminlte-asset\" target=\"_blank\">Yii 2</a> by <a\n                            href=\"https://github.com/schmunk42\" target=\"_blank\">Tobias Munk</a></li>\n                    <li><a href=\"https://github.com/yajra/laravel-admin-template\" target=\"_blank\">Laravel</a> by <a\n                            href=\"https://github.com/yajra\" target=\"_blank\">Arjay Angeles</a></li>\n                    <li><a href=\"https://github.com/acacha/adminlte-laravel\" target=\"_blank\">Laravel 5 package</a>\n                        by <a href=\"https://github.com/acacha\" target=\"_blank\">Sergi Tur Badenas</a></li>\n                    <li><a href=\"https://github.com/avanzu/AdminThemeBundle\" target=\"_blank\">Symfony</a> by <a\n                            href=\"https://github.com/avanzu\" target=\"_blank\">Marc Bach</a></li>\n                    <li>Rails gems: <a href=\"https://github.com/nicolas-besnard/adminlte2-rails\" target=\"_blank\">adminlte2-rails</a>\n                        by <a href=\"https://github.com/nicolas-besnard\" target=\"_blank\">Nicolas Besnard</a> and <a\n                                href=\"https://github.com/racketlogger/lte-rails\" target=\"_blank\">lte-rails</a>\n                        (using AdminLTE sources) by <a href=\"https://github.com/racketlogger\" target=\"_blank\">Carlos\n                            at RacketLogger</a></li>\n                </ul>\n\n                <p><b class=\"text-red\">Note:</b> these implementations are not supported by Almsaeed Studio.\n                    However,\n                    they do provide a good example of how to integrate AdminLTE into different frameworks. For the\n                    latest release\n                    of AdminLTE, please visit our <a href=\"https://github.com/almasaeed2010/AdminLTE\">repository</a>\n                    or <a href=\"https://almsaeedstudio.com\">website</a></p>\n            </section>\n\n\n            <!-- ============================================================= -->\n\n            <section id=\"faq\">\n                <h2 class=\"page-header\"><a href=\"#faq\">FAQ</a></h2>\n                <h3>Can AdminLTE be used with Wordpress?</h3>\n                <p class=\"lead\">AdminLTE is an HTML template that can be used for any purpose. However, it is not\n                    made to be easily installed on Wordpress. It will require some effort and enough knowledge of\n                    the Wordpress script to do so.</p>\n\n                <h3>Is there an integration guide for PHP frameworks such as Yii or Symfony?</h3>\n                <p class=\"lead\">Short answer, no. However, there are forks and tutorials around the web that provide\n                    info on how to integrate with many different frameworks. There are even versions of AdminLTE\n                    that are integrated with jQuery ajax, AngularJS and/or MVC5 ASP .NET.</p>\n\n                <h3>How do I get notified of new AdminLTE versions?</h3>\n                <p class=\"lead\">The best option is to subscribe to our mailing list using the <a\n                        href=\"http://almsaeedstudio.com/#subscribe\">subscription form on Almsaeed Studio</a>.\n                    If that's not appealing to you, you may watch the <a\n                            href=\"https://github.com/almasaeed2010/AdminLTE\">repository on Github</a> or visit <a\n                            href=\"http://almsaeedstudio.com\">Almsaeed Studio</a> every now and then for updates and\n                    announcements.</p>\n            </section>\n\n\n            <!-- ============================================================= -->\n\n            <section id=\"license\">\n                <h2 class=\"page-header\"><a href=\"#license\">License</a></h2>\n                <h3>AdminLTE</h3>\n                <p class=\"lead\">\n                    AdminLTE is an open source project that is licensed under the <a\n                        href=\"http://opensource.org/licenses/MIT\">MIT license</a>.\n                    This allows you to do pretty much anything you want as long as you include\n                    the copyright in \"all copies or substantial portions of the Software.\"\n                    Attribution is not required (though very much appreciated).\n                </p>\n            </section>\n\n\n        </div><!-- /.content -->\n    </div><!-- /.content-wrapper -->\n\n    <footer class=\"main-footer\">\n        <div class=\"pull-right hidden-xs\">\n            <b>Version</b> 2.3.3\n        </div>\n        <strong>Copyright &copy; 2014-2015 <a href=\"http://almsaeedstudio.com\">Almsaeed Studio</a>.</strong> All\n        rights reserved.\n    </footer>\n\n    <!-- Control Sidebar -->\n    <aside class=\"control-sidebar control-sidebar-dark\">\n        <!-- Create the tabs -->\n        <div class=\"pad\">\n            This is an example of the control sidebar.\n        </div>\n    </aside><!-- /.control-sidebar -->\n    <!-- Add the sidebar's background. This div must be placed\n         immediately after the control sidebar -->\n    <div class=\"control-sidebar-bg\"></div>\n\n</div><!-- ./wrapper -->";
 
 /***/ },
-/* 182 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	var settings = __webpack_require__(183);
-	var Layout = __webpack_require__(184);
-	var PushMenu = __webpack_require__(185);
-	var ControlSidebar = __webpack_require__(186);
-	var BoxWidget = __webpack_require__(187);
-
-	var FastClick = __webpack_require__(188);
-
-	function AdminLTE($, userSettings) {
-	    var jQuery = this.$ = $,
-	        _this = this;
-
-	    __webpack_require__(189)(jQuery);
-	    __webpack_require__(190)(jQuery);
-
-	    $("body").removeClass("hold-transition");
-
-	    var o = this.settings = Object.assign({}, userSettings, settings);
-
-	    //Set up the object
-	    this.init();
-
-	    //Activate the layout maker
-	    this.layout.activate();
-
-	    //Enable sidebar tree view controls
-	    this.tree('.sidebar');
-
-	    //Enable control sidebar
-	    if (o.enableControlSidebar) {
-	        this.controlSidebar.activate();
-	    }
-
-	    //Add slimscroll to navbar dropdown
-	    if (o.navbarMenuSlimscroll) {
-	        $(".navbar .menu").slimscroll({
-	            height: o.navbarMenuHeight,
-	            alwaysVisible: false,
-	            size: o.navbarMenuSlimscrollWidth
-	        }).css("width", "100%");
-	    }
-
-	    //Activate sidebar push menu
-	    if (o.sidebarPushMenu) {
-	        this.pushMenu.activate(o.sidebarToggleSelector);
-	    }
-
-	    //Activate Bootstrap tooltip
-	    if (o.enableBSToppltip) {
-	        $('body').tooltip({
-	            selector: o.BSTooltipSelector
-	        });
-	    }
-
-	    //Activate box widget
-	    if (o.enableBoxWidget) {
-	        this.boxWidget.activate();
-	    }
-
-	    //Activate fast click
-	    if (o.enableFastclick) {
-	        FastClick.attach(document.body);
-	    }
-
-	    //Activate direct chat widget
-	    if (o.directChat.enable) {
-	        $(document).on('click', o.directChat.contactToggleSelector, function () {
-	            var box = $(this).parents('.direct-chat').first();
-	            box.toggleClass('direct-chat-contacts-open');
-	        });
-	    }
-
-	    /*
-	     * INITIALIZE BUTTON TOGGLE
-	     * ------------------------
-	     */
-	    $('.btn-group[data-toggle="btn-toggle"]').each(function () {
-	        var group = $(this);
-	        $(this).find(".btn").on('click', function (e) {
-	            group.find(".btn.active").removeClass("active");
-	            $(this).addClass("active");
-	            e.preventDefault();
-	        });
-	    });
-	}
-
-	/* ----------------------------------
-	 * - Initialize the AdminLTE Object -
-	 * ----------------------------------
-	 * All AdminLTE functions are implemented below.
-	 */
-	AdminLTE.prototype.init = function _init() {
-	    /* Layout
-	     * ======
-	     * Fixes the layout height in case min-height fails.
-	     *
-	     * @type Object
-	     * @usage $.AdminLTE.layout.activate()
-	     *        $.AdminLTE.layout.fix()
-	     *        $.AdminLTE.layout.fixSidebar()
-	     */
-	    var $ = this.$,
-	        settings = this.settings;
-
-	    this.layout = new Layout($, settings);
-	    this.pushMenu = new PushMenu($, settings);
-	    this.controlSidebar = new ControlSidebar($, settings);
-	    this.boxWidget = new BoxWidget($, settings);
-	    this.tree = function (menu) {
-	        var _this = this,
-	            $ = this.$;
-	        var animationSpeed = _this.settings.animationSpeed;
-	        $(document).on('click', menu + ' li a', function (e) {
-	            //Get the clicked link and the next element
-	            var $this = $(this);
-	            var checkElement = $this.next();
-
-	            //Check if the next element is a menu and is visible
-	            if (checkElement.is('.treeview-menu') && checkElement.is(':visible') && !$('body').hasClass('sidebar-collapse')) {
-	                //Close the menu
-	                checkElement.slideUp(animationSpeed, function () {
-	                    checkElement.removeClass('menu-open');
-	                    //Fix the layout in case the sidebar stretches over the height of the window
-	                    //_this.layout.fix();
-	                });
-	                checkElement.parent("li").removeClass("active");
-	            }
-	            //If the menu is not visible
-	            else if (checkElement.is('.treeview-menu') && !checkElement.is(':visible')) {
-	                    //Get the parent menu
-	                    var parent = $this.parents('ul').first();
-	                    //Close all open menus within the parent
-	                    var ul = parent.find('ul:visible').slideUp(animationSpeed);
-	                    //Remove the menu-open class from the parent
-	                    ul.removeClass('menu-open');
-	                    //Get the parent li
-	                    var parent_li = $this.parent("li");
-
-	                    //Open the target menu and add the menu-open class
-	                    checkElement.slideDown(animationSpeed, function () {
-	                        //Add the class active to the parent li
-	                        checkElement.addClass('menu-open');
-	                        parent.find('li.active').removeClass('active');
-	                        parent_li.addClass('active');
-	                        //Fix the layout in case the sidebar stretches over the height of the window
-	                        _this.layout.fix();
-	                    });
-	                }
-	            //if this isn't a link, prevent the page from being redirected
-	            if (checkElement.is('.treeview-menu')) {
-	                e.preventDefault();
-	            }
-	        });
-	    };
-	};
-
-	module.exports = AdminLTE;
-
-/***/ },
-/* 183 */
-/***/ function(module, exports) {
-
-	'use strict';
-
-	module.exports = {
-	    //Add slimscroll to navbar menus
-	    //This requires you to load the slimscroll plugin
-	    //in every page before app.js
-	    navbarMenuSlimscroll: true,
-	    navbarMenuSlimscrollWidth: "3px", //The width of the scroll bar
-	    navbarMenuHeight: "200px", //The height of the inner menu
-	    //General animation speed for JS animated elements such as box collapse/expand and
-	    //sidebar treeview slide up/down. This options accepts an integer as milliseconds,
-	    //'fast', 'normal', or 'slow'
-	    animationSpeed: 500,
-	    //Sidebar push menu toggle button selector
-	    sidebarToggleSelector: "[data-toggle='offcanvas']",
-	    //Activate sidebar push menu
-	    sidebarPushMenu: true,
-	    //Activate sidebar slimscroll if the fixed layout is set (requires SlimScroll Plugin)
-	    sidebarSlimScroll: true,
-	    //Enable sidebar expand on hover effect for sidebar mini
-	    //This option is forced to true if both the fixed layout and sidebar mini
-	    //are used together
-	    sidebarExpandOnHover: false,
-	    //BoxRefresh Plugin
-	    enableBoxRefresh: true,
-	    //Bootstrap.js tooltip
-	    enableBSToppltip: true,
-	    BSTooltipSelector: "[data-toggle='tooltip']",
-	    //Enable Fast Click. Fastclick.js creates a more
-	    //native touch experience with touch devices. If you
-	    //choose to enable the plugin, make sure you load the script
-	    //before AdminLTE's app.js
-	    enableFastclick: true,
-	    //Control Sidebar Options
-	    enableControlSidebar: true,
-	    controlSidebarOptions: {
-	        //Which button should trigger the open/close event
-	        toggleBtnSelector: "[data-toggle='control-sidebar']",
-	        //The sidebar selector
-	        selector: ".control-sidebar",
-	        //Enable slide over content
-	        slide: true
-	    },
-	    //Box Widget Plugin. Enable this plugin
-	    //to allow boxes to be collapsed and/or removed
-	    enableBoxWidget: true,
-	    //Box Widget plugin options
-	    boxWidgetOptions: {
-	        boxWidgetIcons: {
-	            //Collapse icon
-	            collapse: 'fa-minus',
-	            //Open icon
-	            open: 'fa-plus',
-	            //Remove icon
-	            remove: 'fa-times'
-	        },
-	        boxWidgetSelectors: {
-	            //Remove button selector
-	            remove: '[data-widget="remove"]',
-	            //Collapse button selector
-	            collapse: '[data-widget="collapse"]'
-	        }
-	    },
-	    //Direct Chat plugin options
-	    directChat: {
-	        //Enable direct chat by default
-	        enable: true,
-	        //The button to open and close the chat contacts pane
-	        contactToggleSelector: '[data-widget="chat-pane-toggle"]'
-	    },
-	    //Define the set of colors to use globally around the website
-	    colors: {
-	        lightBlue: "#3c8dbc",
-	        red: "#f56954",
-	        green: "#00a65a",
-	        aqua: "#00c0ef",
-	        yellow: "#f39c12",
-	        blue: "#0073b7",
-	        navy: "#001F3F",
-	        teal: "#39CCCC",
-	        olive: "#3D9970",
-	        lime: "#01FF70",
-	        orange: "#FF851B",
-	        fuchsia: "#F012BE",
-	        purple: "#8E24AA",
-	        maroon: "#D81B60",
-	        black: "#222222",
-	        gray: "#d2d6de"
-	    },
-	    //The standard screen sizes that bootstrap uses.
-	    //If you change these in the variables.less file, change
-	    //them here too.
-	    screenSizes: {
-	        xs: 480,
-	        sm: 768,
-	        md: 992,
-	        lg: 1200
-	    }
-	};
-
-/***/ },
-/* 184 */
-/***/ function(module, exports) {
-
-	'use strict';
-
-	function Layout(jQuery, settings) {
-	    this.$ = jQuery;
-	    this.settings = settings;
-	}
-
-	//instantiate the object
-	Layout.prototype.activate = function () {
-	    var $ = this.$,
-	        _this = this;
-	    _this.fix();
-	    _this.fixSidebar();
-	    $(window, ".wrapper").resize(function () {
-	        _this.fix();
-	        _this.fixSidebar();
-	    });
-	};
-
-	Layout.prototype.fix = function () {
-	    var $ = this.$,
-	        _this = this;
-	    //Get window height and the wrapper height
-	    var neg = $('.main-header').outerHeight() + $('.main-footer').outerHeight();
-	    var window_height = $(window).height();
-	    var sidebar_height = $(".sidebar").height();
-	    //Set the min-height of the content and sidebar based on the
-	    //the height of the document.
-	    if ($("body").hasClass("fixed")) {
-	        $(".content-wrapper, .right-side").css('min-height', window_height - $('.main-footer').outerHeight());
-	    } else {
-	        var postSetWidth;
-	        if (window_height >= sidebar_height) {
-	            $(".content-wrapper, .right-side").css('min-height', window_height - neg);
-	            postSetWidth = window_height - neg;
-	        } else {
-	            $(".content-wrapper, .right-side").css('min-height', sidebar_height);
-	            postSetWidth = sidebar_height;
-	        }
-
-	        //Fix for the control sidebar height
-	        var controlSidebar = $(_this.settings.controlSidebarOptions.selector);
-	        if (typeof controlSidebar !== "undefined") {
-	            if (controlSidebar.height() > postSetWidth) $(".content-wrapper, .right-side").css('min-height', controlSidebar.height());
-	        }
-	    }
-	};
-
-	Layout.prototype.fixSidebar = function () {
-	    var $ = this.$,
-	        _this = this;
-	    //Make sure the body tag has the .fixed class
-	    if (!$("body").hasClass("fixed")) {
-	        if (typeof $.fn.slimScroll != 'undefined') {
-	            $(".sidebar").slimScroll({ destroy: true }).height("auto");
-	        }
-	        return;
-	    } else if (typeof $.fn.slimScroll == 'undefined' && window.console) {
-	        window.console.error("Error: the fixed layout requires the slimscroll plugin!");
-	    }
-	    //Enable slimscroll for fixed layout
-	    if (_this.settings.sidebarSlimScroll) {
-	        if (typeof $.fn.slimScroll != 'undefined') {
-	            //Destroy if it exists
-	            $(".sidebar").slimScroll({ destroy: true }).height("auto");
-	            //Add slimscroll
-	            $(".sidebar").slimscroll({
-	                height: $(window).height() - $(".main-header").height() + "px",
-	                color: "rgba(0,0,0,0.2)",
-	                size: "3px"
-	            });
-	        }
-	    }
-	};
-
-	module.exports = Layout;
-
-/***/ },
-/* 185 */
-/***/ function(module, exports) {
-
-	'use strict';
-
-	function PushMenu(jQuery, settings) {
-	    this.$ = jQuery;
-	    this.settings = settings;
-	}
-
-	PushMenu.prototype.activate = function (toggleBtn) {
-	    //Get the screen sizes
-	    var $ = this.$,
-	        _this = this,
-	        screenSizes = _this.settings.screenSizes;
-
-	    //Enable sidebar toggle
-	    $(document).on('click', toggleBtn, function (e) {
-	        e.preventDefault();
-
-	        //Enable sidebar push menu
-	        if ($(window).width() > screenSizes.sm - 1) {
-	            if ($("body").hasClass('sidebar-collapse')) {
-	                $("body").removeClass('sidebar-collapse').trigger('expanded.pushMenu');
-	            } else {
-	                $("body").addClass('sidebar-collapse').trigger('collapsed.pushMenu');
-	            }
-	        }
-	        //Handle sidebar push menu for small screens
-	        else {
-	                if ($("body").hasClass('sidebar-open')) {
-	                    $("body").removeClass('sidebar-open').removeClass('sidebar-collapse').trigger('collapsed.pushMenu');
-	                } else {
-	                    $("body").addClass('sidebar-open').trigger('expanded.pushMenu');
-	                }
-	            }
-	    });
-
-	    $(".content-wrapper").click(function () {
-	        //Enable hide menu when clicking on the content-wrapper on small screens
-	        if ($(window).width() <= screenSizes.sm - 1 && $("body").hasClass("sidebar-open")) {
-	            $("body").removeClass('sidebar-open');
-	        }
-	    });
-
-	    //Enable expand on hover for sidebar mini
-	    if (_this.settings.sidebarExpandOnHover || $('body').hasClass('fixed') && $('body').hasClass('sidebar-mini')) {
-	        this.expandOnHover();
-	    }
-	};
-
-	PushMenu.prototype.expandOnHover = function () {
-	    var _this = this;
-	    var $ = this.$;
-	    var screenWidth = _this.settings.screenSizes.sm - 1;
-	    //Expand sidebar on hover
-	    $('.main-sidebar').hover(function () {
-	        if ($('body').hasClass('sidebar-mini') && $("body").hasClass('sidebar-collapse') && $(window).width() > screenWidth) {
-	            _this.expand();
-	        }
-	    }, function () {
-	        if ($('body').hasClass('sidebar-mini') && $('body').hasClass('sidebar-expanded-on-hover') && $(window).width() > screenWidth) {
-	            _this.collapse();
-	        }
-	    });
-	};
-
-	PushMenu.prototype.expand = function () {
-	    var $ = this.$;
-	    $("body").removeClass('sidebar-collapse').addClass('sidebar-expanded-on-hover');
-	};
-
-	PushMenu.prototype.collapse = function () {
-	    var $ = this.$;
-	    if ($('body').hasClass('sidebar-expanded-on-hover')) {
-	        $('body').removeClass('sidebar-expanded-on-hover').addClass('sidebar-collapse');
-	    }
-	};
-
-	module.exports = PushMenu;
-
-/***/ },
-/* 186 */
-/***/ function(module, exports) {
-
-	'use strict';
-
-	function ControlSidebar(jQuery, settings) {
-	    this.$ = jQuery;
-	    //this.element = this.$(element);
-	    this.settings = settings;
-	}
-
-	//instantiate the object
-	ControlSidebar.prototype.activate = function () {
-	    //Get the object
-	    var $ = this.$,
-	        o = this.settings,
-	        _this = this;
-	    //Get the sidebar
-	    var sidebar = $(o.controlSidebarOptions.selector);
-	    //The toggle button
-	    var btn = $(o.controlSidebarOptions.toggleBtnSelector);
-
-	    //Listen to the click event
-	    btn.on('click', function (e) {
-	        e.preventDefault();
-	        //If the sidebar is not open
-	        if (!sidebar.hasClass('control-sidebar-open') && !$('body').hasClass('control-sidebar-open')) {
-	            //Open the sidebar
-	            _this.open(sidebar, o.controlSidebarOptions.slide);
-	        } else {
-	            _this.close(sidebar, o.controlSidebarOptions.slide);
-	        }
-	    });
-
-	    //If the body has a boxed layout, fix the sidebar bg position
-	    var bg = $(".control-sidebar-bg");
-	    _this._fix(bg);
-
-	    //If the body has a fixed layout, make the control sidebar fixed
-	    if ($('body').hasClass('fixed')) {
-	        _this._fixForFixed(sidebar);
-	    } else {
-	        //If the content height is less than the sidebar's height, force max height
-	        if ($('.content-wrapper, .right-side').height() < sidebar.height()) {
-	            _this._fixForContent(sidebar);
-	        }
-	    }
-	};
-
-	//Open the control sidebar
-	ControlSidebar.prototype.open = function (sidebar, slide) {
-	    var $ = this.$;
-	    //Slide over content
-	    if (slide) {
-	        sidebar.addClass('control-sidebar-open');
-	    } else {
-	        //Push the content by adding the open class to the body instead
-	        //of the sidebar itself
-	        $('body').addClass('control-sidebar-open');
-	    }
-	};
-
-	//Close the control sidebar
-	ControlSidebar.prototype.close = function (sidebar, slide) {
-	    var $ = this.$;
-	    if (slide) {
-	        sidebar.removeClass('control-sidebar-open');
-	    } else {
-	        $('body').removeClass('control-sidebar-open');
-	    }
-	};
-
-	ControlSidebar.prototype._fix = function (sidebar) {
-	    var $ = this.$;
-	    if ($("body").hasClass('layout-boxed')) {
-	        sidebar.css('position', 'absolute');
-	        sidebar.height($(".wrapper").height());
-	        $(window).resize(function () {
-	            this._fix(sidebar);
-	        });
-	    } else {
-	        sidebar.css({
-	            'position': 'fixed',
-	            'height': 'auto'
-	        });
-	    }
-	};
-
-	ControlSidebar.prototype._fixForFixed = function (sidebar) {
-	    sidebar.css({
-	        'position': 'fixed',
-	        'max-height': '100%',
-	        'overflow': 'auto',
-	        'padding-bottom': '50px'
-	    });
-	};
-
-	ControlSidebar.prototype._fixForContent = function (sidebar) {
-	    var $ = this.$;
-	    $(".content-wrapper, .right-side").css('min-height', sidebar.height());
-	};
-
-	module.exports = ControlSidebar;
-
-/***/ },
-/* 187 */
-/***/ function(module, exports) {
-
-	'use strict';
-
-	function BoxWidget(jQuery, settings) {
-	    this.$ = jQuery;
-	    //this.element = this.$(element);
-	    this.settings = settings;
-	    this.selectors = this.settings.boxWidgetOptions.boxWidgetSelectors;
-	    this.icons = this.settings.boxWidgetOptions.boxWidgetIcons;
-	    this.animationSpeed = this.settings.animationSpeed;
-	}
-
-	//instantiate the object
-	BoxWidget.prototype.activate = function (_box) {
-	    var _this = this,
-	        $ = this.$;
-	    if (!_box) {
-	        _box = document; // activate all boxes per default
-	    }
-	    //Listen for collapse event triggers
-	    $(_box).on('click', _this.selectors.collapse, function (e) {
-	        e.preventDefault();
-	        _this.collapse($(this));
-	    });
-
-	    //Listen for remove event triggers
-	    $(_box).on('click', _this.selectors.remove, function (e) {
-	        e.preventDefault();
-	        _this.remove($(this));
-	    });
-	};
-
-	//Open the control sidebar
-	BoxWidget.prototype.collapse = function (element) {
-	    var _this = this,
-	        $ = this.$;
-	    //Find the box parent
-	    var box = element.parents(".box").first();
-	    //Find the body and the footer
-	    var box_content = box.find("> .box-body, > .box-footer, > form  >.box-body, > form > .box-footer");
-	    if (!box.hasClass("collapsed-box")) {
-	        //Convert minus into plus
-	        element.children(":first").removeClass(_this.icons.collapse).addClass(_this.icons.open);
-	        //Hide the content
-	        box_content.slideUp(_this.animationSpeed, function () {
-	            box.addClass("collapsed-box");
-	        });
-	    } else {
-	        //Convert plus into minus
-	        element.children(":first").removeClass(_this.icons.open).addClass(_this.icons.collapse);
-	        //Show the content
-	        box_content.slideDown(_this.animationSpeed, function () {
-	            box.removeClass("collapsed-box");
-	        });
-	    }
-	};
-
-	//Close the control sidebar
-	BoxWidget.prototype.remove = function (element) {
-	    //Find the box parent
-	    var box = element.parents(".box").first();
-	    box.slideUp(this.animationSpeed);
-	};
-
-	module.exports = BoxWidget;
-
-/***/ },
-/* 188 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var __WEBPACK_AMD_DEFINE_RESULT__;'use strict';
-
-	var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol ? "symbol" : typeof obj; };
-
-	;(function () {
-		'use strict';
-
-		/**
-	  * @preserve FastClick: polyfill to remove click delays on browsers with touch UIs.
-	  *
-	  * @codingstandard ftlabs-jsv2
-	  * @copyright The Financial Times Limited [All Rights Reserved]
-	  * @license MIT License (see LICENSE.txt)
-	  */
-
-		/*jslint browser:true, node:true*/
-		/*global define, Event, Node*/
-
-		/**
-	  * Instantiate fast-clicking listeners on the specified layer.
-	  *
-	  * @constructor
-	  * @param {Element} layer The layer to listen on
-	  * @param {Object} [options={}] The options to override the defaults
-	  */
-
-		function FastClick(layer, options) {
-			var oldOnClick;
-
-			options = options || {};
-
-			/**
-	   * Whether a click is currently being tracked.
-	   *
-	   * @type boolean
-	   */
-			this.trackingClick = false;
-
-			/**
-	   * Timestamp for when click tracking started.
-	   *
-	   * @type number
-	   */
-			this.trackingClickStart = 0;
-
-			/**
-	   * The element being tracked for a click.
-	   *
-	   * @type EventTarget
-	   */
-			this.targetElement = null;
-
-			/**
-	   * X-coordinate of touch start event.
-	   *
-	   * @type number
-	   */
-			this.touchStartX = 0;
-
-			/**
-	   * Y-coordinate of touch start event.
-	   *
-	   * @type number
-	   */
-			this.touchStartY = 0;
-
-			/**
-	   * ID of the last touch, retrieved from Touch.identifier.
-	   *
-	   * @type number
-	   */
-			this.lastTouchIdentifier = 0;
-
-			/**
-	   * Touchmove boundary, beyond which a click will be cancelled.
-	   *
-	   * @type number
-	   */
-			this.touchBoundary = options.touchBoundary || 10;
-
-			/**
-	   * The FastClick layer.
-	   *
-	   * @type Element
-	   */
-			this.layer = layer;
-
-			/**
-	   * The minimum time between tap(touchstart and touchend) events
-	   *
-	   * @type number
-	   */
-			this.tapDelay = options.tapDelay || 200;
-
-			/**
-	   * The maximum time for a tap
-	   *
-	   * @type number
-	   */
-			this.tapTimeout = options.tapTimeout || 700;
-
-			if (FastClick.notNeeded(layer)) {
-				return;
-			}
-
-			// Some old versions of Android don't have Function.prototype.bind
-			function bind(method, context) {
-				return function () {
-					return method.apply(context, arguments);
-				};
-			}
-
-			var methods = ['onMouse', 'onClick', 'onTouchStart', 'onTouchMove', 'onTouchEnd', 'onTouchCancel'];
-			var context = this;
-			for (var i = 0, l = methods.length; i < l; i++) {
-				context[methods[i]] = bind(context[methods[i]], context);
-			}
-
-			// Set up event handlers as required
-			if (deviceIsAndroid) {
-				layer.addEventListener('mouseover', this.onMouse, true);
-				layer.addEventListener('mousedown', this.onMouse, true);
-				layer.addEventListener('mouseup', this.onMouse, true);
-			}
-
-			layer.addEventListener('click', this.onClick, true);
-			layer.addEventListener('touchstart', this.onTouchStart, false);
-			layer.addEventListener('touchmove', this.onTouchMove, false);
-			layer.addEventListener('touchend', this.onTouchEnd, false);
-			layer.addEventListener('touchcancel', this.onTouchCancel, false);
-
-			// Hack is required for browsers that don't support Event#stopImmediatePropagation (e.g. Android 2)
-			// which is how FastClick normally stops click events bubbling to callbacks registered on the FastClick
-			// layer when they are cancelled.
-			if (!Event.prototype.stopImmediatePropagation) {
-				layer.removeEventListener = function (type, callback, capture) {
-					var rmv = Node.prototype.removeEventListener;
-					if (type === 'click') {
-						rmv.call(layer, type, callback.hijacked || callback, capture);
-					} else {
-						rmv.call(layer, type, callback, capture);
-					}
-				};
-
-				layer.addEventListener = function (type, callback, capture) {
-					var adv = Node.prototype.addEventListener;
-					if (type === 'click') {
-						adv.call(layer, type, callback.hijacked || (callback.hijacked = function (event) {
-							if (!event.propagationStopped) {
-								callback(event);
-							}
-						}), capture);
-					} else {
-						adv.call(layer, type, callback, capture);
-					}
-				};
-			}
-
-			// If a handler is already declared in the element's onclick attribute, it will be fired before
-			// FastClick's onClick handler. Fix this by pulling out the user-defined handler function and
-			// adding it as listener.
-			if (typeof layer.onclick === 'function') {
-
-				// Android browser on at least 3.2 requires a new reference to the function in layer.onclick
-				// - the old one won't work if passed to addEventListener directly.
-				oldOnClick = layer.onclick;
-				layer.addEventListener('click', function (event) {
-					oldOnClick(event);
-				}, false);
-				layer.onclick = null;
-			}
-		}
-
-		/**
-	 * Windows Phone 8.1 fakes user agent string to look like Android and iPhone.
-	 *
-	 * @type boolean
-	 */
-		var deviceIsWindowsPhone = navigator.userAgent.indexOf("Windows Phone") >= 0;
-
-		/**
-	  * Android requires exceptions.
-	  *
-	  * @type boolean
-	  */
-		var deviceIsAndroid = navigator.userAgent.indexOf('Android') > 0 && !deviceIsWindowsPhone;
-
-		/**
-	  * iOS requires exceptions.
-	  *
-	  * @type boolean
-	  */
-		var deviceIsIOS = /iP(ad|hone|od)/.test(navigator.userAgent) && !deviceIsWindowsPhone;
-
-		/**
-	  * iOS 4 requires an exception for select elements.
-	  *
-	  * @type boolean
-	  */
-		var deviceIsIOS4 = deviceIsIOS && /OS 4_\d(_\d)?/.test(navigator.userAgent);
-
-		/**
-	  * iOS 6.0-7.* requires the target element to be manually derived
-	  *
-	  * @type boolean
-	  */
-		var deviceIsIOSWithBadTarget = deviceIsIOS && /OS [6-7]_\d/.test(navigator.userAgent);
-
-		/**
-	  * BlackBerry requires exceptions.
-	  *
-	  * @type boolean
-	  */
-		var deviceIsBlackBerry10 = navigator.userAgent.indexOf('BB10') > 0;
-
-		/**
-	  * Determine whether a given element requires a native click.
-	  *
-	  * @param {EventTarget|Element} target Target DOM element
-	  * @returns {boolean} Returns true if the element needs a native click
-	  */
-		FastClick.prototype.needsClick = function (target) {
-			switch (target.nodeName.toLowerCase()) {
-
-				// Don't send a synthetic click to disabled inputs (issue #62)
-				case 'button':
-				case 'select':
-				case 'textarea':
-					if (target.disabled) {
-						return true;
-					}
-
-					break;
-				case 'input':
-
-					// File inputs need real clicks on iOS 6 due to a browser bug (issue #68)
-					if (deviceIsIOS && target.type === 'file' || target.disabled) {
-						return true;
-					}
-
-					break;
-				case 'label':
-				case 'iframe': // iOS8 homescreen apps can prevent events bubbling into frames
-				case 'video':
-					return true;
-			}
-
-			return (/\bneedsclick\b/.test(target.className)
-			);
-		};
-
-		/**
-	  * Determine whether a given element requires a call to focus to simulate click into element.
-	  *
-	  * @param {EventTarget|Element} target Target DOM element
-	  * @returns {boolean} Returns true if the element requires a call to focus to simulate native click.
-	  */
-		FastClick.prototype.needsFocus = function (target) {
-			switch (target.nodeName.toLowerCase()) {
-				case 'textarea':
-					return true;
-				case 'select':
-					return !deviceIsAndroid;
-				case 'input':
-					switch (target.type) {
-						case 'button':
-						case 'checkbox':
-						case 'file':
-						case 'image':
-						case 'radio':
-						case 'submit':
-							return false;
-					}
-
-					// No point in attempting to focus disabled inputs
-					return !target.disabled && !target.readOnly;
-				default:
-					return (/\bneedsfocus\b/.test(target.className)
-					);
-			}
-		};
-
-		/**
-	  * Send a click event to the specified element.
-	  *
-	  * @param {EventTarget|Element} targetElement
-	  * @param {Event} event
-	  */
-		FastClick.prototype.sendClick = function (targetElement, event) {
-			var clickEvent, touch;
-
-			// On some Android devices activeElement needs to be blurred otherwise the synthetic click will have no effect (#24)
-			if (document.activeElement && document.activeElement !== targetElement) {
-				document.activeElement.blur();
-			}
-
-			touch = event.changedTouches[0];
-
-			// Synthesise a click event, with an extra attribute so it can be tracked
-			clickEvent = document.createEvent('MouseEvents');
-			clickEvent.initMouseEvent(this.determineEventType(targetElement), true, true, window, 1, touch.screenX, touch.screenY, touch.clientX, touch.clientY, false, false, false, false, 0, null);
-			clickEvent.forwardedTouchEvent = true;
-			targetElement.dispatchEvent(clickEvent);
-		};
-
-		FastClick.prototype.determineEventType = function (targetElement) {
-
-			//Issue #159: Android Chrome Select Box does not open with a synthetic click event
-			if (deviceIsAndroid && targetElement.tagName.toLowerCase() === 'select') {
-				return 'mousedown';
-			}
-
-			return 'click';
-		};
-
-		/**
-	  * @param {EventTarget|Element} targetElement
-	  */
-		FastClick.prototype.focus = function (targetElement) {
-			var length;
-
-			// Issue #160: on iOS 7, some input elements (e.g. date datetime month) throw a vague TypeError on setSelectionRange. These elements don't have an integer value for the selectionStart and selectionEnd properties, but unfortunately that can't be used for detection because accessing the properties also throws a TypeError. Just check the type instead. Filed as Apple bug #15122724.
-			if (deviceIsIOS && targetElement.setSelectionRange && targetElement.type.indexOf('date') !== 0 && targetElement.type !== 'time' && targetElement.type !== 'month') {
-				length = targetElement.value.length;
-				targetElement.setSelectionRange(length, length);
-			} else {
-				targetElement.focus();
-			}
-		};
-
-		/**
-	  * Check whether the given target element is a child of a scrollable layer and if so, set a flag on it.
-	  *
-	  * @param {EventTarget|Element} targetElement
-	  */
-		FastClick.prototype.updateScrollParent = function (targetElement) {
-			var scrollParent, parentElement;
-
-			scrollParent = targetElement.fastClickScrollParent;
-
-			// Attempt to discover whether the target element is contained within a scrollable layer. Re-check if the
-			// target element was moved to another parent.
-			if (!scrollParent || !scrollParent.contains(targetElement)) {
-				parentElement = targetElement;
-				do {
-					if (parentElement.scrollHeight > parentElement.offsetHeight) {
-						scrollParent = parentElement;
-						targetElement.fastClickScrollParent = parentElement;
-						break;
-					}
-
-					parentElement = parentElement.parentElement;
-				} while (parentElement);
-			}
-
-			// Always update the scroll top tracker if possible.
-			if (scrollParent) {
-				scrollParent.fastClickLastScrollTop = scrollParent.scrollTop;
-			}
-		};
-
-		/**
-	  * @param {EventTarget} targetElement
-	  * @returns {Element|EventTarget}
-	  */
-		FastClick.prototype.getTargetElementFromEventTarget = function (eventTarget) {
-
-			// On some older browsers (notably Safari on iOS 4.1 - see issue #56) the event target may be a text node.
-			if (eventTarget.nodeType === Node.TEXT_NODE) {
-				return eventTarget.parentNode;
-			}
-
-			return eventTarget;
-		};
-
-		/**
-	  * On touch start, record the position and scroll offset.
-	  *
-	  * @param {Event} event
-	  * @returns {boolean}
-	  */
-		FastClick.prototype.onTouchStart = function (event) {
-			var targetElement, touch, selection;
-
-			// Ignore multiple touches, otherwise pinch-to-zoom is prevented if both fingers are on the FastClick element (issue #111).
-			if (event.targetTouches.length > 1) {
-				return true;
-			}
-
-			targetElement = this.getTargetElementFromEventTarget(event.target);
-			touch = event.targetTouches[0];
-
-			if (deviceIsIOS) {
-
-				// Only trusted events will deselect text on iOS (issue #49)
-				selection = window.getSelection();
-				if (selection.rangeCount && !selection.isCollapsed) {
-					return true;
-				}
-
-				if (!deviceIsIOS4) {
-
-					// Weird things happen on iOS when an alert or confirm dialog is opened from a click event callback (issue #23):
-					// when the user next taps anywhere else on the page, new touchstart and touchend events are dispatched
-					// with the same identifier as the touch event that previously triggered the click that triggered the alert.
-					// Sadly, there is an issue on iOS 4 that causes some normal touch events to have the same identifier as an
-					// immediately preceeding touch event (issue #52), so this fix is unavailable on that platform.
-					// Issue 120: touch.identifier is 0 when Chrome dev tools 'Emulate touch events' is set with an iOS device UA string,
-					// which causes all touch events to be ignored. As this block only applies to iOS, and iOS identifiers are always long,
-					// random integers, it's safe to to continue if the identifier is 0 here.
-					if (touch.identifier && touch.identifier === this.lastTouchIdentifier) {
-						event.preventDefault();
-						return false;
-					}
-
-					this.lastTouchIdentifier = touch.identifier;
-
-					// If the target element is a child of a scrollable layer (using -webkit-overflow-scrolling: touch) and:
-					// 1) the user does a fling scroll on the scrollable layer
-					// 2) the user stops the fling scroll with another tap
-					// then the event.target of the last 'touchend' event will be the element that was under the user's finger
-					// when the fling scroll was started, causing FastClick to send a click event to that layer - unless a check
-					// is made to ensure that a parent layer was not scrolled before sending a synthetic click (issue #42).
-					this.updateScrollParent(targetElement);
-				}
-			}
-
-			this.trackingClick = true;
-			this.trackingClickStart = event.timeStamp;
-			this.targetElement = targetElement;
-
-			this.touchStartX = touch.pageX;
-			this.touchStartY = touch.pageY;
-
-			// Prevent phantom clicks on fast double-tap (issue #36)
-			if (event.timeStamp - this.lastClickTime < this.tapDelay) {
-				event.preventDefault();
-			}
-
-			return true;
-		};
-
-		/**
-	  * Based on a touchmove event object, check whether the touch has moved past a boundary since it started.
-	  *
-	  * @param {Event} event
-	  * @returns {boolean}
-	  */
-		FastClick.prototype.touchHasMoved = function (event) {
-			var touch = event.changedTouches[0],
-			    boundary = this.touchBoundary;
-
-			if (Math.abs(touch.pageX - this.touchStartX) > boundary || Math.abs(touch.pageY - this.touchStartY) > boundary) {
-				return true;
-			}
-
-			return false;
-		};
-
-		/**
-	  * Update the last position.
-	  *
-	  * @param {Event} event
-	  * @returns {boolean}
-	  */
-		FastClick.prototype.onTouchMove = function (event) {
-			if (!this.trackingClick) {
-				return true;
-			}
-
-			// If the touch has moved, cancel the click tracking
-			if (this.targetElement !== this.getTargetElementFromEventTarget(event.target) || this.touchHasMoved(event)) {
-				this.trackingClick = false;
-				this.targetElement = null;
-			}
-
-			return true;
-		};
-
-		/**
-	  * Attempt to find the labelled control for the given label element.
-	  *
-	  * @param {EventTarget|HTMLLabelElement} labelElement
-	  * @returns {Element|null}
-	  */
-		FastClick.prototype.findControl = function (labelElement) {
-
-			// Fast path for newer browsers supporting the HTML5 control attribute
-			if (labelElement.control !== undefined) {
-				return labelElement.control;
-			}
-
-			// All browsers under test that support touch events also support the HTML5 htmlFor attribute
-			if (labelElement.htmlFor) {
-				return document.getElementById(labelElement.htmlFor);
-			}
-
-			// If no for attribute exists, attempt to retrieve the first labellable descendant element
-			// the list of which is defined here: http://www.w3.org/TR/html5/forms.html#category-label
-			return labelElement.querySelector('button, input:not([type=hidden]), keygen, meter, output, progress, select, textarea');
-		};
-
-		/**
-	  * On touch end, determine whether to send a click event at once.
-	  *
-	  * @param {Event} event
-	  * @returns {boolean}
-	  */
-		FastClick.prototype.onTouchEnd = function (event) {
-			var forElement,
-			    trackingClickStart,
-			    targetTagName,
-			    scrollParent,
-			    touch,
-			    targetElement = this.targetElement;
-
-			if (!this.trackingClick) {
-				return true;
-			}
-
-			// Prevent phantom clicks on fast double-tap (issue #36)
-			if (event.timeStamp - this.lastClickTime < this.tapDelay) {
-				this.cancelNextClick = true;
-				return true;
-			}
-
-			if (event.timeStamp - this.trackingClickStart > this.tapTimeout) {
-				return true;
-			}
-
-			// Reset to prevent wrong click cancel on input (issue #156).
-			this.cancelNextClick = false;
-
-			this.lastClickTime = event.timeStamp;
-
-			trackingClickStart = this.trackingClickStart;
-			this.trackingClick = false;
-			this.trackingClickStart = 0;
-
-			// On some iOS devices, the targetElement supplied with the event is invalid if the layer
-			// is performing a transition or scroll, and has to be re-detected manually. Note that
-			// for this to function correctly, it must be called *after* the event target is checked!
-			// See issue #57; also filed as rdar://13048589 .
-			if (deviceIsIOSWithBadTarget) {
-				touch = event.changedTouches[0];
-
-				// In certain cases arguments of elementFromPoint can be negative, so prevent setting targetElement to null
-				targetElement = document.elementFromPoint(touch.pageX - window.pageXOffset, touch.pageY - window.pageYOffset) || targetElement;
-				targetElement.fastClickScrollParent = this.targetElement.fastClickScrollParent;
-			}
-
-			targetTagName = targetElement.tagName.toLowerCase();
-			if (targetTagName === 'label') {
-				forElement = this.findControl(targetElement);
-				if (forElement) {
-					this.focus(targetElement);
-					if (deviceIsAndroid) {
-						return false;
-					}
-
-					targetElement = forElement;
-				}
-			} else if (this.needsFocus(targetElement)) {
-
-				// Case 1: If the touch started a while ago (best guess is 100ms based on tests for issue #36) then focus will be triggered anyway. Return early and unset the target element reference so that the subsequent click will be allowed through.
-				// Case 2: Without this exception for input elements tapped when the document is contained in an iframe, then any inputted text won't be visible even though the value attribute is updated as the user types (issue #37).
-				if (event.timeStamp - trackingClickStart > 100 || deviceIsIOS && window.top !== window && targetTagName === 'input') {
-					this.targetElement = null;
-					return false;
-				}
-
-				this.focus(targetElement);
-				this.sendClick(targetElement, event);
-
-				// Select elements need the event to go through on iOS 4, otherwise the selector menu won't open.
-				// Also this breaks opening selects when VoiceOver is active on iOS6, iOS7 (and possibly others)
-				if (!deviceIsIOS || targetTagName !== 'select') {
-					this.targetElement = null;
-					event.preventDefault();
-				}
-
-				return false;
-			}
-
-			if (deviceIsIOS && !deviceIsIOS4) {
-
-				// Don't send a synthetic click event if the target element is contained within a parent layer that was scrolled
-				// and this tap is being used to stop the scrolling (usually initiated by a fling - issue #42).
-				scrollParent = targetElement.fastClickScrollParent;
-				if (scrollParent && scrollParent.fastClickLastScrollTop !== scrollParent.scrollTop) {
-					return true;
-				}
-			}
-
-			// Prevent the actual click from going though - unless the target node is marked as requiring
-			// real clicks or if it is in the whitelist in which case only non-programmatic clicks are permitted.
-			if (!this.needsClick(targetElement)) {
-				event.preventDefault();
-				this.sendClick(targetElement, event);
-			}
-
-			return false;
-		};
-
-		/**
-	  * On touch cancel, stop tracking the click.
-	  *
-	  * @returns {void}
-	  */
-		FastClick.prototype.onTouchCancel = function () {
-			this.trackingClick = false;
-			this.targetElement = null;
-		};
-
-		/**
-	  * Determine mouse events which should be permitted.
-	  *
-	  * @param {Event} event
-	  * @returns {boolean}
-	  */
-		FastClick.prototype.onMouse = function (event) {
-
-			// If a target element was never set (because a touch event was never fired) allow the event
-			if (!this.targetElement) {
-				return true;
-			}
-
-			if (event.forwardedTouchEvent) {
-				return true;
-			}
-
-			// Programmatically generated events targeting a specific element should be permitted
-			if (!event.cancelable) {
-				return true;
-			}
-
-			// Derive and check the target element to see whether the mouse event needs to be permitted;
-			// unless explicitly enabled, prevent non-touch click events from triggering actions,
-			// to prevent ghost/doubleclicks.
-			if (!this.needsClick(this.targetElement) || this.cancelNextClick) {
-
-				// Prevent any user-added listeners declared on FastClick element from being fired.
-				if (event.stopImmediatePropagation) {
-					event.stopImmediatePropagation();
-				} else {
-
-					// Part of the hack for browsers that don't support Event#stopImmediatePropagation (e.g. Android 2)
-					event.propagationStopped = true;
-				}
-
-				// Cancel the event
-				event.stopPropagation();
-				event.preventDefault();
-
-				return false;
-			}
-
-			// If the mouse event is permitted, return true for the action to go through.
-			return true;
-		};
-
-		/**
-	  * On actual clicks, determine whether this is a touch-generated click, a click action occurring
-	  * naturally after a delay after a touch (which needs to be cancelled to avoid duplication), or
-	  * an actual click which should be permitted.
-	  *
-	  * @param {Event} event
-	  * @returns {boolean}
-	  */
-		FastClick.prototype.onClick = function (event) {
-			var permitted;
-
-			// It's possible for another FastClick-like library delivered with third-party code to fire a click event before FastClick does (issue #44). In that case, set the click-tracking flag back to false and return early. This will cause onTouchEnd to return early.
-			if (this.trackingClick) {
-				this.targetElement = null;
-				this.trackingClick = false;
-				return true;
-			}
-
-			// Very odd behaviour on iOS (issue #18): if a submit element is present inside a form and the user hits enter in the iOS simulator or clicks the Go button on the pop-up OS keyboard the a kind of 'fake' click event will be triggered with the submit-type input element as the target.
-			if (event.target.type === 'submit' && event.detail === 0) {
-				return true;
-			}
-
-			permitted = this.onMouse(event);
-
-			// Only unset targetElement if the click is not permitted. This will ensure that the check for !targetElement in onMouse fails and the browser's click doesn't go through.
-			if (!permitted) {
-				this.targetElement = null;
-			}
-
-			// If clicks are permitted, return true for the action to go through.
-			return permitted;
-		};
-
-		/**
-	  * Remove all FastClick's event listeners.
-	  *
-	  * @returns {void}
-	  */
-		FastClick.prototype.destroy = function () {
-			var layer = this.layer;
-
-			if (deviceIsAndroid) {
-				layer.removeEventListener('mouseover', this.onMouse, true);
-				layer.removeEventListener('mousedown', this.onMouse, true);
-				layer.removeEventListener('mouseup', this.onMouse, true);
-			}
-
-			layer.removeEventListener('click', this.onClick, true);
-			layer.removeEventListener('touchstart', this.onTouchStart, false);
-			layer.removeEventListener('touchmove', this.onTouchMove, false);
-			layer.removeEventListener('touchend', this.onTouchEnd, false);
-			layer.removeEventListener('touchcancel', this.onTouchCancel, false);
-		};
-
-		/**
-	  * Check whether FastClick is needed.
-	  *
-	  * @param {Element} layer The layer to listen on
-	  */
-		FastClick.notNeeded = function (layer) {
-			var metaViewport;
-			var chromeVersion;
-			var blackberryVersion;
-			var firefoxVersion;
-
-			// Devices that don't support touch don't need FastClick
-			if (typeof window.ontouchstart === 'undefined') {
-				return true;
-			}
-
-			// Chrome version - zero for other browsers
-			chromeVersion = +(/Chrome\/([0-9]+)/.exec(navigator.userAgent) || [, 0])[1];
-
-			if (chromeVersion) {
-
-				if (deviceIsAndroid) {
-					metaViewport = document.querySelector('meta[name=viewport]');
-
-					if (metaViewport) {
-						// Chrome on Android with user-scalable="no" doesn't need FastClick (issue #89)
-						if (metaViewport.content.indexOf('user-scalable=no') !== -1) {
-							return true;
-						}
-						// Chrome 32 and above with width=device-width or less don't need FastClick
-						if (chromeVersion > 31 && document.documentElement.scrollWidth <= window.outerWidth) {
-							return true;
-						}
-					}
-
-					// Chrome desktop doesn't need FastClick (issue #15)
-				} else {
-						return true;
-					}
-			}
-
-			if (deviceIsBlackBerry10) {
-				blackberryVersion = navigator.userAgent.match(/Version\/([0-9]*)\.([0-9]*)/);
-
-				// BlackBerry 10.3+ does not require Fastclick library.
-				// https://github.com/ftlabs/fastclick/issues/251
-				if (blackberryVersion[1] >= 10 && blackberryVersion[2] >= 3) {
-					metaViewport = document.querySelector('meta[name=viewport]');
-
-					if (metaViewport) {
-						// user-scalable=no eliminates click delay.
-						if (metaViewport.content.indexOf('user-scalable=no') !== -1) {
-							return true;
-						}
-						// width=device-width (or less than device-width) eliminates click delay.
-						if (document.documentElement.scrollWidth <= window.outerWidth) {
-							return true;
-						}
-					}
-				}
-			}
-
-			// IE10 with -ms-touch-action: none or manipulation, which disables double-tap-to-zoom (issue #97)
-			if (layer.style.msTouchAction === 'none' || layer.style.touchAction === 'manipulation') {
-				return true;
-			}
-
-			// Firefox version - zero for other browsers
-			firefoxVersion = +(/Firefox\/([0-9]+)/.exec(navigator.userAgent) || [, 0])[1];
-
-			if (firefoxVersion >= 27) {
-				// Firefox 27+ does not have tap delay if the content is not zoomable - https://bugzilla.mozilla.org/show_bug.cgi?id=922896
-
-				metaViewport = document.querySelector('meta[name=viewport]');
-				if (metaViewport && (metaViewport.content.indexOf('user-scalable=no') !== -1 || document.documentElement.scrollWidth <= window.outerWidth)) {
-					return true;
-				}
-			}
-
-			// IE11: prefixed -ms-touch-action is no longer supported and it's recomended to use non-prefixed version
-			// http://msdn.microsoft.com/en-us/library/windows/apps/Hh767313.aspx
-			if (layer.style.touchAction === 'none' || layer.style.touchAction === 'manipulation') {
-				return true;
-			}
-
-			return false;
-		};
-
-		/**
-	  * Factory method for creating a FastClick object
-	  *
-	  * @param {Element} layer The layer to listen on
-	  * @param {Object} [options={}] The options to override the defaults
-	  */
-		FastClick.attach = function (layer, options) {
-			return new FastClick(layer, options);
-		};
-
-		if ("function" === 'function' && _typeof(__webpack_require__(122)) === 'object' && __webpack_require__(122)) {
-
-			// AMD. Register as an anonymous module.
-			!(__WEBPACK_AMD_DEFINE_RESULT__ = function () {
-				return FastClick;
-			}.call(exports, __webpack_require__, exports, module), __WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
-		} else if (typeof module !== 'undefined' && module.exports) {
-			module.exports = FastClick.attach;
-			module.exports.FastClick = FastClick;
-		} else {
-			window.FastClick = FastClick;
-		}
-	})();
-
-/***/ },
-/* 189 */
-/***/ function(module, exports) {
-
-	'use strict';
-
-	/*! Copyright (c) 2011 Piotr Rochala (http://rocha.la)
-	 * Dual licensed under the MIT (http://www.opensource.org/licenses/mit-license.php)
-	 * and GPL (http://www.opensource.org/licenses/gpl-license.php) licenses.
-	 *
-	 * Version: 1.3.6
-	 *
-	 */
-	module.exports = function ($) {
-
-	  $.fn.extend({
-	    slimScroll: function slimScroll(options) {
-
-	      var defaults = {
-
-	        // width in pixels of the visible scroll area
-	        width: 'auto',
-
-	        // height in pixels of the visible scroll area
-	        height: '250px',
-
-	        // width in pixels of the scrollbar and rail
-	        size: '7px',
-
-	        // scrollbar color, accepts any hex/color value
-	        color: '#000',
-
-	        // scrollbar position - left/right
-	        position: 'right',
-
-	        // distance in pixels between the side edge and the scrollbar
-	        distance: '1px',
-
-	        // default scroll position on load - top / bottom / $('selector')
-	        start: 'top',
-
-	        // sets scrollbar opacity
-	        opacity: .4,
-
-	        // enables always-on mode for the scrollbar
-	        alwaysVisible: false,
-
-	        // check if we should hide the scrollbar when user is hovering over
-	        disableFadeOut: false,
-
-	        // sets visibility of the rail
-	        railVisible: false,
-
-	        // sets rail color
-	        railColor: '#333',
-
-	        // sets rail opacity
-	        railOpacity: .2,
-
-	        // whether  we should use jQuery UI Draggable to enable bar dragging
-	        railDraggable: true,
-
-	        // defautlt CSS class of the slimscroll rail
-	        railClass: 'slimScrollRail',
-
-	        // defautlt CSS class of the slimscroll bar
-	        barClass: 'slimScrollBar',
-
-	        // defautlt CSS class of the slimscroll wrapper
-	        wrapperClass: 'slimScrollDiv',
-
-	        // check if mousewheel should scroll the window if we reach top/bottom
-	        allowPageScroll: false,
-
-	        // scroll amount applied to each mouse wheel step
-	        wheelStep: 20,
-
-	        // scroll amount applied when user is using gestures
-	        touchScrollStep: 200,
-
-	        // sets border radius
-	        borderRadius: '7px',
-
-	        // sets border radius of the rail
-	        railBorderRadius: '7px'
-	      };
-
-	      var o = $.extend(defaults, options);
-
-	      // do it for every element that matches selector
-	      this.each(function () {
-
-	        var isOverPanel,
-	            isOverBar,
-	            isDragg,
-	            queueHide,
-	            touchDif,
-	            barHeight,
-	            percentScroll,
-	            lastScroll,
-	            divS = '<div></div>',
-	            minBarHeight = 30,
-	            releaseScroll = false;
-
-	        // used in event handlers and for better minification
-	        var me = $(this);
-
-	        // ensure we are not binding it again
-	        if (me.parent().hasClass(o.wrapperClass)) {
-	          // start from last bar position
-	          var offset = me.scrollTop();
-
-	          // find bar and rail
-	          bar = me.closest('.' + o.barClass);
-	          rail = me.closest('.' + o.railClass);
-
-	          getBarHeight();
-
-	          // check if we should scroll existing instance
-	          if ($.isPlainObject(options)) {
-	            // Pass height: auto to an existing slimscroll object to force a resize after contents have changed
-	            if ('height' in options && options.height == 'auto') {
-	              me.parent().css('height', 'auto');
-	              me.css('height', 'auto');
-	              var height = me.parent().parent().height();
-	              me.parent().css('height', height);
-	              me.css('height', height);
-	            }
-
-	            if ('scrollTo' in options) {
-	              // jump to a static point
-	              offset = parseInt(o.scrollTo);
-	            } else if ('scrollBy' in options) {
-	              // jump by value pixels
-	              offset += parseInt(o.scrollBy);
-	            } else if ('destroy' in options) {
-	              // remove slimscroll elements
-	              bar.remove();
-	              rail.remove();
-	              me.unwrap();
-	              return;
-	            }
-
-	            // scroll content by the given offset
-	            scrollContent(offset, false, true);
-	          }
-
-	          return;
-	        } else if ($.isPlainObject(options)) {
-	          if ('destroy' in options) {
-	            return;
-	          }
-	        }
-
-	        // optionally set height to the parent's height
-	        o.height = o.height == 'auto' ? me.parent().height() : o.height;
-
-	        // wrap content
-	        var wrapper = $(divS).addClass(o.wrapperClass).css({
-	          position: 'relative',
-	          overflow: 'hidden',
-	          width: o.width,
-	          height: o.height
-	        });
-
-	        // update style for the div
-	        me.css({
-	          overflow: 'hidden',
-	          width: o.width,
-	          height: o.height
-	        });
-
-	        // create scrollbar rail
-	        var rail = $(divS).addClass(o.railClass).css({
-	          width: o.size,
-	          height: '100%',
-	          position: 'absolute',
-	          top: 0,
-	          display: o.alwaysVisible && o.railVisible ? 'block' : 'none',
-	          'border-radius': o.railBorderRadius,
-	          background: o.railColor,
-	          opacity: o.railOpacity,
-	          zIndex: 90
-	        });
-
-	        // create scrollbar
-	        var bar = $(divS).addClass(o.barClass).css({
-	          background: o.color,
-	          width: o.size,
-	          position: 'absolute',
-	          top: 0,
-	          opacity: o.opacity,
-	          display: o.alwaysVisible ? 'block' : 'none',
-	          'border-radius': o.borderRadius,
-	          BorderRadius: o.borderRadius,
-	          MozBorderRadius: o.borderRadius,
-	          WebkitBorderRadius: o.borderRadius,
-	          zIndex: 99
-	        });
-
-	        // set position
-	        var posCss = o.position == 'right' ? { right: o.distance } : { left: o.distance };
-	        rail.css(posCss);
-	        bar.css(posCss);
-
-	        // wrap it
-	        me.wrap(wrapper);
-
-	        // append to parent div
-	        me.parent().append(bar);
-	        me.parent().append(rail);
-
-	        // make it draggable and no longer dependent on the jqueryUI
-	        if (o.railDraggable) {
-	          bar.bind("mousedown", function (e) {
-	            var $doc = $(document);
-	            isDragg = true;
-	            t = parseFloat(bar.css('top'));
-	            pageY = e.pageY;
-
-	            $doc.bind("mousemove.slimscroll", function (e) {
-	              currTop = t + e.pageY - pageY;
-	              bar.css('top', currTop);
-	              scrollContent(0, bar.position().top, false); // scroll content
-	            });
-
-	            $doc.bind("mouseup.slimscroll", function (e) {
-	              isDragg = false;hideBar();
-	              $doc.unbind('.slimscroll');
-	            });
-	            return false;
-	          }).bind("selectstart.slimscroll", function (e) {
-	            e.stopPropagation();
-	            e.preventDefault();
-	            return false;
-	          });
-	        }
-
-	        // on rail over
-	        rail.hover(function () {
-	          showBar();
-	        }, function () {
-	          hideBar();
-	        });
-
-	        // on bar over
-	        bar.hover(function () {
-	          isOverBar = true;
-	        }, function () {
-	          isOverBar = false;
-	        });
-
-	        // show on parent mouseover
-	        me.hover(function () {
-	          isOverPanel = true;
-	          showBar();
-	          hideBar();
-	        }, function () {
-	          isOverPanel = false;
-	          hideBar();
-	        });
-
-	        // support for mobile
-	        me.bind('touchstart', function (e, b) {
-	          if (e.originalEvent.touches.length) {
-	            // record where touch started
-	            touchDif = e.originalEvent.touches[0].pageY;
-	          }
-	        });
-
-	        me.bind('touchmove', function (e) {
-	          // prevent scrolling the page if necessary
-	          if (!releaseScroll) {
-	            e.originalEvent.preventDefault();
-	          }
-	          if (e.originalEvent.touches.length) {
-	            // see how far user swiped
-	            var diff = (touchDif - e.originalEvent.touches[0].pageY) / o.touchScrollStep;
-	            // scroll content
-	            scrollContent(diff, true);
-	            touchDif = e.originalEvent.touches[0].pageY;
-	          }
-	        });
-
-	        // set up initial height
-	        getBarHeight();
-
-	        // check start position
-	        if (o.start === 'bottom') {
-	          // scroll content to bottom
-	          bar.css({ top: me.outerHeight() - bar.outerHeight() });
-	          scrollContent(0, true);
-	        } else if (o.start !== 'top') {
-	          // assume jQuery selector
-	          scrollContent($(o.start).position().top, null, true);
-
-	          // make sure bar stays hidden
-	          if (!o.alwaysVisible) {
-	            bar.hide();
-	          }
-	        }
-
-	        // attach scroll events
-	        attachWheel(this);
-
-	        function _onWheel(e) {
-	          // use mouse wheel only when mouse is over
-	          if (!isOverPanel) {
-	            return;
-	          }
-
-	          var e = e || window.event;
-
-	          var delta = 0;
-	          if (e.wheelDelta) {
-	            delta = -e.wheelDelta / 120;
-	          }
-	          if (e.detail) {
-	            delta = e.detail / 3;
-	          }
-
-	          var target = e.target || e.srcTarget || e.srcElement;
-	          if ($(target).closest('.' + o.wrapperClass).is(me.parent())) {
-	            // scroll content
-	            scrollContent(delta, true);
-	          }
-
-	          // stop window scroll
-	          if (e.preventDefault && !releaseScroll) {
-	            e.preventDefault();
-	          }
-	          if (!releaseScroll) {
-	            e.returnValue = false;
-	          }
-	        }
-
-	        function scrollContent(y, isWheel, isJump) {
-	          releaseScroll = false;
-	          var delta = y;
-	          var maxTop = me.outerHeight() - bar.outerHeight();
-
-	          if (isWheel) {
-	            // move bar with mouse wheel
-	            delta = parseInt(bar.css('top')) + y * parseInt(o.wheelStep) / 100 * bar.outerHeight();
-
-	            // move bar, make sure it doesn't go out
-	            delta = Math.min(Math.max(delta, 0), maxTop);
-
-	            // if scrolling down, make sure a fractional change to the
-	            // scroll position isn't rounded away when the scrollbar's CSS is set
-	            // this flooring of delta would happened automatically when
-	            // bar.css is set below, but we floor here for clarity
-	            delta = y > 0 ? Math.ceil(delta) : Math.floor(delta);
-
-	            // scroll the scrollbar
-	            bar.css({ top: delta + 'px' });
-	          }
-
-	          // calculate actual scroll amount
-	          percentScroll = parseInt(bar.css('top')) / (me.outerHeight() - bar.outerHeight());
-	          delta = percentScroll * (me[0].scrollHeight - me.outerHeight());
-
-	          if (isJump) {
-	            delta = y;
-	            var offsetTop = delta / me[0].scrollHeight * me.outerHeight();
-	            offsetTop = Math.min(Math.max(offsetTop, 0), maxTop);
-	            bar.css({ top: offsetTop + 'px' });
-	          }
-
-	          // scroll content
-	          me.scrollTop(delta);
-
-	          // fire scrolling event
-	          me.trigger('slimscrolling', ~ ~delta);
-
-	          // ensure bar is visible
-	          showBar();
-
-	          // trigger hide when scroll is stopped
-	          hideBar();
-	        }
-
-	        function attachWheel(target) {
-	          if (window.addEventListener) {
-	            target.addEventListener('DOMMouseScroll', _onWheel, false);
-	            target.addEventListener('mousewheel', _onWheel, false);
-	          } else {
-	            document.attachEvent("onmousewheel", _onWheel);
-	          }
-	        }
-
-	        function getBarHeight() {
-	          // calculate scrollbar height and make sure it is not too small
-	          barHeight = Math.max(me.outerHeight() / me[0].scrollHeight * me.outerHeight(), minBarHeight);
-	          bar.css({ height: barHeight + 'px' });
-
-	          // hide scrollbar if content is not long enough
-	          var display = barHeight == me.outerHeight() ? 'none' : 'block';
-	          bar.css({ display: display });
-	        }
-
-	        function showBar() {
-	          // recalculate bar height
-	          getBarHeight();
-	          clearTimeout(queueHide);
-
-	          // when bar reached top or bottom
-	          if (percentScroll == ~ ~percentScroll) {
-	            //release wheel
-	            releaseScroll = o.allowPageScroll;
-
-	            // publish approporiate event
-	            if (lastScroll != percentScroll) {
-	              var msg = ~ ~percentScroll == 0 ? 'top' : 'bottom';
-	              me.trigger('slimscroll', msg);
-	            }
-	          } else {
-	            releaseScroll = false;
-	          }
-	          lastScroll = percentScroll;
-
-	          // show only when required
-	          if (barHeight >= me.outerHeight()) {
-	            //allow window scroll
-	            releaseScroll = true;
-	            return;
-	          }
-	          bar.stop(true, true).fadeIn('fast');
-	          if (o.railVisible) {
-	            rail.stop(true, true).fadeIn('fast');
-	          }
-	        }
-
-	        function hideBar() {
-	          // only hide when options allow it
-	          if (!o.alwaysVisible) {
-	            queueHide = setTimeout(function () {
-	              if (!(o.disableFadeOut && isOverPanel) && !isOverBar && !isDragg) {
-	                bar.fadeOut('slow');
-	                rail.fadeOut('slow');
-	              }
-	            }, 1000);
-	          }
-	        }
-	      });
-
-	      // maintain chainability
-	      return this;
-	    }
-	  });
-
-	  $.fn.extend({
-	    slimscroll: $.fn.slimScroll
-	  });
-	};
-
-/***/ },
-/* 190 */
-/***/ function(module, exports) {
-
-	'use strict';
-
-	var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol ? "symbol" : typeof obj; };
-
-	/* ========================================================================
-	 * Bootstrap: tooltip.js v3.3.6
-	 * http://getbootstrap.com/javascript/#tooltip
-	 * Inspired by the original jQuery.tipsy by Jason Frame
-	 * ========================================================================
-	 * Copyright 2011-2015 Twitter, Inc.
-	 * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
-	 * ======================================================================== */
-
-	module.exports = function ($) {
-	  'use strict';
-
-	  // TOOLTIP PUBLIC CLASS DEFINITION
-	  // ===============================
-
-	  var Tooltip = function Tooltip(element, options) {
-	    this.type = null;
-	    this.options = null;
-	    this.enabled = null;
-	    this.timeout = null;
-	    this.hoverState = null;
-	    this.$element = null;
-	    this.inState = null;
-
-	    this.init('tooltip', element, options);
-	  };
-
-	  Tooltip.VERSION = '3.3.6';
-
-	  Tooltip.TRANSITION_DURATION = 150;
-
-	  Tooltip.DEFAULTS = {
-	    animation: true,
-	    placement: 'top',
-	    selector: false,
-	    template: '<div class="tooltip" role="tooltip"><div class="tooltip-arrow"></div><div class="tooltip-inner"></div></div>',
-	    trigger: 'hover focus',
-	    title: '',
-	    delay: 0,
-	    html: false,
-	    container: false,
-	    viewport: {
-	      selector: 'body',
-	      padding: 0
-	    }
-	  };
-
-	  Tooltip.prototype.init = function (type, element, options) {
-	    this.enabled = true;
-	    this.type = type;
-	    this.$element = $(element);
-	    this.options = this.getOptions(options);
-	    this.$viewport = this.options.viewport && $($.isFunction(this.options.viewport) ? this.options.viewport.call(this, this.$element) : this.options.viewport.selector || this.options.viewport);
-	    this.inState = { click: false, hover: false, focus: false };
-
-	    if (this.$element[0] instanceof document.constructor && !this.options.selector) {
-	      throw new Error('`selector` option must be specified when initializing ' + this.type + ' on the window.document object!');
-	    }
-
-	    var triggers = this.options.trigger.split(' ');
-
-	    for (var i = triggers.length; i--;) {
-	      var trigger = triggers[i];
-
-	      if (trigger == 'click') {
-	        this.$element.on('click.' + this.type, this.options.selector, $.proxy(this.toggle, this));
-	      } else if (trigger != 'manual') {
-	        var eventIn = trigger == 'hover' ? 'mouseenter' : 'focusin';
-	        var eventOut = trigger == 'hover' ? 'mouseleave' : 'focusout';
-
-	        this.$element.on(eventIn + '.' + this.type, this.options.selector, $.proxy(this.enter, this));
-	        this.$element.on(eventOut + '.' + this.type, this.options.selector, $.proxy(this.leave, this));
-	      }
-	    }
-
-	    this.options.selector ? this._options = $.extend({}, this.options, { trigger: 'manual', selector: '' }) : this.fixTitle();
-	  };
-
-	  Tooltip.prototype.getDefaults = function () {
-	    return Tooltip.DEFAULTS;
-	  };
-
-	  Tooltip.prototype.getOptions = function (options) {
-	    options = $.extend({}, this.getDefaults(), this.$element.data(), options);
-
-	    if (options.delay && typeof options.delay == 'number') {
-	      options.delay = {
-	        show: options.delay,
-	        hide: options.delay
-	      };
-	    }
-
-	    return options;
-	  };
-
-	  Tooltip.prototype.getDelegateOptions = function () {
-	    var options = {};
-	    var defaults = this.getDefaults();
-
-	    this._options && $.each(this._options, function (key, value) {
-	      if (defaults[key] != value) options[key] = value;
-	    });
-
-	    return options;
-	  };
-
-	  Tooltip.prototype.enter = function (obj) {
-	    var self = obj instanceof this.constructor ? obj : $(obj.currentTarget).data('bs.' + this.type);
-
-	    if (!self) {
-	      self = new this.constructor(obj.currentTarget, this.getDelegateOptions());
-	      $(obj.currentTarget).data('bs.' + this.type, self);
-	    }
-
-	    if (obj instanceof $.Event) {
-	      self.inState[obj.type == 'focusin' ? 'focus' : 'hover'] = true;
-	    }
-
-	    if (self.tip().hasClass('in') || self.hoverState == 'in') {
-	      self.hoverState = 'in';
-	      return;
-	    }
-
-	    clearTimeout(self.timeout);
-
-	    self.hoverState = 'in';
-
-	    if (!self.options.delay || !self.options.delay.show) return self.show();
-
-	    self.timeout = setTimeout(function () {
-	      if (self.hoverState == 'in') self.show();
-	    }, self.options.delay.show);
-	  };
-
-	  Tooltip.prototype.isInStateTrue = function () {
-	    for (var key in this.inState) {
-	      if (this.inState[key]) return true;
-	    }
-
-	    return false;
-	  };
-
-	  Tooltip.prototype.leave = function (obj) {
-	    var self = obj instanceof this.constructor ? obj : $(obj.currentTarget).data('bs.' + this.type);
-
-	    if (!self) {
-	      self = new this.constructor(obj.currentTarget, this.getDelegateOptions());
-	      $(obj.currentTarget).data('bs.' + this.type, self);
-	    }
-
-	    if (obj instanceof $.Event) {
-	      self.inState[obj.type == 'focusout' ? 'focus' : 'hover'] = false;
-	    }
-
-	    if (self.isInStateTrue()) return;
-
-	    clearTimeout(self.timeout);
-
-	    self.hoverState = 'out';
-
-	    if (!self.options.delay || !self.options.delay.hide) return self.hide();
-
-	    self.timeout = setTimeout(function () {
-	      if (self.hoverState == 'out') self.hide();
-	    }, self.options.delay.hide);
-	  };
-
-	  Tooltip.prototype.show = function () {
-	    var e = $.Event('show.bs.' + this.type);
-
-	    if (this.hasContent() && this.enabled) {
-	      this.$element.trigger(e);
-
-	      var inDom = $.contains(this.$element[0].ownerDocument.documentElement, this.$element[0]);
-	      if (e.isDefaultPrevented() || !inDom) return;
-	      var that = this;
-
-	      var $tip = this.tip();
-
-	      var tipId = this.getUID(this.type);
-
-	      this.setContent();
-	      $tip.attr('id', tipId);
-	      this.$element.attr('aria-describedby', tipId);
-
-	      if (this.options.animation) $tip.addClass('fade');
-
-	      var placement = typeof this.options.placement == 'function' ? this.options.placement.call(this, $tip[0], this.$element[0]) : this.options.placement;
-
-	      var autoToken = /\s?auto?\s?/i;
-	      var autoPlace = autoToken.test(placement);
-	      if (autoPlace) placement = placement.replace(autoToken, '') || 'top';
-
-	      $tip.detach().css({ top: 0, left: 0, display: 'block' }).addClass(placement).data('bs.' + this.type, this);
-
-	      this.options.container ? $tip.appendTo(this.options.container) : $tip.insertAfter(this.$element);
-	      this.$element.trigger('inserted.bs.' + this.type);
-
-	      var pos = this.getPosition();
-	      var actualWidth = $tip[0].offsetWidth;
-	      var actualHeight = $tip[0].offsetHeight;
-
-	      if (autoPlace) {
-	        var orgPlacement = placement;
-	        var viewportDim = this.getPosition(this.$viewport);
-
-	        placement = placement == 'bottom' && pos.bottom + actualHeight > viewportDim.bottom ? 'top' : placement == 'top' && pos.top - actualHeight < viewportDim.top ? 'bottom' : placement == 'right' && pos.right + actualWidth > viewportDim.width ? 'left' : placement == 'left' && pos.left - actualWidth < viewportDim.left ? 'right' : placement;
-
-	        $tip.removeClass(orgPlacement).addClass(placement);
-	      }
-
-	      var calculatedOffset = this.getCalculatedOffset(placement, pos, actualWidth, actualHeight);
-
-	      this.applyPlacement(calculatedOffset, placement);
-
-	      var complete = function complete() {
-	        var prevHoverState = that.hoverState;
-	        that.$element.trigger('shown.bs.' + that.type);
-	        that.hoverState = null;
-
-	        if (prevHoverState == 'out') that.leave(that);
-	      };
-
-	      $.support.transition && this.$tip.hasClass('fade') ? $tip.one('bsTransitionEnd', complete).emulateTransitionEnd(Tooltip.TRANSITION_DURATION) : complete();
-	    }
-	  };
-
-	  Tooltip.prototype.applyPlacement = function (offset, placement) {
-	    var $tip = this.tip();
-	    var width = $tip[0].offsetWidth;
-	    var height = $tip[0].offsetHeight;
-
-	    // manually read margins because getBoundingClientRect includes difference
-	    var marginTop = parseInt($tip.css('margin-top'), 10);
-	    var marginLeft = parseInt($tip.css('margin-left'), 10);
-
-	    // we must check for NaN for ie 8/9
-	    if (isNaN(marginTop)) marginTop = 0;
-	    if (isNaN(marginLeft)) marginLeft = 0;
-
-	    offset.top += marginTop;
-	    offset.left += marginLeft;
-
-	    // $.fn.offset doesn't round pixel values
-	    // so we use setOffset directly with our own function B-0
-	    $.offset.setOffset($tip[0], $.extend({
-	      using: function using(props) {
-	        $tip.css({
-	          top: Math.round(props.top),
-	          left: Math.round(props.left)
-	        });
-	      }
-	    }, offset), 0);
-
-	    $tip.addClass('in');
-
-	    // check to see if placing tip in new offset caused the tip to resize itself
-	    var actualWidth = $tip[0].offsetWidth;
-	    var actualHeight = $tip[0].offsetHeight;
-
-	    if (placement == 'top' && actualHeight != height) {
-	      offset.top = offset.top + height - actualHeight;
-	    }
-
-	    var delta = this.getViewportAdjustedDelta(placement, offset, actualWidth, actualHeight);
-
-	    if (delta.left) offset.left += delta.left;else offset.top += delta.top;
-
-	    var isVertical = /top|bottom/.test(placement);
-	    var arrowDelta = isVertical ? delta.left * 2 - width + actualWidth : delta.top * 2 - height + actualHeight;
-	    var arrowOffsetPosition = isVertical ? 'offsetWidth' : 'offsetHeight';
-
-	    $tip.offset(offset);
-	    this.replaceArrow(arrowDelta, $tip[0][arrowOffsetPosition], isVertical);
-	  };
-
-	  Tooltip.prototype.replaceArrow = function (delta, dimension, isVertical) {
-	    this.arrow().css(isVertical ? 'left' : 'top', 50 * (1 - delta / dimension) + '%').css(isVertical ? 'top' : 'left', '');
-	  };
-
-	  Tooltip.prototype.setContent = function () {
-	    var $tip = this.tip();
-	    var title = this.getTitle();
-
-	    $tip.find('.tooltip-inner')[this.options.html ? 'html' : 'text'](title);
-	    $tip.removeClass('fade in top bottom left right');
-	  };
-
-	  Tooltip.prototype.hide = function (callback) {
-	    var that = this;
-	    var $tip = $(this.$tip);
-	    var e = $.Event('hide.bs.' + this.type);
-
-	    function complete() {
-	      if (that.hoverState != 'in') $tip.detach();
-	      that.$element.removeAttr('aria-describedby').trigger('hidden.bs.' + that.type);
-	      callback && callback();
-	    }
-
-	    this.$element.trigger(e);
-
-	    if (e.isDefaultPrevented()) return;
-
-	    $tip.removeClass('in');
-
-	    $.support.transition && $tip.hasClass('fade') ? $tip.one('bsTransitionEnd', complete).emulateTransitionEnd(Tooltip.TRANSITION_DURATION) : complete();
-
-	    this.hoverState = null;
-
-	    return this;
-	  };
-
-	  Tooltip.prototype.fixTitle = function () {
-	    var $e = this.$element;
-	    if ($e.attr('title') || typeof $e.attr('data-original-title') != 'string') {
-	      $e.attr('data-original-title', $e.attr('title') || '').attr('title', '');
-	    }
-	  };
-
-	  Tooltip.prototype.hasContent = function () {
-	    return this.getTitle();
-	  };
-
-	  Tooltip.prototype.getPosition = function ($element) {
-	    $element = $element || this.$element;
-
-	    var el = $element[0];
-	    var isBody = el.tagName == 'BODY';
-
-	    var elRect = el.getBoundingClientRect();
-	    if (elRect.width == null) {
-	      // width and height are missing in IE8, so compute them manually; see https://github.com/twbs/bootstrap/issues/14093
-	      elRect = $.extend({}, elRect, { width: elRect.right - elRect.left, height: elRect.bottom - elRect.top });
-	    }
-	    var elOffset = isBody ? { top: 0, left: 0 } : $element.offset();
-	    var scroll = { scroll: isBody ? document.documentElement.scrollTop || document.body.scrollTop : $element.scrollTop() };
-	    var outerDims = isBody ? { width: $(window).width(), height: $(window).height() } : null;
-
-	    return $.extend({}, elRect, scroll, outerDims, elOffset);
-	  };
-
-	  Tooltip.prototype.getCalculatedOffset = function (placement, pos, actualWidth, actualHeight) {
-	    return placement == 'bottom' ? { top: pos.top + pos.height, left: pos.left + pos.width / 2 - actualWidth / 2 } : placement == 'top' ? { top: pos.top - actualHeight, left: pos.left + pos.width / 2 - actualWidth / 2 } : placement == 'left' ? { top: pos.top + pos.height / 2 - actualHeight / 2, left: pos.left - actualWidth } :
-	    /* placement == 'right' */{ top: pos.top + pos.height / 2 - actualHeight / 2, left: pos.left + pos.width };
-	  };
-
-	  Tooltip.prototype.getViewportAdjustedDelta = function (placement, pos, actualWidth, actualHeight) {
-	    var delta = { top: 0, left: 0 };
-	    if (!this.$viewport) return delta;
-
-	    var viewportPadding = this.options.viewport && this.options.viewport.padding || 0;
-	    var viewportDimensions = this.getPosition(this.$viewport);
-
-	    if (/right|left/.test(placement)) {
-	      var topEdgeOffset = pos.top - viewportPadding - viewportDimensions.scroll;
-	      var bottomEdgeOffset = pos.top + viewportPadding - viewportDimensions.scroll + actualHeight;
-	      if (topEdgeOffset < viewportDimensions.top) {
-	        // top overflow
-	        delta.top = viewportDimensions.top - topEdgeOffset;
-	      } else if (bottomEdgeOffset > viewportDimensions.top + viewportDimensions.height) {
-	        // bottom overflow
-	        delta.top = viewportDimensions.top + viewportDimensions.height - bottomEdgeOffset;
-	      }
-	    } else {
-	      var leftEdgeOffset = pos.left - viewportPadding;
-	      var rightEdgeOffset = pos.left + viewportPadding + actualWidth;
-	      if (leftEdgeOffset < viewportDimensions.left) {
-	        // left overflow
-	        delta.left = viewportDimensions.left - leftEdgeOffset;
-	      } else if (rightEdgeOffset > viewportDimensions.right) {
-	        // right overflow
-	        delta.left = viewportDimensions.left + viewportDimensions.width - rightEdgeOffset;
-	      }
-	    }
-
-	    return delta;
-	  };
-
-	  Tooltip.prototype.getTitle = function () {
-	    var title;
-	    var $e = this.$element;
-	    var o = this.options;
-
-	    title = $e.attr('data-original-title') || (typeof o.title == 'function' ? o.title.call($e[0]) : o.title);
-
-	    return title;
-	  };
-
-	  Tooltip.prototype.getUID = function (prefix) {
-	    do {
-	      prefix += ~ ~(Math.random() * 1000000);
-	    } while (document.getElementById(prefix));
-	    return prefix;
-	  };
-
-	  Tooltip.prototype.tip = function () {
-	    if (!this.$tip) {
-	      this.$tip = $(this.options.template);
-	      if (this.$tip.length != 1) {
-	        throw new Error(this.type + ' `template` option must consist of exactly 1 top-level element!');
-	      }
-	    }
-	    return this.$tip;
-	  };
-
-	  Tooltip.prototype.arrow = function () {
-	    return this.$arrow = this.$arrow || this.tip().find('.tooltip-arrow');
-	  };
-
-	  Tooltip.prototype.enable = function () {
-	    this.enabled = true;
-	  };
-
-	  Tooltip.prototype.disable = function () {
-	    this.enabled = false;
-	  };
-
-	  Tooltip.prototype.toggleEnabled = function () {
-	    this.enabled = !this.enabled;
-	  };
-
-	  Tooltip.prototype.toggle = function (e) {
-	    var self = this;
-	    if (e) {
-	      self = $(e.currentTarget).data('bs.' + this.type);
-	      if (!self) {
-	        self = new this.constructor(e.currentTarget, this.getDelegateOptions());
-	        $(e.currentTarget).data('bs.' + this.type, self);
-	      }
-	    }
-
-	    if (e) {
-	      self.inState.click = !self.inState.click;
-	      if (self.isInStateTrue()) self.enter(self);else self.leave(self);
-	    } else {
-	      self.tip().hasClass('in') ? self.leave(self) : self.enter(self);
-	    }
-	  };
-
-	  Tooltip.prototype.destroy = function () {
-	    var that = this;
-	    clearTimeout(this.timeout);
-	    this.hide(function () {
-	      that.$element.off('.' + that.type).removeData('bs.' + that.type);
-	      if (that.$tip) {
-	        that.$tip.detach();
-	      }
-	      that.$tip = null;
-	      that.$arrow = null;
-	      that.$viewport = null;
-	    });
-	  };
-
-	  // TOOLTIP PLUGIN DEFINITION
-	  // =========================
-
-	  function Plugin(option) {
-	    return this.each(function () {
-	      var $this = $(this);
-	      var data = $this.data('bs.tooltip');
-	      var options = (typeof option === 'undefined' ? 'undefined' : _typeof(option)) == 'object' && option;
-
-	      if (!data && /destroy|hide/.test(option)) return;
-	      if (!data) $this.data('bs.tooltip', data = new Tooltip(this, options));
-	      if (typeof option == 'string') data[option]();
-	    });
-	  }
-
-	  var old = $.fn.tooltip;
-
-	  $.fn.tooltip = Plugin;
-	  $.fn.tooltip.Constructor = Tooltip;
-
-	  // TOOLTIP NO CONFLICT
-	  // ===================
-
-	  $.fn.tooltip.noConflict = function () {
-	    $.fn.tooltip = old;
-	    return this;
-	  };
-	};
-
-/***/ },
+/* 182 */,
+/* 183 */,
+/* 184 */,
+/* 185 */,
+/* 186 */,
+/* 187 */,
+/* 188 */,
+/* 189 */,
+/* 190 */,
 /* 191 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -15423,7 +13056,7 @@
 /* 206 */
 /***/ function(module, exports) {
 
-	module.exports = "<nav class=\"Sidebar__container\">\n    <ul class=\"Sidebar__topList\">\n        <li class=\"Sidebar__menu\">\n            <!-- 说明: a标签上面加上getRouteName点击事件的原因是为了获取当前点击是否是auth -->\n            <a class=\"Sidebar__link fa fa-home\"\n               name=\"home\"\n               @click=\"getRouteName\"\n               v-bind:class=\"[ currentLink == 'auth' ? 'activeLink' : '' ]\"\n               v-link=\"{ path: '/home', activeClass: 'active' }\"></a>\n        </li>\n        <li class=\"Sidebar__menu\">\n            <a class=\"Sidebar__link fa fa-th\"\n               @click=\"getRouteName\"\n               v-link=\"{ path: '/dashboard', activeClass: 'active' }\"></a>\n        </li>\n        <li class=\"Sidebar__menu\">\n            <a class=\"Sidebar__link fa fa-tasks\"\n               @click=\"getRouteName\"\n               v-link=\"{ path: '/anttest', activeClass: 'active' }\"></a>\n        </li>\n        <li class=\"Sidebar__menu\">\n            <a class=\"Sidebar__link fa fa-users\"\n               @click=\"getRouteName\"\n               v-link=\"{ path: '/admintest', activeClass: 'active' }\"></a>\n        </li>\n    </ul>\n    <ul class=\"Sidebar__bottomList\">\n        <li class=\"Sidebar__menu\">\n            <a class=\"Sidebar__link fa fa-cog\"></a>\n        </li>\n        <li class=\"Sidebar__menu\">\n            <a class=\"Sidebar__link fa fa-sign-in\"\n               name=\"auth\"\n               @click=\"getRouteName\"\n               v-link=\"{ path: '/sign_in', activeClass: 'hidden' }\"\n               v-bind:class=\"[ currentLink == 'auth' ? 'hiddenLink' : '' ]\"></a>\n        </li>\n    </ul>\n</nav>";
+	module.exports = "<nav class=\"Sidebar__container\">\n    <ul class=\"Sidebar__topList\">\n        <li class=\"Sidebar__menu\">\n            <!-- 说明: a标签上面加上getRouteName点击事件的原因是为了获取当前点击是否是auth -->\n            <a class=\"Sidebar__link fa fa-home\"\n               name=\"home\"\n               @click=\"getRouteName\"\n               v-bind:class=\"[ currentLink == 'auth' ? 'activeLink' : '' ]\"\n               v-link=\"{ path: '/home', activeClass: 'active' }\"></a>\n        </li>\n        <li class=\"Sidebar__menu\">\n            <a class=\"Sidebar__link fa fa-th\"\n               @click=\"getRouteName\"\n               v-link=\"{ path: '/dashboard', activeClass: 'active' }\"></a>\n        </li>\n        <li class=\"Sidebar__menu\">\n            <a class=\"Sidebar__link fa fa-tasks\"\n               @click=\"getRouteName\"\n               v-link=\"{ path: '/anttest', activeClass: 'active' }\"></a>\n        </li>\n        <li class=\"Sidebar__menu\">\n            <a class=\"Sidebar__link fa fa-users\"\n               @click=\"getRouteName\"\n               v-link=\"{ path: '/admintest', activeClass: 'active' }\"></a>\n        </li>\n        <li class=\"Sidebar__menu\">\n            <a class=\"Sidebar__link fa fa-taxi\"\n               @click=\"getRouteName\"\n               v-link=\"{ path: '/newadmintest', activeClass: 'active' }\"></a>\n        </li>\n    </ul>\n    <ul class=\"Sidebar__bottomList\">\n        <li class=\"Sidebar__menu\">\n            <a class=\"Sidebar__link fa fa-cog\"></a>\n        </li>\n        <li class=\"Sidebar__menu\">\n            <a class=\"Sidebar__link fa fa-sign-in\"\n               name=\"auth\"\n               @click=\"getRouteName\"\n               v-link=\"{ path: '/sign_in', activeClass: 'hidden' }\"\n               v-bind:class=\"[ currentLink == 'auth' ? 'hiddenLink' : '' ]\"></a>\n        </li>\n    </ul>\n</nav>";
 
 /***/ },
 /* 207 */
@@ -15820,6 +13453,237 @@
 
 	// module
 	exports.push([module.id, ".Form__input--group {\n  position: relative; }\n\n.Form__input--group-item:first-child {\n  border-top-left-radius: 5px;\n  border-bottom-left-radius: 5px; }\n\n.Form__input--group-item:last-child {\n  border-top-right-radius: 5px;\n  border-bottom-right-radius: 5px; }\n\n.Form__input--addon {\n  display: inline-block;\n  position: relative;\n  padding: 10px;\n  border: 1px solid #ccc;\n  border-right: 0;\n  margin: 0; }\n\n.Form__input--counter {\n  display: inline-block;\n  position: relative;\n  margin: 0;\n  border: 1px solid #ccc;\n  padding: 10px;\n  font-weight: 400;\n  border-left: 0; }\n\n.Form__input--text {\n  display: inline-block;\n  margin: 0;\n  border: 1px solid #ccc; }\n", ""]);
+
+	// exports
+
+
+/***/ },
+/* 229 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _dec, _class;
+
+	var _jquery = __webpack_require__(180);
+
+	var _jquery2 = _interopRequireDefault(_jquery);
+
+	var _vueClassComponent = __webpack_require__(88);
+
+	var _vueClassComponent2 = _interopRequireDefault(_vueClassComponent);
+
+	var _newAdminTestTpl = __webpack_require__(230);
+
+	var _newAdminTestTpl2 = _interopRequireDefault(_newAdminTestTpl);
+
+	var _newAdminLTE = __webpack_require__(231);
+
+	var _AdminLTE = __webpack_require__(233);
+
+	var _AdminLTE2 = _interopRequireDefault(_AdminLTE);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	var AdminTest = (_dec = (0, _vueClassComponent2.default)({
+	    template: _newAdminTestTpl2.default
+	}), _dec(_class = function () {
+	    function AdminTest() {
+	        _classCallCheck(this, AdminTest);
+	    }
+
+	    _createClass(AdminTest, [{
+	        key: 'data',
+	        value: function data() {
+	            return {
+	                ControlSidebarBtn: {}
+	            };
+	        }
+	    }, {
+	        key: 'ready',
+	        value: function ready() {
+
+	            this.ControlSidebar = new _newAdminLTE.ControlSidebar(document.getElementById('ControlSidebarBtn'), document.getElementById('ControlSidebar'), document.getElementById('ControlSidebarBg'), { slide: true });
+	        }
+	    }, {
+	        key: 'openSidebar',
+	        value: function openSidebar() {
+	            this.ControlSidebar.open();
+	        }
+	    }, {
+	        key: 'closeSidebar',
+	        value: function closeSidebar() {
+	            this.ControlSidebar.close();
+	        }
+	    }]);
+
+	    return AdminTest;
+	}()) || _class);
+	exports.default = AdminTest;
+
+/***/ },
+/* 230 */
+/***/ function(module, exports) {
+
+	module.exports = "<div class=\"wrapper\">\n\n    <!-- ControlSidebar -->\n    <button class=\"btn btn-primary\" id=\"ControlSidebarBtn\">Toggle Right Sidebar</button>\n\n    <aside id=\"ControlSidebar\" class=\"control-sidebar control-sidebar-dark\">\n        <div class=\"pad\">\n            This is an example of the control sidebar.\n        </div>\n    </aside>\n    <div id=\"ControlSidebarBg\" class=\"control-sidebar-bg\"></div>\n    <!-- ControlSidebar -->\n\n    <!-- Vue binding -->\n    <h1>Vue click bind</h1>\n    <button @click=\"openSidebar\">openSidebar</button>\n    <button @click=\"closeSidebar\">closeSidebar</button>\n    <!-- Vue binding -->\n\n</div><!-- ./wrapper -->";
+
+/***/ },
+/* 231 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	var ControlSidebar = __webpack_require__(232);
+
+	module.exports = {
+	    ControlSidebar: ControlSidebar
+	};
+
+/***/ },
+/* 232 */
+/***/ function(module, exports) {
+
+	'use strict';
+
+	function ControlSidebar(button, sidebar, sidebarBackground, settings) {
+	    this.DOM = {
+	        button: button,
+	        sidebar: sidebar,
+	        sidebarBackground: sidebarBackground
+	    };
+	    this.settings = settings;
+	    this.init();
+	}
+
+	//init the instance
+	ControlSidebar.prototype.init = function () {
+
+	    // get basic params
+	    var DOM = this.DOM,
+	        _this = this;
+
+	    // add click event
+	    DOM.button.addEventListener('click', function (event) {
+	        event.preventDefault();
+	        //If the sidebar is not open
+	        if (!(DOM.sidebar.className.indexOf('control-sidebar-open') >= 0) && !(document.body.className.indexOf('control-sidebar-open') >= 0)) {
+	            //Open the sidebar, enable slide
+	            _this.open();
+	        } else {
+	            _this.close();
+	        }
+	    });
+
+	    // If the body has a boxed layout, fix the sidebar bg position
+	    _this._fix(DOM.sidebarBackground);
+
+	    //If the body has a fixed layout, make the control sidebar fixed
+	    if (document.body.className.indexOf('fixed') >= 0) {
+	        _this._fixForFixed(DOM.sidebar);
+	    } else {
+	        //If the content height is less than the sidebar's height, force max height
+	        if (document.querySelector('.content-wrapper, .right-side').style.height < DOM.sidebar.style.height) {
+	            _this._fixForContent(DOM.sidebar);
+	        }
+	    }
+	};
+
+	//Open the control sidebar
+	ControlSidebar.prototype.open = function () {
+	    var DOM = this.DOM,
+	        o = this.settings;
+	    //Slide over content
+	    if (o.slide) {
+	        DOM.sidebar.className = DOM.sidebar.className.indexOf('control-sidebar-open') >= 0 ? DOM.sidebar.className : DOM.sidebar.className + ' control-sidebar-open';
+	    } else {
+	        //Push the content by adding the open class to the body instead
+	        //of the sidebar itself
+	        document.body.className = document.body.className.indexOf('control-sidebar-open') >= 0 ? document.body.className : document.body.className + ' control-sidebar-open';
+	    }
+	};
+
+	//Close the control sidebar
+	ControlSidebar.prototype.close = function () {
+	    var DOM = this.DOM,
+	        o = this.settings;
+	    if (o.slide) {
+	        DOM.sidebar.className = DOM.sidebar.className.indexOf('control-sidebar-open') >= 0 ? DOM.sidebar.className.replace(' control-sidebar-open', '') : DOM.sidebar.className;
+	    } else {
+	        document.body.className = document.body.className.indexOf('control-sidebar-open') >= 0 ? document.body.className.replace(' control-sidebar-open', '') : document.body.className;
+	    }
+	};
+
+	ControlSidebar.prototype._fix = function (sidebar) {
+	    if (document.body.className.indexOf('layout-boxed') >= 0) {
+	        sidebar.style.position = 'absolute';
+	        sidebar.height = document.querySelector('.wrapper').style.height;
+	        window.addEventListener('resize', function () {
+	            this._fix(sidebar);
+	        });
+	    } else {
+	        sidebar.style.position = 'fixed';
+	        sidebar.style.height = 'auto';
+	    }
+	};
+
+	ControlSidebar.prototype._fixForFixed = function (sidebar) {
+	    sidebar.style.position = 'fixed';
+	    sidebar.style.maxHeight = '100%';
+	    sidebar.style.overflow = 'auto';
+	    sidebar.style.paddingBottom = '50px';
+	};
+
+	ControlSidebar.prototype._fixForContent = function (sidebar) {
+
+	    document.querySelector('.content-wrapper, .right-side').style.minHeight = sidebar.style.height;
+	};
+
+	module.exports = ControlSidebar;
+
+/***/ },
+/* 233 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+
+	// load the styles
+	var content = __webpack_require__(234);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(174)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(false) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept("!!./../../../node_modules/css-loader/index.js!./../../../node_modules/sass-loader/index.js!./../../../node_modules/postcss-loader/index.js?browsers=last 2 version!./AdminLTE.scss", function() {
+				var newContent = require("!!./../../../node_modules/css-loader/index.js!./../../../node_modules/sass-loader/index.js!./../../../node_modules/postcss-loader/index.js?browsers=last 2 version!./AdminLTE.scss");
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ },
+/* 234 */
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(173)();
+	// imports
+	exports.push([module.id, "@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic);", ""]);
+
+	// module
+	exports.push([module.id, "/*!\n *   AdminLTE v2.3.3\n *   Author: Almsaeed Studio\n *\t Website: Almsaeed Studio <http://almsaeedstudio.com>\n *   License: Open source - MIT\n *           Please visit http://opensource.org/licenses/MIT for more information\n!*/\n/*\n * Core: General Layout Style\n * -------------------------\n */\nhtml,\nbody {\n  min-height: 100%; }\n\n.layout-boxed html,\n.layout-boxed body {\n  height: 100%; }\n\nbody {\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-family: 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;\n  font-weight: 400;\n  overflow-x: hidden;\n  overflow-y: auto; }\n\n/* Layout */\n.wrapper {\n  min-height: 100%;\n  position: relative;\n  overflow: hidden; }\n\n.wrapper:before,\n.wrapper:after {\n  content: \" \";\n  display: table; }\n\n.wrapper:after {\n  clear: both; }\n\n.layout-boxed .wrapper {\n  max-width: 1250px;\n  margin: 0 auto;\n  min-height: 100%;\n  box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);\n  position: relative; }\n\n/*\n * Content Wrapper - contains the main content\n * ```.right-side has been deprecated as of v2.0.0 in favor of .content-wrapper  ```\n */\n.content-wrapper,\n.right-side,\n.main-footer {\n  -webkit-transition: -webkit-transform 0.3s ease-in-out, margin 0.3s ease-in-out;\n  -moz-transition: -moz-transform 0.3s ease-in-out, margin 0.3s ease-in-out;\n  -o-transition: -o-transform 0.3s ease-in-out, margin 0.3s ease-in-out;\n  transition: transform 0.3s ease-in-out, margin 0.3s ease-in-out;\n  margin-left: 230px;\n  z-index: 820; }\n\n.layout-top-nav .content-wrapper,\n.layout-top-nav .right-side,\n.layout-top-nav .main-footer {\n  margin-left: 0; }\n\n@media (max-width: 767px) {\n  .content-wrapper,\n  .right-side,\n  .main-footer {\n    margin-left: 0; } }\n\n@media (min-width: 768px) {\n  .sidebar-collapse .content-wrapper,\n  .sidebar-collapse .right-side,\n  .sidebar-collapse .main-footer {\n    margin-left: 0; } }\n\n@media (max-width: 767px) {\n  .sidebar-open .content-wrapper,\n  .sidebar-open .right-side,\n  .sidebar-open .main-footer {\n    -webkit-transform: translate(230px, 0);\n    -ms-transform: translate(230px, 0);\n    -o-transform: translate(230px, 0);\n    transform: translate(230px, 0); } }\n\n.content-wrapper,\n.right-side {\n  min-height: 100%;\n  background-color: #ecf0f5;\n  z-index: 800; }\n\n.main-footer {\n  background: #fff;\n  padding: 15px;\n  color: #444;\n  border-top: 1px solid #d2d6de; }\n\n/* Fixed layout */\n.fixed .main-header,\n.fixed .main-sidebar,\n.fixed .left-side {\n  position: fixed; }\n\n.fixed .main-header {\n  top: 0;\n  right: 0;\n  left: 0; }\n\n.fixed .content-wrapper,\n.fixed .right-side {\n  padding-top: 50px; }\n\n@media (max-width: 767px) {\n  .fixed .content-wrapper,\n  .fixed .right-side {\n    padding-top: 100px; } }\n\n.fixed.layout-boxed .wrapper {\n  max-width: 100%; }\n\nbody.hold-transition .content-wrapper,\nbody.hold-transition .right-side,\nbody.hold-transition .main-footer,\nbody.hold-transition .main-sidebar,\nbody.hold-transition .left-side,\nbody.hold-transition .main-header > .navbar,\nbody.hold-transition .main-header .logo {\n  /* Fix for IE */\n  -webkit-transition: none;\n  -o-transition: none;\n  transition: none; }\n\n/* Content */\n.content {\n  min-height: 250px;\n  padding: 15px;\n  margin-right: auto;\n  margin-left: auto;\n  padding-left: 15px;\n  padding-right: 15px; }\n\n/* H1 - H6 font */\nh1,\nh2,\nh3,\nh4,\nh5,\nh6,\n.h1,\n.h2,\n.h3,\n.h4,\n.h5,\n.h6 {\n  font-family: 'Source Sans Pro', sans-serif; }\n\n/* General Links */\na {\n  color: #3c8dbc; }\n\na:hover,\na:active,\na:focus {\n  outline: none;\n  text-decoration: none;\n  color: #72afd2; }\n\n/* Page Header */\n.page-header {\n  margin: 10px 0 20px 0;\n  font-size: 22px; }\n\n.page-header > small {\n  color: #666;\n  display: block;\n  margin-top: 5px; }\n\n/*\n * Component: Main Header\n * ----------------------\n */\n.main-header {\n  position: relative;\n  max-height: 100px;\n  z-index: 1030; }\n\n.main-header > .navbar {\n  -webkit-transition: margin-left 0.3s ease-in-out;\n  -o-transition: margin-left 0.3s ease-in-out;\n  transition: margin-left 0.3s ease-in-out;\n  margin-bottom: 0;\n  margin-left: 230px;\n  border: none;\n  min-height: 50px;\n  border-radius: 0; }\n\n.layout-top-nav .main-header > .navbar {\n  margin-left: 0; }\n\n.main-header #navbar-search-input.form-control {\n  background: rgba(255, 255, 255, 0.2);\n  border-color: transparent; }\n\n.main-header #navbar-search-input.form-control:focus,\n.main-header #navbar-search-input.form-control:active {\n  border-color: rgba(0, 0, 0, 0.1);\n  background: rgba(255, 255, 255, 0.9); }\n\n.main-header #navbar-search-input.form-control::-moz-placeholder {\n  color: #ccc;\n  opacity: 1; }\n\n.main-header #navbar-search-input.form-control:-ms-input-placeholder {\n  color: #ccc; }\n\n.main-header #navbar-search-input.form-control::-webkit-input-placeholder {\n  color: #ccc; }\n\n.main-header .navbar-custom-menu,\n.main-header .navbar-right {\n  float: right; }\n\n@media (max-width: 991px) {\n  .main-header .navbar-custom-menu a,\n  .main-header .navbar-right a {\n    color: inherit;\n    background: transparent; } }\n\n@media (max-width: 767px) {\n  .main-header .navbar-right {\n    float: none; }\n  .navbar-collapse .main-header .navbar-right {\n    margin: 7.5px -15px; }\n  .main-header .navbar-right > li {\n    color: inherit;\n    border: 0; } }\n\n.main-header .sidebar-toggle {\n  float: left;\n  background-color: transparent;\n  background-image: none;\n  padding: 15px 15px;\n  font-family: fontAwesome; }\n\n.main-header .sidebar-toggle:before {\n  content: \"\\F0C9\"; }\n\n.main-header .sidebar-toggle:hover {\n  color: #fff; }\n\n.main-header .sidebar-toggle:focus,\n.main-header .sidebar-toggle:active {\n  background: transparent; }\n\n.main-header .sidebar-toggle .icon-bar {\n  display: none; }\n\n.main-header .navbar .nav > li.user > a > .fa,\n.main-header .navbar .nav > li.user > a > .glyphicon,\n.main-header .navbar .nav > li.user > a > .ion {\n  margin-right: 5px; }\n\n.main-header .navbar .nav > li > a > .label {\n  position: absolute;\n  top: 9px;\n  right: 7px;\n  text-align: center;\n  font-size: 9px;\n  padding: 2px 3px;\n  line-height: .9; }\n\n.main-header .logo {\n  -webkit-transition: width 0.3s ease-in-out;\n  -o-transition: width 0.3s ease-in-out;\n  transition: width 0.3s ease-in-out;\n  display: block;\n  float: left;\n  height: 50px;\n  font-size: 20px;\n  line-height: 50px;\n  text-align: center;\n  width: 230px;\n  font-family: \"Helvetica Neue\", Helvetica, Arial, sans-serif;\n  padding: 0 15px;\n  font-weight: 300;\n  overflow: hidden; }\n\n.main-header .logo .logo-lg {\n  display: block; }\n\n.main-header .logo .logo-mini {\n  display: none; }\n\n.main-header .navbar-brand {\n  color: #fff; }\n\n.content-header {\n  position: relative;\n  padding: 15px 15px 0 15px; }\n\n.content-header > h1 {\n  margin: 0;\n  font-size: 24px; }\n\n.content-header > h1 > small {\n  font-size: 15px;\n  display: inline-block;\n  padding-left: 4px;\n  font-weight: 300; }\n\n.content-header > .breadcrumb {\n  float: right;\n  background: transparent;\n  margin-top: 0;\n  margin-bottom: 0;\n  font-size: 12px;\n  padding: 7px 5px;\n  position: absolute;\n  top: 15px;\n  right: 10px;\n  border-radius: 2px; }\n\n.content-header > .breadcrumb > li > a {\n  color: #444;\n  text-decoration: none;\n  display: inline-block; }\n\n.content-header > .breadcrumb > li > a > .fa,\n.content-header > .breadcrumb > li > a > .glyphicon,\n.content-header > .breadcrumb > li > a > .ion {\n  margin-right: 5px; }\n\n.content-header > .breadcrumb > li + li:before {\n  content: '>\\A0'; }\n\n@media (max-width: 991px) {\n  .content-header > .breadcrumb {\n    position: relative;\n    margin-top: 5px;\n    top: 0;\n    right: 0;\n    float: none;\n    background: #d2d6de;\n    padding-left: 10px; }\n  .content-header > .breadcrumb li:before {\n    color: #97a0b3; } }\n\n.navbar-toggle {\n  color: #fff;\n  border: 0;\n  margin: 0;\n  padding: 15px 15px; }\n\n@media (max-width: 991px) {\n  .navbar-custom-menu .navbar-nav > li {\n    float: left; }\n  .navbar-custom-menu .navbar-nav {\n    margin: 0;\n    float: left; }\n  .navbar-custom-menu .navbar-nav > li > a {\n    padding-top: 15px;\n    padding-bottom: 15px;\n    line-height: 20px; } }\n\n@media (max-width: 767px) {\n  .main-header {\n    position: relative; }\n  .main-header .logo,\n  .main-header .navbar {\n    width: 100%;\n    float: none; }\n  .main-header .navbar {\n    margin: 0; }\n  .main-header .navbar-custom-menu {\n    float: right; } }\n\n@media (max-width: 991px) {\n  .navbar-collapse.pull-left {\n    float: none !important; }\n  .navbar-collapse.pull-left + .navbar-custom-menu {\n    display: block;\n    position: absolute;\n    top: 0;\n    right: 40px; } }\n\n/*\n * Component: Sidebar\n * ------------------\n */\n.main-sidebar,\n.left-side {\n  position: absolute;\n  top: 0;\n  left: 0;\n  padding-top: 50px;\n  min-height: 100%;\n  width: 230px;\n  z-index: 810;\n  -webkit-transition: -webkit-transform 0.3s ease-in-out, width 0.3s ease-in-out;\n  -moz-transition: -moz-transform 0.3s ease-in-out, width 0.3s ease-in-out;\n  -o-transition: -o-transform 0.3s ease-in-out, width 0.3s ease-in-out;\n  transition: transform 0.3s ease-in-out, width 0.3s ease-in-out; }\n\n@media (max-width: 767px) {\n  .main-sidebar,\n  .left-side {\n    padding-top: 100px; } }\n\n@media (max-width: 767px) {\n  .main-sidebar,\n  .left-side {\n    -webkit-transform: translate(-230px, 0);\n    -ms-transform: translate(-230px, 0);\n    -o-transform: translate(-230px, 0);\n    transform: translate(-230px, 0); } }\n\n@media (min-width: 768px) {\n  .sidebar-collapse .main-sidebar,\n  .sidebar-collapse .left-side {\n    -webkit-transform: translate(-230px, 0);\n    -ms-transform: translate(-230px, 0);\n    -o-transform: translate(-230px, 0);\n    transform: translate(-230px, 0); } }\n\n@media (max-width: 767px) {\n  .sidebar-open .main-sidebar,\n  .sidebar-open .left-side {\n    -webkit-transform: translate(0, 0);\n    -ms-transform: translate(0, 0);\n    -o-transform: translate(0, 0);\n    transform: translate(0, 0); } }\n\n.sidebar {\n  padding-bottom: 10px; }\n\n.sidebar-form input:focus {\n  border-color: transparent; }\n\n.user-panel {\n  position: relative;\n  width: 100%;\n  padding: 10px;\n  overflow: hidden; }\n\n.user-panel:before,\n.user-panel:after {\n  content: \" \";\n  display: table; }\n\n.user-panel:after {\n  clear: both; }\n\n.user-panel > .image > img {\n  width: 100%;\n  max-width: 45px;\n  height: auto; }\n\n.user-panel > .info {\n  padding: 5px 5px 5px 15px;\n  line-height: 1;\n  position: absolute;\n  left: 55px; }\n\n.user-panel > .info > p {\n  font-weight: 600;\n  margin-bottom: 9px; }\n\n.user-panel > .info > a {\n  text-decoration: none;\n  padding-right: 5px;\n  margin-top: 3px;\n  font-size: 11px; }\n\n.user-panel > .info > a > .fa,\n.user-panel > .info > a > .ion,\n.user-panel > .info > a > .glyphicon {\n  margin-right: 3px; }\n\n.sidebar-menu {\n  list-style: none;\n  margin: 0;\n  padding: 0; }\n\n.sidebar-menu > li {\n  position: relative;\n  margin: 0;\n  padding: 0; }\n\n.sidebar-menu > li > a {\n  padding: 12px 5px 12px 15px;\n  display: block; }\n\n.sidebar-menu > li > a > .fa,\n.sidebar-menu > li > a > .glyphicon,\n.sidebar-menu > li > a > .ion {\n  width: 20px; }\n\n.sidebar-menu > li .label,\n.sidebar-menu > li .badge {\n  margin-top: 3px;\n  margin-right: 5px; }\n\n.sidebar-menu li.header {\n  padding: 10px 25px 10px 15px;\n  font-size: 12px; }\n\n.sidebar-menu li > a > .fa-angle-left {\n  width: auto;\n  height: auto;\n  padding: 0;\n  margin-right: 10px;\n  margin-top: 3px; }\n\n.sidebar-menu li.active > a > .fa-angle-left {\n  -webkit-transform: rotate(-90deg);\n  -ms-transform: rotate(-90deg);\n  -o-transform: rotate(-90deg);\n  transform: rotate(-90deg); }\n\n.sidebar-menu li.active > .treeview-menu {\n  display: block; }\n\n.sidebar-menu .treeview-menu {\n  display: none;\n  list-style: none;\n  padding: 0;\n  margin: 0;\n  padding-left: 5px; }\n\n.sidebar-menu .treeview-menu .treeview-menu {\n  padding-left: 20px; }\n\n.sidebar-menu .treeview-menu > li {\n  margin: 0; }\n\n.sidebar-menu .treeview-menu > li > a {\n  padding: 5px 5px 5px 15px;\n  display: block;\n  font-size: 14px; }\n\n.sidebar-menu .treeview-menu > li > a > .fa,\n.sidebar-menu .treeview-menu > li > a > .glyphicon,\n.sidebar-menu .treeview-menu > li > a > .ion {\n  width: 20px; }\n\n.sidebar-menu .treeview-menu > li > a > .fa-angle-left,\n.sidebar-menu .treeview-menu > li > a > .fa-angle-down {\n  width: auto; }\n\n/*\n * Component: Sidebar Mini\n */\n@media (min-width: 768px) {\n  .sidebar-mini.sidebar-collapse .content-wrapper,\n  .sidebar-mini.sidebar-collapse .right-side,\n  .sidebar-mini.sidebar-collapse .main-footer {\n    margin-left: 50px !important;\n    z-index: 840; }\n  .sidebar-mini.sidebar-collapse .main-sidebar {\n    -webkit-transform: translate(0, 0);\n    -ms-transform: translate(0, 0);\n    -o-transform: translate(0, 0);\n    transform: translate(0, 0);\n    width: 50px !important;\n    z-index: 850; }\n  .sidebar-mini.sidebar-collapse .sidebar-menu > li {\n    position: relative; }\n  .sidebar-mini.sidebar-collapse .sidebar-menu > li > a {\n    margin-right: 0; }\n  .sidebar-mini.sidebar-collapse .sidebar-menu > li > a > span {\n    border-top-right-radius: 4px; }\n  .sidebar-mini.sidebar-collapse .sidebar-menu > li:not(.treeview) > a > span {\n    border-bottom-right-radius: 4px; }\n  .sidebar-mini.sidebar-collapse .sidebar-menu > li > .treeview-menu {\n    padding-top: 5px;\n    padding-bottom: 5px;\n    border-bottom-right-radius: 4px; }\n  .sidebar-mini.sidebar-collapse .sidebar-menu > li:hover > a > span:not(.pull-right),\n  .sidebar-mini.sidebar-collapse .sidebar-menu > li:hover > .treeview-menu {\n    display: block !important;\n    position: absolute;\n    width: 180px;\n    left: 50px; }\n  .sidebar-mini.sidebar-collapse .sidebar-menu > li:hover > a > span {\n    top: 0;\n    margin-left: -3px;\n    padding: 12px 5px 12px 20px;\n    background-color: inherit; }\n  .sidebar-mini.sidebar-collapse .sidebar-menu > li:hover > .treeview-menu {\n    top: 44px;\n    margin-left: 0; }\n  .sidebar-mini.sidebar-collapse .main-sidebar .user-panel > .info,\n  .sidebar-mini.sidebar-collapse .sidebar-form,\n  .sidebar-mini.sidebar-collapse .sidebar-menu > li > a > span,\n  .sidebar-mini.sidebar-collapse .sidebar-menu > li > .treeview-menu,\n  .sidebar-mini.sidebar-collapse .sidebar-menu > li > a > .pull-right,\n  .sidebar-mini.sidebar-collapse .sidebar-menu li.header {\n    display: none !important;\n    -webkit-transform: translateZ(0); }\n  .sidebar-mini.sidebar-collapse .main-header .logo {\n    width: 50px; }\n  .sidebar-mini.sidebar-collapse .main-header .logo > .logo-mini {\n    display: block;\n    margin-left: -15px;\n    margin-right: -15px;\n    font-size: 18px; }\n  .sidebar-mini.sidebar-collapse .main-header .logo > .logo-lg {\n    display: none; }\n  .sidebar-mini.sidebar-collapse .main-header .navbar {\n    margin-left: 50px; } }\n\n.sidebar-menu,\n.main-sidebar .user-panel,\n.sidebar-menu > li.header {\n  white-space: nowrap;\n  overflow: hidden; }\n\n.sidebar-menu:hover {\n  overflow: visible; }\n\n.sidebar-form,\n.sidebar-menu > li.header {\n  overflow: hidden;\n  text-overflow: clip; }\n\n.sidebar-menu li > a {\n  position: relative; }\n\n.sidebar-menu li > a > .pull-right {\n  position: absolute;\n  right: 10px;\n  top: 50%;\n  margin-top: -7px; }\n\n/*\n * Component: Control sidebar. By default, this is the right sidebar.\n */\n.control-sidebar-bg {\n  position: fixed;\n  z-index: 1000;\n  bottom: 0; }\n\n.control-sidebar-bg,\n.control-sidebar {\n  top: 0;\n  right: -230px;\n  width: 230px;\n  -webkit-transition: right 0.3s ease-in-out;\n  -o-transition: right 0.3s ease-in-out;\n  transition: right 0.3s ease-in-out; }\n\n.control-sidebar {\n  position: absolute;\n  padding-top: 50px;\n  z-index: 1010; }\n\n@media (max-width: 768px) {\n  .control-sidebar {\n    padding-top: 100px; } }\n\n.control-sidebar > .tab-content {\n  padding: 10px 15px; }\n\n.control-sidebar.control-sidebar-open,\n.control-sidebar.control-sidebar-open + .control-sidebar-bg {\n  right: 0; }\n\n.control-sidebar-open .control-sidebar-bg,\n.control-sidebar-open .control-sidebar {\n  right: 0; }\n\n@media (min-width: 768px) {\n  .control-sidebar-open .content-wrapper,\n  .control-sidebar-open .right-side,\n  .control-sidebar-open .main-footer {\n    margin-right: 230px; } }\n\n.nav-tabs.control-sidebar-tabs > li:first-of-type > a,\n.nav-tabs.control-sidebar-tabs > li:first-of-type > a:hover,\n.nav-tabs.control-sidebar-tabs > li:first-of-type > a:focus {\n  border-left-width: 0; }\n\n.nav-tabs.control-sidebar-tabs > li > a {\n  border-radius: 0; }\n\n.nav-tabs.control-sidebar-tabs > li > a,\n.nav-tabs.control-sidebar-tabs > li > a:hover {\n  border-top: none;\n  border-right: none;\n  border-left: 1px solid transparent;\n  border-bottom: 1px solid transparent; }\n\n.nav-tabs.control-sidebar-tabs > li > a .icon {\n  font-size: 16px; }\n\n.nav-tabs.control-sidebar-tabs > li.active > a,\n.nav-tabs.control-sidebar-tabs > li.active > a:hover,\n.nav-tabs.control-sidebar-tabs > li.active > a:focus,\n.nav-tabs.control-sidebar-tabs > li.active > a:active {\n  border-top: none;\n  border-right: none;\n  border-bottom: none; }\n\n@media (max-width: 768px) {\n  .nav-tabs.control-sidebar-tabs {\n    display: table; }\n  .nav-tabs.control-sidebar-tabs > li {\n    display: table-cell; } }\n\n.control-sidebar-heading {\n  font-weight: 400;\n  font-size: 16px;\n  padding: 10px 0;\n  margin-bottom: 10px; }\n\n.control-sidebar-subheading {\n  display: block;\n  font-weight: 400;\n  font-size: 14px; }\n\n.control-sidebar-menu {\n  list-style: none;\n  padding: 0;\n  margin: 0 -15px; }\n\n.control-sidebar-menu > li > a {\n  display: block;\n  padding: 10px 15px; }\n\n.control-sidebar-menu > li > a:before,\n.control-sidebar-menu > li > a:after {\n  content: \" \";\n  display: table; }\n\n.control-sidebar-menu > li > a:after {\n  clear: both; }\n\n.control-sidebar-menu > li > a > .control-sidebar-subheading {\n  margin-top: 0; }\n\n.control-sidebar-menu .menu-icon {\n  float: left;\n  width: 35px;\n  height: 35px;\n  border-radius: 50%;\n  text-align: center;\n  line-height: 35px; }\n\n.control-sidebar-menu .menu-info {\n  margin-left: 45px;\n  margin-top: 3px; }\n\n.control-sidebar-menu .menu-info > .control-sidebar-subheading {\n  margin: 0; }\n\n.control-sidebar-menu .menu-info > p {\n  margin: 0;\n  font-size: 11px; }\n\n.control-sidebar-menu .progress {\n  margin: 0; }\n\n.control-sidebar-dark {\n  color: #b8c7ce; }\n\n.control-sidebar-dark,\n.control-sidebar-dark + .control-sidebar-bg {\n  background: #222d32; }\n\n.control-sidebar-dark .nav-tabs.control-sidebar-tabs {\n  border-bottom: #1c2529; }\n\n.control-sidebar-dark .nav-tabs.control-sidebar-tabs > li > a {\n  background: #181f23;\n  color: #b8c7ce; }\n\n.control-sidebar-dark .nav-tabs.control-sidebar-tabs > li > a,\n.control-sidebar-dark .nav-tabs.control-sidebar-tabs > li > a:hover,\n.control-sidebar-dark .nav-tabs.control-sidebar-tabs > li > a:focus {\n  border-left-color: #141a1d;\n  border-bottom-color: #141a1d; }\n\n.control-sidebar-dark .nav-tabs.control-sidebar-tabs > li > a:hover,\n.control-sidebar-dark .nav-tabs.control-sidebar-tabs > li > a:focus,\n.control-sidebar-dark .nav-tabs.control-sidebar-tabs > li > a:active {\n  background: #1c2529; }\n\n.control-sidebar-dark .nav-tabs.control-sidebar-tabs > li > a:hover {\n  color: #fff; }\n\n.control-sidebar-dark .nav-tabs.control-sidebar-tabs > li.active > a,\n.control-sidebar-dark .nav-tabs.control-sidebar-tabs > li.active > a:hover,\n.control-sidebar-dark .nav-tabs.control-sidebar-tabs > li.active > a:focus,\n.control-sidebar-dark .nav-tabs.control-sidebar-tabs > li.active > a:active {\n  background: #222d32;\n  color: #fff; }\n\n.control-sidebar-dark .control-sidebar-heading,\n.control-sidebar-dark .control-sidebar-subheading {\n  color: #fff; }\n\n.control-sidebar-dark .control-sidebar-menu > li > a:hover {\n  background: #1e282c; }\n\n.control-sidebar-dark .control-sidebar-menu > li > a .menu-info > p {\n  color: #b8c7ce; }\n\n.control-sidebar-light {\n  color: #5e5e5e; }\n\n.control-sidebar-light,\n.control-sidebar-light + .control-sidebar-bg {\n  background: #f9fafc;\n  border-left: 1px solid #d2d6de; }\n\n.control-sidebar-light .nav-tabs.control-sidebar-tabs {\n  border-bottom: #d2d6de; }\n\n.control-sidebar-light .nav-tabs.control-sidebar-tabs > li > a {\n  background: #e8ecf4;\n  color: #444444; }\n\n.control-sidebar-light .nav-tabs.control-sidebar-tabs > li > a,\n.control-sidebar-light .nav-tabs.control-sidebar-tabs > li > a:hover,\n.control-sidebar-light .nav-tabs.control-sidebar-tabs > li > a:focus {\n  border-left-color: #d2d6de;\n  border-bottom-color: #d2d6de; }\n\n.control-sidebar-light .nav-tabs.control-sidebar-tabs > li > a:hover,\n.control-sidebar-light .nav-tabs.control-sidebar-tabs > li > a:focus,\n.control-sidebar-light .nav-tabs.control-sidebar-tabs > li > a:active {\n  background: #eff1f7; }\n\n.control-sidebar-light .nav-tabs.control-sidebar-tabs > li.active > a,\n.control-sidebar-light .nav-tabs.control-sidebar-tabs > li.active > a:hover,\n.control-sidebar-light .nav-tabs.control-sidebar-tabs > li.active > a:focus,\n.control-sidebar-light .nav-tabs.control-sidebar-tabs > li.active > a:active {\n  background: #f9fafc;\n  color: #111; }\n\n.control-sidebar-light .control-sidebar-heading,\n.control-sidebar-light .control-sidebar-subheading {\n  color: #111; }\n\n.control-sidebar-light .control-sidebar-menu {\n  margin-left: -14px; }\n\n.control-sidebar-light .control-sidebar-menu > li > a:hover {\n  background: #f4f4f5; }\n\n.control-sidebar-light .control-sidebar-menu > li > a .menu-info > p {\n  color: #5e5e5e; }\n\n/*\n * Component: Dropdown menus\n * -------------------------\n */\n/*Dropdowns in general*/\n.dropdown-menu {\n  box-shadow: none;\n  border-color: #eee; }\n\n.dropdown-menu > li > a {\n  color: #777; }\n\n.dropdown-menu > li > a > .glyphicon,\n.dropdown-menu > li > a > .fa,\n.dropdown-menu > li > a > .ion {\n  margin-right: 10px; }\n\n.dropdown-menu > li > a:hover {\n  background-color: #e1e3e9;\n  color: #333; }\n\n.dropdown-menu > .divider {\n  background-color: #eee; }\n\n.navbar-nav > .notifications-menu > .dropdown-menu,\n.navbar-nav > .messages-menu > .dropdown-menu,\n.navbar-nav > .tasks-menu > .dropdown-menu {\n  width: 280px;\n  padding: 0 0 0 0;\n  margin: 0;\n  top: 100%; }\n\n.navbar-nav > .notifications-menu > .dropdown-menu > li,\n.navbar-nav > .messages-menu > .dropdown-menu > li,\n.navbar-nav > .tasks-menu > .dropdown-menu > li {\n  position: relative; }\n\n.navbar-nav > .notifications-menu > .dropdown-menu > li.header,\n.navbar-nav > .messages-menu > .dropdown-menu > li.header,\n.navbar-nav > .tasks-menu > .dropdown-menu > li.header {\n  border-top-left-radius: 4px;\n  border-top-right-radius: 4px;\n  border-bottom-right-radius: 0;\n  border-bottom-left-radius: 0;\n  background-color: #ffffff;\n  padding: 7px 10px;\n  border-bottom: 1px solid #f4f4f4;\n  color: #444444;\n  font-size: 14px; }\n\n.navbar-nav > .notifications-menu > .dropdown-menu > li.footer > a,\n.navbar-nav > .messages-menu > .dropdown-menu > li.footer > a,\n.navbar-nav > .tasks-menu > .dropdown-menu > li.footer > a {\n  border-top-left-radius: 0;\n  border-top-right-radius: 0;\n  border-bottom-right-radius: 4px;\n  border-bottom-left-radius: 4px;\n  font-size: 12px;\n  background-color: #fff;\n  padding: 7px 10px;\n  border-bottom: 1px solid #eeeeee;\n  color: #444 !important;\n  text-align: center; }\n\n@media (max-width: 991px) {\n  .navbar-nav > .notifications-menu > .dropdown-menu > li.footer > a,\n  .navbar-nav > .messages-menu > .dropdown-menu > li.footer > a,\n  .navbar-nav > .tasks-menu > .dropdown-menu > li.footer > a {\n    background: #fff !important;\n    color: #444 !important; } }\n\n.navbar-nav > .notifications-menu > .dropdown-menu > li.footer > a:hover,\n.navbar-nav > .messages-menu > .dropdown-menu > li.footer > a:hover,\n.navbar-nav > .tasks-menu > .dropdown-menu > li.footer > a:hover {\n  text-decoration: none;\n  font-weight: normal; }\n\n.navbar-nav > .notifications-menu > .dropdown-menu > li .menu,\n.navbar-nav > .messages-menu > .dropdown-menu > li .menu,\n.navbar-nav > .tasks-menu > .dropdown-menu > li .menu {\n  max-height: 200px;\n  margin: 0;\n  padding: 0;\n  list-style: none;\n  overflow-x: hidden; }\n\n.navbar-nav > .notifications-menu > .dropdown-menu > li .menu > li > a,\n.navbar-nav > .messages-menu > .dropdown-menu > li .menu > li > a,\n.navbar-nav > .tasks-menu > .dropdown-menu > li .menu > li > a {\n  display: block;\n  white-space: nowrap;\n  /* Prevent text from breaking */\n  border-bottom: 1px solid #f4f4f4; }\n\n.navbar-nav > .notifications-menu > .dropdown-menu > li .menu > li > a:hover,\n.navbar-nav > .messages-menu > .dropdown-menu > li .menu > li > a:hover,\n.navbar-nav > .tasks-menu > .dropdown-menu > li .menu > li > a:hover {\n  background: #f4f4f4;\n  text-decoration: none; }\n\n.navbar-nav > .notifications-menu > .dropdown-menu > li .menu > li > a {\n  color: #444444;\n  overflow: hidden;\n  text-overflow: ellipsis;\n  padding: 10px; }\n\n.navbar-nav > .notifications-menu > .dropdown-menu > li .menu > li > a > .glyphicon,\n.navbar-nav > .notifications-menu > .dropdown-menu > li .menu > li > a > .fa,\n.navbar-nav > .notifications-menu > .dropdown-menu > li .menu > li > a > .ion {\n  width: 20px; }\n\n.navbar-nav > .messages-menu > .dropdown-menu > li .menu > li > a {\n  margin: 0;\n  padding: 10px 10px; }\n\n.navbar-nav > .messages-menu > .dropdown-menu > li .menu > li > a > div > img {\n  margin: auto 10px auto auto;\n  width: 40px;\n  height: 40px; }\n\n.navbar-nav > .messages-menu > .dropdown-menu > li .menu > li > a > h4 {\n  padding: 0;\n  margin: 0 0 0 45px;\n  color: #444444;\n  font-size: 15px;\n  position: relative; }\n\n.navbar-nav > .messages-menu > .dropdown-menu > li .menu > li > a > h4 > small {\n  color: #999999;\n  font-size: 10px;\n  position: absolute;\n  top: 0;\n  right: 0; }\n\n.navbar-nav > .messages-menu > .dropdown-menu > li .menu > li > a > p {\n  margin: 0 0 0 45px;\n  font-size: 12px;\n  color: #888888; }\n\n.navbar-nav > .messages-menu > .dropdown-menu > li .menu > li > a:before,\n.navbar-nav > .messages-menu > .dropdown-menu > li .menu > li > a:after {\n  content: \" \";\n  display: table; }\n\n.navbar-nav > .messages-menu > .dropdown-menu > li .menu > li > a:after {\n  clear: both; }\n\n.navbar-nav > .tasks-menu > .dropdown-menu > li .menu > li > a {\n  padding: 10px; }\n\n.navbar-nav > .tasks-menu > .dropdown-menu > li .menu > li > a > h3 {\n  font-size: 14px;\n  padding: 0;\n  margin: 0 0 10px 0;\n  color: #666666; }\n\n.navbar-nav > .tasks-menu > .dropdown-menu > li .menu > li > a > .progress {\n  padding: 0;\n  margin: 0; }\n\n.navbar-nav > .user-menu > .dropdown-menu {\n  border-top-right-radius: 0;\n  border-top-left-radius: 0;\n  padding: 1px 0 0 0;\n  border-top-width: 0;\n  width: 280px; }\n\n.navbar-nav > .user-menu > .dropdown-menu,\n.navbar-nav > .user-menu > .dropdown-menu > .user-body {\n  border-bottom-right-radius: 4px;\n  border-bottom-left-radius: 4px; }\n\n.navbar-nav > .user-menu > .dropdown-menu > li.user-header {\n  height: 175px;\n  padding: 10px;\n  text-align: center; }\n\n.navbar-nav > .user-menu > .dropdown-menu > li.user-header > img {\n  z-index: 5;\n  height: 90px;\n  width: 90px;\n  border: 3px solid;\n  border-color: transparent;\n  border-color: rgba(255, 255, 255, 0.2); }\n\n.navbar-nav > .user-menu > .dropdown-menu > li.user-header > p {\n  z-index: 5;\n  color: #fff;\n  color: rgba(255, 255, 255, 0.8);\n  font-size: 17px;\n  margin-top: 10px; }\n\n.navbar-nav > .user-menu > .dropdown-menu > li.user-header > p > small {\n  display: block;\n  font-size: 12px; }\n\n.navbar-nav > .user-menu > .dropdown-menu > .user-body {\n  padding: 15px;\n  border-bottom: 1px solid #f4f4f4;\n  border-top: 1px solid #dddddd; }\n\n.navbar-nav > .user-menu > .dropdown-menu > .user-body:before,\n.navbar-nav > .user-menu > .dropdown-menu > .user-body:after {\n  content: \" \";\n  display: table; }\n\n.navbar-nav > .user-menu > .dropdown-menu > .user-body:after {\n  clear: both; }\n\n.navbar-nav > .user-menu > .dropdown-menu > .user-body a {\n  color: #444 !important; }\n\n@media (max-width: 991px) {\n  .navbar-nav > .user-menu > .dropdown-menu > .user-body a {\n    background: #fff !important;\n    color: #444 !important; } }\n\n.navbar-nav > .user-menu > .dropdown-menu > .user-footer {\n  background-color: #f9f9f9;\n  padding: 10px; }\n\n.navbar-nav > .user-menu > .dropdown-menu > .user-footer:before,\n.navbar-nav > .user-menu > .dropdown-menu > .user-footer:after {\n  content: \" \";\n  display: table; }\n\n.navbar-nav > .user-menu > .dropdown-menu > .user-footer:after {\n  clear: both; }\n\n.navbar-nav > .user-menu > .dropdown-menu > .user-footer .btn-default {\n  color: #666666; }\n\n@media (max-width: 991px) {\n  .navbar-nav > .user-menu > .dropdown-menu > .user-footer .btn-default:hover {\n    background-color: #f9f9f9; } }\n\n.navbar-nav > .user-menu .user-image {\n  float: left;\n  width: 25px;\n  height: 25px;\n  border-radius: 50%;\n  margin-right: 10px;\n  margin-top: -2px; }\n\n@media (max-width: 767px) {\n  .navbar-nav > .user-menu .user-image {\n    float: none;\n    margin-right: 0;\n    margin-top: -8px;\n    line-height: 10px; } }\n\n/* Add fade animation to dropdown menus by appending\n the class .animated-dropdown-menu to the .dropdown-menu ul (or ol)*/\n.open:not(.dropup) > .animated-dropdown-menu {\n  backface-visibility: visible !important;\n  -webkit-animation: flipInX 0.7s both;\n  -o-animation: flipInX 0.7s both;\n  animation: flipInX 0.7s both; }\n\n@keyframes flipInX {\n  0% {\n    transform: perspective(400px) rotate3d(1, 0, 0, 90deg);\n    transition-timing-function: ease-in;\n    opacity: 0; }\n  40% {\n    transform: perspective(400px) rotate3d(1, 0, 0, -20deg);\n    transition-timing-function: ease-in; }\n  60% {\n    transform: perspective(400px) rotate3d(1, 0, 0, 10deg);\n    opacity: 1; }\n  80% {\n    transform: perspective(400px) rotate3d(1, 0, 0, -5deg); }\n  100% {\n    transform: perspective(400px); } }\n\n@-webkit-keyframes flipInX {\n  0% {\n    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);\n    -webkit-transition-timing-function: ease-in;\n    opacity: 0; }\n  40% {\n    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -20deg);\n    -webkit-transition-timing-function: ease-in; }\n  60% {\n    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 10deg);\n    opacity: 1; }\n  80% {\n    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -5deg); }\n  100% {\n    -webkit-transform: perspective(400px); } }\n\n/* Fix dropdown menu in navbars */\n.navbar-custom-menu > .navbar-nav > li {\n  position: relative; }\n\n.navbar-custom-menu > .navbar-nav > li > .dropdown-menu {\n  position: absolute;\n  right: 0;\n  left: auto; }\n\n@media (max-width: 991px) {\n  .navbar-custom-menu > .navbar-nav {\n    float: right; }\n  .navbar-custom-menu > .navbar-nav > li {\n    position: static; }\n  .navbar-custom-menu > .navbar-nav > li > .dropdown-menu {\n    position: absolute;\n    right: 5%;\n    left: auto;\n    border: 1px solid #ddd;\n    background: #fff; } }\n\n/*\n * Component: Form\n * ---------------\n */\n.form-control {\n  border-radius: 0;\n  box-shadow: none;\n  border-color: #d2d6de; }\n\n.form-control:focus {\n  border-color: #3c8dbc;\n  box-shadow: none; }\n\n.form-control::-moz-placeholder,\n.form-control:-ms-input-placeholder,\n.form-control::-webkit-input-placeholder {\n  color: #bbb;\n  opacity: 1; }\n\n.form-control:not(select) {\n  -webkit-appearance: none;\n  -moz-appearance: none;\n  appearance: none; }\n\n.form-group.has-success label {\n  color: #00a65a; }\n\n.form-group.has-success .form-control {\n  border-color: #00a65a;\n  box-shadow: none; }\n\n.form-group.has-success .help-block {\n  color: #00a65a; }\n\n.form-group.has-warning label {\n  color: #f39c12; }\n\n.form-group.has-warning .form-control {\n  border-color: #f39c12;\n  box-shadow: none; }\n\n.form-group.has-warning .help-block {\n  color: #f39c12; }\n\n.form-group.has-error label {\n  color: #dd4b39; }\n\n.form-group.has-error .form-control {\n  border-color: #dd4b39;\n  box-shadow: none; }\n\n.form-group.has-error .help-block {\n  color: #dd4b39; }\n\n/* Input group */\n.input-group .input-group-addon {\n  border-radius: 0;\n  border-color: #d2d6de;\n  background-color: #fff; }\n\n/* button groups */\n.btn-group-vertical .btn.btn-flat:first-of-type,\n.btn-group-vertical .btn.btn-flat:last-of-type {\n  border-radius: 0; }\n\n.icheck > label {\n  padding-left: 0; }\n\n/* support Font Awesome icons in form-control */\n.form-control-feedback.fa {\n  line-height: 34px; }\n\n.input-lg + .form-control-feedback.fa,\n.input-group-lg + .form-control-feedback.fa,\n.form-group-lg .form-control + .form-control-feedback.fa {\n  line-height: 46px; }\n\n.input-sm + .form-control-feedback.fa,\n.input-group-sm + .form-control-feedback.fa,\n.form-group-sm .form-control + .form-control-feedback.fa {\n  line-height: 30px; }\n\n/*\n * Component: Progress Bar\n * -----------------------\n */\n.progress,\n.progress > .progress-bar {\n  -webkit-box-shadow: none;\n  box-shadow: none; }\n\n.progress,\n.progress > .progress-bar,\n.progress .progress-bar,\n.progress > .progress-bar .progress-bar {\n  border-radius: 1px; }\n\n/* size variation */\n.progress.sm,\n.progress-sm {\n  height: 10px; }\n\n.progress.sm,\n.progress-sm,\n.progress.sm .progress-bar,\n.progress-sm .progress-bar {\n  border-radius: 1px; }\n\n.progress.xs,\n.progress-xs {\n  height: 7px; }\n\n.progress.xs,\n.progress-xs,\n.progress.xs .progress-bar,\n.progress-xs .progress-bar {\n  border-radius: 1px; }\n\n.progress.xxs,\n.progress-xxs {\n  height: 3px; }\n\n.progress.xxs,\n.progress-xxs,\n.progress.xxs .progress-bar,\n.progress-xxs .progress-bar {\n  border-radius: 1px; }\n\n/* Vertical bars */\n.progress.vertical {\n  position: relative;\n  width: 30px;\n  height: 200px;\n  display: inline-block;\n  margin-right: 10px; }\n\n.progress.vertical > .progress-bar {\n  width: 100%;\n  position: absolute;\n  bottom: 0; }\n\n.progress.vertical.sm,\n.progress.vertical.progress-sm {\n  width: 20px; }\n\n.progress.vertical.xs,\n.progress.vertical.progress-xs {\n  width: 10px; }\n\n.progress.vertical.xxs,\n.progress.vertical.progress-xxs {\n  width: 3px; }\n\n.progress-group .progress-text {\n  font-weight: 600; }\n\n.progress-group .progress-number {\n  float: right; }\n\n/* Remove margins from progress bars when put in a table */\n.table tr > td .progress {\n  margin: 0; }\n\n.progress-bar-light-blue,\n.progress-bar-primary {\n  background-color: #3c8dbc; }\n\n.progress-striped .progress-bar-light-blue,\n.progress-striped .progress-bar-primary {\n  background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);\n  background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);\n  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent); }\n\n.progress-bar-green,\n.progress-bar-success {\n  background-color: #00a65a; }\n\n.progress-striped .progress-bar-green,\n.progress-striped .progress-bar-success {\n  background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);\n  background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);\n  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent); }\n\n.progress-bar-aqua,\n.progress-bar-info {\n  background-color: #00c0ef; }\n\n.progress-striped .progress-bar-aqua,\n.progress-striped .progress-bar-info {\n  background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);\n  background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);\n  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent); }\n\n.progress-bar-yellow,\n.progress-bar-warning {\n  background-color: #f39c12; }\n\n.progress-striped .progress-bar-yellow,\n.progress-striped .progress-bar-warning {\n  background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);\n  background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);\n  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent); }\n\n.progress-bar-red,\n.progress-bar-danger {\n  background-color: #dd4b39; }\n\n.progress-striped .progress-bar-red,\n.progress-striped .progress-bar-danger {\n  background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);\n  background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);\n  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent); }\n\n/*\n * Component: Small Box\n * --------------------\n */\n.small-box {\n  border-radius: 2px;\n  position: relative;\n  display: block;\n  margin-bottom: 20px;\n  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1); }\n\n.small-box > .inner {\n  padding: 10px; }\n\n.small-box > .small-box-footer {\n  position: relative;\n  text-align: center;\n  padding: 3px 0;\n  color: #fff;\n  color: rgba(255, 255, 255, 0.8);\n  display: block;\n  z-index: 10;\n  background: rgba(0, 0, 0, 0.1);\n  text-decoration: none; }\n\n.small-box > .small-box-footer:hover {\n  color: #fff;\n  background: rgba(0, 0, 0, 0.15); }\n\n.small-box h3 {\n  font-size: 38px;\n  font-weight: bold;\n  margin: 0 0 10px 0;\n  white-space: nowrap;\n  padding: 0; }\n\n.small-box p {\n  font-size: 15px; }\n\n.small-box p > small {\n  display: block;\n  color: #f9f9f9;\n  font-size: 13px;\n  margin-top: 5px; }\n\n.small-box h3,\n.small-box p {\n  z-index: 5; }\n\n.small-box .icon {\n  -webkit-transition: all 0.3s linear;\n  -o-transition: all 0.3s linear;\n  transition: all 0.3s linear;\n  position: absolute;\n  top: -10px;\n  right: 10px;\n  z-index: 0;\n  font-size: 90px;\n  color: rgba(0, 0, 0, 0.15); }\n\n.small-box:hover {\n  text-decoration: none;\n  color: #f9f9f9; }\n\n.small-box:hover .icon {\n  font-size: 95px; }\n\n@media (max-width: 767px) {\n  .small-box {\n    text-align: center; }\n  .small-box .icon {\n    display: none; }\n  .small-box p {\n    font-size: 12px; } }\n\n/*\n * Component: Box\n * --------------\n */\n.box {\n  position: relative;\n  border-radius: 3px;\n  background: #ffffff;\n  border-top: 3px solid #d2d6de;\n  margin-bottom: 20px;\n  width: 100%;\n  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1); }\n\n.box.box-primary {\n  border-top-color: #3c8dbc; }\n\n.box.box-info {\n  border-top-color: #00c0ef; }\n\n.box.box-danger {\n  border-top-color: #dd4b39; }\n\n.box.box-warning {\n  border-top-color: #f39c12; }\n\n.box.box-success {\n  border-top-color: #00a65a; }\n\n.box.box-default {\n  border-top-color: #d2d6de; }\n\n.box.collapsed-box .box-body,\n.box.collapsed-box .box-footer {\n  display: none; }\n\n.box .nav-stacked > li {\n  border-bottom: 1px solid #f4f4f4;\n  margin: 0; }\n\n.box .nav-stacked > li:last-of-type {\n  border-bottom: none; }\n\n.box.height-control .box-body {\n  max-height: 300px;\n  overflow: auto; }\n\n.box .border-right {\n  border-right: 1px solid #f4f4f4; }\n\n.box .border-left {\n  border-left: 1px solid #f4f4f4; }\n\n.box.box-solid {\n  border-top: 0; }\n\n.box.box-solid > .box-header .btn.btn-default {\n  background: transparent; }\n\n.box.box-solid > .box-header .btn:hover,\n.box.box-solid > .box-header a:hover {\n  background: rgba(0, 0, 0, 0.1); }\n\n.box.box-solid.box-default {\n  border: 1px solid #d2d6de; }\n\n.box.box-solid.box-default > .box-header {\n  color: #444444;\n  background: #d2d6de;\n  background-color: #d2d6de; }\n\n.box.box-solid.box-default > .box-header a,\n.box.box-solid.box-default > .box-header .btn {\n  color: #444444; }\n\n.box.box-solid.box-primary {\n  border: 1px solid #3c8dbc; }\n\n.box.box-solid.box-primary > .box-header {\n  color: #ffffff;\n  background: #3c8dbc;\n  background-color: #3c8dbc; }\n\n.box.box-solid.box-primary > .box-header a,\n.box.box-solid.box-primary > .box-header .btn {\n  color: #ffffff; }\n\n.box.box-solid.box-info {\n  border: 1px solid #00c0ef; }\n\n.box.box-solid.box-info > .box-header {\n  color: #ffffff;\n  background: #00c0ef;\n  background-color: #00c0ef; }\n\n.box.box-solid.box-info > .box-header a,\n.box.box-solid.box-info > .box-header .btn {\n  color: #ffffff; }\n\n.box.box-solid.box-danger {\n  border: 1px solid #dd4b39; }\n\n.box.box-solid.box-danger > .box-header {\n  color: #ffffff;\n  background: #dd4b39;\n  background-color: #dd4b39; }\n\n.box.box-solid.box-danger > .box-header a,\n.box.box-solid.box-danger > .box-header .btn {\n  color: #ffffff; }\n\n.box.box-solid.box-warning {\n  border: 1px solid #f39c12; }\n\n.box.box-solid.box-warning > .box-header {\n  color: #ffffff;\n  background: #f39c12;\n  background-color: #f39c12; }\n\n.box.box-solid.box-warning > .box-header a,\n.box.box-solid.box-warning > .box-header .btn {\n  color: #ffffff; }\n\n.box.box-solid.box-success {\n  border: 1px solid #00a65a; }\n\n.box.box-solid.box-success > .box-header {\n  color: #ffffff;\n  background: #00a65a;\n  background-color: #00a65a; }\n\n.box.box-solid.box-success > .box-header a,\n.box.box-solid.box-success > .box-header .btn {\n  color: #ffffff; }\n\n.box.box-solid > .box-header > .box-tools .btn {\n  border: 0;\n  box-shadow: none; }\n\n.box.box-solid[class*='bg'] > .box-header {\n  color: #fff; }\n\n.box .box-group > .box {\n  margin-bottom: 5px; }\n\n.box .knob-label {\n  text-align: center;\n  color: #333;\n  font-weight: 100;\n  font-size: 12px;\n  margin-bottom: 0.3em; }\n\n.box > .overlay,\n.overlay-wrapper > .overlay,\n.box > .loading-img,\n.overlay-wrapper > .loading-img {\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%; }\n\n.box .overlay,\n.overlay-wrapper .overlay {\n  z-index: 50;\n  background: rgba(255, 255, 255, 0.7);\n  border-radius: 3px; }\n\n.box .overlay > .fa,\n.overlay-wrapper .overlay > .fa {\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  margin-left: -15px;\n  margin-top: -15px;\n  color: #000;\n  font-size: 30px; }\n\n.box .overlay.dark,\n.overlay-wrapper .overlay.dark {\n  background: rgba(0, 0, 0, 0.5); }\n\n.box-header:before,\n.box-body:before,\n.box-footer:before,\n.box-header:after,\n.box-body:after,\n.box-footer:after {\n  content: \" \";\n  display: table; }\n\n.box-header:after,\n.box-body:after,\n.box-footer:after {\n  clear: both; }\n\n.box-header {\n  color: #444;\n  display: block;\n  padding: 10px;\n  position: relative; }\n\n.box-header.with-border {\n  border-bottom: 1px solid #f4f4f4; }\n\n.collapsed-box .box-header.with-border {\n  border-bottom: none; }\n\n.box-header > .fa,\n.box-header > .glyphicon,\n.box-header > .ion,\n.box-header .box-title {\n  display: inline-block;\n  font-size: 18px;\n  margin: 0;\n  line-height: 1; }\n\n.box-header > .fa,\n.box-header > .glyphicon,\n.box-header > .ion {\n  margin-right: 5px; }\n\n.box-header > .box-tools {\n  position: absolute;\n  right: 10px;\n  top: 5px; }\n\n.box-header > .box-tools [data-toggle=\"tooltip\"] {\n  position: relative; }\n\n.box-header > .box-tools.pull-right .dropdown-menu {\n  right: 0;\n  left: auto; }\n\n.btn-box-tool {\n  padding: 5px;\n  font-size: 12px;\n  background: transparent;\n  color: #97a0b3; }\n\n.open .btn-box-tool,\n.btn-box-tool:hover {\n  color: #606c84; }\n\n.btn-box-tool.btn:active {\n  box-shadow: none; }\n\n.box-body {\n  border-top-left-radius: 0;\n  border-top-right-radius: 0;\n  border-bottom-right-radius: 3px;\n  border-bottom-left-radius: 3px;\n  padding: 10px; }\n\n.no-header .box-body {\n  border-top-right-radius: 3px;\n  border-top-left-radius: 3px; }\n\n.box-body > .table {\n  margin-bottom: 0; }\n\n.box-body .fc {\n  margin-top: 5px; }\n\n.box-body .full-width-chart {\n  margin: -19px; }\n\n.box-body.no-padding .full-width-chart {\n  margin: -9px; }\n\n.box-body .box-pane {\n  border-top-left-radius: 0;\n  border-top-right-radius: 0;\n  border-bottom-right-radius: 0;\n  border-bottom-left-radius: 3px; }\n\n.box-body .box-pane-right {\n  border-top-left-radius: 0;\n  border-top-right-radius: 0;\n  border-bottom-right-radius: 3px;\n  border-bottom-left-radius: 0; }\n\n.box-footer {\n  border-top-left-radius: 0;\n  border-top-right-radius: 0;\n  border-bottom-right-radius: 3px;\n  border-bottom-left-radius: 3px;\n  border-top: 1px solid #f4f4f4;\n  padding: 10px;\n  background-color: #ffffff; }\n\n.chart-legend {\n  margin: 10px 0; }\n\n@media (max-width: 991px) {\n  .chart-legend > li {\n    float: left;\n    margin-right: 10px; } }\n\n.box-comments {\n  background: #f7f7f7; }\n\n.box-comments .box-comment {\n  padding: 8px 0;\n  border-bottom: 1px solid #eee; }\n\n.box-comments .box-comment:before,\n.box-comments .box-comment:after {\n  content: \" \";\n  display: table; }\n\n.box-comments .box-comment:after {\n  clear: both; }\n\n.box-comments .box-comment:last-of-type {\n  border-bottom: 0; }\n\n.box-comments .box-comment:first-of-type {\n  padding-top: 0; }\n\n.box-comments .box-comment img {\n  float: left; }\n\n.box-comments .comment-text {\n  margin-left: 40px;\n  color: #555; }\n\n.box-comments .username {\n  color: #444;\n  display: block;\n  font-weight: 600; }\n\n.box-comments .text-muted {\n  font-weight: 400;\n  font-size: 12px; }\n\n/* Widget: TODO LIST */\n.todo-list {\n  margin: 0;\n  padding: 0;\n  list-style: none;\n  overflow: auto; }\n\n.todo-list > li {\n  border-radius: 2px;\n  padding: 10px;\n  background: #f4f4f4;\n  margin-bottom: 2px;\n  border-left: 2px solid #e6e7e8;\n  color: #444; }\n\n.todo-list > li:last-of-type {\n  margin-bottom: 0; }\n\n.todo-list > li > input[type='checkbox'] {\n  margin: 0 10px 0 5px; }\n\n.todo-list > li .text {\n  display: inline-block;\n  margin-left: 5px;\n  font-weight: 600; }\n\n.todo-list > li .label {\n  margin-left: 10px;\n  font-size: 9px; }\n\n.todo-list > li .tools {\n  display: none;\n  float: right;\n  color: #dd4b39; }\n\n.todo-list > li .tools > .fa,\n.todo-list > li .tools > .glyphicon,\n.todo-list > li .tools > .ion {\n  margin-right: 5px;\n  cursor: pointer; }\n\n.todo-list > li:hover .tools {\n  display: inline-block; }\n\n.todo-list > li.done {\n  color: #999; }\n\n.todo-list > li.done .text {\n  text-decoration: line-through;\n  font-weight: 500; }\n\n.todo-list > li.done .label {\n  background: #d2d6de !important; }\n\n.todo-list .danger {\n  border-left-color: #dd4b39; }\n\n.todo-list .warning {\n  border-left-color: #f39c12; }\n\n.todo-list .info {\n  border-left-color: #00c0ef; }\n\n.todo-list .success {\n  border-left-color: #00a65a; }\n\n.todo-list .primary {\n  border-left-color: #3c8dbc; }\n\n.todo-list .handle {\n  display: inline-block;\n  cursor: move;\n  margin: 0 5px; }\n\n/* Chat widget (DEPRECATED - this will be removed in the next major release. Use Direct Chat instead)*/\n.chat {\n  padding: 5px 20px 5px 10px; }\n\n.chat .item {\n  margin-bottom: 10px; }\n\n.chat .item:before,\n.chat .item:after {\n  content: \" \";\n  display: table; }\n\n.chat .item:after {\n  clear: both; }\n\n.chat .item > img {\n  width: 40px;\n  height: 40px;\n  border: 2px solid transparent;\n  border-radius: 50%; }\n\n.chat .item > .online {\n  border: 2px solid #00a65a; }\n\n.chat .item > .offline {\n  border: 2px solid #dd4b39; }\n\n.chat .item > .message {\n  margin-left: 55px;\n  margin-top: -40px; }\n\n.chat .item > .message > .name {\n  display: block;\n  font-weight: 600; }\n\n.chat .item > .attachment {\n  border-radius: 3px;\n  background: #f4f4f4;\n  margin-left: 65px;\n  margin-right: 15px;\n  padding: 10px; }\n\n.chat .item > .attachment > h4 {\n  margin: 0 0 5px 0;\n  font-weight: 600;\n  font-size: 14px; }\n\n.chat .item > .attachment > p,\n.chat .item > .attachment > .filename {\n  font-weight: 600;\n  font-size: 13px;\n  font-style: italic;\n  margin: 0; }\n\n.chat .item > .attachment:before,\n.chat .item > .attachment:after {\n  content: \" \";\n  display: table; }\n\n.chat .item > .attachment:after {\n  clear: both; }\n\n.box-input {\n  max-width: 200px; }\n\n.modal .panel-body {\n  color: #444; }\n\n/*\n * Component: Info Box\n * -------------------\n */\n.info-box {\n  display: block;\n  min-height: 90px;\n  background: #fff;\n  width: 100%;\n  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);\n  border-radius: 2px;\n  margin-bottom: 15px; }\n\n.info-box small {\n  font-size: 14px; }\n\n.info-box .progress {\n  background: rgba(0, 0, 0, 0.2);\n  margin: 5px -10px 5px -10px;\n  height: 2px; }\n\n.info-box .progress,\n.info-box .progress .progress-bar {\n  border-radius: 0; }\n\n.info-box .progress .progress-bar {\n  background: #fff; }\n\n.info-box-icon {\n  border-top-left-radius: 2px;\n  border-top-right-radius: 0;\n  border-bottom-right-radius: 0;\n  border-bottom-left-radius: 2px;\n  display: block;\n  float: left;\n  height: 90px;\n  width: 90px;\n  text-align: center;\n  font-size: 45px;\n  line-height: 90px;\n  background: rgba(0, 0, 0, 0.2); }\n\n.info-box-icon > img {\n  max-width: 100%; }\n\n.info-box-content {\n  padding: 5px 10px;\n  margin-left: 90px; }\n\n.info-box-number {\n  display: block;\n  font-weight: bold;\n  font-size: 18px; }\n\n.progress-description,\n.info-box-text {\n  display: block;\n  font-size: 14px;\n  white-space: nowrap;\n  overflow: hidden;\n  text-overflow: ellipsis; }\n\n.info-box-text {\n  text-transform: uppercase; }\n\n.info-box-more {\n  display: block; }\n\n.progress-description {\n  margin: 0; }\n\n/*\n * Component: Timeline\n * -------------------\n */\n.timeline {\n  position: relative;\n  margin: 0 0 30px 0;\n  padding: 0;\n  list-style: none; }\n\n.timeline:before {\n  content: '';\n  position: absolute;\n  top: 0;\n  bottom: 0;\n  width: 4px;\n  background: #ddd;\n  left: 31px;\n  margin: 0;\n  border-radius: 2px; }\n\n.timeline > li {\n  position: relative;\n  margin-right: 10px;\n  margin-bottom: 15px; }\n\n.timeline > li:before,\n.timeline > li:after {\n  content: \" \";\n  display: table; }\n\n.timeline > li:after {\n  clear: both; }\n\n.timeline > li > .timeline-item {\n  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);\n  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);\n  border-radius: 3px;\n  margin-top: 0;\n  background: #fff;\n  color: #444;\n  margin-left: 60px;\n  margin-right: 15px;\n  padding: 0;\n  position: relative; }\n\n.timeline > li > .timeline-item > .time {\n  color: #999;\n  float: right;\n  padding: 10px;\n  font-size: 12px; }\n\n.timeline > li > .timeline-item > .timeline-header {\n  margin: 0;\n  color: #555;\n  border-bottom: 1px solid #f4f4f4;\n  padding: 10px;\n  font-size: 16px;\n  line-height: 1.1; }\n\n.timeline > li > .timeline-item > .timeline-header > a {\n  font-weight: 600; }\n\n.timeline > li > .timeline-item > .timeline-body,\n.timeline > li > .timeline-item > .timeline-footer {\n  padding: 10px; }\n\n.timeline > li > .fa,\n.timeline > li > .glyphicon,\n.timeline > li > .ion {\n  width: 30px;\n  height: 30px;\n  font-size: 15px;\n  line-height: 30px;\n  position: absolute;\n  color: #666;\n  background: #d2d6de;\n  border-radius: 50%;\n  text-align: center;\n  left: 18px;\n  top: 0; }\n\n.timeline > .time-label > span {\n  font-weight: 600;\n  padding: 5px;\n  display: inline-block;\n  background-color: #fff;\n  border-radius: 4px; }\n\n.timeline-inverse > li > .timeline-item {\n  background: #f0f0f0;\n  border: 1px solid #ddd;\n  -webkit-box-shadow: none;\n  box-shadow: none; }\n\n.timeline-inverse > li > .timeline-item > .timeline-header {\n  border-bottom-color: #ddd; }\n\n/*\n * Component: Button\n * -----------------\n */\n.btn {\n  border-radius: 3px;\n  -webkit-box-shadow: none;\n  box-shadow: none;\n  border: 1px solid transparent; }\n\n.btn.uppercase {\n  text-transform: uppercase; }\n\n.btn.btn-flat {\n  border-radius: 0;\n  -webkit-box-shadow: none;\n  -moz-box-shadow: none;\n  box-shadow: none;\n  border-width: 1px; }\n\n.btn:active {\n  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);\n  -moz-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);\n  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125); }\n\n.btn:focus {\n  outline: none; }\n\n.btn.btn-file {\n  position: relative;\n  overflow: hidden; }\n\n.btn.btn-file > input[type='file'] {\n  position: absolute;\n  top: 0;\n  right: 0;\n  min-width: 100%;\n  min-height: 100%;\n  font-size: 100px;\n  text-align: right;\n  opacity: 0;\n  filter: alpha(opacity=0);\n  outline: none;\n  background: white;\n  cursor: inherit;\n  display: block; }\n\n.btn-default {\n  background-color: #f4f4f4;\n  color: #444;\n  border-color: #ddd; }\n\n.btn-default:hover,\n.btn-default:active,\n.btn-default.hover {\n  background-color: #e7e7e7; }\n\n.btn-primary {\n  background-color: #3c8dbc;\n  border-color: #367fa9; }\n\n.btn-primary:hover,\n.btn-primary:active,\n.btn-primary.hover {\n  background-color: #367fa9; }\n\n.btn-success {\n  background-color: #00a65a;\n  border-color: #008d4c; }\n\n.btn-success:hover,\n.btn-success:active,\n.btn-success.hover {\n  background-color: #008d4c; }\n\n.btn-info {\n  background-color: #00c0ef;\n  border-color: #00acd6; }\n\n.btn-info:hover,\n.btn-info:active,\n.btn-info.hover {\n  background-color: #00acd6; }\n\n.btn-danger {\n  background-color: #dd4b39;\n  border-color: #d73925; }\n\n.btn-danger:hover,\n.btn-danger:active,\n.btn-danger.hover {\n  background-color: #d73925; }\n\n.btn-warning {\n  background-color: #f39c12;\n  border-color: #e08e0b; }\n\n.btn-warning:hover,\n.btn-warning:active,\n.btn-warning.hover {\n  background-color: #e08e0b; }\n\n.btn-outline {\n  border: 1px solid #fff;\n  background: transparent;\n  color: #fff; }\n\n.btn-outline:hover,\n.btn-outline:focus,\n.btn-outline:active {\n  color: rgba(255, 255, 255, 0.7);\n  border-color: rgba(255, 255, 255, 0.7); }\n\n.btn-link {\n  -webkit-box-shadow: none;\n  box-shadow: none; }\n\n.btn[class*='bg-']:hover {\n  -webkit-box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.2);\n  box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.2); }\n\n.btn-app {\n  border-radius: 3px;\n  position: relative;\n  padding: 15px 5px;\n  margin: 0 0 10px 10px;\n  min-width: 80px;\n  height: 60px;\n  text-align: center;\n  color: #666;\n  border: 1px solid #ddd;\n  background-color: #f4f4f4;\n  font-size: 12px; }\n\n.btn-app > .fa,\n.btn-app > .glyphicon,\n.btn-app > .ion {\n  font-size: 20px;\n  display: block; }\n\n.btn-app:hover {\n  background: #f4f4f4;\n  color: #444;\n  border-color: #aaa; }\n\n.btn-app:active,\n.btn-app:focus {\n  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);\n  -moz-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);\n  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125); }\n\n.btn-app > .badge {\n  position: absolute;\n  top: -3px;\n  right: -10px;\n  font-size: 10px;\n  font-weight: 400; }\n\n/*\n * Component: Callout\n * ------------------\n */\n.callout {\n  border-radius: 3px;\n  margin: 0 0 20px 0;\n  padding: 15px 30px 15px 15px;\n  border-left: 5px solid #eee; }\n\n.callout a {\n  color: #fff;\n  text-decoration: underline; }\n\n.callout a:hover {\n  color: #eee; }\n\n.callout h4 {\n  margin-top: 0;\n  font-weight: 600; }\n\n.callout p:last-child {\n  margin-bottom: 0; }\n\n.callout code,\n.callout .highlight {\n  background-color: #fff; }\n\n.callout.callout-danger {\n  border-color: #c23321; }\n\n.callout.callout-warning {\n  border-color: #c87f0a; }\n\n.callout.callout-info {\n  border-color: #0097bc; }\n\n.callout.callout-success {\n  border-color: #00733e; }\n\n/*\n * Component: alert\n * ----------------\n */\n.alert {\n  border-radius: 3px; }\n\n.alert h4 {\n  font-weight: 600; }\n\n.alert .icon {\n  margin-right: 10px; }\n\n.alert .close {\n  color: #000;\n  opacity: 0.2;\n  filter: alpha(opacity=20); }\n\n.alert .close:hover {\n  opacity: 0.5;\n  filter: alpha(opacity=50); }\n\n.alert a {\n  color: #fff;\n  text-decoration: underline; }\n\n.alert-success {\n  border-color: #008d4c; }\n\n.alert-danger,\n.alert-error {\n  border-color: #d73925; }\n\n.alert-warning {\n  border-color: #e08e0b; }\n\n.alert-info {\n  border-color: #00acd6; }\n\n/*\n * Component: Nav\n * --------------\n */\n.nav > li > a:hover,\n.nav > li > a:active,\n.nav > li > a:focus {\n  color: #444;\n  background: #f7f7f7; }\n\n/* NAV PILLS */\n.nav-pills > li > a {\n  border-radius: 0;\n  border-top: 3px solid transparent;\n  color: #444; }\n\n.nav-pills > li > a > .fa,\n.nav-pills > li > a > .glyphicon,\n.nav-pills > li > a > .ion {\n  margin-right: 5px; }\n\n.nav-pills > li.active > a,\n.nav-pills > li.active > a:hover,\n.nav-pills > li.active > a:focus {\n  border-top-color: #3c8dbc; }\n\n.nav-pills > li.active > a {\n  font-weight: 600; }\n\n/* NAV STACKED */\n.nav-stacked > li > a {\n  border-radius: 0;\n  border-top: 0;\n  border-left: 3px solid transparent;\n  color: #444; }\n\n.nav-stacked > li.active > a,\n.nav-stacked > li.active > a:hover {\n  background: transparent;\n  color: #444;\n  border-top: 0;\n  border-left-color: #3c8dbc; }\n\n.nav-stacked > li.header {\n  border-bottom: 1px solid #ddd;\n  color: #777;\n  margin-bottom: 10px;\n  padding: 5px 10px;\n  text-transform: uppercase; }\n\n/* NAV TABS */\n.nav-tabs-custom {\n  margin-bottom: 20px;\n  background: #fff;\n  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);\n  border-radius: 3px; }\n\n.nav-tabs-custom > .nav-tabs {\n  margin: 0;\n  border-bottom-color: #f4f4f4;\n  border-top-right-radius: 3px;\n  border-top-left-radius: 3px; }\n\n.nav-tabs-custom > .nav-tabs > li {\n  border-top: 3px solid transparent;\n  margin-bottom: -2px;\n  margin-right: 5px; }\n\n.nav-tabs-custom > .nav-tabs > li > a {\n  color: #444;\n  border-radius: 0; }\n\n.nav-tabs-custom > .nav-tabs > li > a.text-muted {\n  color: #999; }\n\n.nav-tabs-custom > .nav-tabs > li > a,\n.nav-tabs-custom > .nav-tabs > li > a:hover {\n  background: transparent;\n  margin: 0; }\n\n.nav-tabs-custom > .nav-tabs > li > a:hover {\n  color: #999; }\n\n.nav-tabs-custom > .nav-tabs > li:not(.active) > a:hover,\n.nav-tabs-custom > .nav-tabs > li:not(.active) > a:focus,\n.nav-tabs-custom > .nav-tabs > li:not(.active) > a:active {\n  border-color: transparent; }\n\n.nav-tabs-custom > .nav-tabs > li.active {\n  border-top-color: #3c8dbc; }\n\n.nav-tabs-custom > .nav-tabs > li.active > a,\n.nav-tabs-custom > .nav-tabs > li.active:hover > a {\n  background-color: #fff;\n  color: #444; }\n\n.nav-tabs-custom > .nav-tabs > li.active > a {\n  border-top-color: transparent;\n  border-left-color: #f4f4f4;\n  border-right-color: #f4f4f4; }\n\n.nav-tabs-custom > .nav-tabs > li:first-of-type {\n  margin-left: 0; }\n\n.nav-tabs-custom > .nav-tabs > li:first-of-type.active > a {\n  border-left-color: transparent; }\n\n.nav-tabs-custom > .nav-tabs.pull-right {\n  float: none !important; }\n\n.nav-tabs-custom > .nav-tabs.pull-right > li {\n  float: right; }\n\n.nav-tabs-custom > .nav-tabs.pull-right > li:first-of-type {\n  margin-right: 0; }\n\n.nav-tabs-custom > .nav-tabs.pull-right > li:first-of-type > a {\n  border-left-width: 1px; }\n\n.nav-tabs-custom > .nav-tabs.pull-right > li:first-of-type.active > a {\n  border-left-color: #f4f4f4;\n  border-right-color: transparent; }\n\n.nav-tabs-custom > .nav-tabs > li.header {\n  line-height: 35px;\n  padding: 0 10px;\n  font-size: 20px;\n  color: #444; }\n\n.nav-tabs-custom > .nav-tabs > li.header > .fa,\n.nav-tabs-custom > .nav-tabs > li.header > .glyphicon,\n.nav-tabs-custom > .nav-tabs > li.header > .ion {\n  margin-right: 5px; }\n\n.nav-tabs-custom > .tab-content {\n  background: #fff;\n  padding: 10px;\n  border-bottom-right-radius: 3px;\n  border-bottom-left-radius: 3px; }\n\n.nav-tabs-custom .dropdown.open > a:active,\n.nav-tabs-custom .dropdown.open > a:focus {\n  background: transparent;\n  color: #999; }\n\n.nav-tabs-custom.tab-primary > .nav-tabs > li.active {\n  border-top-color: #3c8dbc; }\n\n.nav-tabs-custom.tab-info > .nav-tabs > li.active {\n  border-top-color: #00c0ef; }\n\n.nav-tabs-custom.tab-danger > .nav-tabs > li.active {\n  border-top-color: #dd4b39; }\n\n.nav-tabs-custom.tab-warning > .nav-tabs > li.active {\n  border-top-color: #f39c12; }\n\n.nav-tabs-custom.tab-success > .nav-tabs > li.active {\n  border-top-color: #00a65a; }\n\n.nav-tabs-custom.tab-default > .nav-tabs > li.active {\n  border-top-color: #d2d6de; }\n\n/* PAGINATION */\n.pagination > li > a {\n  background: #fafafa;\n  color: #666; }\n\n.pagination.pagination-flat > li > a {\n  border-radius: 0 !important; }\n\n/*\n * Component: Products List\n * ------------------------\n */\n.products-list {\n  list-style: none;\n  margin: 0;\n  padding: 0; }\n\n.products-list > .item {\n  border-radius: 3px;\n  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);\n  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);\n  padding: 10px 0;\n  background: #fff; }\n\n.products-list > .item:before,\n.products-list > .item:after {\n  content: \" \";\n  display: table; }\n\n.products-list > .item:after {\n  clear: both; }\n\n.products-list .product-img {\n  float: left; }\n\n.products-list .product-img img {\n  width: 50px;\n  height: 50px; }\n\n.products-list .product-info {\n  margin-left: 60px; }\n\n.products-list .product-title {\n  font-weight: 600; }\n\n.products-list .product-description {\n  display: block;\n  color: #999;\n  overflow: hidden;\n  white-space: nowrap;\n  text-overflow: ellipsis; }\n\n.product-list-in-box > .item {\n  -webkit-box-shadow: none;\n  box-shadow: none;\n  border-radius: 0;\n  border-bottom: 1px solid #f4f4f4; }\n\n.product-list-in-box > .item:last-of-type {\n  border-bottom-width: 0; }\n\n/*\n * Component: Table\n * ----------------\n */\n.table > thead > tr > th,\n.table > tbody > tr > th,\n.table > tfoot > tr > th,\n.table > thead > tr > td,\n.table > tbody > tr > td,\n.table > tfoot > tr > td {\n  border-top: 1px solid #f4f4f4; }\n\n.table > thead > tr > th {\n  border-bottom: 2px solid #f4f4f4; }\n\n.table tr td .progress {\n  margin-top: 5px; }\n\n.table-bordered {\n  border: 1px solid #f4f4f4; }\n\n.table-bordered > thead > tr > th,\n.table-bordered > tbody > tr > th,\n.table-bordered > tfoot > tr > th,\n.table-bordered > thead > tr > td,\n.table-bordered > tbody > tr > td,\n.table-bordered > tfoot > tr > td {\n  border: 1px solid #f4f4f4; }\n\n.table-bordered > thead > tr > th,\n.table-bordered > thead > tr > td {\n  border-bottom-width: 2px; }\n\n.table.no-border,\n.table.no-border td,\n.table.no-border th {\n  border: 0; }\n\n/* .text-center in tables */\ntable.text-center,\ntable.text-center td,\ntable.text-center th {\n  text-align: center; }\n\n.table.align th {\n  text-align: left; }\n\n.table.align td {\n  text-align: right; }\n\n/*\n * Component: Label\n * ----------------\n */\n.label-default {\n  background-color: #d2d6de;\n  color: #444; }\n\n/*\n * Component: Direct Chat\n * ----------------------\n */\n.direct-chat .box-body {\n  border-bottom-right-radius: 0;\n  border-bottom-left-radius: 0;\n  position: relative;\n  overflow-x: hidden;\n  padding: 0; }\n\n.direct-chat.chat-pane-open .direct-chat-contacts {\n  -webkit-transform: translate(0, 0);\n  -ms-transform: translate(0, 0);\n  -o-transform: translate(0, 0);\n  transform: translate(0, 0); }\n\n.direct-chat-messages {\n  -webkit-transform: translate(0, 0);\n  -ms-transform: translate(0, 0);\n  -o-transform: translate(0, 0);\n  transform: translate(0, 0);\n  padding: 10px;\n  height: 250px;\n  overflow: auto; }\n\n.direct-chat-msg,\n.direct-chat-text {\n  display: block; }\n\n.direct-chat-msg {\n  margin-bottom: 10px; }\n\n.direct-chat-msg:before,\n.direct-chat-msg:after {\n  content: \" \";\n  display: table; }\n\n.direct-chat-msg:after {\n  clear: both; }\n\n.direct-chat-messages,\n.direct-chat-contacts {\n  -webkit-transition: -webkit-transform 0.5s ease-in-out;\n  -moz-transition: -moz-transform 0.5s ease-in-out;\n  -o-transition: -o-transform 0.5s ease-in-out;\n  transition: transform 0.5s ease-in-out; }\n\n.direct-chat-text {\n  border-radius: 5px;\n  position: relative;\n  padding: 5px 10px;\n  background: #d2d6de;\n  border: 1px solid #d2d6de;\n  margin: 5px 0 0 50px;\n  color: #444444; }\n\n.direct-chat-text:after,\n.direct-chat-text:before {\n  position: absolute;\n  right: 100%;\n  top: 15px;\n  border: solid transparent;\n  border-right-color: #d2d6de;\n  content: ' ';\n  height: 0;\n  width: 0;\n  pointer-events: none; }\n\n.direct-chat-text:after {\n  border-width: 5px;\n  margin-top: -5px; }\n\n.direct-chat-text:before {\n  border-width: 6px;\n  margin-top: -6px; }\n\n.right .direct-chat-text {\n  margin-right: 50px;\n  margin-left: 0; }\n\n.right .direct-chat-text:after,\n.right .direct-chat-text:before {\n  right: auto;\n  left: 100%;\n  border-right-color: transparent;\n  border-left-color: #d2d6de; }\n\n.direct-chat-img {\n  border-radius: 50%;\n  float: left;\n  width: 40px;\n  height: 40px; }\n\n.right .direct-chat-img {\n  float: right; }\n\n.direct-chat-info {\n  display: block;\n  margin-bottom: 2px;\n  font-size: 12px; }\n\n.direct-chat-name {\n  font-weight: 600; }\n\n.direct-chat-timestamp {\n  color: #999; }\n\n.direct-chat-contacts-open .direct-chat-contacts {\n  -webkit-transform: translate(0, 0);\n  -ms-transform: translate(0, 0);\n  -o-transform: translate(0, 0);\n  transform: translate(0, 0); }\n\n.direct-chat-contacts {\n  -webkit-transform: translate(101%, 0);\n  -ms-transform: translate(101%, 0);\n  -o-transform: translate(101%, 0);\n  transform: translate(101%, 0);\n  position: absolute;\n  top: 0;\n  bottom: 0;\n  height: 250px;\n  width: 100%;\n  background: #222d32;\n  color: #fff;\n  overflow: auto; }\n\n.contacts-list > li {\n  border-bottom: 1px solid rgba(0, 0, 0, 0.2);\n  padding: 10px;\n  margin: 0; }\n\n.contacts-list > li:before,\n.contacts-list > li:after {\n  content: \" \";\n  display: table; }\n\n.contacts-list > li:after {\n  clear: both; }\n\n.contacts-list > li:last-of-type {\n  border-bottom: none; }\n\n.contacts-list-img {\n  border-radius: 50%;\n  width: 40px;\n  float: left; }\n\n.contacts-list-info {\n  margin-left: 45px;\n  color: #fff; }\n\n.contacts-list-name,\n.contacts-list-status {\n  display: block; }\n\n.contacts-list-name {\n  font-weight: 600; }\n\n.contacts-list-status {\n  font-size: 12px; }\n\n.contacts-list-date {\n  color: #aaa;\n  font-weight: normal; }\n\n.contacts-list-msg {\n  color: #999; }\n\n.direct-chat-danger .right > .direct-chat-text {\n  background: #dd4b39;\n  border-color: #dd4b39;\n  color: #ffffff; }\n\n.direct-chat-danger .right > .direct-chat-text:after,\n.direct-chat-danger .right > .direct-chat-text:before {\n  border-left-color: #dd4b39; }\n\n.direct-chat-primary .right > .direct-chat-text {\n  background: #3c8dbc;\n  border-color: #3c8dbc;\n  color: #ffffff; }\n\n.direct-chat-primary .right > .direct-chat-text:after,\n.direct-chat-primary .right > .direct-chat-text:before {\n  border-left-color: #3c8dbc; }\n\n.direct-chat-warning .right > .direct-chat-text {\n  background: #f39c12;\n  border-color: #f39c12;\n  color: #ffffff; }\n\n.direct-chat-warning .right > .direct-chat-text:after,\n.direct-chat-warning .right > .direct-chat-text:before {\n  border-left-color: #f39c12; }\n\n.direct-chat-info .right > .direct-chat-text {\n  background: #00c0ef;\n  border-color: #00c0ef;\n  color: #ffffff; }\n\n.direct-chat-info .right > .direct-chat-text:after,\n.direct-chat-info .right > .direct-chat-text:before {\n  border-left-color: #00c0ef; }\n\n.direct-chat-success .right > .direct-chat-text {\n  background: #00a65a;\n  border-color: #00a65a;\n  color: #ffffff; }\n\n.direct-chat-success .right > .direct-chat-text:after,\n.direct-chat-success .right > .direct-chat-text:before {\n  border-left-color: #00a65a; }\n\n/*\n * Component: Users List\n * ---------------------\n */\n.users-list > li {\n  width: 25%;\n  float: left;\n  padding: 10px;\n  text-align: center; }\n\n.users-list > li img {\n  border-radius: 50%;\n  max-width: 100%;\n  height: auto; }\n\n.users-list > li > a:hover,\n.users-list > li > a:hover .users-list-name {\n  color: #999; }\n\n.users-list-name,\n.users-list-date {\n  display: block; }\n\n.users-list-name {\n  font-weight: 600;\n  color: #444;\n  overflow: hidden;\n  white-space: nowrap;\n  text-overflow: ellipsis; }\n\n.users-list-date {\n  color: #999;\n  font-size: 12px; }\n\n/*\n * Component: Carousel\n * -------------------\n */\n.carousel-control.left,\n.carousel-control.right {\n  background-image: none; }\n\n.carousel-control > .fa {\n  font-size: 40px;\n  position: absolute;\n  top: 50%;\n  z-index: 5;\n  display: inline-block;\n  margin-top: -20px; }\n\n/*\n * Component: modal\n * ----------------\n */\n.modal {\n  background: rgba(0, 0, 0, 0.3); }\n\n.modal-content {\n  border-radius: 0;\n  -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.125);\n  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.125);\n  border: 0; }\n\n@media (min-width: 768px) {\n  .modal-content {\n    -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.125);\n    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.125); } }\n\n.modal-header {\n  border-bottom-color: #f4f4f4; }\n\n.modal-footer {\n  border-top-color: #f4f4f4; }\n\n.modal-primary .modal-header,\n.modal-primary .modal-footer {\n  border-color: #307095; }\n\n.modal-warning .modal-header,\n.modal-warning .modal-footer {\n  border-color: #c87f0a; }\n\n.modal-info .modal-header,\n.modal-info .modal-footer {\n  border-color: #0097bc; }\n\n.modal-success .modal-header,\n.modal-success .modal-footer {\n  border-color: #00733e; }\n\n.modal-danger .modal-header,\n.modal-danger .modal-footer {\n  border-color: #c23321; }\n\n/*\n * Component: Social Widgets\n * -------------------------\n */\n.box-widget {\n  border: none;\n  position: relative; }\n\n.widget-user .widget-user-header {\n  padding: 20px;\n  height: 120px;\n  border-top-right-radius: 3px;\n  border-top-left-radius: 3px; }\n\n.widget-user .widget-user-username {\n  margin-top: 0;\n  margin-bottom: 5px;\n  font-size: 25px;\n  font-weight: 300;\n  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2); }\n\n.widget-user .widget-user-desc {\n  margin-top: 0; }\n\n.widget-user .widget-user-image {\n  position: absolute;\n  top: 65px;\n  left: 50%;\n  margin-left: -45px; }\n\n.widget-user .widget-user-image > img {\n  width: 90px;\n  height: auto;\n  border: 3px solid #fff; }\n\n.widget-user .box-footer {\n  padding-top: 30px; }\n\n.widget-user-2 .widget-user-header {\n  padding: 20px;\n  border-top-right-radius: 3px;\n  border-top-left-radius: 3px; }\n\n.widget-user-2 .widget-user-username {\n  margin-top: 5px;\n  margin-bottom: 5px;\n  font-size: 25px;\n  font-weight: 300; }\n\n.widget-user-2 .widget-user-desc {\n  margin-top: 0; }\n\n.widget-user-2 .widget-user-username,\n.widget-user-2 .widget-user-desc {\n  margin-left: 75px; }\n\n.widget-user-2 .widget-user-image > img {\n  width: 65px;\n  height: auto;\n  float: left; }\n\n/*\n * Page: Mailbox\n * -------------\n */\n.mailbox-messages > .table {\n  margin: 0; }\n\n.mailbox-controls {\n  padding: 5px; }\n\n.mailbox-controls.with-border {\n  border-bottom: 1px solid #f4f4f4; }\n\n.mailbox-read-info {\n  border-bottom: 1px solid #f4f4f4;\n  padding: 10px; }\n\n.mailbox-read-info h3 {\n  font-size: 20px;\n  margin: 0; }\n\n.mailbox-read-info h5 {\n  margin: 0;\n  padding: 5px 0 0 0; }\n\n.mailbox-read-time {\n  color: #999;\n  font-size: 13px; }\n\n.mailbox-read-message {\n  padding: 10px; }\n\n.mailbox-attachments li {\n  float: left;\n  width: 200px;\n  border: 1px solid #eee;\n  margin-bottom: 10px;\n  margin-right: 10px; }\n\n.mailbox-attachment-name {\n  font-weight: bold;\n  color: #666; }\n\n.mailbox-attachment-icon,\n.mailbox-attachment-info,\n.mailbox-attachment-size {\n  display: block; }\n\n.mailbox-attachment-info {\n  padding: 10px;\n  background: #f4f4f4; }\n\n.mailbox-attachment-size {\n  color: #999;\n  font-size: 12px; }\n\n.mailbox-attachment-icon {\n  text-align: center;\n  font-size: 65px;\n  color: #666;\n  padding: 20px 10px; }\n\n.mailbox-attachment-icon.has-img {\n  padding: 0; }\n\n.mailbox-attachment-icon.has-img > img {\n  max-width: 100%;\n  height: auto; }\n\n/*\n * Page: Lock Screen\n * -----------------\n */\n/* ADD THIS CLASS TO THE <BODY> TAG */\n.lockscreen {\n  background: #d2d6de; }\n\n.lockscreen-logo {\n  font-size: 35px;\n  text-align: center;\n  margin-bottom: 25px;\n  font-weight: 300; }\n\n.lockscreen-logo a {\n  color: #444; }\n\n.lockscreen-wrapper {\n  max-width: 400px;\n  margin: 0 auto;\n  margin-top: 10%; }\n\n/* User name [optional] */\n.lockscreen .lockscreen-name {\n  text-align: center;\n  font-weight: 600; }\n\n/* Will contain the image and the sign in form */\n.lockscreen-item {\n  border-radius: 4px;\n  padding: 0;\n  background: #fff;\n  position: relative;\n  margin: 10px auto 30px auto;\n  width: 290px; }\n\n/* User image */\n.lockscreen-image {\n  border-radius: 50%;\n  position: absolute;\n  left: -10px;\n  top: -25px;\n  background: #fff;\n  padding: 5px;\n  z-index: 10; }\n\n.lockscreen-image > img {\n  border-radius: 50%;\n  width: 70px;\n  height: 70px; }\n\n/* Contains the password input and the login button */\n.lockscreen-credentials {\n  margin-left: 70px; }\n\n.lockscreen-credentials .form-control {\n  border: 0; }\n\n.lockscreen-credentials .btn {\n  background-color: #fff;\n  border: 0;\n  padding: 0 10px; }\n\n.lockscreen-footer {\n  margin-top: 10px; }\n\n/*\n * Page: Login & Register\n * ----------------------\n */\n.login-logo,\n.register-logo {\n  font-size: 35px;\n  text-align: center;\n  margin-bottom: 25px;\n  font-weight: 300; }\n\n.login-logo a,\n.register-logo a {\n  color: #444; }\n\n.login-page,\n.register-page {\n  background: #d2d6de; }\n\n.login-box,\n.register-box {\n  width: 360px;\n  margin: 7% auto; }\n\n@media (max-width: 768px) {\n  .login-box,\n  .register-box {\n    width: 90%;\n    margin-top: 20px; } }\n\n.login-box-body,\n.register-box-body {\n  background: #fff;\n  padding: 20px;\n  border-top: 0;\n  color: #666; }\n\n.login-box-body .form-control-feedback,\n.register-box-body .form-control-feedback {\n  color: #777; }\n\n.login-box-msg,\n.register-box-msg {\n  margin: 0;\n  text-align: center;\n  padding: 0 20px 20px 20px; }\n\n.social-auth-links {\n  margin: 10px 0; }\n\n/*\n * Page: 400 and 500 error pages\n * ------------------------------\n */\n.error-page {\n  width: 600px;\n  margin: 20px auto 0 auto; }\n\n@media (max-width: 991px) {\n  .error-page {\n    width: 100%; } }\n\n.error-page > .headline {\n  float: left;\n  font-size: 100px;\n  font-weight: 300; }\n\n@media (max-width: 991px) {\n  .error-page > .headline {\n    float: none;\n    text-align: center; } }\n\n.error-page > .error-content {\n  margin-left: 190px;\n  display: block; }\n\n@media (max-width: 991px) {\n  .error-page > .error-content {\n    margin-left: 0; } }\n\n.error-page > .error-content > h3 {\n  font-weight: 300;\n  font-size: 25px; }\n\n@media (max-width: 991px) {\n  .error-page > .error-content > h3 {\n    text-align: center; } }\n\n/*\n * Page: Invoice\n * -------------\n */\n.invoice {\n  position: relative;\n  background: #fff;\n  border: 1px solid #f4f4f4;\n  padding: 20px;\n  margin: 10px 25px; }\n\n.invoice-title {\n  margin-top: 0; }\n\n/*\n * Page: Profile\n * -------------\n */\n.profile-user-img {\n  margin: 0 auto;\n  width: 100px;\n  padding: 3px;\n  border: 3px solid #d2d6de; }\n\n.profile-username {\n  font-size: 21px;\n  margin-top: 5px; }\n\n.post {\n  border-bottom: 1px solid #d2d6de;\n  margin-bottom: 15px;\n  padding-bottom: 15px;\n  color: #666; }\n\n.post:last-of-type {\n  border-bottom: 0;\n  margin-bottom: 0;\n  padding-bottom: 0; }\n\n.post .user-block {\n  margin-bottom: 15px; }\n\n/*\n * Social Buttons for Bootstrap\n *\n * Copyright 2013-2015 Panayiotis Lipiridis\n * Licensed under the MIT License\n *\n * https://github.com/lipis/bootstrap-social\n */\n.btn-social {\n  position: relative;\n  padding-left: 44px;\n  text-align: left;\n  white-space: nowrap;\n  overflow: hidden;\n  text-overflow: ellipsis; }\n\n.btn-social > :first-child {\n  position: absolute;\n  left: 0;\n  top: 0;\n  bottom: 0;\n  width: 32px;\n  line-height: 34px;\n  font-size: 1.6em;\n  text-align: center;\n  border-right: 1px solid rgba(0, 0, 0, 0.2); }\n\n.btn-social.btn-lg {\n  padding-left: 61px; }\n\n.btn-social.btn-lg > :first-child {\n  line-height: 45px;\n  width: 45px;\n  font-size: 1.8em; }\n\n.btn-social.btn-sm {\n  padding-left: 38px; }\n\n.btn-social.btn-sm > :first-child {\n  line-height: 28px;\n  width: 28px;\n  font-size: 1.4em; }\n\n.btn-social.btn-xs {\n  padding-left: 30px; }\n\n.btn-social.btn-xs > :first-child {\n  line-height: 20px;\n  width: 20px;\n  font-size: 1.2em; }\n\n.btn-social-icon {\n  position: relative;\n  padding-left: 44px;\n  text-align: left;\n  white-space: nowrap;\n  overflow: hidden;\n  text-overflow: ellipsis;\n  height: 34px;\n  width: 34px;\n  padding: 0; }\n\n.btn-social-icon > :first-child {\n  position: absolute;\n  left: 0;\n  top: 0;\n  bottom: 0;\n  width: 32px;\n  line-height: 34px;\n  font-size: 1.6em;\n  text-align: center;\n  border-right: 1px solid rgba(0, 0, 0, 0.2); }\n\n.btn-social-icon.btn-lg {\n  padding-left: 61px; }\n\n.btn-social-icon.btn-lg > :first-child {\n  line-height: 45px;\n  width: 45px;\n  font-size: 1.8em; }\n\n.btn-social-icon.btn-sm {\n  padding-left: 38px; }\n\n.btn-social-icon.btn-sm > :first-child {\n  line-height: 28px;\n  width: 28px;\n  font-size: 1.4em; }\n\n.btn-social-icon.btn-xs {\n  padding-left: 30px; }\n\n.btn-social-icon.btn-xs > :first-child {\n  line-height: 20px;\n  width: 20px;\n  font-size: 1.2em; }\n\n.btn-social-icon > :first-child {\n  border: none;\n  text-align: center;\n  width: 100%; }\n\n.btn-social-icon.btn-lg {\n  height: 45px;\n  width: 45px;\n  padding-left: 0;\n  padding-right: 0; }\n\n.btn-social-icon.btn-sm {\n  height: 30px;\n  width: 30px;\n  padding-left: 0;\n  padding-right: 0; }\n\n.btn-social-icon.btn-xs {\n  height: 22px;\n  width: 22px;\n  padding-left: 0;\n  padding-right: 0; }\n\n.btn-adn {\n  color: #ffffff;\n  background-color: #d87a68;\n  border-color: rgba(0, 0, 0, 0.2); }\n\n.btn-adn:focus,\n.btn-adn.focus {\n  color: #ffffff;\n  background-color: #ce563f;\n  border-color: rgba(0, 0, 0, 0.2); }\n\n.btn-adn:hover {\n  color: #ffffff;\n  background-color: #ce563f;\n  border-color: rgba(0, 0, 0, 0.2); }\n\n.btn-adn:active,\n.btn-adn.active,\n.open > .dropdown-toggle.btn-adn {\n  color: #ffffff;\n  background-color: #ce563f;\n  border-color: rgba(0, 0, 0, 0.2); }\n\n.btn-adn:active,\n.btn-adn.active,\n.open > .dropdown-toggle.btn-adn {\n  background-image: none; }\n\n.btn-adn .badge {\n  color: #d87a68;\n  background-color: #ffffff; }\n\n.btn-bitbucket {\n  color: #ffffff;\n  background-color: #205081;\n  border-color: rgba(0, 0, 0, 0.2); }\n\n.btn-bitbucket:focus,\n.btn-bitbucket.focus {\n  color: #ffffff;\n  background-color: #163758;\n  border-color: rgba(0, 0, 0, 0.2); }\n\n.btn-bitbucket:hover {\n  color: #ffffff;\n  background-color: #163758;\n  border-color: rgba(0, 0, 0, 0.2); }\n\n.btn-bitbucket:active,\n.btn-bitbucket.active,\n.open > .dropdown-toggle.btn-bitbucket {\n  color: #ffffff;\n  background-color: #163758;\n  border-color: rgba(0, 0, 0, 0.2); }\n\n.btn-bitbucket:active,\n.btn-bitbucket.active,\n.open > .dropdown-toggle.btn-bitbucket {\n  background-image: none; }\n\n.btn-bitbucket .badge {\n  color: #205081;\n  background-color: #ffffff; }\n\n.btn-dropbox {\n  color: #ffffff;\n  background-color: #1087dd;\n  border-color: rgba(0, 0, 0, 0.2); }\n\n.btn-dropbox:focus,\n.btn-dropbox.focus {\n  color: #ffffff;\n  background-color: #0d6aad;\n  border-color: rgba(0, 0, 0, 0.2); }\n\n.btn-dropbox:hover {\n  color: #ffffff;\n  background-color: #0d6aad;\n  border-color: rgba(0, 0, 0, 0.2); }\n\n.btn-dropbox:active,\n.btn-dropbox.active,\n.open > .dropdown-toggle.btn-dropbox {\n  color: #ffffff;\n  background-color: #0d6aad;\n  border-color: rgba(0, 0, 0, 0.2); }\n\n.btn-dropbox:active,\n.btn-dropbox.active,\n.open > .dropdown-toggle.btn-dropbox {\n  background-image: none; }\n\n.btn-dropbox .badge {\n  color: #1087dd;\n  background-color: #ffffff; }\n\n.btn-facebook {\n  color: #ffffff;\n  background-color: #3b5998;\n  border-color: rgba(0, 0, 0, 0.2); }\n\n.btn-facebook:focus,\n.btn-facebook.focus {\n  color: #ffffff;\n  background-color: #2d4373;\n  border-color: rgba(0, 0, 0, 0.2); }\n\n.btn-facebook:hover {\n  color: #ffffff;\n  background-color: #2d4373;\n  border-color: rgba(0, 0, 0, 0.2); }\n\n.btn-facebook:active,\n.btn-facebook.active,\n.open > .dropdown-toggle.btn-facebook {\n  color: #ffffff;\n  background-color: #2d4373;\n  border-color: rgba(0, 0, 0, 0.2); }\n\n.btn-facebook:active,\n.btn-facebook.active,\n.open > .dropdown-toggle.btn-facebook {\n  background-image: none; }\n\n.btn-facebook .badge {\n  color: #3b5998;\n  background-color: #ffffff; }\n\n.btn-flickr {\n  color: #ffffff;\n  background-color: #ff0084;\n  border-color: rgba(0, 0, 0, 0.2); }\n\n.btn-flickr:focus,\n.btn-flickr.focus {\n  color: #ffffff;\n  background-color: #cc006a;\n  border-color: rgba(0, 0, 0, 0.2); }\n\n.btn-flickr:hover {\n  color: #ffffff;\n  background-color: #cc006a;\n  border-color: rgba(0, 0, 0, 0.2); }\n\n.btn-flickr:active,\n.btn-flickr.active,\n.open > .dropdown-toggle.btn-flickr {\n  color: #ffffff;\n  background-color: #cc006a;\n  border-color: rgba(0, 0, 0, 0.2); }\n\n.btn-flickr:active,\n.btn-flickr.active,\n.open > .dropdown-toggle.btn-flickr {\n  background-image: none; }\n\n.btn-flickr .badge {\n  color: #ff0084;\n  background-color: #ffffff; }\n\n.btn-foursquare {\n  color: #ffffff;\n  background-color: #f94877;\n  border-color: rgba(0, 0, 0, 0.2); }\n\n.btn-foursquare:focus,\n.btn-foursquare.focus {\n  color: #ffffff;\n  background-color: #f71752;\n  border-color: rgba(0, 0, 0, 0.2); }\n\n.btn-foursquare:hover {\n  color: #ffffff;\n  background-color: #f71752;\n  border-color: rgba(0, 0, 0, 0.2); }\n\n.btn-foursquare:active,\n.btn-foursquare.active,\n.open > .dropdown-toggle.btn-foursquare {\n  color: #ffffff;\n  background-color: #f71752;\n  border-color: rgba(0, 0, 0, 0.2); }\n\n.btn-foursquare:active,\n.btn-foursquare.active,\n.open > .dropdown-toggle.btn-foursquare {\n  background-image: none; }\n\n.btn-foursquare .badge {\n  color: #f94877;\n  background-color: #ffffff; }\n\n.btn-github {\n  color: #ffffff;\n  background-color: #444444;\n  border-color: rgba(0, 0, 0, 0.2); }\n\n.btn-github:focus,\n.btn-github.focus {\n  color: #ffffff;\n  background-color: #2b2b2b;\n  border-color: rgba(0, 0, 0, 0.2); }\n\n.btn-github:hover {\n  color: #ffffff;\n  background-color: #2b2b2b;\n  border-color: rgba(0, 0, 0, 0.2); }\n\n.btn-github:active,\n.btn-github.active,\n.open > .dropdown-toggle.btn-github {\n  color: #ffffff;\n  background-color: #2b2b2b;\n  border-color: rgba(0, 0, 0, 0.2); }\n\n.btn-github:active,\n.btn-github.active,\n.open > .dropdown-toggle.btn-github {\n  background-image: none; }\n\n.btn-github .badge {\n  color: #444444;\n  background-color: #ffffff; }\n\n.btn-google {\n  color: #ffffff;\n  background-color: #dd4b39;\n  border-color: rgba(0, 0, 0, 0.2); }\n\n.btn-google:focus,\n.btn-google.focus {\n  color: #ffffff;\n  background-color: #c23321;\n  border-color: rgba(0, 0, 0, 0.2); }\n\n.btn-google:hover {\n  color: #ffffff;\n  background-color: #c23321;\n  border-color: rgba(0, 0, 0, 0.2); }\n\n.btn-google:active,\n.btn-google.active,\n.open > .dropdown-toggle.btn-google {\n  color: #ffffff;\n  background-color: #c23321;\n  border-color: rgba(0, 0, 0, 0.2); }\n\n.btn-google:active,\n.btn-google.active,\n.open > .dropdown-toggle.btn-google {\n  background-image: none; }\n\n.btn-google .badge {\n  color: #dd4b39;\n  background-color: #ffffff; }\n\n.btn-instagram {\n  color: #ffffff;\n  background-color: #3f729b;\n  border-color: rgba(0, 0, 0, 0.2); }\n\n.btn-instagram:focus,\n.btn-instagram.focus {\n  color: #ffffff;\n  background-color: #305777;\n  border-color: rgba(0, 0, 0, 0.2); }\n\n.btn-instagram:hover {\n  color: #ffffff;\n  background-color: #305777;\n  border-color: rgba(0, 0, 0, 0.2); }\n\n.btn-instagram:active,\n.btn-instagram.active,\n.open > .dropdown-toggle.btn-instagram {\n  color: #ffffff;\n  background-color: #305777;\n  border-color: rgba(0, 0, 0, 0.2); }\n\n.btn-instagram:active,\n.btn-instagram.active,\n.open > .dropdown-toggle.btn-instagram {\n  background-image: none; }\n\n.btn-instagram .badge {\n  color: #3f729b;\n  background-color: #ffffff; }\n\n.btn-linkedin {\n  color: #ffffff;\n  background-color: #007bb6;\n  border-color: rgba(0, 0, 0, 0.2); }\n\n.btn-linkedin:focus,\n.btn-linkedin.focus {\n  color: #ffffff;\n  background-color: #005983;\n  border-color: rgba(0, 0, 0, 0.2); }\n\n.btn-linkedin:hover {\n  color: #ffffff;\n  background-color: #005983;\n  border-color: rgba(0, 0, 0, 0.2); }\n\n.btn-linkedin:active,\n.btn-linkedin.active,\n.open > .dropdown-toggle.btn-linkedin {\n  color: #ffffff;\n  background-color: #005983;\n  border-color: rgba(0, 0, 0, 0.2); }\n\n.btn-linkedin:active,\n.btn-linkedin.active,\n.open > .dropdown-toggle.btn-linkedin {\n  background-image: none; }\n\n.btn-linkedin .badge {\n  color: #007bb6;\n  background-color: #ffffff; }\n\n.btn-microsoft {\n  color: #ffffff;\n  background-color: #2672ec;\n  border-color: rgba(0, 0, 0, 0.2); }\n\n.btn-microsoft:focus,\n.btn-microsoft.focus {\n  color: #ffffff;\n  background-color: #125acd;\n  border-color: rgba(0, 0, 0, 0.2); }\n\n.btn-microsoft:hover {\n  color: #ffffff;\n  background-color: #125acd;\n  border-color: rgba(0, 0, 0, 0.2); }\n\n.btn-microsoft:active,\n.btn-microsoft.active,\n.open > .dropdown-toggle.btn-microsoft {\n  color: #ffffff;\n  background-color: #125acd;\n  border-color: rgba(0, 0, 0, 0.2); }\n\n.btn-microsoft:active,\n.btn-microsoft.active,\n.open > .dropdown-toggle.btn-microsoft {\n  background-image: none; }\n\n.btn-microsoft .badge {\n  color: #2672ec;\n  background-color: #ffffff; }\n\n.btn-openid {\n  color: #ffffff;\n  background-color: #f7931e;\n  border-color: rgba(0, 0, 0, 0.2); }\n\n.btn-openid:focus,\n.btn-openid.focus {\n  color: #ffffff;\n  background-color: #da7908;\n  border-color: rgba(0, 0, 0, 0.2); }\n\n.btn-openid:hover {\n  color: #ffffff;\n  background-color: #da7908;\n  border-color: rgba(0, 0, 0, 0.2); }\n\n.btn-openid:active,\n.btn-openid.active,\n.open > .dropdown-toggle.btn-openid {\n  color: #ffffff;\n  background-color: #da7908;\n  border-color: rgba(0, 0, 0, 0.2); }\n\n.btn-openid:active,\n.btn-openid.active,\n.open > .dropdown-toggle.btn-openid {\n  background-image: none; }\n\n.btn-openid .badge {\n  color: #f7931e;\n  background-color: #ffffff; }\n\n.btn-pinterest {\n  color: #ffffff;\n  background-color: #cb2027;\n  border-color: rgba(0, 0, 0, 0.2); }\n\n.btn-pinterest:focus,\n.btn-pinterest.focus {\n  color: #ffffff;\n  background-color: #9f191f;\n  border-color: rgba(0, 0, 0, 0.2); }\n\n.btn-pinterest:hover {\n  color: #ffffff;\n  background-color: #9f191f;\n  border-color: rgba(0, 0, 0, 0.2); }\n\n.btn-pinterest:active,\n.btn-pinterest.active,\n.open > .dropdown-toggle.btn-pinterest {\n  color: #ffffff;\n  background-color: #9f191f;\n  border-color: rgba(0, 0, 0, 0.2); }\n\n.btn-pinterest:active,\n.btn-pinterest.active,\n.open > .dropdown-toggle.btn-pinterest {\n  background-image: none; }\n\n.btn-pinterest .badge {\n  color: #cb2027;\n  background-color: #ffffff; }\n\n.btn-reddit {\n  color: #000000;\n  background-color: #eff7ff;\n  border-color: rgba(0, 0, 0, 0.2); }\n\n.btn-reddit:focus,\n.btn-reddit.focus {\n  color: #000000;\n  background-color: #bcddff;\n  border-color: rgba(0, 0, 0, 0.2); }\n\n.btn-reddit:hover {\n  color: #000000;\n  background-color: #bcddff;\n  border-color: rgba(0, 0, 0, 0.2); }\n\n.btn-reddit:active,\n.btn-reddit.active,\n.open > .dropdown-toggle.btn-reddit {\n  color: #000000;\n  background-color: #bcddff;\n  border-color: rgba(0, 0, 0, 0.2); }\n\n.btn-reddit:active,\n.btn-reddit.active,\n.open > .dropdown-toggle.btn-reddit {\n  background-image: none; }\n\n.btn-reddit .badge {\n  color: #eff7ff;\n  background-color: #000000; }\n\n.btn-soundcloud {\n  color: #ffffff;\n  background-color: #ff5500;\n  border-color: rgba(0, 0, 0, 0.2); }\n\n.btn-soundcloud:focus,\n.btn-soundcloud.focus {\n  color: #ffffff;\n  background-color: #cc4400;\n  border-color: rgba(0, 0, 0, 0.2); }\n\n.btn-soundcloud:hover {\n  color: #ffffff;\n  background-color: #cc4400;\n  border-color: rgba(0, 0, 0, 0.2); }\n\n.btn-soundcloud:active,\n.btn-soundcloud.active,\n.open > .dropdown-toggle.btn-soundcloud {\n  color: #ffffff;\n  background-color: #cc4400;\n  border-color: rgba(0, 0, 0, 0.2); }\n\n.btn-soundcloud:active,\n.btn-soundcloud.active,\n.open > .dropdown-toggle.btn-soundcloud {\n  background-image: none; }\n\n.btn-soundcloud .badge {\n  color: #ff5500;\n  background-color: #ffffff; }\n\n.btn-tumblr {\n  color: #ffffff;\n  background-color: #2c4762;\n  border-color: rgba(0, 0, 0, 0.2); }\n\n.btn-tumblr:focus,\n.btn-tumblr.focus {\n  color: #ffffff;\n  background-color: #1c2d3f;\n  border-color: rgba(0, 0, 0, 0.2); }\n\n.btn-tumblr:hover {\n  color: #ffffff;\n  background-color: #1c2d3f;\n  border-color: rgba(0, 0, 0, 0.2); }\n\n.btn-tumblr:active,\n.btn-tumblr.active,\n.open > .dropdown-toggle.btn-tumblr {\n  color: #ffffff;\n  background-color: #1c2d3f;\n  border-color: rgba(0, 0, 0, 0.2); }\n\n.btn-tumblr:active,\n.btn-tumblr.active,\n.open > .dropdown-toggle.btn-tumblr {\n  background-image: none; }\n\n.btn-tumblr .badge {\n  color: #2c4762;\n  background-color: #ffffff; }\n\n.btn-twitter {\n  color: #ffffff;\n  background-color: #55acee;\n  border-color: rgba(0, 0, 0, 0.2); }\n\n.btn-twitter:focus,\n.btn-twitter.focus {\n  color: #ffffff;\n  background-color: #2795e9;\n  border-color: rgba(0, 0, 0, 0.2); }\n\n.btn-twitter:hover {\n  color: #ffffff;\n  background-color: #2795e9;\n  border-color: rgba(0, 0, 0, 0.2); }\n\n.btn-twitter:active,\n.btn-twitter.active,\n.open > .dropdown-toggle.btn-twitter {\n  color: #ffffff;\n  background-color: #2795e9;\n  border-color: rgba(0, 0, 0, 0.2); }\n\n.btn-twitter:active,\n.btn-twitter.active,\n.open > .dropdown-toggle.btn-twitter {\n  background-image: none; }\n\n.btn-twitter .badge {\n  color: #55acee;\n  background-color: #ffffff; }\n\n.btn-vimeo {\n  color: #ffffff;\n  background-color: #1ab7ea;\n  border-color: rgba(0, 0, 0, 0.2); }\n\n.btn-vimeo:focus,\n.btn-vimeo.focus {\n  color: #ffffff;\n  background-color: #1295bf;\n  border-color: rgba(0, 0, 0, 0.2); }\n\n.btn-vimeo:hover {\n  color: #ffffff;\n  background-color: #1295bf;\n  border-color: rgba(0, 0, 0, 0.2); }\n\n.btn-vimeo:active,\n.btn-vimeo.active,\n.open > .dropdown-toggle.btn-vimeo {\n  color: #ffffff;\n  background-color: #1295bf;\n  border-color: rgba(0, 0, 0, 0.2); }\n\n.btn-vimeo:active,\n.btn-vimeo.active,\n.open > .dropdown-toggle.btn-vimeo {\n  background-image: none; }\n\n.btn-vimeo .badge {\n  color: #1ab7ea;\n  background-color: #ffffff; }\n\n.btn-vk {\n  color: #ffffff;\n  background-color: #587ea3;\n  border-color: rgba(0, 0, 0, 0.2); }\n\n.btn-vk:focus,\n.btn-vk.focus {\n  color: #ffffff;\n  background-color: #466482;\n  border-color: rgba(0, 0, 0, 0.2); }\n\n.btn-vk:hover {\n  color: #ffffff;\n  background-color: #466482;\n  border-color: rgba(0, 0, 0, 0.2); }\n\n.btn-vk:active,\n.btn-vk.active,\n.open > .dropdown-toggle.btn-vk {\n  color: #ffffff;\n  background-color: #466482;\n  border-color: rgba(0, 0, 0, 0.2); }\n\n.btn-vk:active,\n.btn-vk.active,\n.open > .dropdown-toggle.btn-vk {\n  background-image: none; }\n\n.btn-vk .badge {\n  color: #587ea3;\n  background-color: #ffffff; }\n\n.btn-yahoo {\n  color: #ffffff;\n  background-color: #720e9e;\n  border-color: rgba(0, 0, 0, 0.2); }\n\n.btn-yahoo:focus,\n.btn-yahoo.focus {\n  color: #ffffff;\n  background-color: #500a6f;\n  border-color: rgba(0, 0, 0, 0.2); }\n\n.btn-yahoo:hover {\n  color: #ffffff;\n  background-color: #500a6f;\n  border-color: rgba(0, 0, 0, 0.2); }\n\n.btn-yahoo:active,\n.btn-yahoo.active,\n.open > .dropdown-toggle.btn-yahoo {\n  color: #ffffff;\n  background-color: #500a6f;\n  border-color: rgba(0, 0, 0, 0.2); }\n\n.btn-yahoo:active,\n.btn-yahoo.active,\n.open > .dropdown-toggle.btn-yahoo {\n  background-image: none; }\n\n.btn-yahoo .badge {\n  color: #720e9e;\n  background-color: #ffffff; }\n\n/*\n * Plugin: Full Calendar\n * ---------------------\n */\n.fc-button {\n  background: #f4f4f4;\n  background-image: none;\n  color: #444;\n  border-color: #ddd;\n  border-bottom-color: #ddd; }\n\n.fc-button:hover,\n.fc-button:active,\n.fc-button.hover {\n  background-color: #e9e9e9; }\n\n.fc-header-title h2 {\n  font-size: 15px;\n  line-height: 1.6em;\n  color: #666;\n  margin-left: 10px; }\n\n.fc-header-right {\n  padding-right: 10px; }\n\n.fc-header-left {\n  padding-left: 10px; }\n\n.fc-widget-header {\n  background: #fafafa; }\n\n.fc-grid {\n  width: 100%;\n  border: 0; }\n\n.fc-widget-header:first-of-type,\n.fc-widget-content:first-of-type {\n  border-left: 0;\n  border-right: 0; }\n\n.fc-widget-header:last-of-type,\n.fc-widget-content:last-of-type {\n  border-right: 0; }\n\n.fc-toolbar {\n  padding: 10px;\n  margin: 0; }\n\n.fc-day-number {\n  font-size: 20px;\n  font-weight: 300;\n  padding-right: 10px; }\n\n.fc-color-picker {\n  list-style: none;\n  margin: 0;\n  padding: 0; }\n\n.fc-color-picker > li {\n  float: left;\n  font-size: 30px;\n  margin-right: 5px;\n  line-height: 30px; }\n\n.fc-color-picker > li .fa {\n  -webkit-transition: -webkit-transform linear 0.3s;\n  -moz-transition: -moz-transform linear 0.3s;\n  -o-transition: -o-transform linear 0.3s;\n  transition: transform linear 0.3s; }\n\n.fc-color-picker > li .fa:hover {\n  -webkit-transform: rotate(30deg);\n  -ms-transform: rotate(30deg);\n  -o-transform: rotate(30deg);\n  transform: rotate(30deg); }\n\n#add-new-event {\n  -webkit-transition: all linear 0.3s;\n  -o-transition: all linear 0.3s;\n  transition: all linear 0.3s; }\n\n.external-event {\n  padding: 5px 10px;\n  font-weight: bold;\n  margin-bottom: 4px;\n  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);\n  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);\n  border-radius: 3px;\n  cursor: move; }\n\n.external-event:hover {\n  box-shadow: inset 0 0 90px rgba(0, 0, 0, 0.2); }\n\n/*\n * Plugin: Select2\n * ---------------\n */\n.select2-container--default.select2-container--focus,\n.select2-selection.select2-container--focus,\n.select2-container--default:focus,\n.select2-selection:focus,\n.select2-container--default:active,\n.select2-selection:active {\n  outline: none; }\n\n.select2-container--default .select2-selection--single,\n.select2-selection .select2-selection--single {\n  border: 1px solid #d2d6de;\n  border-radius: 0;\n  padding: 6px 12px;\n  height: 34px; }\n\n.select2-container--default.select2-container--open {\n  border-color: #3c8dbc; }\n\n.select2-dropdown {\n  border: 1px solid #d2d6de;\n  border-radius: 0; }\n\n.select2-container--default .select2-results__option--highlighted[aria-selected] {\n  background-color: #3c8dbc;\n  color: white; }\n\n.select2-results__option {\n  padding: 6px 12px;\n  user-select: none;\n  -webkit-user-select: none; }\n\n.select2-container .select2-selection--single .select2-selection__rendered {\n  padding-left: 0;\n  padding-right: 0;\n  height: auto;\n  margin-top: -4px; }\n\n.select2-container[dir=\"rtl\"] .select2-selection--single .select2-selection__rendered {\n  padding-right: 6px;\n  padding-left: 20px; }\n\n.select2-container--default .select2-selection--single .select2-selection__arrow {\n  height: 28px;\n  right: 3px; }\n\n.select2-container--default .select2-selection--single .select2-selection__arrow b {\n  margin-top: 0; }\n\n.select2-dropdown .select2-search__field,\n.select2-search--inline .select2-search__field {\n  border: 1px solid #d2d6de; }\n\n.select2-dropdown .select2-search__field:focus,\n.select2-search--inline .select2-search__field:focus {\n  outline: none;\n  border: 1px solid #3c8dbc; }\n\n.select2-container--default .select2-results__option[aria-disabled=true] {\n  color: #999; }\n\n.select2-container--default .select2-results__option[aria-selected=true] {\n  background-color: #ddd; }\n\n.select2-container--default .select2-results__option[aria-selected=true],\n.select2-container--default .select2-results__option[aria-selected=true]:hover {\n  color: #444; }\n\n.select2-container--default .select2-selection--multiple {\n  border: 1px solid #d2d6de;\n  border-radius: 0; }\n\n.select2-container--default .select2-selection--multiple:focus {\n  border-color: #3c8dbc; }\n\n.select2-container--default.select2-container--focus .select2-selection--multiple {\n  border-color: #d2d6de; }\n\n.select2-container--default .select2-selection--multiple .select2-selection__choice {\n  background-color: #3c8dbc;\n  border-color: #367fa9;\n  padding: 1px 10px;\n  color: #fff; }\n\n.select2-container--default .select2-selection--multiple .select2-selection__choice__remove {\n  margin-right: 5px;\n  color: rgba(255, 255, 255, 0.7); }\n\n.select2-container--default .select2-selection--multiple .select2-selection__choice__remove:hover {\n  color: #fff; }\n\n.select2-container .select2-selection--single .select2-selection__rendered {\n  padding-right: 10px; }\n\n/*\n * General: Miscellaneous\n * ----------------------\n */\n.pad {\n  padding: 10px; }\n\n.margin {\n  margin: 10px; }\n\n.margin-bottom {\n  margin-bottom: 20px; }\n\n.margin-bottom-none {\n  margin-bottom: 0; }\n\n.margin-r-5 {\n  margin-right: 5px; }\n\n.inline {\n  display: inline; }\n\n.description-block {\n  display: block;\n  margin: 10px 0;\n  text-align: center; }\n\n.description-block.margin-bottom {\n  margin-bottom: 25px; }\n\n.description-block > .description-header {\n  margin: 0;\n  padding: 0;\n  font-weight: 600;\n  font-size: 16px; }\n\n.description-block > .description-text {\n  text-transform: uppercase; }\n\n.bg-red,\n.bg-yellow,\n.bg-aqua,\n.bg-blue,\n.bg-light-blue,\n.bg-green,\n.bg-navy,\n.bg-teal,\n.bg-olive,\n.bg-lime,\n.bg-orange,\n.bg-fuchsia,\n.bg-purple,\n.bg-maroon,\n.bg-black,\n.bg-red-active,\n.bg-yellow-active,\n.bg-aqua-active,\n.bg-blue-active,\n.bg-light-blue-active,\n.bg-green-active,\n.bg-navy-active,\n.bg-teal-active,\n.bg-olive-active,\n.bg-lime-active,\n.bg-orange-active,\n.bg-fuchsia-active,\n.bg-purple-active,\n.bg-maroon-active,\n.bg-black-active,\n.callout.callout-danger,\n.callout.callout-warning,\n.callout.callout-info,\n.callout.callout-success,\n.alert-success,\n.alert-danger,\n.alert-error,\n.alert-warning,\n.alert-info,\n.label-danger,\n.label-info,\n.label-warning,\n.label-primary,\n.label-success,\n.modal-primary .modal-body,\n.modal-primary .modal-header,\n.modal-primary .modal-footer,\n.modal-warning .modal-body,\n.modal-warning .modal-header,\n.modal-warning .modal-footer,\n.modal-info .modal-body,\n.modal-info .modal-header,\n.modal-info .modal-footer,\n.modal-success .modal-body,\n.modal-success .modal-header,\n.modal-success .modal-footer,\n.modal-danger .modal-body,\n.modal-danger .modal-header,\n.modal-danger .modal-footer {\n  color: #fff !important; }\n\n.bg-gray {\n  color: #000;\n  background-color: #d2d6de !important; }\n\n.bg-gray-light {\n  background-color: #f7f7f7; }\n\n.bg-black {\n  background-color: #111111 !important; }\n\n.bg-red,\n.callout.callout-danger,\n.alert-danger,\n.alert-error,\n.label-danger,\n.modal-danger .modal-body {\n  background-color: #dd4b39 !important; }\n\n.bg-yellow,\n.callout.callout-warning,\n.alert-warning,\n.label-warning,\n.modal-warning .modal-body {\n  background-color: #f39c12 !important; }\n\n.bg-aqua,\n.callout.callout-info,\n.alert-info,\n.label-info,\n.modal-info .modal-body {\n  background-color: #00c0ef !important; }\n\n.bg-blue {\n  background-color: #0073b7 !important; }\n\n.bg-light-blue,\n.label-primary,\n.modal-primary .modal-body {\n  background-color: #3c8dbc !important; }\n\n.bg-green,\n.callout.callout-success,\n.alert-success,\n.label-success,\n.modal-success .modal-body {\n  background-color: #00a65a !important; }\n\n.bg-navy {\n  background-color: #001f3f !important; }\n\n.bg-teal {\n  background-color: #39cccc !important; }\n\n.bg-olive {\n  background-color: #3d9970 !important; }\n\n.bg-lime {\n  background-color: #01ff70 !important; }\n\n.bg-orange {\n  background-color: #ff851b !important; }\n\n.bg-fuchsia {\n  background-color: #f012be !important; }\n\n.bg-purple {\n  background-color: #605ca8 !important; }\n\n.bg-maroon {\n  background-color: #d81b60 !important; }\n\n.bg-gray-active {\n  color: #000;\n  background-color: #b5bbc8 !important; }\n\n.bg-black-active {\n  background-color: #000000 !important; }\n\n.bg-red-active,\n.modal-danger .modal-header,\n.modal-danger .modal-footer {\n  background-color: #d33724 !important; }\n\n.bg-yellow-active,\n.modal-warning .modal-header,\n.modal-warning .modal-footer {\n  background-color: #db8b0b !important; }\n\n.bg-aqua-active,\n.modal-info .modal-header,\n.modal-info .modal-footer {\n  background-color: #00a7d0 !important; }\n\n.bg-blue-active {\n  background-color: #005384 !important; }\n\n.bg-light-blue-active,\n.modal-primary .modal-header,\n.modal-primary .modal-footer {\n  background-color: #357ca5 !important; }\n\n.bg-green-active,\n.modal-success .modal-header,\n.modal-success .modal-footer {\n  background-color: #008d4c !important; }\n\n.bg-navy-active {\n  background-color: #001a35 !important; }\n\n.bg-teal-active {\n  background-color: #30bbbb !important; }\n\n.bg-olive-active {\n  background-color: #368763 !important; }\n\n.bg-lime-active {\n  background-color: #00e765 !important; }\n\n.bg-orange-active {\n  background-color: #ff7701 !important; }\n\n.bg-fuchsia-active {\n  background-color: #db0ead !important; }\n\n.bg-purple-active {\n  background-color: #555299 !important; }\n\n.bg-maroon-active {\n  background-color: #ca195a !important; }\n\n[class^=\"bg-\"].disabled {\n  opacity: 0.65;\n  filter: alpha(opacity=65); }\n\n.text-red {\n  color: #dd4b39 !important; }\n\n.text-yellow {\n  color: #f39c12 !important; }\n\n.text-aqua {\n  color: #00c0ef !important; }\n\n.text-blue {\n  color: #0073b7 !important; }\n\n.text-black {\n  color: #111111 !important; }\n\n.text-light-blue {\n  color: #3c8dbc !important; }\n\n.text-green {\n  color: #00a65a !important; }\n\n.text-gray {\n  color: #d2d6de !important; }\n\n.text-navy {\n  color: #001f3f !important; }\n\n.text-teal {\n  color: #39cccc !important; }\n\n.text-olive {\n  color: #3d9970 !important; }\n\n.text-lime {\n  color: #01ff70 !important; }\n\n.text-orange {\n  color: #ff851b !important; }\n\n.text-fuchsia {\n  color: #f012be !important; }\n\n.text-purple {\n  color: #605ca8 !important; }\n\n.text-maroon {\n  color: #d81b60 !important; }\n\n.link-muted {\n  color: #7a869d; }\n\n.link-muted:hover,\n.link-muted:focus {\n  color: #606c84; }\n\n.link-black {\n  color: #666; }\n\n.link-black:hover,\n.link-black:focus {\n  color: #999; }\n\n.hide {\n  display: none !important; }\n\n.no-border {\n  border: 0 !important; }\n\n.no-padding {\n  padding: 0 !important; }\n\n.no-margin {\n  margin: 0 !important; }\n\n.no-shadow {\n  box-shadow: none !important; }\n\n.list-unstyled,\n.chart-legend,\n.contacts-list,\n.users-list,\n.mailbox-attachments {\n  list-style: none;\n  margin: 0;\n  padding: 0; }\n\n.list-group-unbordered > .list-group-item {\n  border-left: 0;\n  border-right: 0;\n  border-radius: 0;\n  padding-left: 0;\n  padding-right: 0; }\n\n.flat {\n  border-radius: 0 !important; }\n\n.text-bold,\n.text-bold.table td,\n.text-bold.table th {\n  font-weight: 700; }\n\n.text-sm {\n  font-size: 12px; }\n\n.jqstooltip {\n  padding: 5px !important;\n  width: auto !important;\n  height: auto !important; }\n\n.bg-teal-gradient {\n  background: #39cccc !important;\n  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #39cccc), color-stop(1, #7adddd)) !important;\n  background: -ms-linear-gradient(bottom, #39cccc, #7adddd) !important;\n  background: -moz-linear-gradient(center bottom, #39cccc 0%, #7adddd 100%) !important;\n  background: -o-linear-gradient(#7adddd, #39cccc) !important;\n  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#7adddd', endColorstr='#39cccc', GradientType=0) !important;\n  color: #fff; }\n\n.bg-light-blue-gradient {\n  background: #3c8dbc !important;\n  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #3c8dbc), color-stop(1, #67a8ce)) !important;\n  background: -ms-linear-gradient(bottom, #3c8dbc, #67a8ce) !important;\n  background: -moz-linear-gradient(center bottom, #3c8dbc 0%, #67a8ce 100%) !important;\n  background: -o-linear-gradient(#67a8ce, #3c8dbc) !important;\n  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#67a8ce', endColorstr='#3c8dbc', GradientType=0) !important;\n  color: #fff; }\n\n.bg-blue-gradient {\n  background: #0073b7 !important;\n  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #0073b7), color-stop(1, #0089db)) !important;\n  background: -ms-linear-gradient(bottom, #0073b7, #0089db) !important;\n  background: -moz-linear-gradient(center bottom, #0073b7 0%, #0089db 100%) !important;\n  background: -o-linear-gradient(#0089db, #0073b7) !important;\n  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0089db', endColorstr='#0073b7', GradientType=0) !important;\n  color: #fff; }\n\n.bg-aqua-gradient {\n  background: #00c0ef !important;\n  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #00c0ef), color-stop(1, #14d1ff)) !important;\n  background: -ms-linear-gradient(bottom, #00c0ef, #14d1ff) !important;\n  background: -moz-linear-gradient(center bottom, #00c0ef 0%, #14d1ff 100%) !important;\n  background: -o-linear-gradient(#14d1ff, #00c0ef) !important;\n  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#14d1ff', endColorstr='#00c0ef', GradientType=0) !important;\n  color: #fff; }\n\n.bg-yellow-gradient {\n  background: #f39c12 !important;\n  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #f39c12), color-stop(1, #f7bc60)) !important;\n  background: -ms-linear-gradient(bottom, #f39c12, #f7bc60) !important;\n  background: -moz-linear-gradient(center bottom, #f39c12 0%, #f7bc60 100%) !important;\n  background: -o-linear-gradient(#f7bc60, #f39c12) !important;\n  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f7bc60', endColorstr='#f39c12', GradientType=0) !important;\n  color: #fff; }\n\n.bg-purple-gradient {\n  background: #605ca8 !important;\n  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #605ca8), color-stop(1, #9491c4)) !important;\n  background: -ms-linear-gradient(bottom, #605ca8, #9491c4) !important;\n  background: -moz-linear-gradient(center bottom, #605ca8 0%, #9491c4 100%) !important;\n  background: -o-linear-gradient(#9491c4, #605ca8) !important;\n  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#9491c4', endColorstr='#605ca8', GradientType=0) !important;\n  color: #fff; }\n\n.bg-green-gradient {\n  background: #00a65a !important;\n  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #00a65a), color-stop(1, #00ca6d)) !important;\n  background: -ms-linear-gradient(bottom, #00a65a, #00ca6d) !important;\n  background: -moz-linear-gradient(center bottom, #00a65a 0%, #00ca6d 100%) !important;\n  background: -o-linear-gradient(#00ca6d, #00a65a) !important;\n  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00ca6d', endColorstr='#00a65a', GradientType=0) !important;\n  color: #fff; }\n\n.bg-red-gradient {\n  background: #dd4b39 !important;\n  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #dd4b39), color-stop(1, #e47365)) !important;\n  background: -ms-linear-gradient(bottom, #dd4b39, #e47365) !important;\n  background: -moz-linear-gradient(center bottom, #dd4b39 0%, #e47365 100%) !important;\n  background: -o-linear-gradient(#e47365, #dd4b39) !important;\n  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e47365', endColorstr='#dd4b39', GradientType=0) !important;\n  color: #fff; }\n\n.bg-black-gradient {\n  background: #111111 !important;\n  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #111111), color-stop(1, #2b2b2b)) !important;\n  background: -ms-linear-gradient(bottom, #111111, #2b2b2b) !important;\n  background: -moz-linear-gradient(center bottom, #111111 0%, #2b2b2b 100%) !important;\n  background: -o-linear-gradient(#2b2b2b, #111111) !important;\n  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#2b2b2b', endColorstr='#111111', GradientType=0) !important;\n  color: #fff; }\n\n.bg-maroon-gradient {\n  background: #d81b60 !important;\n  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #d81b60), color-stop(1, #e73f7c)) !important;\n  background: -ms-linear-gradient(bottom, #d81b60, #e73f7c) !important;\n  background: -moz-linear-gradient(center bottom, #d81b60 0%, #e73f7c 100%) !important;\n  background: -o-linear-gradient(#e73f7c, #d81b60) !important;\n  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e73f7c', endColorstr='#d81b60', GradientType=0) !important;\n  color: #fff; }\n\n.description-block .description-icon {\n  font-size: 16px; }\n\n.no-pad-top {\n  padding-top: 0; }\n\n.position-static {\n  position: static !important; }\n\n.list-header {\n  font-size: 15px;\n  padding: 10px 4px;\n  font-weight: bold;\n  color: #666; }\n\n.list-seperator {\n  height: 1px;\n  background: #f4f4f4;\n  margin: 15px 0 9px 0; }\n\n.list-link > a {\n  padding: 4px;\n  color: #777; }\n\n.list-link > a:hover {\n  color: #222; }\n\n.font-light {\n  font-weight: 300; }\n\n.user-block:before,\n.user-block:after {\n  content: \" \";\n  display: table; }\n\n.user-block:after {\n  clear: both; }\n\n.user-block img {\n  width: 40px;\n  height: 40px;\n  float: left; }\n\n.user-block .username,\n.user-block .description,\n.user-block .comment {\n  display: block;\n  margin-left: 50px; }\n\n.user-block .username {\n  font-size: 16px;\n  font-weight: 600; }\n\n.user-block .description {\n  color: #999;\n  font-size: 13px; }\n\n.user-block.user-block-sm .username,\n.user-block.user-block-sm .description,\n.user-block.user-block-sm .comment {\n  margin-left: 40px; }\n\n.user-block.user-block-sm .username {\n  font-size: 14px; }\n\n.img-sm,\n.img-md,\n.img-lg,\n.box-comments .box-comment img,\n.user-block.user-block-sm img {\n  float: left; }\n\n.img-sm,\n.box-comments .box-comment img,\n.user-block.user-block-sm img {\n  width: 30px !important;\n  height: 30px !important; }\n\n.img-sm + .img-push {\n  margin-left: 40px; }\n\n.img-md {\n  width: 60px;\n  height: 60px; }\n\n.img-md + .img-push {\n  margin-left: 70px; }\n\n.img-lg {\n  width: 100px;\n  height: 100px; }\n\n.img-lg + .img-push {\n  margin-left: 110px; }\n\n.img-bordered {\n  border: 3px solid #d2d6de;\n  padding: 3px; }\n\n.img-bordered-sm {\n  border: 2px solid #d2d6de;\n  padding: 2px; }\n\n.attachment-block {\n  border: 1px solid #f4f4f4;\n  padding: 5px;\n  margin-bottom: 10px;\n  background: #f7f7f7; }\n\n.attachment-block .attachment-img {\n  max-width: 100px;\n  max-height: 100px;\n  height: auto;\n  float: left; }\n\n.attachment-block .attachment-pushed {\n  margin-left: 110px; }\n\n.attachment-block .attachment-heading {\n  margin: 0; }\n\n.attachment-block .attachment-text {\n  color: #555; }\n\n.connectedSortable {\n  min-height: 100px; }\n\n.ui-helper-hidden-accessible {\n  border: 0;\n  clip: rect(0 0 0 0);\n  height: 1px;\n  margin: -1px;\n  overflow: hidden;\n  padding: 0;\n  position: absolute;\n  width: 1px; }\n\n.sort-highlight {\n  background: #f4f4f4;\n  border: 1px dashed #ddd;\n  margin-bottom: 10px; }\n\n.full-opacity-hover {\n  opacity: 0.65;\n  filter: alpha(opacity=65); }\n\n.full-opacity-hover:hover {\n  opacity: 1;\n  filter: alpha(opacity=100); }\n\n.chart {\n  position: relative;\n  overflow: hidden;\n  width: 100%; }\n\n.chart svg,\n.chart canvas {\n  width: 100% !important; }\n\n/*\n * Misc: print\n * -----------\n */\n@media print {\n  .no-print,\n  .main-sidebar,\n  .left-side,\n  .main-header,\n  .content-header {\n    display: none !important; }\n  .content-wrapper,\n  .right-side,\n  .main-footer {\n    margin-left: 0 !important;\n    min-height: 0 !important;\n    -webkit-transform: translate(0, 0) !important;\n    -ms-transform: translate(0, 0) !important;\n    -o-transform: translate(0, 0) !important;\n    transform: translate(0, 0) !important; }\n  .fixed .content-wrapper,\n  .fixed .right-side {\n    padding-top: 0 !important; }\n  .invoice {\n    width: 100%;\n    border: 0;\n    margin: 0;\n    padding: 0; }\n  .invoice-col {\n    float: left;\n    width: 33.3333333%; }\n  .table-responsive {\n    overflow: auto; }\n  .table-responsive > .table tr th,\n  .table-responsive > .table tr td {\n    white-space: normal !important; } }\n", ""]);
 
 	// exports
 
