@@ -1,4 +1,44 @@
 @import "../../../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_variables.scss";
 
+.Form__input--group {
+  position: relative;
+}
+
+.Form__input--group-item {
+  &:first-child {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
+  &:last-child {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+}
+
+.Form__input--addon {
+  display: inline-block;
+  position: relative;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-right: 0;
+  margin: 0;
+}
+
+.Form__input--counter {
+  display: inline-block;
+  position: relative;
+  margin: 0;
+  border: 1px solid #ccc;
+  padding: 10px;
+  font-weight: 400;
+  border-left: 0;
+}
+
+.Form__input--text {
+  display: inline-block;
+  margin: 0;
+  border: 1px solid #ccc;
+}
+
 @media screen and (max-width: $screen-xs-max) {
 }

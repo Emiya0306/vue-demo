@@ -5,9 +5,13 @@ import style from './input-group.scss';
 @Component({
     template: tpl,
     props: {
+        id: String,
+        label: String,
+        addon: String,
         field: String,
         type: String,
-        length: String,
+        maxLength: String,
+        showLimited: String,
         value: {
             type: String,
             twoWay: true
@@ -16,19 +20,20 @@ import style from './input-group.scss';
 })
 class InputGroup {
 
-    _onKeyDown(event) {
-        this.value = event.target.value;
-        console.log(event.target.value.length);
+    data() {
+        return {
+            length: 0
+        }
     }
 
-    _onChange(event) {
-        let value = event.target.value;
-        this._setValue(value);
+    _onInput() {
+        this.length = this.value.length;
     }
 
-    _setValue(value) {
-        this.value = value;
+    _clearInput() {
+        this.value = '';
     }
+
 }
 
 export default InputGroup;

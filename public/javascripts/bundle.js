@@ -15423,7 +15423,7 @@
 /* 206 */
 /***/ function(module, exports) {
 
-	module.exports = "<nav class=\"Sidebar__container\">\n    <ul class=\"Sidebar__topList\">\n        <li class=\"Sidebar__menu\">\n            <!-- 说明: a标签上面加上getRouteName点击事件的原因是为了获取当前点击是否是auth -->\n            <a class=\"Sidebar__link fa fa-home\"\n               name=\"home\"\n               @click=\"getRouteName\"\n               v-bind:class=\"[ currentLink == 'auth' ? 'activeLink' : '' ]\"\n               v-link=\"{ path: '/home', activeClass: 'active' }\"></a>\n        </li>\n        <li class=\"Sidebar__menu\">\n            <a class=\"Sidebar__link fa fa-th\"\n               @click=\"getRouteName\"\n               v-link=\"{ path: '/dashboard', activeClass: 'active' }\"></a>\n        </li>\n        <li class=\"Sidebar__menu hidden\">\n            <a class=\"Sidebar__link fa fa-tasks\"\n               @click=\"getRouteName\"\n               v-link=\"{ path: '/anttest', activeClass: 'active' }\"></a>\n        </li>\n        <li class=\"Sidebar__menu hidden\">\n            <a class=\"Sidebar__link fa fa-users\"\n               @click=\"getRouteName\"\n               v-link=\"{ path: '/admintest', activeClass: 'active' }\"></a>\n        </li>\n    </ul>\n    <ul class=\"Sidebar__bottomList\">\n        <li class=\"Sidebar__menu\">\n            <a class=\"Sidebar__link fa fa-cog\"></a>\n        </li>\n        <li class=\"Sidebar__menu\">\n            <a class=\"Sidebar__link fa fa-sign-in\"\n               name=\"auth\"\n               @click=\"getRouteName\"\n               v-link=\"{ path: '/sign_in', activeClass: 'hidden' }\"\n               v-bind:class=\"[ currentLink == 'auth' ? 'hiddenLink' : '' ]\"></a>\n        </li>\n    </ul>\n</nav>";
+	module.exports = "<nav class=\"Sidebar__container\">\n    <ul class=\"Sidebar__topList\">\n        <li class=\"Sidebar__menu\">\n            <!-- 说明: a标签上面加上getRouteName点击事件的原因是为了获取当前点击是否是auth -->\n            <a class=\"Sidebar__link fa fa-home\"\n               name=\"home\"\n               @click=\"getRouteName\"\n               v-bind:class=\"[ currentLink == 'auth' ? 'activeLink' : '' ]\"\n               v-link=\"{ path: '/home', activeClass: 'active' }\"></a>\n        </li>\n        <li class=\"Sidebar__menu\">\n            <a class=\"Sidebar__link fa fa-th\"\n               @click=\"getRouteName\"\n               v-link=\"{ path: '/dashboard', activeClass: 'active' }\"></a>\n        </li>\n        <li class=\"Sidebar__menu\">\n            <a class=\"Sidebar__link fa fa-tasks\"\n               @click=\"getRouteName\"\n               v-link=\"{ path: '/anttest', activeClass: 'active' }\"></a>\n        </li>\n        <li class=\"Sidebar__menu\">\n            <a class=\"Sidebar__link fa fa-users\"\n               @click=\"getRouteName\"\n               v-link=\"{ path: '/admintest', activeClass: 'active' }\"></a>\n        </li>\n    </ul>\n    <ul class=\"Sidebar__bottomList\">\n        <li class=\"Sidebar__menu\">\n            <a class=\"Sidebar__link fa fa-cog\"></a>\n        </li>\n        <li class=\"Sidebar__menu\">\n            <a class=\"Sidebar__link fa fa-sign-in\"\n               name=\"auth\"\n               @click=\"getRouteName\"\n               v-link=\"{ path: '/sign_in', activeClass: 'hidden' }\"\n               v-bind:class=\"[ currentLink == 'auth' ? 'hiddenLink' : '' ]\"></a>\n        </li>\n    </ul>\n</nav>";
 
 /***/ },
 /* 207 */
@@ -15661,7 +15661,7 @@
 /* 220 */
 /***/ function(module, exports) {
 
-	module.exports = "<form>\n    <v-input-group field=\"username\" type=\"text\" length=\"6\" :value.sync=\"passport\"></v-input-group>\n</form>";
+	module.exports = "<form>\n    <v-input-group id=\"passport\"\n                   label=\"手机/邮箱:\"\n                   addon=\"fa fa-user\"\n                   placeholder=\"请输入手机或邮箱\"\n                   field=\"passport\"\n                   type=\"text\"\n                   max-length=\"6\"\n                   show-limited=\"true\"\n                   :value.sync=\"passport\"></v-input-group>\n</form>";
 
 /***/ },
 /* 221 */
@@ -15738,9 +15738,13 @@
 	var InputGroup = (_dec = (0, _vueClassComponent2.default)({
 	    template: _inputGroupTpl2.default,
 	    props: {
+	        id: String,
+	        label: String,
+	        addon: String,
 	        field: String,
 	        type: String,
-	        length: String,
+	        maxLength: String,
+	        showLimited: String,
 	        value: {
 	            type: String,
 	            twoWay: true
@@ -15752,21 +15756,21 @@
 	    }
 
 	    _createClass(InputGroup, [{
-	        key: '_onKeyDown',
-	        value: function _onKeyDown(event) {
-	            this.value = event.target.value;
-	            console.log(event.target.value.length);
+	        key: 'data',
+	        value: function data() {
+	            return {
+	                length: 0
+	            };
 	        }
 	    }, {
-	        key: '_onChange',
-	        value: function _onChange(event) {
-	            var value = event.target.value;
-	            this._setValue(value);
+	        key: '_onInput',
+	        value: function _onInput() {
+	            this.length = this.value.length;
 	        }
 	    }, {
-	        key: '_setValue',
-	        value: function _setValue(value) {
-	            this.value = value;
+	        key: '_clearInput',
+	        value: function _clearInput() {
+	            this.value = '';
 	        }
 	    }]);
 
@@ -15778,7 +15782,7 @@
 /* 226 */
 /***/ function(module, exports) {
 
-	module.exports = "<div class=\"Form__input-group\">\n    <label class=\"Form__input--label\"\n           :for=\"name\">{{ name }}</label>\n    <input class=\"Form__input--text\"\n           @keydown=\"_onKeyDown\"\n           @change=\"_onChange\"\n           :id=\"name\"\n           :name=\"field\"\n           :value=\"value\"\n           :maxlength=\"length\">\n</div>";
+	module.exports = "<div class=\"Form__input--container\">\n    <label class=\"Form__input--label\"\n           v-if=\"label\"\n           :for=\"id\">{{ label }}</label>\n    <div class=\"Form__input--group\">\n        <label class=\"Form__input--group-item Form__input--addon\"\n               v-if=\"addon\"\n               :class=\"addon\"\n               :for=\"id\"></label>\n        <input class=\"Form__input--group-item Form__input--text\"\n               :id=\"id\"\n               :name=\"field\"\n               :type=\"type\"\n               :maxlength=\"maxLength\"\n               v-model=\"value\"\n               @input=\"_onInput\">\n        <label class=\"Form__input--group-item Form__input--counter\"\n               v-if=\"showLimited\"\n               :for=\"id\">{{length}}/{{maxLength}}</label>\n    </div>\n</div>";
 
 /***/ },
 /* 227 */
@@ -15815,7 +15819,7 @@
 
 
 	// module
-	exports.push([module.id, "", ""]);
+	exports.push([module.id, ".Form__input--group {\n  position: relative; }\n\n.Form__input--group-item:first-child {\n  border-top-left-radius: 5px;\n  border-bottom-left-radius: 5px; }\n\n.Form__input--group-item:last-child {\n  border-top-right-radius: 5px;\n  border-bottom-right-radius: 5px; }\n\n.Form__input--addon {\n  display: inline-block;\n  position: relative;\n  padding: 10px;\n  border: 1px solid #ccc;\n  border-right: 0;\n  margin: 0; }\n\n.Form__input--counter {\n  display: inline-block;\n  position: relative;\n  margin: 0;\n  border: 1px solid #ccc;\n  padding: 10px;\n  font-weight: 400;\n  border-left: 0; }\n\n.Form__input--text {\n  display: inline-block;\n  margin: 0;\n  border: 1px solid #ccc; }\n", ""]);
 
 	// exports
 

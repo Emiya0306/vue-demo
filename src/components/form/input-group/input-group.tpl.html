@@ -1,11 +1,21 @@
-<div class="Form__input-group">
+<div class="Form__input--container">
     <label class="Form__input--label"
-           :for="name">{{ name }}</label>
-    <input class="Form__input--text"
-           @keydown="_onKeyDown"
-           @change="_onChange"
-           :id="name"
-           :name="field"
-           :value="value"
-           :maxlength="length">
+           v-if="label"
+           :for="id">{{ label }}</label>
+    <div class="Form__input--group">
+        <label class="Form__input--group-item Form__input--addon"
+               v-if="addon"
+               :class="addon"
+               :for="id"></label>
+        <input class="Form__input--group-item Form__input--text"
+               :id="id"
+               :name="field"
+               :type="type"
+               :maxlength="maxLength"
+               v-model="value"
+               @input="_onInput">
+        <label class="Form__input--group-item Form__input--counter"
+               v-if="showLimited"
+               :for="id">{{length}}/{{maxLength}}</label>
+    </div>
 </div>

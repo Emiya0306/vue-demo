@@ -1,3 +1,11 @@
 <form>
-    <v-input-group field="username" type="text" length="6" :value.sync="passport"></v-input-group>
+    <v-input-group id="passport"
+                   label="手机/邮箱:"
+                   addon="fa fa-user"
+                   placeholder="请输入手机或邮箱"
+                   field="passport"
+                   type="text"
+                   max-length="6"
+                   show-limited="true"
+                   :value.sync="passport"></v-input-group>
 </form>
