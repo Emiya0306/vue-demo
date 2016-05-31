@@ -1,81 +1,101 @@
 'use strict';
 
-function PushMenu(jQuery, settings) {
-    this.$ = jQuery;
-    this.settings = settings;
+function PushMenu(settings, button, contentWrapper) {
+    this.DOM = {
+        button: button || document.body.querySelector("[data-toggle='offcanvas']"),
+        contentWrapper: contentWrapper || document.body.querySelector(".content-wrapper")
+    };
+    this.settings = settings || {
+            screenSizes: {
+                xs: 480,
+                sm: 768,
+                md: 992,
+                lg: 1200
+            },
+            sidebarExpandOnHover: false
+        };
+    this.init();
 }
 
-PushMenu.prototype.activate = function (toggleBtn) {
+PushMenu.prototype.init = function () {
     //Get the screen sizes
-    var $ = this.$, _this = this, screenSizes = _this.settings.screenSizes;
+    var DOM = this.DOM,
+        screenSizes = this.settings.screenSizes,
+        sidebarExpandOnHover = this.settings.sidebarExpandOnHover;
 
     //Enable sidebar toggle
-    $(document).on('click', toggleBtn, function (e) {
+    DOM.button.addEventListener('click', function(e) {
         e.preventDefault();
 
         //Enable sidebar push menu
-        if ($(window).width() > (screenSizes.sm - 1)) {
-            if ($("body").hasClass('sidebar-collapse')) {
-                $("body").removeClass('sidebar-collapse').trigger('expanded.pushMenu');
+        if (document.body.clientWidth > (screenSizes.sm - 1)) {
+            if (document.body.className.indexOf('sidebar-collapse') >= 0) {
+                //$("body").removeClass('sidebar-collapse').trigger('expanded.pushMenu');
+                document.body.className = document.body.className.replace(' sidebar-collapse', '');
             } else {
-                $("body").addClass('sidebar-collapse').trigger('collapsed.pushMenu');
+                //$("body").addClass('sidebar-collapse').trigger('collapsed.pushMenu');
+                document.body.className += ' sidebar-collapse';
             }
         }
         //Handle sidebar push menu for small screens
         else {
-            if ($("body").hasClass('sidebar-open')) {
-                $("body").removeClass('sidebar-open').removeClass('sidebar-collapse').trigger('collapsed.pushMenu');
+            if (document.body.className.indexOf('sidebar-open') >= 0) {
+                //$("body").removeClass('sidebar-open').removeClass('sidebar-collapse').trigger('collapsed.pushMenu');
+                document.body.className = document.body.className.replace(' sidebar-open', '').replace(' sidebar-collapse', '');
             } else {
-                $("body").addClass('sidebar-open').trigger('expanded.pushMenu');
+                //$("body").addClass('sidebar-open').trigger('expanded.pushMenu');
+                document.body.className += ' sidebar-open';
+                console.log(document.body.className);
             }
         }
     });
 
-    $(".content-wrapper").click(function () {
+    DOM.contentWrapper.addEventListener('click', function () {
         //Enable hide menu when clicking on the content-wrapper on small screens
-        if ($(window).width() <= (screenSizes.sm - 1) && $("body").hasClass("sidebar-open")) {
-            $("body").removeClass('sidebar-open');
+        if (document.body.clientWidth <= (screenSizes.sm - 1) &&
+            (document.body.className.indexOf('sidebar-open') >= 0)) {
+            document.body.className = document.body.className.replace(' sidebar-open', '');
         }
     });
 
+    // TODO: sidebar mini is not finished
     //Enable expand on hover for sidebar mini
-    if (_this.settings.sidebarExpandOnHover
-        || ($('body').hasClass('fixed')
-        && $('body').hasClass('sidebar-mini'))) {
-        this.expandOnHover();
-    }
+    //if (sidebarExpandOnHover
+    //    || (document.body.className.indexOf('fixed') >= 0
+    //    && document.body.className.indexOf('sidebar-mini') >= 0)) {
+    //    //this.expandOnHover();
+    //}
 };
 
-PushMenu.prototype.expandOnHover = function () {
-    var _this = this;
-    var $ = this.$;
-    var screenWidth = _this.settings.screenSizes.sm - 1;
-    //Expand sidebar on hover
-    $('.main-sidebar').hover(function () {
-        if ($('body').hasClass('sidebar-mini')
-            && $("body").hasClass('sidebar-collapse')
-            && $(window).width() > screenWidth) {
-            _this.expand();
-        }
-    }, function () {
-        if ($('body').hasClass('sidebar-mini')
-            && $('body').hasClass('sidebar-expanded-on-hover')
-            && $(window).width() > screenWidth) {
-            _this.collapse();
-        }
-    });
-};
-
-PushMenu.prototype.expand = function () {
-    var $ = this.$;
-    $("body").removeClass('sidebar-collapse').addClass('sidebar-expanded-on-hover');
-};
-
-PushMenu.prototype.collapse = function () {
-    var $ = this.$;
-    if ($('body').hasClass('sidebar-expanded-on-hover')) {
-        $('body').removeClass('sidebar-expanded-on-hover').addClass('sidebar-collapse');
-    }
-};
+//PushMenu.prototype.expandOnHover = function () {
+//    var _this = this;
+//    var screenWidth = this.settings.screenSizes.sm - 1;
+//    //Expand sidebar on hover
+//    $('.main-sidebar').hover(function () {
+//        if ($('body').hasClass('sidebar-mini')
+//            && $("body").hasClass('sidebar-collapse')
+//            && $(window).width() > screenWidth) {
+//            _this.expand();
+//        }
+//    }, function () {
+//        if ($('body').hasClass('sidebar-mini')
+//            && $('body').hasClass('sidebar-expanded-on-hover')
+//            && $(window).width() > screenWidth) {
+//            _this.collapse();
+//        }
+//    });
+//};
+//
+//PushMenu.prototype.expand = function () {
+//    var $ = this.$;
+//    $("body").removeClass('sidebar-collapse').addClass('sidebar-expanded-on-hover');
+//};
+//
+//PushMenu.prototype.collapse = function () {
+//    var $ = this.$;
+//    if ($('body').hasClass('sidebar-expanded-on-hover')) {
+//        $('body').removeClass('sidebar-expanded-on-hover').addClass('sidebar-collapse');
+//    }
+//};
 
 module.exports = PushMenu;

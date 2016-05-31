@@ -1,9 +1,10 @@
 import $ from 'jquery'
 import Component from 'vue-class-component';
 import tpl from './newAdminTest.tpl.html'
-import { ControlSidebar } from '../../lib/newAdminLTE'
+import { ControlSidebar, PushMenu } from '../../lib/newAdminLTE'
 
 import style from './AdminLTE.scss';
+import skin from './skins/_all-skins.scss'
 
 @Component({
     template: tpl
@@ -12,19 +13,27 @@ class AdminTest {
 
     data() {
         return {
-            ControlSidebarBtn: {}
+            ControlSidebarBtn: {},
+            PushMenu: {}
         }
     }
 
     ready() {
-
-
         this.ControlSidebar = new ControlSidebar(
+            { slide: true },
             document.getElementById('ControlSidebarBtn'),
             document.getElementById('ControlSidebar'),
             document.getElementById('ControlSidebarBg'),
-            { slide: true }
+            document.getElementById('bodyWrapper')
         );
+
+
+        this.PushMenu = new PushMenu(
+            null,
+            document.getElementById('PushMenuBtn'),
+            document.getElementById('PushMenuWrapper')
+        );
+
     }
 
     openSidebar() {

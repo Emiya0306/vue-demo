@@ -1,10 +1,12 @@
 'use strict';
 
-function ControlSidebar(button, sidebar, sidebarBackground, settings) {
+function ControlSidebar(settings, button, sidebar, sidebarBackground, wrapper, rightSide) {
     this.DOM = {
         button: button,
         sidebar: sidebar,
-        sidebarBackground: sidebarBackground
+        sidebarBackground: sidebarBackground,
+        wrapper: wrapper || document.querySelector('.wrapper'),
+        rightSide: rightSide || document.querySelector('.content-wrapper, .right-side')
     };
     this.settings = settings;
     this.init();
@@ -37,7 +39,7 @@ ControlSidebar.prototype.init = function () {
         _this._fixForFixed(DOM.sidebar);
     } else {
         //If the content height is less than the sidebar's height, force max height
-        if (document.querySelector('.content-wrapper, .right-side').style.height < DOM.sidebar.style.height) {
+        if (DOM.rightSide.style.height < DOM.sidebar.style.height) {
             _this._fixForContent(DOM.sidebar);
         }
     }
@@ -71,9 +73,10 @@ ControlSidebar.prototype.close = function () {
 };
 
 ControlSidebar.prototype._fix = function (sidebar) {
+    var DOM = this.DOM;
     if (document.body.className.indexOf('layout-boxed') >= 0) {
         sidebar.style.position='absolute';
-        sidebar.height = document.querySelector('.wrapper').style.height;
+        sidebar.height = DOM.wrapper.style.height;
         window.addEventListener('resize', function () {
             this._fix(sidebar);
         });
@@ -91,8 +94,8 @@ ControlSidebar.prototype._fixForFixed = function (sidebar) {
 };
 
 ControlSidebar.prototype._fixForContent = function (sidebar) {
-
-    document.querySelector('.content-wrapper, .right-side').style.minHeight = sidebar.style.height;
+    var DOM = this.DOM;
+    DOM.rightSide.style.minHeight = sidebar.style.height;
 };
 
 module.exports = ControlSidebar;
