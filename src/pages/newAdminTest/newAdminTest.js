@@ -1,7 +1,7 @@
 import $ from 'jquery'
 import Component from 'vue-class-component';
 import tpl from './newAdminTest.tpl.html'
-import { ControlSidebar, PushMenu } from '../../lib/newAdminLTE'
+import { ControlSidebar, PushMenu, BoxWidget } from '../../lib/newAdminLTE'
 
 import style from './AdminLTE.scss';
 import skin from './skins/_all-skins.scss'
@@ -14,7 +14,8 @@ class AdminTest {
     data() {
         return {
             ControlSidebarBtn: {},
-            PushMenu: {}
+            PushMenu: {},
+            BoxWidget: {}
         }
     }
 
@@ -34,6 +35,10 @@ class AdminTest {
             document.getElementById('PushMenuWrapper')
         );
 
+        this.BoxWidget = new BoxWidget(
+            null,
+            document.getElementById('BoxWidget')
+        );
     }
 
     openSidebar() {
@@ -42,6 +47,14 @@ class AdminTest {
 
     closeSidebar() {
         this.ControlSidebar.close();
+    }
+
+    removeBoxWidget() {
+        this.BoxWidget.remove();
+    }
+
+    collapseBoxWidget() {
+        this.BoxWidget.collapse();
     }
 }
 
