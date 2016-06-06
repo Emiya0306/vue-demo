@@ -130,11 +130,13 @@ BoxWidget.prototype.slideDown = function (element, animationSpeed, cb) {
 };
 
 BoxWidget.prototype.getStyle = function (element, styleName) {
-    var computedStyle = window.getComputedStyle(element, null)[styleName];
-    var styleAttribute = document.createAttribute('data-' + styleName);
-    styleAttribute.nodeValue = computedStyle;
-    element.attributes.setNamedItem(styleAttribute);
-    element.style[styleName] = element.attributes.getNamedItem('data-' + styleName).value;
+    if(!element.attributes.getNamedItem('data-' + styleName)) {
+        var computedStyle = window.getComputedStyle(element, null)[styleName];
+        var styleAttribute = document.createAttribute('data-' + styleName);
+        styleAttribute.nodeValue = computedStyle;
+        element.attributes.setNamedItem(styleAttribute);
+        element.style[styleName] = element.attributes.getNamedItem('data-' + styleName).value;
+    }
 };
 
 module.exports = BoxWidget;

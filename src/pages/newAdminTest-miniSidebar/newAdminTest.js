@@ -1,7 +1,7 @@
 import $ from 'jquery'
 import Component from 'vue-class-component';
 import tpl from './newAdminTest.tpl.html'
-import { PushMenu } from '../../lib/newAdminLTE'
+import { PushMenu, Tree } from '../../lib/newAdminLTE'
 
 import style from './AdminLTE.scss';
 import skin from './skins/_all-skins.scss'
@@ -30,6 +30,11 @@ class NewAdminTest_minisidebar {
             document.getElementById('PushMenuBtn'),
             document.getElementById('MainSidebar'),
             document.getElementById('PushMenuWrapper')
+        );
+
+        this.Tree = new Tree(
+            {},
+            document.getElementById('MenuTree')
         );
     }
 }
