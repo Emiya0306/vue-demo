@@ -5,6 +5,7 @@ import AdminTest from './pages/adminTest/adminTest'
 import NewAdminTest from './pages/newAdminTest/newAdminTest'
 import NewAdminTest_minisidebar from './pages/newAdminTest-miniSidebar/newAdminTest'
 import Auth from './pages/auth/auth'
+import Vuex_Page from './pages/vuex_page/vuex_page'
 
 const routers = {
     '/sign_up': {
@@ -22,6 +23,9 @@ const routers = {
     '/dashboard': {
         name: 'dashboard',
         component: Dashboard
+    },
+    '/vuex': {
+        component: Vuex_Page
     },
     '/admintest': {
         component: AdminTest

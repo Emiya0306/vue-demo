@@ -50,10 +50,6 @@
 
 	var _vue2 = _interopRequireDefault(_vue);
 
-	var _vuex = __webpack_require__(84);
-
-	var _vuex2 = _interopRequireDefault(_vuex);
-
 	var _vueRouter = __webpack_require__(85);
 
 	var _vueRouter2 = _interopRequireDefault(_vueRouter);
@@ -62,14 +58,13 @@
 
 	var _routeConfig2 = _interopRequireDefault(_routeConfig);
 
-	var _app = __webpack_require__(226);
+	var _app = __webpack_require__(232);
 
 	var _app2 = _interopRequireDefault(_app);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	_vue2.default.use(_vueRouter2.default);
-	_vue2.default.use(_vuex2.default);
 
 	var router = new _vueRouter2.default({
 	    history: true,
@@ -6419,6 +6414,10 @@
 
 	var _auth2 = _interopRequireDefault(_auth);
 
+	var _vuex_page = __webpack_require__(246);
+
+	var _vuex_page2 = _interopRequireDefault(_vuex_page);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	var routers = {
@@ -6437,6 +6436,9 @@
 	    '/dashboard': {
 	        name: 'dashboard',
 	        component: _dashboard2.default
+	    },
+	    '/vuex': {
+	        component: _vuex_page2.default
 	    },
 	    '/admintest': {
 	        component: _adminTest2.default
@@ -16446,7 +16448,13 @@
 	module.exports = "<div>\n    <h1>register</h1>\n</div>";
 
 /***/ },
-/* 226 */
+/* 226 */,
+/* 227 */,
+/* 228 */,
+/* 229 */,
+/* 230 */,
+/* 231 */,
+/* 232 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -16459,19 +16467,31 @@
 
 	var _dec, _class;
 
+	var _vue = __webpack_require__(82);
+
+	var _vue2 = _interopRequireDefault(_vue);
+
+	var _vuex = __webpack_require__(84);
+
+	var _vuex2 = _interopRequireDefault(_vuex);
+
 	var _vueClassComponent = __webpack_require__(88);
 
 	var _vueClassComponent2 = _interopRequireDefault(_vueClassComponent);
 
-	var _appTpl = __webpack_require__(227);
+	var _appTpl = __webpack_require__(233);
 
 	var _appTpl2 = _interopRequireDefault(_appTpl);
 
-	var _app = __webpack_require__(228);
+	var _app = __webpack_require__(234);
 
 	var _app2 = _interopRequireDefault(_app);
 
-	var _sidebar = __webpack_require__(230);
+	var _store = __webpack_require__(255);
+
+	var _store2 = _interopRequireDefault(_store);
+
+	var _sidebar = __webpack_require__(236);
 
 	var _sidebar2 = _interopRequireDefault(_sidebar);
 
@@ -16479,12 +16499,15 @@
 
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
+	_vue2.default.use(_vuex2.default);
+
 	var App = (_dec = (0, _vueClassComponent2.default)({
 	    template: _appTpl2.default,
 	    replace: false,
 	    components: {
 	        vSidebar: _sidebar2.default
-	    }
+	    },
+	    store: _store2.default
 	}), _dec(_class = function () {
 	    function App() {
 	        _classCallCheck(this, App);
@@ -16500,19 +16523,19 @@
 	exports.default = App;
 
 /***/ },
-/* 227 */
+/* 233 */
 /***/ function(module, exports) {
 
 	module.exports = "<div>\n    <v-sidebar></v-sidebar>\n    <div class=\"App__Container\">\n        <router-view></router-view>\n    </div>\n</div>";
 
 /***/ },
-/* 228 */
+/* 234 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(229);
+	var content = __webpack_require__(235);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(174)(content, {});
@@ -16532,7 +16555,7 @@
 	}
 
 /***/ },
-/* 229 */
+/* 235 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(173)();
@@ -16546,7 +16569,7 @@
 
 
 /***/ },
-/* 230 */
+/* 236 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -16563,11 +16586,11 @@
 
 	var _vueClassComponent2 = _interopRequireDefault(_vueClassComponent);
 
-	var _sidebarTpl = __webpack_require__(231);
+	var _sidebarTpl = __webpack_require__(237);
 
 	var _sidebarTpl2 = _interopRequireDefault(_sidebarTpl);
 
-	var _sidebar = __webpack_require__(232);
+	var _sidebar = __webpack_require__(238);
 
 	var _sidebar2 = _interopRequireDefault(_sidebar);
 
@@ -16606,19 +16629,19 @@
 	exports.default = Sidebar;
 
 /***/ },
-/* 231 */
+/* 237 */
 /***/ function(module, exports) {
 
-	module.exports = "<nav class=\"Sidebar__container\">\n    <ul class=\"Sidebar__topList\">\n        <li class=\"Sidebar__menu\">\n            <!-- 说明: a标签上面加上getRouteName点击事件的原因是为了获取当前点击是否是auth -->\n            <a class=\"Sidebar__link fa fa-home\"\n               name=\"home\"\n               @click=\"getRouteName\"\n               v-bind:class=\"[ currentLink == 'auth' ? 'activeLink' : '' ]\"\n               v-link=\"{ path: '/home', activeClass: 'active' }\"></a>\n        </li>\n        <li class=\"Sidebar__menu\">\n            <a class=\"Sidebar__link fa fa-th\"\n               @click=\"getRouteName\"\n               v-link=\"{ path: '/dashboard', activeClass: 'active' }\"></a>\n        </li>\n        <li class=\"Sidebar__menu\">\n            <a class=\"Sidebar__link fa fa-tasks\"\n               @click=\"getRouteName\"\n               v-link=\"{ path: '/anttest', activeClass: 'active' }\"></a>\n        </li>\n        <li class=\"Sidebar__menu\">\n            <a class=\"Sidebar__link fa fa-users\"\n               @click=\"getRouteName\"\n               v-link=\"{ path: '/admintest', activeClass: 'active' }\"></a>\n        </li>\n        <li class=\"Sidebar__menu\">\n            <a class=\"Sidebar__link fa fa-taxi\"\n               @click=\"getRouteName\"\n               v-link=\"{ path: '/newadmintest', activeClass: 'active' }\"></a>\n        </li>\n        <li class=\"Sidebar__menu\">\n            <a class=\"Sidebar__link fa fa-tachometer\"\n               @click=\"getRouteName\"\n               v-link=\"{ path: '/newadmintest_minisidebar', activeClass: 'active' }\"></a>\n        </li>\n    </ul>\n    <ul class=\"Sidebar__bottomList\">\n        <li class=\"Sidebar__menu\">\n            <a class=\"Sidebar__link fa fa-cog\"></a>\n        </li>\n        <li class=\"Sidebar__menu\">\n            <a class=\"Sidebar__link fa fa-sign-in\"\n               name=\"auth\"\n               @click=\"getRouteName\"\n               v-link=\"{ path: '/sign_in', activeClass: 'hidden' }\"\n               v-bind:class=\"[ currentLink == 'auth' ? 'hiddenLink' : '' ]\"></a>\n        </li>\n    </ul>\n</nav>";
+	module.exports = "<nav class=\"Sidebar__container\">\n    <ul class=\"Sidebar__topList\">\n        <li class=\"Sidebar__menu\">\n            <!-- 说明: a标签上面加上getRouteName点击事件的原因是为了获取当前点击是否是auth -->\n            <a class=\"Sidebar__link fa fa-home\"\n               name=\"home\"\n               @click=\"getRouteName\"\n               v-bind:class=\"[ currentLink == 'auth' ? 'activeLink' : '' ]\"\n               v-link=\"{ path: '/home', activeClass: 'active' }\"></a>\n        </li>\n        <li class=\"Sidebar__menu\">\n            <a class=\"Sidebar__link fa fa-th\"\n               @click=\"getRouteName\"\n               v-link=\"{ path: '/dashboard', activeClass: 'active' }\"></a>\n        </li>\n        <li class=\"Sidebar__menu\">\n            <a class=\"Sidebar__link fa fa-tasks\"\n               @click=\"getRouteName\"\n               v-link=\"{ path: '/anttest', activeClass: 'active' }\"></a>\n        </li>\n        <li class=\"Sidebar__menu\">\n            <a class=\"Sidebar__link fa fa-users\"\n               @click=\"getRouteName\"\n               v-link=\"{ path: '/admintest', activeClass: 'active' }\"></a>\n        </li>\n        <li class=\"Sidebar__menu\">\n            <a class=\"Sidebar__link fa fa-taxi\"\n               @click=\"getRouteName\"\n               v-link=\"{ path: '/newadmintest', activeClass: 'active' }\"></a>\n        </li>\n        <li class=\"Sidebar__menu\">\n            <a class=\"Sidebar__link fa fa-tachometer\"\n               @click=\"getRouteName\"\n               v-link=\"{ path: '/newadmintest_minisidebar', activeClass: 'active' }\"></a>\n        </li>\n        <li class=\"Sidebar__menu\">\n            <a class=\"Sidebar__link fa fa-tachometer\"\n               @click=\"getRouteName\"\n               v-link=\"{ path: '/vuex', activeClass: 'active' }\"></a>\n        </li>\n    </ul>\n    <ul class=\"Sidebar__bottomList\">\n        <li class=\"Sidebar__menu\">\n            <a class=\"Sidebar__link fa fa-cog\"></a>\n        </li>\n        <li class=\"Sidebar__menu\">\n            <a class=\"Sidebar__link fa fa-sign-in\"\n               name=\"auth\"\n               @click=\"getRouteName\"\n               v-link=\"{ path: '/sign_in', activeClass: 'hidden' }\"\n               v-bind:class=\"[ currentLink == 'auth' ? 'hiddenLink' : '' ]\"></a>\n        </li>\n    </ul>\n</nav>";
 
 /***/ },
-/* 232 */
+/* 238 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(233);
+	var content = __webpack_require__(239);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(174)(content, {});
@@ -16638,7 +16661,7 @@
 	}
 
 /***/ },
-/* 233 */
+/* 239 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(173)();
@@ -16650,6 +16673,245 @@
 
 	// exports
 
+
+/***/ },
+/* 240 */,
+/* 241 */,
+/* 242 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+
+	var _dec, _class;
+
+	var _vueClassComponent = __webpack_require__(88);
+
+	var _vueClassComponent2 = _interopRequireDefault(_vueClassComponent);
+
+	var _displayTpl = __webpack_require__(243);
+
+	var _displayTpl2 = _interopRequireDefault(_displayTpl);
+
+	var _getters = __webpack_require__(253);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	var Display = (_dec = (0, _vueClassComponent2.default)({
+	    template: _displayTpl2.default,
+	    vuex: {
+	        getters: {
+	            // 注意在这里你需要 `getCount` 函数本身而不是它的执行结果 'getCount()'
+	            counterValue: _getters.getCount
+	        }
+	    }
+	}), _dec(_class = function Display() {
+	    _classCallCheck(this, Display);
+	}) || _class);
+	exports.default = Display;
+
+/***/ },
+/* 243 */
+/***/ function(module, exports) {
+
+	module.exports = "<div>\n    <h3>Count is {{ counterValue }}</h3>\n</div>";
+
+/***/ },
+/* 244 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+
+	var _dec, _class;
+
+	var _vueClassComponent = __webpack_require__(88);
+
+	var _vueClassComponent2 = _interopRequireDefault(_vueClassComponent);
+
+	var _incrementTpl = __webpack_require__(245);
+
+	var _incrementTpl2 = _interopRequireDefault(_incrementTpl);
+
+	var _actions = __webpack_require__(254);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	var Increment = (_dec = (0, _vueClassComponent2.default)({
+	    template: _incrementTpl2.default,
+	    vuex: {
+	        actions: {
+	            increment: _actions.incrementCounter
+	        }
+	    }
+	}), _dec(_class = function Increment() {
+	    _classCallCheck(this, Increment);
+	}) || _class);
+	exports.default = Increment;
+
+/***/ },
+/* 245 */
+/***/ function(module, exports) {
+
+	module.exports = "<div>\n    <button @click='increment'>Increment +1</button>\n</div>";
+
+/***/ },
+/* 246 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _dec, _class;
+
+	var _vueClassComponent = __webpack_require__(88);
+
+	var _vueClassComponent2 = _interopRequireDefault(_vueClassComponent);
+
+	var _vuex_pageTpl = __webpack_require__(247);
+
+	var _vuex_pageTpl2 = _interopRequireDefault(_vuex_pageTpl);
+
+	var _display = __webpack_require__(242);
+
+	var _display2 = _interopRequireDefault(_display);
+
+	var _increment = __webpack_require__(244);
+
+	var _increment2 = _interopRequireDefault(_increment);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	var Vuex_Page = (_dec = (0, _vueClassComponent2.default)({
+	    template: _vuex_pageTpl2.default,
+	    components: {
+	        Display: _display2.default,
+	        Increment: _increment2.default
+	    }
+	}), _dec(_class = function () {
+	    function Vuex_Page() {
+	        _classCallCheck(this, Vuex_Page);
+	    }
+
+	    _createClass(Vuex_Page, [{
+	        key: 'ready',
+	        value: function ready() {}
+	    }]);
+
+	    return Vuex_Page;
+	}()) || _class);
+	exports.default = Vuex_Page;
+
+/***/ },
+/* 247 */
+/***/ function(module, exports) {
+
+	module.exports = "<h1>vuex</h1>\n\n<Display></Display>\n\n<Increment></Increment>";
+
+/***/ },
+/* 248 */,
+/* 249 */,
+/* 250 */,
+/* 251 */,
+/* 252 */,
+/* 253 */
+/***/ function(module, exports) {
+
+	"use strict";
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+	exports.getCount = getCount;
+	// 这个 getter 函数会返回 count 的值
+	// 在 ES6 里你可以写成：
+	// export const getCount = state => state.count
+
+	function getCount(state) {
+	    return state.count;
+	}
+
+/***/ },
+/* 254 */
+/***/ function(module, exports) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+	// action 会收到 store 作为它的第一个参数
+	// 既然我们只对事件的分发（dispatch 对象）感兴趣。（state 也可以作为可选项放入）
+	// 我们可以利用 ES6 的解构（destructuring）功能来简化对参数的导入
+	var incrementCounter = exports.incrementCounter = function incrementCounter(_ref) {
+	    var dispatch = _ref.dispatch;
+	    var state = _ref.state;
+
+	    dispatch('INCREMENT', 1);
+	};
+
+/***/ },
+/* 255 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+
+	var _vue = __webpack_require__(82);
+
+	var _vue2 = _interopRequireDefault(_vue);
+
+	var _vuex = __webpack_require__(84);
+
+	var _vuex2 = _interopRequireDefault(_vuex);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	// 告诉 vue “使用” vuex
+	_vue2.default.use(_vuex2.default);
+
+	// 创建一个对象来保存应用启动时的初始状态
+	var state = {
+	    // 应用启动时，count 置为0
+	    count: 0
+	};
+
+	// 创建一个对象存储一系列我们接下来要写的 mutation 函数
+	var mutations = {
+	    // mutation 的第一个参数是当前的 state
+	    // 你可以在函数里修改 state
+
+	    INCREMENT: function INCREMENT(state, amount) {
+	        state.count = state.count + amount;
+	    }
+	};
+
+	// 整合初始状态和变更函数，我们就得到了我们所需的 store
+	// 至此，这个 store 就可以连接到我们的应用中
+	exports.default = new _vuex2.default.Store({
+	    state: state,
+	    mutations: mutations
+	});
 
 /***/ }
 /******/ ]);
